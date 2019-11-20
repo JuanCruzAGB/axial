@@ -3,20 +3,20 @@
     use Illuminate\Database\Schema\Blueprint;
     use Illuminate\Support\Facades\Schema;
 
-    class CreateUsersTable extends Migration{
+    class CreateTablePosts extends Migration{
         /**
          * Run the migrations.
          *
          * @return void
          */
         public function up(){
-            Schema::create('usuarios', function (Blueprint $table){
-                $table->bigIncrements('id_usuario');
-                $table->string('nombre');
-                $table->string('correo')->unique();
-                $table->string('clave');
+            Schema::create('posts', function(Blueprint $table){
+                $table->increments('id_post');
+                $table->string('title');
+                $table->text('body');
+                $table->unsignedInteger('id_category');
+                $table->unsignedInteger('id_user');
                 $table->string('slug');
-                $table->rememberToken();
                 $table->timestamps();
             });
         }
@@ -27,6 +27,6 @@
          * @return void
          */
         public function down(){
-            Schema::dropIfExists('usuarios');
+            Schema::dropIfExists('posts');
         }
     }
