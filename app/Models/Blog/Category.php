@@ -2,8 +2,12 @@
     namespace App\Models\Blog;
 
     use App\Models\Blog\Post;
+    use Cviebrock\EloquentSluggable\Sluggable;
+    use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 
     class Category extends Model{
+        use Sluggable, SluggableScopeHelpers;
+
         /** @var string - The table name. */
         protected $table = 'categories';
         
@@ -40,4 +44,17 @@
                 ],
             ],
         ];
+        
+        /**
+         * The Sluggable configuration for the Model.
+         * @return array
+         */
+        public function sluggable(){
+            return [
+                'slug' => [
+                    'source'	=> 'name',
+                    'onUpdate'	=> true,
+                ]
+            ];
+        }
     }

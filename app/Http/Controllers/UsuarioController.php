@@ -18,7 +18,6 @@
         
         /**
          * Carga la seccion "Editar Usuario".
-         * 
          * @param $id_usuario - El id de la Usuario.
          */
         public function showEditar($id_usuario){
@@ -30,8 +29,7 @@
         }
 
         /**
-         * Valida y actualiza los datos..
-         * 
+         * Valida y actualiza el Usuario.
          * @param $request - Request
          * @param $id_usuario - El id del Usuario.
          */

@@ -4,10 +4,12 @@
     use App\Models\Blog\Category;
     use App\Models\Blog\Feature;
     use App\User;
-    use Illuminate\Contracts\Auth\MustVerifyEmail;
-    use Illuminate\Foundation\Auth\User as Authenticatable;
+    use Cviebrock\EloquentSluggable\Sluggable;
+    use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 
     class Post extends Model{
+        use Sluggable, SluggableScopeHelpers;
+
         /** @var string - The table name. */
         protected $table = 'posts';
         
@@ -54,4 +56,17 @@
                 ],
             ],
         ];
+        
+        /**
+         * The Sluggable configuration for the Model.
+         * @return array
+         */
+        public function sluggable(){
+            return [
+                'slug' => [
+                    'source'	=> 'title',
+                    'onUpdate'	=> true,
+                ]
+            ];
+        }
     }

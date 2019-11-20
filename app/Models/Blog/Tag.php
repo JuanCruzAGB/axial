@@ -2,10 +2,12 @@
     namespace App\Models\Blog;
 
     use App\Models\Blog\Feature;
-    use Illuminate\Contracts\Auth\MustVerifyEmail;
-    use Illuminate\Foundation\Auth\User as Authenticatable;
+    use Cviebrock\EloquentSluggable\Sluggable;
+    use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 
     class Tag extends Model{
+        use Sluggable, SluggableScopeHelpers;
+
         /** @var string - The table name. */
         protected $table = 'tags';
         
@@ -42,4 +44,17 @@
                 ],
             ],
         ];
+        
+        /**
+         * The Sluggable configuration for the Model.
+         * @return array
+         */
+        public function sluggable(){
+            return [
+                'slug' => [
+                    'source'	=> 'name',
+                    'onUpdate'	=> true,
+                ]
+            ];
+        }
     }
