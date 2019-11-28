@@ -11,8 +11,8 @@
         <!-- Fuentes -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
 
-        <!-- Bootstrap Ukit -->
-        <!-- <link href="{{asset('css/bootstrap/bootstrap.min.css')}}" rel="stylesheet"> -->
+        <!-- Bootstrap -->
+        <link href="{{asset('css/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
 
         <!-- Mi CSS -->
         <link href="{{asset('css/WhatsApp.css')}}" rel="stylesheet">
@@ -55,10 +55,10 @@
             @yield('footer')
         </footer>
 
-        <!-- Bootstrap Ukit -->
-        <!-- <script type="text/javascript" src="{{ asset('js/jquery-popper/jquery-3.4.1.min.js') }}"></script>
+        <!-- Bootstrap -->
+        <script type="text/javascript" src="{{ asset('js/jquery-popper/jquery-3.4.1.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/jquery-popper/popper.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script> -->
+        <script type="text/javascript" src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
 
         <!-- Mi JS -->
         <script type="text/javascript" src="{{ asset('js/PopUpNotification.js') }}"></script>
