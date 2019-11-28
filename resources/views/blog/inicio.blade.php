@@ -1,11 +1,11 @@
 @extends('layout.index')
 
 @section('css')
-    <link href="{{asset('css/web/inicio.css')}}" rel="stylesheet">
+    <link href="{{asset('css/blog/inicio.css')}}" rel="stylesheet">
 @endsection
 
 @section('titulo')
-    Title
+    Blog
 @endsection
 
 @section('nav')
@@ -27,5 +27,5 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="{{asset('js/web/inicio.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/blog/inicio.js')}}"></script>
 @endsection

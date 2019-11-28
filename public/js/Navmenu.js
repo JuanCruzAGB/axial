@@ -103,7 +103,7 @@ let Sidebar = {
     close(){
         Sidebar.HTML.classList.remove('opened');
         Sidebar.HTML.classList.add('closed');
-	},
+    },
 };
 
 document.addEventListener('DOMContentLoaded', function(){

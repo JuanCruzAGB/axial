@@ -7,7 +7,7 @@
     class BlogController extends Controller{
         /** Carga la seccion principal. */
         public function inicio(){            
-            return view('web.blog.inicio', [
+            return view('blog.inicio', [
                 //
             ]);
         }
