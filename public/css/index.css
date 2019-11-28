@@ -3,3 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    --color-uno: #0D4A7B;
+    --color-uno-hover: #1a1a1a21;
+    --color-dos: #197C3E;
+    --color-tres: #C6C6C6;
+    --color-tres-hover: #9F9F9F;
+    --color-cuatro: #222222;
+    --color-fondo: linear-gradient(to top, #efefef 0%, #f5f8f9b5 75%, #e7e8e9 100%);
+    --fuente-encabezados: 'Quicksand', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+a:hover{
+    color: transparent;
+    text-decoration: none;
+ }

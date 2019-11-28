@@ -1,0 +1,759 @@
+.pagination{
+    margin-bottom: 0;
+}
+
+/* Navmenu */
+.nav-menu{
+    --secondary-color: var(--color-cuatro);
+}
+
+.invalid-tooltip{
+    position: initial;
+    margin-bottom: .5rem;
+    width: 100%;
+    background: var(--color-cuatro);
+}
+
+.panel{
+    flex-wrap: wrap;
+}
+
+.tabs .tab-menu{
+    flex-basis: 100%;
+    background: var(--color-uno);
+    border-radius: .25rem;
+}
+
+.tabs .tab-menu ul{
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.tabs .tab-menu li{
+    flex-basis: 100%;
+    height: 4rem;
+}
+
+.tabs .tab-menu .tab-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.tabs .tab-menu .tab-button .tab-icon{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: transparent;
+    transition: 500ms;
+    border-radius: 50%;
+}
+
+.tabs .tab-menu .tab-button.opened .tab-icon{
+    color: white;
+    background: #0d4a7a00;
+    z-index: 3;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px;
+}
+
+.tabs .tab-menu .tab-button .tab-text{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: 500ms;
+}
+
+.tabs .tab-menu .tab-button.opened .tab-text{
+    background: var(--color-uno-hover);
+}
+
+.tabs .tab-body{
+    position: relative;
+    flex-basis: 100%;
+    overflow: hidden;
+}
+
+.tabs .tab-body .tab-content{
+    display: none;
+    width: 100%;
+    height: fit-content;
+}
+
+.tabs .tab-body .tab-content.opened{
+    display: block;
+}
+
+.tabs .tab-body .tab-content .title{
+    background: var(--color-uno);
+}
+
+.tabs .tab-body .tab-content .title h2{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.tabs .tab-body .tab-content section .content{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--color-tres);
+}
+
+.tabs .tab-body .tab-content section .content:last-of-type{
+    border: none;
+}
+
+.tabs .tab-body .tab-content section .content .titulo{
+    flex-basis: 100%;
+}
+
+.tabs .tab-body .tab-content section .content .titulo h3{
+    color: var(--color-cuatro);
+    text-transform: initial;
+}
+
+.tabs .tab-body .tab-content section .content .titulo h4{
+    color: var(--color-tres);
+    text-transform: initial;
+    font-size: 1rem;
+}
+
+.tabs .tab-body .tab-content section .content .descripcion{
+    flex-basis: 100%;
+}
+
+.tabs .tab-body .tab-content section .content .imagen{
+    position: relative;
+    flex-basis: 100%;
+    border-radius: .25rem;
+    overflow: hidden;
+}
+
+.tabs .tab-body .tab-content section .content .imagen img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.tabs .tab-body .tab-content section .content .boton,
+.tabs .tab-body .tab-content section .content .acciones{
+    flex-basis: 100%;
+}
+
+.tabs .tab-body .tab-content section .content .acciones button,
+.tabs .tab-body .tab-content section .content .acciones a,
+.tabs .tab-body .tab-content section .content .boton button,
+.tabs .tab-body .tab-content section .content .boton a{
+    width: 45%;
+    background: var(--color-uno);
+    border-radius: .25rem;
+    color: white;
+}
+
+/* Personalizar */
+.tabs .tab-body .personalizar section .active > .informacion,
+.tabs .tab-body .personalizar section .active > .imagen,
+.tabs .tab-body .personalizar section .active > .accion,
+.tabs .tab-body .personalizar section .inactive form{
+    display: none;
+}
+
+.tabs .tab-body .personalizar section .inactive > .informacion,
+.tabs .tab-body .personalizar section .inactive > .imagen,
+.tabs .tab-body .personalizar section .inactive > .accion,
+.tabs .tab-body .personalizar section .active form{
+    display: block;
+}
+
+.tabs .tab-body .personalizar section .active .titulo input,
+.tabs .tab-body .personalizar section .active .descripcion textarea{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: var(--color-cuatro);
+    font-size: 1.5rem;
+    font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    border: 1px solid #ced4da;
+}
+
+
+.tabs .tab-body .personalizar section .active .titulo input:focus,
+.tabs .tab-body .personalizar section .active .descripcion textarea:focus{
+    box-shadow: none !important;
+    border: 1px solid var(--color-uno);
+}
+
+.tabs .tab-body .personalizar section .active .titulo input:focus,
+.tabs .tab-body .personalizar section .active .descripcion textarea:focus{
+    animation: none;
+    outline: none;
+}
+
+.tabs .tab-body .personalizar section .active .descripcion textarea{
+    font-size: 0.875rem;
+    color: #919aa1;
+    font-weight: 200;
+    letter-spacing: 1px;
+    resize: none;
+    height: 7.5rem;
+}
+
+.tabs .tab-body .personalizar .active .imagen .imagen-input{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    animation: rainbow 4s infinite;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.tabs .tab-body .personalizar .active .imagen .imagen-input .input-icon{
+    animation: text-rainbow 4s infinite;
+    font-size: 3rem;
+}
+
+.suport .boton .web-cancelar{
+    background-color: var(--color-cuatro) !important;
+}
+
+/* Galerias */
+.tabs .tab-body .galerias.tab-content section .content{
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    height: 300px;
+}
+
+.tabs .tab-body .galerias section .content .image-input.col-10{
+    flex-basis: 300px;
+    max-width: 300px;
+}
+
+.tabs .tab-body .galerias section .content .image-input form,
+.tabs .tab-body .galerias section .content .image-input.confirm .form,
+.tabs .tab-body .galerias section .content .image-input.checked{
+    display: none;
+}
+
+.tabs .tab-body .galerias section .content .image-input .form{
+    width: 100%;
+    height: 100%;
+}
+
+.tabs .tab-body .galerias section .content .image-input .form .input-file{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    border-radius: .25rem;
+    background: transparent;
+    animation: rainbow 4s infinite;
+    cursor: pointer;
+}
+
+.tabs .tab-body .galerias section .content .image-input .form .input-file input{
+    display: none;
+}
+
+.tabs .tab-body .galerias section .content .image-input .form .input-file .input-text{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: var(--color-uno);
+}
+
+.tabs .tab-body .galerias section .content .image-input .form .input-file .input-icon{
+    font-size: 1.2rem;
+    color: var(--color-uno);
+}
+
+.tabs .tab-body .galerias section .content .image-input .form-accions{
+    display: none !important;
+    width: 100%;
+    height: 100%;
+}
+
+.tabs .tab-body .galerias section .content .image-input.confirm .form-accions{
+    display: flex !important;
+}
+
+.tabs .tab-body .galerias section .content .image-input .form-accions label{
+    flex-basis: calc(50% - .5rem);
+}
+
+.tabs .tab-body .galerias section .content .image-input .form-accions label button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    border-radius: .25rem;
+    background: transparent;
+    animation: rainbow 4s infinite;
+    cursor: pointer;
+}
+
+.tabs .tab-body .galerias section .content .image-input .form-accions label button .input-text{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--color-uno);
+}
+
+.tabs .tab-body .galerias section .content .image-input .form-accions label button .input-icon{
+    font-size: 1rem;
+    color: var(--color-uno);
+}
+
+.tabs .tab-body .galerias section .content .image,
+.tabs .tab-body .galerias section .content .example-image{
+    position: relative;
+    cursor: pointer;
+    flex-basis: 300px;
+    max-width: 300px;
+}
+
+.tabs .tab-body .galerias .content .image label{
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: #1a1a1a7a;
+    box-shadow: 0px 0px;
+    z-index: 1;
+    transition: 500ms;
+}
+
+.tabs .tab-body .galerias .content .image label.trash{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    clip-path: polygon(35px 0%, calc(100% - 35px) 0%, 100% 100%, 0% 100%);
+}
+
+.tabs .tab-body .galerias .content .image.active label.trash{
+    height: 35px;
+}
+
+.tabs .tab-body .galerias .content .image label.arrow{
+    top: 0;
+    height: 100%;
+}
+
+.tabs .tab-body .galerias .content .image.active label.arrow{
+    width: 35px;
+}
+
+.tabs .tab-body .galerias .content .image label.prev{
+    left: 0;
+    clip-path: polygon(0% 0%, 100% 0,  100% calc(100% - 35px), 0% 100%);
+}
+
+.tabs .tab-body .galerias .content .image label.next{
+    right: 0;
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% calc(100% - 35px));
+}
+
+.tabs .tab-body .galerias section .content .image button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    box-shadow: 0px 0px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: 500ms;
+}
+
+.tabs .tab-body .galerias .content .image.active button{
+    background: #c6c6c600;
+    z-index: 3;
+}
+
+.tabs .tab-body .galerias section .content .image .trash button{
+    bottom: 0;
+    left: 50%;
+    width: 50px;
+    height: 25px;
+    transform: translateX(-50%);
+}
+
+.tabs .tab-body .galerias section .content .image.active .trash button{
+    height: 100%;
+}
+
+.tabs .tab-body .galerias section .content .image .arrow button{
+    top: 50%;
+    width: 25px;
+    height: 50px;
+    transform: translateY(-50%);
+}
+
+.tabs .tab-body .galerias section .content .image.active .arrow button{
+    width: 100%;
+}
+
+.tabs .tab-body .galerias section .content .image .prev button{
+    left: 0;
+}
+
+.tabs .tab-body .galerias section .content .image .next button{
+    right: 0;
+}
+
+.tabs .tab-body .galerias section .content .image button .button-icon{
+    color: transparent;
+    transition: 600ms;
+}
+
+.tabs .tab-body .galerias section .content .image.active button .button-icon{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.tabs .tab-body .galerias .content .image img,
+.tabs .tab-body .galerias .content .example-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .25rem;
+}
+
+.tabs .tab-body .galerias.tab-content section .content .substitute{
+    flex-basis: 0 !important;
+    margin: 0;
+}
+
+.tabs .tab-body .galerias section .content .example-image .example-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+    text-align: center;
+    opacity: 0;
+    background: #1a1a1a7a;
+    color: white;
+}
+
+.tabs .tab-body .galerias section .content .example-image .example-text.show{
+    opacity: 1;
+}
+
+.tabs .tab-body .galerias section .content .empty-image{
+    flex-basis: 300px;
+    min-width: 300px;
+    height: 100%;
+    border-radius: .25rem;
+    border: 2px solid var(--color-tres);
+}
+
+.tabs .tab-body .galerias section .content .empty-image .empty-content{
+    width: 100%;
+    height: 100%;
+    border-radius: .25rem;
+    background: var(--color-tres);
+}
+
+/* Eventos */
+.tabs .tab-body .eventos section .button{
+    display: flex;
+    justify-content: center;
+}
+
+.tabs .tab-body .eventos section .button button,
+.tabs .tab-body .eventos section .button a{
+    width: 45%;
+    background: var(--color-uno);
+    border-radius: .25rem;
+}
+
+.tabs .tab-body .eventos section .button button .button-text,
+.tabs .tab-body .eventos section .button a .button-text{
+    color: white;
+}
+
+.tabs .tab-body .eventos section .button button .button-icon,
+.tabs .tab-body .eventos section .button a .button-icon{
+    color: white;
+}
+
+.loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+}
+
+.loading .loading-icon{
+    font-size: 3rem;
+    animation: loading 4s infinite;
+    transition: 500ms;
+}
+
+@keyframes rainbow{
+    0%{
+        border-color: white;
+    } 25%{
+        border-color: var(--color-uno);
+    } 75%{
+        border-color: var(--color-uno);
+    } 100%{
+        border-color: white;
+    }
+}
+
+@keyframes text-rainbow{
+    0%{
+        color: white;
+    } 25%{
+        color: var(--color-uno);
+    } 75%{
+        color: var(--color-uno);
+    } 100%{
+        color: white;
+    }
+}
+
+@keyframes loading{
+    0%{
+        color: white;
+        transform: rotate(0);
+    } 25%{
+        color: var(--color-uno);
+        transform: rotate(360deg);
+    } 75%{
+        color: var(--color-uno);
+        transform: rotate(720deg);
+    } 100%{
+        color: white;
+        transform: rotate(1080deg);
+    }
+}
+
+.tabs .tab-body .eventos section .empty-event{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--color-tres);
+}
+
+.tabs .tab-body .eventos section .empty-event .empty-titulo,
+.tabs .tab-body .eventos section .empty-event .empty-subtitulo,
+.tabs .tab-body .eventos section .empty-event .empty-descripcion,
+.tabs .tab-body .eventos section .empty-event .empty-date,
+.tabs .tab-body .eventos section .empty-event .empty-url{
+    height: 2rem;
+    background: var(--color-tres);
+    border-radius: .25rem;
+}
+
+.tabs .tab-body .eventos section .empty-event .empty-subtitulo{
+    width: 80%;
+}
+
+.tabs .tab-body .eventos section .empty-event .empty-descripcion{
+    height: 6rem;
+}
+
+.tabs .tab-body .eventos section .empty-event .empty-date,
+.tabs .tab-body .eventos section .empty-event .empty-url{
+    width: 30%;
+}
+
+.tabs .tab-body .eventos section .empty-event .empty-url{
+    width: 60%;
+}
+
+.tabs .tab-body .eventos section .empty-event .empty-image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid var(--color-tres);
+    border-radius: .25rem;
+}
+
+.tabs .tab-body .eventos section .empty-event .empty-image .empty-content{
+    width: 100%;
+    height: 100%;
+    background: var(--color-tres);
+    border-radius: .25rem;
+}
+
+/* MD */
+@media(min-width: 768px){
+    .tabs .tab-menu{
+        flex-basis: 30%;
+    }
+
+    .tabs .tab-menu .tab-button .tab-text{
+        justify-content: flex-end;
+    }
+
+    .tabs .tab-body{
+        flex-basis: 70%;
+    }
+
+    .tabs .tab-body .tab-content section:last-of-type .content:last-of-type{
+        padding-bottom: 0 !important;
+    }
+
+    .tabs .tab-body .eventos section .button button{
+        width: calc((45% / 2) - .5rem);
+    }
+
+    .tabs .tab-body .personalizar section:first-of-type .active .descripcion textarea{
+        height: 9.5rem;
+    }
+
+    .tabs .tab-body .personalizar section:last-of-type .active .descripcion textarea{
+        height: 5.5rem;
+    }
+
+    .tabs .tab-body .galerias section .content .image-input,
+    .tabs .tab-body .galerias .content .image,
+    .tabs .tab-body .galerias .content .example-image{
+        flex-basis: calc(45% - .5rem);
+    }
+
+    .tabs .tab-body .galerias section .content .image-input .form-accions label button .input-text{
+        font-size: .8rem;
+    }
+    
+    .tabs .tab-body .galerias section .content .image-input .form-accions label button .input-icon{
+        font-size: .8rem;
+    }
+}
+
+/* LG */
+@media(min-width: 1024px){
+    .tabs .tab-menu{
+        flex-basis: 20%;
+    }
+
+    .tabs .tab-body{
+        flex-basis: 80%;
+    }
+
+    .tabs .tab-body .eventos section .button button{
+        width: calc((33.calc(33% - .5rem) / 2) - .5rem);
+    }
+
+    .tabs .tab-body .personalizar section .active .descripcion textarea{
+        height: 5.5rem;
+    }
+
+    .tabs .tab-body .galerias.tab-content section .content{
+        overflow: hidden;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+
+    .tabs .tab-body .personalizar section:first-of-type .active .descripcion textarea{
+        height: 5.5rem;
+    }
+
+    .tabs .tab-body .personalizar section:last-of-type .active .descripcion textarea{
+        height: 4.5rem;
+    }
+
+    .tabs .tab-body .galerias.tab-content section .content{
+        height: fit-content;
+    }
+
+    .tabs .tab-body .galerias section .content .image-input.col-10,
+    .tabs .tab-body .galerias section .content .example-image,
+    .tabs .tab-body .galerias section .content .image{
+        position: relative;
+        flex-basis: calc(33% - .5rem);
+        height: 250px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        max-width: calc(33% - .5rem);
+    }
+
+    .tabs .tab-body .galerias .content :nth-child(3),
+    .tabs .tab-body .galerias .content :nth-child(6),
+    .tabs .tab-body .galerias .content :nth-child(9){
+        margin-right: 0 !important;
+    }
+
+    .tabs .tab-body .galerias.tab-content section .content .substitute{
+        width: 0;
+        height: 0;
+        background: #1a1a1a7a;
+        box-shadow: 0px 0px;
+        z-index: 1;
+        transition: 500ms;
+        position: relative;
+        flex-basis: calc(33% - .5rem);
+        overflow: hidden;
+    }
+
+    .tabs .tab-body .galerias section .content .empty-image{
+        flex-basis: calc(33% - .5rem);
+        min-width: calc(33% - .5rem);
+        height: 250px;
+    }
+
+    .tabs .tab-body .eventos section .empty-event .empty-titulo{
+        width: 80%;
+    }
+
+    .tabs .tab-body .eventos section .empty-event .empty-subtitulo{
+        width: 60%;
+    }
+    
+    .tabs .tab-body .eventos section .empty-event .empty-descripcion{
+        height: 6rem;
+    }
+    
+    .tabs .tab-body .eventos section .empty-event .empty-date,
+    .tabs .tab-body .eventos section .empty-event .empty-url{
+        width: 30%;
+    }
+    
+    .tabs .tab-body .eventos section .empty-event .empty-url{
+        width: 50%;
+    }
+}
+
+/* XL */
+@media(min-width: 1200px){
+    .tabs .tab-body .personalizar section .active .descripcion textarea{
+        height: 4.5rem;
+    }
+}
