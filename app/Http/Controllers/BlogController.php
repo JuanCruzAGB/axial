@@ -5,9 +5,9 @@
     use Illuminate\Http\Request;
 
     class BlogController extends Controller{
-        /** Carga la seccion principal. */
-        public function inicio(){            
-            return view('blog.inicio', [
+        /** Load the blog's home. */
+        public function home(){            
+            return view('blog.home', [
                 //
             ]);
         }

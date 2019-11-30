@@ -4,7 +4,7 @@
     <link href="{{asset('css/web/inicio.css')}}" rel="stylesheet">
 @endsection
 
-@section('titulo')
+@section('title')
     Title
 @endsection
 
@@ -19,6 +19,11 @@
 
 @section('main')
     <!-- contenido -->
+@endsection
+
+@section('extras')
+    @component('components.whatsapp')
+    @endcomponent
 @endsection
 
 @section('footer')

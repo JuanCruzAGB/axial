@@ -1,12 +1,3 @@
-.pagination{
-    margin-bottom: 0;
-}
-
-/* Navmenu */
-.nav-menu{
-    --secondary-color: var(--color-cuatro);
-}
-
 .invalid-tooltip{
     position: initial;
     margin-bottom: .5rem;

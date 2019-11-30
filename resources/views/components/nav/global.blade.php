@@ -24,9 +24,9 @@
             <li class="collapsable closed">
                 <a href="#" class="collapsable-button">Panel<i class="fas fa-sort-down"></i></a>
                 <ul class="collapsable-menu">
-                    <li><a href="/panel#" class="collapsable-link text-white">Algo</a></li>
-                    <li><a href="/panel#" class="collapsable-link text-white">Algo</a></li>
-                    <li><a href="/panel#" class="collapsable-link text-white">Algo</a></li>
+                    <li><a href="/panel#" class="collapsable-link">Algo</a></li>
+                    <li><a href="/panel#" class="collapsable-link">Algo</a></li>
+                    <li><a href="/panel#" class="collapsable-link">Algo</a></li>
                 </ul>
             </li>
             <li><a href="/salir" class="nav-link">

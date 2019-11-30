@@ -148,8 +148,11 @@
     right: 0;
     height: 100%;
     padding-right: 1rem;
-    color: var(--tertiary-color);
     text-decoration: none;
+}
+
+.sidebar .sidebar-header .sidebar-button .sidebar-icon{
+    color: var(--tertiary-color);
 }
 
 .neon .sidebar .sidebar-header .sidebar-button{

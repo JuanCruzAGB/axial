@@ -21,7 +21,7 @@
         <link href="{{ asset('css/index.css') }}" rel="stylesheet">       
         @yield('css')
 
-        <title>@yield('titulo')</title>
+        <title>@yield('title')</title>
     </head>
 
     <body>
@@ -47,8 +47,7 @@
                 </div>
             </div>
 
-            @component('components.whatsapp')
-            @endcomponent
+            @yield('extras')
         </main>
 
         <footer> 
