@@ -3,6 +3,7 @@
 
     use App\Models\Blog\Post;
     use App\Models\Blog\Tag;
+    use Illuminate\Database\Eloquent\Model;
 
     class Feature extends Model{
         /** @var string - The table name. */

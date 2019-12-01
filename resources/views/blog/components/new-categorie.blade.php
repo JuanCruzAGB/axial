@@ -3,7 +3,8 @@
         <h2 class="mb-3 p-3">Nueva categoría</h2>
     </div>
     <div class="content">
-        <form action="#">
+        <form action="/categoria/crear" method="post" enctype="multipart/form-data">
+            @csrf
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">

@@ -2,6 +2,7 @@
 
 @section('css')
     <link href="{{asset('css/blog/home.css')}}" rel="stylesheet">
+    <link href="{{asset('ValidationJS/css/styles.css')}}" rel="stylesheet">
 @endsection
 
 @section('title')
@@ -29,7 +30,7 @@
                     <i class="tab-icon far fa-calendar"></i>
                     <span class="tab-text p-2">Categorias</span>
                 </a></li>
-                <li><a class="tab-button" href="#new-category">
+                <li><a class="tab-button" href="#new-categorie">
                     <i class="tab-icon far fa-calendar"></i>
                     <span class="tab-text p-2">Nueva categoría</span>
                 </a></li>
@@ -64,8 +65,8 @@
                 @component('blog.components.categories')
                 @endcomponent
             </div>
-            <div id="new-category" class="new-category tab-content mt-3 mt-md-0">
-                @component('blog.components.new-category')
+            <div id="new-categorie" class="new-categorie tab-content mt-3 mt-md-0">
+                @component('blog.components.new-categorie')
                 @endcomponent
             </div>
             <div id="tags" class="tags tab-content mt-3 mt-md-0">
@@ -95,4 +96,10 @@
 
 @section('js')
     <script type="text/javascript" src="{{asset('js/blog/home.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Validation.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Rules.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Messages.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Requirements.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Validator.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script>
 @endsection

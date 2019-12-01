@@ -3,7 +3,8 @@
         <h2 class="mb-3 p-3">Nueva publicación</h2>
     </div>
     <div class="content">
-        <form action="#">
+        <form action="/publicacion/crear" method="post" enctype="multipart/form-data">
+            @csrf
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
@@ -29,22 +30,22 @@
                 </div>
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="id_category" class="input-name">
+                        <label for="id_categorie" class="input-name">
                             <span class="input-text">Categoría</span>
                         </label>
-                        <select id="id_category"
-                            name="id_category"
+                        <select id="id_categorie"
+                            name="id_categorie"
                             class="form-control">
                             <option value="1">Alguna categoría</option>
                             <option value="2">Alguna otra</option>
                         </select>
-                        <div @if($errors->has('id_category'))
+                        <div @if($errors->has('id_categorie'))
                             class="invalid-tooltip showed"
                         @else
                             class="invalid-tooltip"
                         @endif>
-                            @if($errors->has('id_category'))
-                                <small>{{$errors->first('id_category')}}</small>
+                            @if($errors->has('id_categorie'))
+                                <small>{{$errors->first('id_categorie')}}</small>
                             @endif
                         </div>
                     </div>
@@ -71,6 +72,15 @@
                                 value="2">
                             <label for="option2"
                                 class="form-check-label">Alguna otra</label>
+                        </div>
+                        <div @if($errors->has('tags'))
+                            class="invalid-tooltip showed"
+                        @else
+                            class="invalid-tooltip"
+                        @endif>
+                            @if($errors->has('tags'))
+                                <small>{{$errors->first('tags')}}</small>
+                            @endif
                         </div>
                     </div>
                 </div>

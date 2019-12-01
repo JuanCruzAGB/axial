@@ -13,8 +13,8 @@
             Schema::create('posts', function(Blueprint $table){
                 $table->increments('id_post');
                 $table->string('title');
-                $table->text('body');
-                $table->unsignedInteger('id_category');
+                $table->text('content');
+                $table->unsignedInteger('id_categorie');
                 $table->unsignedInteger('id_user');
                 $table->string('slug');
                 $table->timestamps();
