@@ -28,7 +28,8 @@
             }
 
             h1{
-                font-size: 2.5rem !important;
+                font-size: 2rem !important;
+                margin-bottom: 1.5rem;
             }
 
             h2{
@@ -37,6 +38,12 @@
 
             h3{
                 font-size: 1.3rem !important;
+            }
+
+            .socialMedia i{
+                font-size: 1.8rem;
+                height: 3rem;
+                width: 3rem;
             }
 
                 /* MD */
@@ -48,23 +55,26 @@
             }
 
             @media(min-width: 1024px){
-            .logo{
-                width: 12rem;
-                border-radius: .75rem;
-            }
+                .logo{
+                    width: 12rem;
+                    border-radius: .75rem;
+                }
+                    
+                h1{
+                    font-size: 3rem !important;
+                }
 
-                
-            h1{
-                font-size: 3rem !important;
-            }
+                h2{
+                    font-size: 1.5rem !important;
+                }
 
-            h2{
-                font-size: 1.5rem !important;
-            }
+                h3{
+                    font-size: 1.5rem !important;
+                }
 
-            h3{
-                font-size: 1.5rem !important;
-            }
+                .__coverPage-content p{
+                    font-size: 1.1rem;
+                }
             }
         </style>
     </head>
@@ -89,10 +99,9 @@
         
             <div class="__coverPage-content">
             <img src="/img/logo.jpg" class="img-fluid logo" alt="Responsive image">
-                <h1>Axial Grupo Medico</h1>
-                <h2>Medicina especializada en Columna</h2>
+                <h1>Medicina especializada en Columna</h1>
                 <h3>Sitio web en construcción</h3>
-                <p>info@grupoaxial.org <br>
+                <p class="info">info@grupoaxial.org <br>
                 (011) 4772-7679 <br>
                 Huergo 366 6 "A" , Cañitas, CABA</p>
                 <div class="socialMedia">
@@ -100,7 +109,6 @@
                     <a target="_blank" class="socialIcon" href="https://wa.me/+541123539011">
                         <i class="fab fa-whatsapp"></i>
                     </a>
-                    <a class="socialIcon" href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
