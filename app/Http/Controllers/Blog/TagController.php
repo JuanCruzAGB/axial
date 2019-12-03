@@ -18,7 +18,7 @@
             if($validator){
                 return redirect('/blog#new-tag')->withErrors($validator)->withInput();
             }
-            return redirect('/')->with('status', 'Etiqueta creada correctamente.');
+            return redirect('/panel#tags')->with('status', 'Etiqueta creada correctamente.');
         }
 
         /** Load the "Create a new Tag" section. */
@@ -40,7 +40,8 @@
             if($validator->fails()){
                 return $validator;
             }else{
-                $data['id_user'] = Auth::user()->id_usuario;
+                // $data['id_user'] = Auth::user()->id_usuario;
+                $data['id_user'] = 1;
 
                 $data['slug'] = SlugService::createSlug(Tag::class, 'slug', $data['name']);
                 
@@ -69,6 +70,10 @@
             $tag = Tag::findBySlug($slug);      
             return view('blog.tag.edit', [
                 'tag' => $tag,
+                'validation' => json_encode([
+                    'rules' => Tag::$validation['create']['rules'],
+                    'messages' => Tag::$validation['create']['messages'][$this->idiom],
+                ]),
             ]);
         }
 

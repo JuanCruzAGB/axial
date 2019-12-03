@@ -7,14 +7,26 @@
 
     <div class="sidebar-content">
         <ul class="sidebar-menu">
-            <li><a href="/panel" class="nav-link">
+            <li><a href="/demo" class="nav-link">
+                Inicio
+            </a></li>
+            <li><a href="/demo#nosotros" class="nav-link">
+                Nosotros
+            </a></li>
+            <li><a href="/demo#tratamiento-del-dolor" class="nav-link">
+                Tratamiento del dolor
+            </a></li>
+            <li><a href="/demo#cirugia-mini-invasiva" class="nav-link">
+                Cirugía mini invasiva
+            </a></li>
+            <li><a href="/demo#escoliosis" class="nav-link">
+                Escoliosis
+            </a></li>
+            <li><a href="/demo#equipo" class="nav-link">
+                Equipo
+            </a></li>
+            <li><a href="/blog" class="nav-link">
                 Blog
-            </a></li>
-            <li><a href="/demo#" class="nav-link">
-                Algo
-            </a></li>
-            <li><a href="/demo#" class="nav-link">
-                Algo
             </a></li>
             @if(Auth::check())
             <li><a href="/panel" class="nav-link">

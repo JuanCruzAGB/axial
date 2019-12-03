@@ -22,14 +22,9 @@
             'title', 'image', 'content', 'id_categorie', 'id_user', 'slug',
         ];
         
-        /** Get the Categorie that match the PK. */
-        public function categorie(){
-            return $this->belongsTo(Categorie::class, 'id_categorie', 'id_categorie');
-        }
-        
         /** Get the User that match the PK. */
         public function user(){
-            return $this->belongsTo(User::class, 'id_user', 'id_user');
+            return $this->belongsTo(User::class, 'id_user', 'id_usuario');
         }
         
         /** Get all the Features that match the PK. */
@@ -41,7 +36,7 @@
         public static $validation = [
             'create' => [
                 'rules' => [
-                    'title' => 'required|min:10|max:200',
+                    'title' => 'required|min:5|max:200',
                     'image' => 'required|mimetypes:image/jpeg,image/png',
                     'content' => 'required',
                     'id_categorie' => 'required',

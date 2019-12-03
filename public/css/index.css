@@ -25,4 +25,9 @@ body{
 a:hover{
     color: transparent;
     text-decoration: none;
- }
+}
+
+.invalid-tooltip{
+    --primary-color: var(--color-cuatro);
+    width: 100%;
+}

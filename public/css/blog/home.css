@@ -39,7 +39,7 @@
 .tabs .tab-menu .tab-button .tab-icon{
     position: absolute;
     top: 50%;
-    left: 5px;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,6 +114,10 @@
     color: white;
     outline: none;
     border: none;
+}
+
+.tabs .tab-body .tab-content section .content form{
+    width: 100%;
 }
 
 /* MD */

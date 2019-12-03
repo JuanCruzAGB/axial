@@ -2,6 +2,7 @@
     namespace App\Models\Blog;
 
     use App\Models\Blog\Post;
+    use App\User;
     use Cviebrock\EloquentSluggable\Sluggable;
     use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
     use Illuminate\Database\Eloquent\Model;
@@ -21,15 +22,15 @@
         ];
         
         /** Get all the Posts that match the PK. */
-        public function categories(){
-            return $this->hasMany(Post::class, 'id_categorie', 'id_categorie');
+        public function user(){
+            return $this->belongsTo(User::class, 'id_user', 'id_usuario');
         }
         
         /** @var array - Validation messages and rules. */
         public static $validation = [
             'create' => [
                 'rules' => [
-                    'name' => 'required|min:10|max:200',
+                    'name' => 'required|min:5|max:200',
                 ], 'messages' => [
                     'en' => [
                         'name.required' => 'The name is required.',

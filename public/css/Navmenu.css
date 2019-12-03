@@ -80,7 +80,7 @@
     line-height: 2.3rem;
 }
 
-.collapsable .collapsable-button i{
+.collapsable .collapsable-button .collapsable-icon{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -89,6 +89,7 @@
     align-items: center;
     justify-content: center;
     padding-left: 1rem;
+    color: var(--tertiary-color);
 }
 
 .collapsable .collapsable-menu{
@@ -101,6 +102,7 @@
     width: 100%;
     height: 2.3rem;
     line-height: 2.3rem;
+    color: var(--secondary-color);
 }
 
 /* Sidebar */
@@ -383,7 +385,7 @@
         color: var(--secondary-color);
     }
 
-    .collapsable .collapsable-button i{
+    .collapsable .collapsable-button .collapsable-icon{
         position: relative;
     }
 
@@ -415,7 +417,7 @@
     }
 
     .collapsable .collapsable-menu li{
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--tertiary-color);
     }
 
     .collapsable .collapsable-menu li:last-of-type{

@@ -1,9 +1,16 @@
+<?php
+    /** @var array $validation */
+?>
 <section>
     <div class="title">
         <h2 class="mb-3 p-3">Nueva publicación</h2>
     </div>
     <div class="content">
-        <form action="/publicacion/crear" method="post" enctype="multipart/form-data">
+        <form action="/publicacion/crear"
+            class="form-validate"
+            method="post"
+            enctype="multipart/form-data"
+            data-validation="{{$validation}}">
             @csrf
             <div class="row">
                 <div class="col-12">
@@ -127,7 +134,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Crear</button>
+                    <button type="submit" class="form-submit btn btn-primary">Crear</button>
                 </div>
             </div>
         </form>

@@ -1,3 +1,7 @@
+<?php
+    /** @var array $validations */
+    /** @var array $data */
+?>
 @extends('layout.index')
 
 @section('css')
@@ -54,27 +58,27 @@
         </div>
         <div class="tab-body pl-md-3">
             <div id="posts" class="posts tab-content opened mt-3 mt-md-0">
-                @component('blog.components.posts')
+                @component('blog.components.posts', ['posts' => $data['posts']])
                 @endcomponent
             </div>
             <div id="new-post" class="new-post tab-content mt-3 mt-md-0">
-                @component('blog.components.new-post')
+                @component('blog.components.new-post', ['validation' => $validations['post']])
                 @endcomponent
             </div>
             <div id="categories" class="categories tab-content mt-3 mt-md-0">
-                @component('blog.components.categories')
+                @component('blog.components.categories', ['categories' => $data['categories']])
                 @endcomponent
             </div>
             <div id="new-categorie" class="new-categorie tab-content mt-3 mt-md-0">
-                @component('blog.components.new-categorie')
+                @component('blog.components.new-categorie', ['validation' => $validations['categorie']])
                 @endcomponent
             </div>
             <div id="tags" class="tags tab-content mt-3 mt-md-0">
-                @component('blog.components.tags')
+                @component('blog.components.tags', ['tags' => $data['tags']])
                 @endcomponent
             </div>
             <div id="new-tag" class="new-tag tab-content mt-3 mt-md-0">
-                @component('blog.components.new-tag')
+                @component('blog.components.new-tag', ['validation' => $validations['tag']])
                 @endcomponent
             </div>
             <div id="profile" class="profile tab-content mt-3 mt-md-0">

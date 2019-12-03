@@ -11,22 +11,37 @@
 
     <div class="nav-row">
         <ul class="menu-list">
-            <li><a href="/panel" class="nav-link">
+            <li><a href="/demo" class="nav-link">
+                Inicio
+            </a></li>
+            <li><a href="/demo#nosotros" class="nav-link">
+                Nosotros
+            </a></li>
+            <li class="collapsable closed">
+                <a href="/demo#servicios" class="collapsable-button">Servicios<i class="collapsable-icon fas fa-sort-down"></i></a>
+                <ul class="collapsable-menu">
+                    <li class="m-0"><a href="/demo#tratamiento-del-dolor" class="collapsable-link">Tratamiento del dolor</a></li>
+                    <li class="m-0"><a href="/demo#cirugia-mini-invasiva" class="collapsable-link">Cirugía mini invasiva</a></li>
+                    <li class="m-0"><a href="/demo#escoliosis" class="collapsable-link">Escoliosis</a></li>
+                </ul>
+            </li>
+            <li><a href="/demo#equipo" class="nav-link">
+                Equipo
+            </a></li>
+            <li><a href="/blog" class="nav-link">
                 Blog
-            </a></li>
-            <li><a href="/demo#" class="nav-link">
-                Algo
-            </a></li>
-            <li><a href="/demo#" class="nav-link">
-                Algo
             </a></li>
             @if(Auth::check())
             <li class="collapsable closed">
-                <a href="#" class="collapsable-button">Panel<i class="fas fa-sort-down"></i></a>
+                <a href="/panel" class="collapsable-button">Panel<i class="collapsable-icon fas fa-sort-down"></i></a>
                 <ul class="collapsable-menu">
-                    <li><a href="/panel#" class="collapsable-link">Algo</a></li>
-                    <li><a href="/panel#" class="collapsable-link">Algo</a></li>
-                    <li><a href="/panel#" class="collapsable-link">Algo</a></li>
+                    <li class="m-0"><a href="/panel#posts" class="collapsable-link">Publicaciones</a></li>
+                    <li class="m-0"><a href="/panel#new-post" class="collapsable-link">Nueva publicación</a></li>
+                    <li class="m-0"><a href="/panel#categories" class="collapsable-link">Categorías</a></li>
+                    <li class="m-0"><a href="/panel#new-categorie" class="collapsable-link">Nueva categoría</a></li>
+                    <li class="m-0"><a href="/panel#tags" class="collapsable-link">Etiquetas</a></li>
+                    <li class="m-0"><a href="/panel#new-tag" class="collapsable-link">Nueva etiqueta</a></li>
+                    <li class="m-0"><a href="/panel#config" class="collapsable-link">Configuración</a></li>
                 </ul>
             </li>
             <li><a href="/salir" class="nav-link">

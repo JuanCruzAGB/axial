@@ -18,7 +18,7 @@
             if($validator){
                 return redirect('/blog#new-categorie')->withErrors($validator)->withInput();
             }
-            return redirect('/')->with('status', 'Categoría creada correctamente.');
+            return redirect('/panel#categories')->with('status', 'Categoría creada correctamente.');
         }
 
         /** Load the "Create a new Categorie" section. */
@@ -40,7 +40,8 @@
             if($validator->fails()){
                 return $validator;
             }else{
-                $data['id_user'] = Auth::user()->id_usuario;
+                // $data['id_user'] = Auth::user()->id_usuario;
+                $data['id_user'] = 1;
 
                 $data['slug'] = SlugService::createSlug(Categorie::class, 'slug', $data['name']);
                 
@@ -69,6 +70,10 @@
             $categorie = Categorie::findBySlug($slug);      
             return view('blog.categorie.edit', [
                 'categorie' => $categorie,
+                'validation' => json_encode([
+                    'rules' => Categorie::$validation['create']['rules'],
+                    'messages' => Categorie::$validation['create']['messages'][$this->idiom],
+                ]),
             ]);
         }
 
