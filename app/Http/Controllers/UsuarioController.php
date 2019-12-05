@@ -18,10 +18,10 @@
         
         /**
          * Carga la seccion "Editar Usuario".
-         * @param $id_usuario - El id de la Usuario.
+         * @param $id_user - El id de la Usuario.
          */
-        public function showEditar($id_usuario){
-            $usuario = User::find($id_usuario);
+        public function showEditar($id_user){
+            $usuario = User::find($id_user);
 
             return view('usuario.editar', [
                 'usuario' => $usuario,
@@ -31,17 +31,17 @@
         /**
          * Valida y actualiza el Usuario.
          * @param $request - Request
-         * @param $id_usuario - El id del Usuario.
+         * @param $id_user - El id del Usuario.
          */
-        public function doEditar(Request $request, $id_usuario){
+        public function doEditar(Request $request, $id_user){
             $inputData = $request->input();
             if(isset($inputData['id_nivel']) && $inputData['id_nivel'] == 1){
                 $request->validate([
                     'nombre' => 'required|min:2|max:60',
-                    'correo' => 'required|email|max:100|unique:users,correo,' . $id_usuario . ',id_usuario',
+                    'correo' => 'required|email|max:100|unique:users,correo,' . $id_user . ',id_user',
                     'clave' => 'nullable|min:4|max:40|confirmed',
                     'id_nivel' => 'required|numeric',
-                    'id_suscriptor' => 'nullable|numeric|unique:users,id_suscriptor,' . $id_usuario . ',id_usuario',
+                    'id_suscriptor' => 'nullable|numeric|unique:users,id_suscriptor,' . $id_user . ',id_user',
                     'entidad' => 'required|max:300',
                     'direccion' => 'required|max:160',
                     'provincia' => 'required|max:100',
@@ -83,10 +83,10 @@
             }else{
                 $request->validate([
                     'nombre' => 'required|min:2|max:60',
-                    'correo' => 'required|email|max:100|unique:users,correo,' . $id_usuario . ',id_usuario',
+                    'correo' => 'required|email|max:100|unique:users,correo,' . $id_user . ',id_user',
                     'clave' => 'nullable|min:4|max:40|confirmed',
                     'id_nivel' => 'required|numeric',
-                    'id_suscriptor' => 'nullable|numeric|unique:users,id_suscriptor,' . $id_usuario . ',id_usuario',
+                    'id_suscriptor' => 'nullable|numeric|unique:users,id_suscriptor,' . $id_user . ',id_user',
                 ], [
                     'nombre.required' => 'El nombre es obligatorio.',
                     'nombre.min' => 'El nombre no puede tener menos de :min caracteres.',
@@ -104,7 +104,7 @@
                 ]);
             }
             
-            $usuario = User::find($id_usuario);
+            $usuario = User::find($id_user);
 
             if(isset($inputData['clave']) && $inputData['clave']){
                 $inputData['clave'] = \Hash::make($inputData['clave']);
@@ -128,7 +128,7 @@
                 foreach($inputData['obras'] as $obra){
                     $inputSuscripcion = [];
 
-                    $inputSuscripcion['id_usuario'] = $usuario->id_usuario;
+                    $inputSuscripcion['id_user'] = $usuario->id_user;
                     $inputSuscripcion['id_obra'] = $obra;
 
                     Suscripcion::create($inputSuscripcion);
@@ -138,7 +138,7 @@
                 foreach($obras as $obra){
                     $inputSuscripcion = [];
 
-                    $inputSuscripcion['id_usuario'] = $usuario->id_usuario;
+                    $inputSuscripcion['id_user'] = $usuario->id_user;
                     $inputSuscripcion['id_obra'] = $obra->id_obra;
 
                     Suscripcion::create($inputSuscripcion);

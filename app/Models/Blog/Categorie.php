@@ -23,7 +23,7 @@
         
         /** Get all the Posts that match the PK. */
         public function user(){
-            return $this->belongsTo(User::class, 'id_user', 'id_usuario');
+            return $this->belongsTo(User::class, 'id_user', 'id_user');
         }
         
         /** @var array - Validation messages and rules. */

@@ -21,7 +21,7 @@ class Controller extends BaseController
         
         $request->validate(Post::$validation['create']['rules'], Post::$validation['create']['messages']['es']);
         
-        $data['id_user'] = Auth::user()->id_usuario;
+        $data['id_user'] = Auth::user()->id_user;
         $data['slug'] = SlugService::createSlug(Post::class, 'slug', $data['title']);
         
         Post::create($data);

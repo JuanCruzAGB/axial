@@ -40,7 +40,7 @@
             if($validator->fails()){
                 return $validator;
             }else{
-                // $data['id_user'] = Auth::user()->id_usuario;
+                // $data['id_user'] = Auth::user()->id_user;
                 $data['id_user'] = 1;
 
                 $data['slug'] = SlugService::createSlug(Tag::class, 'slug', $data['name']);
@@ -92,7 +92,7 @@
             if($validator->fails()){
                 return $validator;
             }else{                
-                $data['id_user'] = Auth::user()->id_usuario;
+                $data['id_user'] = Auth::user()->id_user;
 
                 if($data['name'] != $tag->name){
                     $data['slug'] = SlugService::createSlug(Tag::class, 'slug', $data['name']);

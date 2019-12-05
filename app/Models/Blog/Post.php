@@ -24,7 +24,7 @@
         
         /** Get the User that match the PK. */
         public function user(){
-            return $this->belongsTo(User::class, 'id_user', 'id_usuario');
+            return $this->belongsTo(User::class, 'id_user', 'id_user');
         }
         
         /** Get all the Features that match the PK. */

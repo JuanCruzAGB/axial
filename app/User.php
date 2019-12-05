@@ -2,53 +2,83 @@
     namespace App;
 
     use App\Models\Blog\Post;
+    use App\Models\Blog\Presentation;
     use Auth;
+    use Cviebrock\EloquentSluggable\Sluggable;
+    use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
     use Illuminate\Notifications\Notifiable;
     use Illuminate\Contracts\Auth\MustVerifyEmail;
     use Illuminate\Foundation\Auth\User as Authenticatable;
 
     class User extends Authenticatable{
-        use Notifiable;
+        use Notifiable, Sluggable, SluggableScopeHelpers;
 
-        /** @var string - El nombre de la tabla. */
-        protected $table = 'usuarios';
+        /** @var string - The table name. */
+        protected $table = 'users';
         
-        /** @var string - El nombre de la PK. */
-        protected $primaryKey = 'id_usuario';
+        /** @var string - The PK name. */
+        protected $primaryKey = 'id_user';
 
-        /** @var array - Los atributos que se van a cargar de forma masiva. */
+        /** @var array - The attributes that are mass assignable. */
         protected $fillable = [
-            'nombre', 'correo', 'clave', 'slug',
+            'name', 'email', 'password', 'picture', 'id_presentation', 'slug',
         ];
 
-        /** @var array - Los atributos que no se van a ver. */
+        /** @var array - The hidden attributes. */
         protected $hidden = [
-            'clave', 'remember_token',
+            'password', 'remember_token',
         ];
         
-        /** Trae todos los Posts que coincidan con el PK. */
-        public function publicaciones(){
-            return $this->hasMany(Post::class, 'id_user', 'id_usuario');
+        /** Get the Presentation that match the PK. */
+        public function presentation(){
+            return $this->belongsTo(Presentation::class, 'id_presentation', 'id_presentation');
+        }
+
+        /** Get all the Posts that match the PK. */
+        public function posts(){
+            return $this->hasMany(Post::class, 'id_user', 'id_user');
         }
         
-        /** @var array - Las reglas de validación y sus mensajes correspondientes. */
+        /** @var array - Validation messages and rules. */
         public static $validation = [
-            'ingresar' => [
+            'log-in' => [
                 'rules' => [
-                    'correo' => 'required|email',
-                    'clave' => 'required|min:4|max:40',
+                    'email' => 'required|email',
+                    'password' => 'required|min:4|max:40',
                 ], 'messages' => [
-                    'correo.required' => 'El correo es obligatorio.',
-                    'correo.email' => 'El correo no es un formato válido.',
-                    'clave.required' => 'La clave es obligatoria.',
-                    'clave.min' => 'La clave no puede tener menos de :min caracteres.',
-                    'clave.max' => 'La clave no puede tener más de :max caracteres.',
+                    'en' => [
+                        'email.required' => 'The email is required.',
+                        'email.email' => 'The email must be a valid email.',
+                        'password.required' => 'The password is required.',
+                        'password.min' => 'The password min length is :min.',
+                        'password.max' => 'The password max length is :max.',
+                    ], 'es' => [
+                        'email.required' => 'El correo es obligatorio.',
+                        'email.email' => 'El correo no es un formato válido.',
+                        'password.required' => 'La password es obligatoria.',
+                        'password.min' => 'La password no puede tener menos de :min caracteres.',
+                        'password.max' => 'La password no puede tener más de :max caracteres.',
+                    ],
                 ],
+            ], 'register' => [
+                //
+            ], 'create' => [
+                //
+            ], 'edit' => [
+                //
             ],
         ];
-
-        /** Establece cual campo va a funcionar como la "Password" guardada para verificar su Autenticacion. */
-        public function getAuthPassword(){
-            return $this->clave;
+        
+        /**
+         * The Sluggable configuration for the Model.
+         * @return array
+         */
+        public function sluggable(){
+            return [
+                'slug' => [
+                    'source'	=> 'name',
+                    'onUpdate'	=> true,
+                ]
+            ];
         }
     }

@@ -30,12 +30,11 @@
                         'rules' => Tag::$validation['create']['rules'],
                         'messages' => Tag::$validation['create']['messages'][$this->idiom],
                     ]),
-                    ],
-                    'data' => [
-                        'categories' => $categories,
-                        'posts' => $posts,
-                        'tags' => $tags,
-                    ],
+                ], 'data' => [
+                    'categories' => $categories,
+                    'posts' => $posts,
+                    'tags' => $tags,
+                ],
             ]);
         }
     }

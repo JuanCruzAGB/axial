@@ -8,6 +8,7 @@
          * @return void
          */
         public function run(){
-            $this->call(UsuariosTableSeeder::class);
+            $this->call(UsersTableSeeder::class);
+            $this->call(PresentationsTableSeeder::class);
         }
     }
