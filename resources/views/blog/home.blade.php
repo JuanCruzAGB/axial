@@ -7,6 +7,7 @@
 @section('css')
     <link href="{{asset('css/blog/home.css')}}" rel="stylesheet">
     <link href="{{asset('ValidationJS/css/styles.css')}}" rel="stylesheet">
+    <link href="{{asset('css/InputFileMaker.css')}}" rel="stylesheet">
 @endsection
 
 @section('title')
@@ -62,7 +63,7 @@
                 @endcomponent
             </div>
             <div id="new-post" class="new-post tab-content mt-3 mt-md-0">
-                @component('blog.components.new-post', ['validation' => $validations['post']])
+                @component('blog.components.new-post', ['validation' => $validations['post'], 'categories' => $data['categories'], 'tags' => $data['tags']])
                 @endcomponent
             </div>
             <div id="categories" class="categories tab-content mt-3 mt-md-0">
@@ -99,11 +100,12 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="{{asset('js/blog/home.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Validation.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Rules.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Messages.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Requirements.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Validator.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/InputFileMaker.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/blog/home.js')}}"></script>
 @endsection

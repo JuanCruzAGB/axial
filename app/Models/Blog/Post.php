@@ -19,7 +19,7 @@
 
         /** @var array - The attributes that are mass assignable. */
         protected $fillable = [
-            'title', 'image', 'content', 'id_categorie', 'id_user', 'slug',
+            'title', 'content', 'image', 'id_categorie', 'id_user', 'slug',
         ];
         
         /** Get the User that match the PK. */

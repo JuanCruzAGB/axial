@@ -40,6 +40,20 @@
             if($validator->fails()){
                 return $validator;
             }else{
+                if($request->hasFile('image')){
+                    $filepath = $request->file('image')->hashName('posts');
+                    
+                    $img = Image::make($request->file('image'))
+                            ->resize(525, 525, function($constrait){
+                                $constrait->aspectRatio();
+                                $constrait->upsize();
+                            });
+                            
+                    Storage::put($filepath, (string) $img->encode());
+                    
+                    $inputData['image'] = $filepath;
+                }
+
                 $data['id_user'] = Auth::user()->id_user;
 
                 $data['slug'] = SlugService::createSlug(Post::class, 'slug', $data['title']);

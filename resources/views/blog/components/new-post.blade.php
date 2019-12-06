@@ -1,5 +1,7 @@
 <?php
     /** @var array $validation */
+    /** @var Categorie[] $categories */
+    /** @var Tag[] $tags */
 ?>
 <section>
     <div class="title">
@@ -43,8 +45,9 @@
                         <select id="id_categorie"
                             name="id_categorie"
                             class="form-control">
-                            <option value="1">Alguna categoría</option>
-                            <option value="2">Alguna otra</option>
+                            @foreach($categories as $categorie)
+                                <option value="{{$categorie->id_categorie}}">{{$categorie->name}}</option>
+                            @endforeach
                         </select>
                         <div @if($errors->has('id_categorie'))
                             class="invalid-tooltip showed"
@@ -62,24 +65,17 @@
                         <div class="input-name">
                             <span class="input-text">Etiquetas</span>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input id="option1"
-                                name="tags[]"
-                                class="form-check-input"
-                                type="checkbox"
-                                value="1">
-                            <label for="option1"
-                                class="form-check-label">Alguna etiqueta</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input id="option2"
-                                name="tags[]"
-                                class="form-check-input"
-                                type="checkbox"
-                                value="2">
-                            <label for="option2"
-                                class="form-check-label">Alguna otra</label>
-                        </div>
+                        @foreach($tags as $tag)
+                            <div class="form-check form-check-inline">
+                                <input id="{{$tag->slug}}"
+                                    name="tags[]"
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value="{{$tag->id_tag}}">
+                                <label for="{{$tag->slug}}"
+                                    class="form-check-label">{{$tag->name}}</label>
+                            </div>
+                        @endforeach
                         <div @if($errors->has('tags'))
                             class="invalid-tooltip showed"
                         @else
@@ -93,13 +89,11 @@
                 </div>
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="image" class="input-name">
-                            <span class="input-text">Imagen</span>
-                        </label>
-                        <input id="image"
-                            name="image"
+                        <input class="make-a-file make-an-image"
                             type="file"
-                            class="form-control">
+                            name="image"
+                            data-text="Imagen"
+                            data-notfound="No se eligió ninguna imagen.">
                         <div @if($errors->has('image'))
                             class="invalid-tooltip showed"
                         @else

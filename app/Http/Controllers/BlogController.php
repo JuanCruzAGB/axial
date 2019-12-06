@@ -14,8 +14,14 @@
         /** Load the blog's home. */
         public function home(){
             $categories = Categorie::with('user')->get();
-            $posts = Post::with('user')->get();
+            $posts = Post::with('user', 'features', 'categorie')->get();
             $tags = Tag::with('user')->get();
+            if(isset($posts->features)){
+                $posts->tags = [];
+                for($i = 0; $i < count($posts->features); $i++){
+                    $posts->tags[] = Tag::find($posts->features[$i]);
+                }
+            }
             return view('blog.home', [
                 'validations' => [
                     'categorie' => json_encode([
