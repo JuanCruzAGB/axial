@@ -1,14 +1,16 @@
-.jumbotron-fluid{
+/* banner */
+
+.jumbotron{
     position: relative;
     background: url('/img/bg-demo.jpg') center center no-repeat;
-    height: 60vh;
+    height: 41vh;
 }
 
-.jumbotron-fluid .container{
+.jumbotron .container{
     display: block;
     background: rgba(0, 0, 0, 0.1);
     width: 100vw;
-    height: 60vh;
+    height: 41vh;
     top: 0;
 }
 
@@ -25,4 +27,38 @@
 .enviar-mensaje{
     background-color: rgb(0, 69, 125);
     border: none;
+}
+
+/* main */
+
+.jumbotron-dos{
+    position: relative;
+    background-color: rgb(0, 69, 125);
+    height: 41vh;
+}
+
+.contenedor{
+    padding: 0 !important;
+}
+
+.separador-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+/* contenido */
+
+.nuestros-servicios{
+    background-color: #55C9D8;
+}
+
+.cartas-servicios .card-title{
+    color: var(--color-uno);
+    font-weight: bold;
+}
+
+.cartas-servicios .card-text{
+    color: var(--color-uno);
 }
