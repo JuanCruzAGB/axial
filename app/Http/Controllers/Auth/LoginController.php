@@ -31,7 +31,7 @@
         
         /** Carga la seccion "Iniciar Sesión". */
         public function showIngresar(){
-            $validation = User::$validation['ingresar'];
+            $validation = User::$validation['log-in'];
 
             return view('auth.ingresar',[
                 'validation' => json_encode($validation),
@@ -46,19 +46,19 @@
         public function doIngresar(Request $request){
             $inputData = $request->input();
             
-            $request->validate(User::$validation['ingresar']['rules'], User::$validation['ingresar']['messages']);
+            $request->validate(User::$validation['log-in']['rules'], User::$validation['log-in']['messages']);
 
-            if(isset($inputData['recordar'])){
-                if($inputData['recordar'] == 'on'){
-                    $recordar = true;
+            if(isset($inputData['remember'])){
+                if($inputData['remember'] == 'on'){
+                    $remember = true;
                 }else{
-                    $recordar = false;
+                    $remember = false;
                 }
             }else{
-                $recordar = false;
+                $remember = false;
             }
 
-            if(Auth::attempt(['password' => $inputData['clave'], 'correo' => $inputData['correo']], $recordar)){
+            if(Auth::attempt(['password' => $inputData['password'], 'email' => $inputData['email']], $remember)){
                 return redirect()->route('blog.home')->with('status', 'Sesión Iniciada.');
             }else{
                 return redirect()->route('auth.showIngresar')->withInput()->with('status', 'Correo y/o clave incorrectos.');

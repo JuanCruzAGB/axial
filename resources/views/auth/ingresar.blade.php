@@ -8,7 +8,7 @@
     <link href="{{asset('css/auth/ingresar.css')}}" rel="stylesheet">
 @endsection
 
-@section('titulo')
+@section('title')
     Iniciar Sesión
 @endsection
 
@@ -30,49 +30,49 @@
             @csrf
             <div class="row">
                 <div class="form-group form-group-sm col-12 mb-2">
-                    <label for="correo" class="input-name m-0 p-0">
+                    <label for="email" class="input-name m-0 p-0">
                         <span class="input-text">Correo</span>
                     </label>
-                    <input id="correo"
-                        name="correo"
+                    <input id="email"
+                        name="email"
                         type="text"
                         class="form-control m-0 p-2"
-                        value="{{old('correo')}}"
-                        placeholder="ejemplo@correo.com">
-                    <div @if($errors->has('correo'))
+                        value="{{old('email')}}"
+                        placeholder="ejemplo@email.com">
+                    <div @if($errors->has('email'))
                         class="invalid-tooltip showed"
                     @else
                         class="invalid-tooltip"
                     @endif>
-                        @if($errors->has('correo'))
-                            <small>{{$errors->first('correo')}}</small>
+                        @if($errors->has('email'))
+                            <small>{{$errors->first('email')}}</small>
                         @endif
                     </div>
                 </div>
 
                 <div class="form-group form-group-sm col-12 mb-2">
-                    <label for="clave" class="input-name m-0 p-0">
+                    <label for="password" class="input-name m-0 p-0">
                         <span class="input-text">Contraseña</span>
                     </label>
-                    <input id="clave" 
-                        name="clave"
+                    <input id="password" 
+                        name="password"
                         type="password" 
                         class="form-control m-0 p-2"
                         placeholder="Contraseña">
-                    <div @if($errors->has('clave'))
+                    <div @if($errors->has('password'))
                         class="invalid-tooltip showed"
                     @else
                         class="invalid-tooltip"
                     @endif>
-                        @if($errors->has('clave'))
-                            <small>{{$errors->first('clave')}}</small>
+                        @if($errors->has('password'))
+                            <small>{{$errors->first('password')}}</small>
                         @endif
                     </div>
                 </div>
 
                 <div class="col-12 d-flex justify-content-end">
                     <div class="form-check d-flex align-items-center mr-2 p-0">
-                        <input class="form-check-input m-0" type="checkbox" id="autoSizingCheck2" name="recordar">
+                        <input class="form-check-input m-0" type="checkbox" id="autoSizingCheck2" name="remember">
                         <label class="form-check-label ml-4" for="autoSizingCheck2">Recordarme</label>
                     </div>
                     <button class="form-submit btn btn-primary"
