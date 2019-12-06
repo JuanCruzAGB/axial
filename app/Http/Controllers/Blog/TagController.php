@@ -59,7 +59,7 @@
             if($validator){
                 return redirect('/blog#tag-' . $id_tag)->withErrors($validator)->withInput();
             }
-            return redirect('/')->with('status', 'Etiqueta editada correctamente.');
+            return redirect('/panel#tags')->with('status', 'Etiqueta editada correctamente.');
         }
 
         /**

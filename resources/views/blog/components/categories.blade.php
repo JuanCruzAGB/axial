@@ -18,13 +18,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @for($i = 0; $i < count($categories); $i++)
+                        @foreach($categories as $categorie)
                             <tr>
-                                <th scope="row">{{$categories[$i]->id_categorie}}</th>
-                                <td>{{$categories[$i]->name}}</td>
-                                <td>{{$categories[$i]->user->nombre}}</td>
+                                <th scope="row">{{$categorie->id_categorie}}</th>
+                                <td><a href="/{{$categorie->slug}}/publicaciones">{{$categorie->name}}</a></td>
+                                <td>{{$categorie->user->name}}</td>
                                 <td class="d-flex justify-content-end" colspan="2">
-                                    <a href="/categoria/{{$categories[$i]->slug}}/editar" class="btn btn-primary">
+                                    <a href="/categoria/{{$categorie->slug}}/editar" class="btn btn-primary">
                                         <span class="button-text mr-2">Editar</span>
                                         <i class="button-icon fas fa-pen"></i>
                                     </a>
@@ -34,7 +34,7 @@
                                     </button>
                                 </td>
                             </tr>
-                        @endfor
+                        @endforeach
                     </tbody>
                 </table>
             @else

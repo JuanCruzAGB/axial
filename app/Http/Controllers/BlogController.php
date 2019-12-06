@@ -16,11 +16,17 @@
             $categories = Categorie::with('user')->get();
             $posts = Post::with('user', 'features', 'categorie')->get();
             $tags = Tag::with('user')->get();
-            if(isset($posts->features)){
-                $posts->tags = [];
-                for($i = 0; $i < count($posts->features); $i++){
-                    $posts->tags[] = Tag::find($posts->features[$i]);
+            foreach($posts as $post){
+                if(isset($post->features)){
+                    $post->tags = collect([]);
+                    foreach($post->features as $feature){
+                        $post->tags->push(Tag::find($feature->id_tag));
+                    }
                 }
+            }
+            $posts_count = 0;
+            foreach($posts as $post){
+                $posts_count++;
             }
             return view('blog.home', [
                 'validations' => [
@@ -40,6 +46,8 @@
                     'categories' => $categories,
                     'posts' => $posts,
                     'tags' => $tags,
+                ], 'counts' => [
+                    'posts' => $posts_count,
                 ],
             ]);
         }

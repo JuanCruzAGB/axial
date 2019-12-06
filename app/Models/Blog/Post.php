@@ -26,6 +26,11 @@
         public function user(){
             return $this->belongsTo(User::class, 'id_user', 'id_user');
         }
+
+        /** Get the Categorie that match the PK. */
+        public function categorie(){
+            return $this->belongsTo(Categorie::class, 'id_categorie', 'id_categorie');
+        }
         
         /** Get all the Features that match the PK. */
         public function features(){

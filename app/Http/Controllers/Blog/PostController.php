@@ -2,11 +2,15 @@
     namespace App\Http\Controllers\Blog;
 
     use App\Models\Blog\Post;
+    use App\Models\Blog\Feature;
     use App\Http\Controllers\BlogController;
     use Auth;
     use Cviebrock\EloquentSluggable\Services\SlugService;
     use Illuminate\Http\Request;
+    use Illuminate\Support\Facades\File;
     use Illuminate\Support\Facades\Validator;
+    use Intervention\Image\ImageManagerStatic as Image;
+    use Storage;
 
     class PostController extends BlogController{
         /**
@@ -18,7 +22,7 @@
             if($validator){
                 return redirect('/blog#new-post')->withErrors($validator)->withInput();
             }
-            return redirect('/')->with('status', 'Publicación creada correctamente.');
+            return redirect('/panel#posts')->with('status', 'Publicación creada correctamente.');
         }
 
         /** Load the "Create a new Post" section. */
@@ -51,14 +55,22 @@
                             
                     Storage::put($filepath, (string) $img->encode());
                     
-                    $inputData['image'] = $filepath;
+                    $data['image'] = $filepath;
                 }
 
                 $data['id_user'] = Auth::user()->id_user;
 
                 $data['slug'] = SlugService::createSlug(Post::class, 'slug', $data['title']);
                 
-                Post::create($data);
+                $post = Post::create($data);
+
+                foreach($data['tags'] as $id_tag){
+                    $auxData = [];
+                    $auxData['id_post'] = $post->id_post;
+                    $auxData['id_tag'] = $id_tag;
+
+                    Feature::create($auxData);
+                }
             }
         }
 
@@ -72,7 +84,7 @@
             if($validator){
                 return redirect('/blog#post-' . $id_post)->withErrors($validator)->withInput();
             }
-            return redirect('/')->with('status', 'Publicación editada correctamente.');
+            return redirect('/panel#posts')->with('status', 'Publicación editada correctamente.');
         }
 
         /**
@@ -107,7 +119,39 @@
                     $data['slug'] = SlugService::createSlug(Post::class, 'slug', $data['title']);
                 }
 
+                if($request->hasFile('image')){
+                    $currentImage = $post->image;
+                    
+                    $filepath = $request->file('image')->hashName('posts');
+                    
+                    $img = Image::make($request->file('image'))
+                            ->resize(525, 525, function($constrait){
+                                $constrait->aspectRatio();
+                                $constrait->upsize();
+                            });
+                            
+                    Storage::put($filepath, (string) $img->encode());
+                    
+                    $data['image'] = $filepath;
+                }
+
                 $post->update($data);
+            
+                if(isset($currentImage) && !empty($currentImage)){
+                    Storage::delete($currentImage);
+                }
+
+                foreach($post->features as $feature){
+                    $feature->delete();
+                }
+
+                foreach($data['tags'] as $id_tag){
+                    $auxData = [];
+                    $auxData['id_post'] = $post->id_post;
+                    $auxData['id_tag'] = $id_tag;
+
+                    Feature::create($auxData);
+                }
             }
         }
 

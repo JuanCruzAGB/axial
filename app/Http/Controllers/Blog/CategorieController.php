@@ -59,7 +59,7 @@
             if($validator){
                 return redirect('/blog#categorie-' . $id_categorie)->withErrors($validator)->withInput();
             }
-            return redirect('/')->with('status', 'Categoría editada correctamente.');
+            return redirect('/panel#categories')->with('status', 'Categoría editada correctamente.');
         }
 
         /**

@@ -1,4 +1,5 @@
 <?php
+    /** @var string $count */
     /** @var Post[] $posts */
 ?>
 <section>
@@ -7,7 +8,7 @@
     </div>
     <div class="content row">
         <div class="col-12">
-            @if(count($posts))
+            @if($count)
                 <table class="table table-sm">
                     <thead>
                         <tr>
@@ -16,27 +17,27 @@
                             <th scope="col">Categoría</th>
                             <th scope="col">Etiquetas</th>
                             <th scope="col">Creada por:</th>
-                            <th colspan="3" scope="col"></th>
+                            <th colspan="2" scope="col"></th>
                         </tr>
                     </thead>
                     <tbody>
-                        @for($i = 0; $i < count($posts); $i++)
+                        @foreach($posts as $post)
                             <tr>
-                                <th scope="row">{{$posts[$i]->id_post}}</th>
-                                <td>{{$posts[$i]->title}}</td>
-                                <td>{{$posts[$i]->categorie->name}}</td>
+                                <th scope="row">{{$post->id_post}}</th>
+                                <td>{{$post->title}}</td>
+                                <td><a href="/{{$post->categorie->slug}}/publicaciones">{{$post->categorie->name}}</a></td>
                                 <td>
-                                    @for($j = 0; $j < count($posts[$j]->tags); $j++)
-                                        <a href="#{{$posts[$i]->tags[$j]->slug}}">#{{$posts[$i]->tags[$j]->name}}</a>
-                                    @endfor
+                                    @foreach($post->tags as $tag)
+                                        <a href="/{{$tag->slug}}/publicaciones">#{{$tag->name}}</a>
+                                    @endforeach
                                 </td>
-                                <td>{{$posts[$i]->user->nombre}}</td>
+                                <td>{{$post->user->name}}</td>
                                 <td class="d-flex justify-content-end" colspan="2">
-                                    <a href="/publicacion/{{$posts[$i]->slug}}" class="btn btn-primary">
+                                    <a href="/publicacion/{{$post->slug}}" class="btn btn-primary">
                                         <span class="button-text mr-2">Ver más</span>
-                                        <i class="button-icon fas fa-add"></i>
+                                        <i class="button-icon fas fa-plus"></i>
                                     </a>
-                                    <a href="/publicacion/{{$posts[$i]->slug}}/editar" class="btn btn-primary">
+                                    <a href="/publicacion/{{$post->slug}}/editar" class="btn btn-primary ml-2">
                                         <span class="button-text mr-2">Editar</span>
                                         <i class="button-icon fas fa-pen"></i>
                                     </a>
@@ -46,7 +47,7 @@
                                     </button>
                                 </td>
                             </tr>
-                        @endfor
+                        @endforeach
                     </tbody>
                 </table>
             @else

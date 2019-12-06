@@ -18,13 +18,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @for($i = 0; $i < count($tags); $i++)
+                        @foreach($tags as $tag)
                             <tr>
-                                <th scope="row">{{$tags[$i]->id_tag}}</th>
-                                <td>{{$tags[$i]->name}}</td>
-                                <td>{{$tags[$i]->user->nombre}}</td>
+                                <th scope="row">{{$tag->id_tag}}</th>
+                                <td><a href="/{{$tag->slug}}/publicaciones">{{$tag->name}}</a></td>
+                                <td>{{$tag->user->name}}</td>
                                 <td class="d-flex justify-content-end" colspan="2">
-                                    <a href="/etiqueta/{{$tags[$i]->slug}}/editar" class="btn btn-primary">
+                                    <a href="/etiqueta/{{$tag->slug}}/editar" class="btn btn-primary">
                                         <span class="button-text mr-2">Editar</span>
                                         <i class="button-icon fas fa-pen"></i>
                                     </a>
@@ -34,7 +34,7 @@
                                     </button>
                                 </td>
                             </tr>
-                        @endfor
+                        @endforeach
                     </tbody>
                 </table>
             @else
