@@ -37,10 +37,28 @@
     height: 41vh;
 }
 
-.jumbotron-dos .container{
-    
-}
-
 .contenedor{
     padding: 0 !important;
+}
+
+.separador-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+/* contenido */
+
+.nuestros-servicios{
+    background-color: #55C9D8;
+}
+
+.cartas-servicios .card-title{
+    color: var(--color-uno);
+    font-weight: bold;
+}
+
+.cartas-servicios .card-text{
+    color: var(--color-uno);
 }
