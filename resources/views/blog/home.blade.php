@@ -84,7 +84,7 @@
                 @endcomponent
             </div>
             <div id="profile" class="profile tab-content mt-3 mt-md-0">
-                @component('blog.components.profile')
+                @component('blog.components.profile', ['posts' => $data[Auth::user()->id_user . ''], 'count' => $counts[Auth::user()->id_user . '']])
                 @endcomponent
             </div>
             <div id="config" class="config tab-content mt-3 mt-md-0">

@@ -43,15 +43,13 @@
         width: 50%;
         padding-right: .5rem;
     }
-    
-    .file-img{
-        width: 50%;
-    }
 }
 
 /* LG */
 @media(min-width: 1024px){
-    /**/
+    .file-img{
+        width: 50%;
+    }
 }
 
 /* XL */

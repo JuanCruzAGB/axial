@@ -7,35 +7,35 @@
         <h2 class="mb-3 p-3">Publicaciones</h2>
     </div>
     <div class="content row">
-        <div class="col-12">
+        <div class="parent-table col-12 p-0 px-lg-3">
             @if($count)
-                <table class="table table-sm">
+                <table class="posts table table-sm mx-3 mb-0 mx-lg-0">
                     <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Título</th>
-                            <th scope="col">Categoría</th>
-                            <th scope="col">Etiquetas</th>
-                            <th scope="col">Creada por:</th>
-                            <th colspan="2" scope="col"></th>
+                        <tr class="py-2">
+                            <th class="id"></th>
+                            <th>Título</th>
+                            <th>Categoría</th>
+                            <th>Etiquetas</th>
+                            <th>Creada por:</th>
+                            <th class="accions"></th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($posts as $post)
-                            <tr>
-                                <th scope="row">{{$post->id_post}}</th>
+                            <tr class="py-2">
+                                <th class="id">{{$post->id_post}}</th>
                                 <td>{{$post->title}}</td>
                                 <td><a href="/{{$post->categorie->slug}}/publicaciones">{{$post->categorie->name}}</a></td>
-                                <td>
+                                <td class="multiple">
                                     @foreach($post->tags as $tag)
                                         <a href="/{{$tag->slug}}/publicaciones">#{{$tag->name}}</a>
                                     @endforeach
                                 </td>
                                 <td>{{$post->user->name}}</td>
-                                <td class="d-flex justify-content-end" colspan="2">
+                                <td class="accions d-flex justify-content-end">
                                     <a href="/publicacion/{{$post->slug}}" class="btn btn-primary">
                                         <span class="button-text mr-2">Ver más</span>
-                                        <i class="button-icon fas fa-plus"></i>
+                                        <i class="button-icon fas fa-eye"></i>
                                     </a>
                                     <a href="/publicacion/{{$post->slug}}/editar" class="btn btn-primary ml-2">
                                         <span class="button-text mr-2">Editar</span>

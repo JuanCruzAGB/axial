@@ -6,24 +6,24 @@
         <h2 class="mb-3 p-3">Etiquetas</h2>
     </div>
     <div class="content row">
-        <div class="col-12">
+        <div class="col-12 p-0 px-lg-3">
             @if(count($tags))
-                <table class="table table-sm">
+                <table class="tags table table-sm mx-3 mb-0 mx-lg-0">
                     <thead>
                         <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Creada por:</th>
-                            <th colspan="2" scope="col"></th>
+                            <th class="id"></th>
+                            <th>Nombre</th>
+                            <th>Creada por:</th>
+                            <th class="accions"></th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($tags as $tag)
                             <tr>
-                                <th scope="row">{{$tag->id_tag}}</th>
+                                <th class="id">{{$tag->id_tag}}</th>
                                 <td><a href="/{{$tag->slug}}/publicaciones">{{$tag->name}}</a></td>
                                 <td>{{$tag->user->name}}</td>
-                                <td class="d-flex justify-content-end" colspan="2">
+                                <td class="accions d-flex justify-content-end">
                                     <a href="/etiqueta/{{$tag->slug}}/editar" class="btn btn-primary">
                                         <span class="button-text mr-2">Editar</span>
                                         <i class="button-icon fas fa-pen"></i>

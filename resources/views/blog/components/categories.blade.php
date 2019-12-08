@@ -6,24 +6,24 @@
         <h2 class="mb-3 p-3">Categorias</h2>
     </div>
     <div class="content row">
-        <div class="col-12">
+        <div class="col-12 p-0 px-lg-3">
             @if(count($categories))
-                <table class="table table-sm">
+                <table class="categories table table-sm mx-3 mb-0 mx-lg-0">
                     <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Creada por:</th>
-                            <th colspan="2" scope="col"></th>
+                        <tr class="py-2">
+                            <th class="id"></th>
+                            <th>Nombre</th>
+                            <th>Creada por:</th>
+                            <th class="accions"></th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($categories as $categorie)
-                            <tr>
-                                <th scope="row">{{$categorie->id_categorie}}</th>
+                            <tr class="py-2">
+                                <th class="id">{{$categorie->id_categorie}}</th>
                                 <td><a href="/{{$categorie->slug}}/publicaciones">{{$categorie->name}}</a></td>
                                 <td>{{$categorie->user->name}}</td>
-                                <td class="d-flex justify-content-end" colspan="2">
+                                <td class="accions d-flex justify-content-end">
                                     <a href="/categoria/{{$categorie->slug}}/editar" class="btn btn-primary">
                                         <span class="button-text mr-2">Editar</span>
                                         <i class="button-icon fas fa-pen"></i>
