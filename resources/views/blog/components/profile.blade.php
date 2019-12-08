@@ -31,7 +31,7 @@
     <div class="content">
         <div class="parent-table col-12 p-0 px-lg-3">
             @if($count)
-                <table class="posts table table-sm mx-3 mb-0 mx-lg-0">
+                <table class="posts table table-sm mb-0">
                     <thead>
                         <tr class="py-2">
                             <th class="id"></th>
@@ -49,9 +49,13 @@
                                 <td>{{$post->title}}</td>
                                 <td><a href="/{{$post->categorie->slug}}/publicaciones">{{$post->categorie->name}}</a></td>
                                 <td class="multiple">
-                                    @foreach($post->tags as $tag)
-                                        <a href="/{{$tag->slug}}/publicaciones">#{{$tag->name}}</a>
-                                    @endforeach
+                                    @if(count($post->tags))
+                                        @foreach($post->tags as $tag)
+                                            <a href="/{{$tag->slug}}/publicaciones">#{{$tag->name}}</a>
+                                        @endforeach
+                                    @else
+                                        <p class="text-muted">Ninguna</p>
+                                    @endif
                                 </td>
                                 <td>{{$post->user->name}}</td>
                                 <td class="accions d-flex justify-content-end">
@@ -75,5 +79,6 @@
             @else
                 <p class="text-muted">Ninguna publicacón encontrada</p>
             @endif
+        </div>
     </div>
 </section>

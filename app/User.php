@@ -55,9 +55,9 @@
                     ], 'es' => [
                         'email.required' => 'El correo es obligatorio.',
                         'email.email' => 'El correo no es un formato válido.',
-                        'password.required' => 'La password es obligatoria.',
-                        'password.min' => 'La password no puede tener menos de :min caracteres.',
-                        'password.max' => 'La password no puede tener más de :max caracteres.',
+                        'password.required' => 'La clave es obligatoria.',
+                        'password.min' => 'La clave no puede tener menos de :min caracteres.',
+                        'password.max' => 'La clave no puede tener más de :max caracteres.',
                     ],
                 ],
             ], 'register' => [
@@ -65,7 +65,34 @@
             ], 'create' => [
                 //
             ], 'edit' => [
-                //
+                'rules' => [
+                    'name' => 'required|min:2|max:40',
+                    'email' => 'required|email',
+                    'password' => 'nullable|confirmed|min:4|max:40',
+                    'picture' => 'nullable|mimetypes:image/jpeg,image/png',
+                ], 'messages' => [
+                    'en' => [
+                        'name.required' => 'The name is required.',
+                        'name.min' => 'The name min length is :min.',
+                        'name.max' => 'The name max length is :max.',
+                        'email.required' => 'The email is required.',
+                        'email.email' => 'The email must be a valid email.',
+                        'password.confirmed' => 'The passwords don\'t match.',
+                        'password.min' => 'The password min length is :min.',
+                        'password.max' => 'The password max length is :max.',
+                        'picture.mimetypes' => 'The image mimetypes must be jpeg/jpg or png.',
+                    ], 'es' => [
+                        'name.required' => 'El nombre es obligatorio.',
+                        'name.min' => 'El nombre debe tener al menos :min caracteres.',
+                        'name.max' => 'El nombre no puede tener más de :max caracteres.',
+                        'email.required' => 'El correo es obligatorio.',
+                        'email.email' => 'El correo no es un formato válido.',
+                        'password.confirmed' => 'Las claves no coinciden.',
+                        'password.min' => 'La clave no puede tener menos de :min caracteres.',
+                        'password.max' => 'La clave no puede tener más de :max caracteres.',
+                        'picture.mimetypes' => 'La imagen debe ser formato jpeg/jpg o png.',
+                    ],
+                ],
             ],
         ];
         

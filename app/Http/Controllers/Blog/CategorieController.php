@@ -9,6 +9,9 @@
     use Illuminate\Support\Facades\Validator;
 
     class CategorieController extends BlogController{
+        /** @var string - The UserController principal Model. */
+        protected $model = 'Categorie';
+
         /**
          * Create a new Categorie.
          * @param $request - Request.
@@ -24,7 +27,10 @@
         /** Load the "Create a new Categorie" section. */
         public function showCreate(){            
             return view('blog.categorie.create', [
-                //
+                'validation' => json_encode([
+                    'rules' => Categorie::$validation['create']['rules'],
+                    'messages' => Categorie::$validation['create']['messages'][$this->idiom],
+                ]),
             ]);
         }
 
@@ -57,7 +63,8 @@
         public function edit(Request $request, $id_categorie){
             $validator = $this->doEdit($request, $id_categorie);
             if($validator){
-                return redirect('/blog#categorie-' . $id_categorie)->withErrors($validator)->withInput();
+                $categorie = Categorie::find($id_categorie);
+                return redirect("/categoria/$categorie->slug/editar")->withErrors($validator)->withInput();
             }
             return redirect('/panel#categories')->with('status', 'Categoría editada correctamente.');
         }
@@ -67,12 +74,12 @@
          * @param $slug - The Categorie's slug.
          */
         public function showEdit($slug){      
-            $categorie = Categorie::findBySlug($slug);      
+            $categorie = Categorie::findBySlug($slug);
             return view('blog.categorie.edit', [
                 'categorie' => $categorie,
                 'validation' => json_encode([
-                    'rules' => Categorie::$validation['create']['rules'],
-                    'messages' => Categorie::$validation['create']['messages'][$this->idiom],
+                    'rules' => Categorie::$validation['edit']['rules'],
+                    'messages' => Categorie::$validation['edit']['messages'][$this->idiom],
                 ]),
             ]);
         }

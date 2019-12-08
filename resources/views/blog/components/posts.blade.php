@@ -27,9 +27,13 @@
                                 <td>{{$post->title}}</td>
                                 <td><a href="/{{$post->categorie->slug}}/publicaciones">{{$post->categorie->name}}</a></td>
                                 <td class="multiple">
-                                    @foreach($post->tags as $tag)
-                                        <a href="/{{$tag->slug}}/publicaciones">#{{$tag->name}}</a>
-                                    @endforeach
+                                    @if(count($post->tags))
+                                        @foreach($post->tags as $tag)
+                                            <a href="/{{$tag->slug}}/publicaciones">#{{$tag->name}}</a>
+                                        @endforeach
+                                    @else
+                                        <p class="text-muted">Ninguna</p>
+                                    @endif
                                 </td>
                                 <td>{{$post->user->name}}</td>
                                 <td class="accions d-flex justify-content-end">

@@ -87,6 +87,10 @@
     display: block;
 }
 
+.tabs .tab-body .tab-content section{
+    width: 100%;
+}
+
 .tabs .tab-body .tab-content section > .title{
     background: var(--primary-color);
     position: relative;

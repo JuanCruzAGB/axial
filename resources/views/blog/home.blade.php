@@ -58,36 +58,36 @@
                 </a></li>
             </ul>
         </div>
-        <div class="tab-body pl-md-3">
-            <div id="posts" class="posts tab-content opened mt-3 mt-md-0">
+        <div class="tab-body pl-md-3 pt-3 pt-lg-0">
+            <div id="posts" class="posts tab-content opened">
                 @component('blog.components.posts', ['posts' => $data['posts'], 'count' => $counts['posts']])
                 @endcomponent
             </div>
-            <div id="new-post" class="new-post tab-content mt-3 mt-md-0">
+            <div id="new-post" class="new-post tab-content">
                 @component('blog.components.new-post', ['validation' => $validations['post'], 'categories' => $data['categories'], 'tags' => $data['tags']])
                 @endcomponent
             </div>
-            <div id="categories" class="categories tab-content mt-3 mt-md-0">
+            <div id="categories" class="categories tab-content">
                 @component('blog.components.categories', ['categories' => $data['categories']])
                 @endcomponent
             </div>
-            <div id="new-categorie" class="new-categorie tab-content mt-3 mt-md-0">
+            <div id="new-categorie" class="new-categorie tab-content">
                 @component('blog.components.new-categorie', ['validation' => $validations['categorie']])
                 @endcomponent
             </div>
-            <div id="tags" class="tags tab-content mt-3 mt-md-0">
+            <div id="tags" class="tags tab-content">
                 @component('blog.components.tags', ['tags' => $data['tags']])
                 @endcomponent
             </div>
-            <div id="new-tag" class="new-tag tab-content mt-3 mt-md-0">
+            <div id="new-tag" class="new-tag tab-content">
                 @component('blog.components.new-tag', ['validation' => $validations['tag']])
                 @endcomponent
             </div>
-            <div id="profile" class="profile tab-content mt-3 mt-md-0">
+            <div id="profile" class="profile tab-content">
                 @component('blog.components.profile', ['posts' => $data[Auth::user()->id_user . ''], 'count' => $counts[Auth::user()->id_user . '']])
                 @endcomponent
             </div>
-            <div id="config" class="config tab-content mt-3 mt-md-0">
+            <div id="config" class="config tab-content">
                 @component('blog.components.config')
                 @endcomponent
             </div>

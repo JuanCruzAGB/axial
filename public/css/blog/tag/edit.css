@@ -1,7 +1,51 @@
-.container-fluid > .row{
-    display: flex;
-    justify-content: center;
+.edit-tag{
     flex-wrap: wrap;
+    --primary-color: #222;
+    --primary-color-hover: #dddddd0d;
+    --secondary-color: #ddd;
+    --secondary-color-hover: #0d4a7a00;
+    --tertiary-color: #222;
+}
+
+.edit-tag section{
+    width: 100%;
+}
+
+.edit-tag section > .title{
+    background: var(--primary-color);
+    position: relative;
+}
+
+.edit-tag section > .title h2{
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.edit-tag section > .title .title-button{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.edit-tag section > .content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.edit-tag section button{
+    background: var(--primary-color);
+    border-radius: .25rem;
+    color: var(--secondary-color);
+    outline: none;
+    border: none;
+}
+
+.edit-tag section > .content form{
+    width: 100%;
 }
 
 /* MD */

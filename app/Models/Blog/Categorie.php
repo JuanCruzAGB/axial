@@ -42,6 +42,20 @@
                         'name.max' => 'El nombre no puede tener más de :max caracteres.',
                     ],
                 ],
+            ], 'edit' => [
+                'rules' => [
+                    'name' => 'required|min:5|max:200',
+                ], 'messages' => [
+                    'en' => [
+                        'name.required' => 'The name is required.',
+                        'name.min' => 'The name min length is :min.',
+                        'name.max' => 'The name max length is :max.',
+                    ], 'es' => [
+                        'name.required' => 'El nombre es obligatorio.',
+                        'name.min' => 'El nombre debe tener al menos :min caracteres.',
+                        'name.max' => 'El nombre no puede tener más de :max caracteres.',
+                    ],
+                ],
             ],
         ];
         

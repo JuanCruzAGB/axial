@@ -25,7 +25,6 @@
     cursor: pointer;
     padding: .5rem;
     box-shadow: 3px 3px 8px var(--shadow-color);
-    text-transform: uppercase;
     border-radius: .25rem;
     margin-right: .5rem;
 }

@@ -1,4 +1,4 @@
-.edit-categorie{
+.edit-post{
     flex-wrap: wrap;
     --primary-color: #222;
     --primary-color-hover: #dddddd0d;
@@ -7,21 +7,21 @@
     --tertiary-color: #222;
 }
 
-.edit-categorie section{
+.edit-post section{
     width: 100%;
 }
 
-.edit-categorie section > .title{
+.edit-post section > .title{
     background: var(--primary-color);
     position: relative;
 }
 
-.edit-categorie section > .title h2{
+.edit-post section > .title h2{
     font-size: 1.2rem;
     color: var(--secondary-color);
 }
 
-.edit-categorie section > .title .title-button{
+.edit-post section > .title .title-button{
     position: absolute;
     top: 0;
     right: 1rem;
@@ -30,13 +30,13 @@
     align-items: center;
 }
 
-.edit-categorie section > .content{
+.edit-post section > .content{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1rem;
 }
 
-.edit-categorie section button{
+.edit-post section button{
     background: var(--primary-color);
     border-radius: .25rem;
     color: var(--secondary-color);
@@ -44,7 +44,7 @@
     border: none;
 }
 
-.edit-categorie section > .content form{
+.edit-post section > .content form{
     width: 100%;
 }
 

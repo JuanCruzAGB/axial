@@ -9,6 +9,9 @@
     use Illuminate\Support\Facades\Validator;
 
     class TagController extends BlogController{
+        /** @var string - The UserController principal Model. */
+        protected $model = 'Tag';
+
         /**
          * Create a new Tag.
          * @param $request - Request.
@@ -24,7 +27,10 @@
         /** Load the "Create a new Tag" section. */
         public function showCreate(){            
             return view('blog.tag.create', [
-                //
+                'validation' => json_encode([
+                    'rules' => Tag::$validation['create']['rules'],
+                    'messages' => Tag::$validation['create']['messages'][$this->idiom],
+                ]),
             ]);
         }
 
@@ -57,7 +63,8 @@
         public function edit(Request $request, $id_tag){
             $validator = $this->doEdit($request, $id_tag);
             if($validator){
-                return redirect('/blog#tag-' . $id_tag)->withErrors($validator)->withInput();
+                $tag = Tag::find($id_tag);
+                return redirect("/etiqueta/$tag->slug/editar")->withErrors($validator)->withInput();
             }
             return redirect('/panel#tags')->with('status', 'Etiqueta editada correctamente.');
         }
@@ -66,13 +73,13 @@
          * Load the "Edit a Tag" section.
          * @param $slug - The Tag's slug.
          */
-        public function showEdit($slug){      
+        public function showEdit($slug){
             $tag = Tag::findBySlug($slug);      
             return view('blog.tag.edit', [
                 'tag' => $tag,
                 'validation' => json_encode([
-                    'rules' => Tag::$validation['create']['rules'],
-                    'messages' => Tag::$validation['create']['messages'][$this->idiom],
+                    'rules' => Tag::$validation['edit']['rules'],
+                    'messages' => Tag::$validation['edit']['messages'][$this->idiom],
                 ]),
             ]);
         }

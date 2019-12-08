@@ -2,7 +2,9 @@
     namespace App\Http\Controllers\Blog;
 
     use App\Models\Blog\Post;
+    use App\Models\Blog\Categorie;
     use App\Models\Blog\Feature;
+    use App\Models\Blog\Tag;
     use App\Http\Controllers\BlogController;
     use Auth;
     use Cviebrock\EloquentSluggable\Services\SlugService;
@@ -13,6 +15,9 @@
     use Storage;
 
     class PostController extends BlogController{
+        /** @var string - The UserController principal Model. */
+        protected $model = 'Post';
+
         /**
          * Create a new Post.
          * @param $request - Request.
@@ -26,9 +31,16 @@
         }
 
         /** Load the "Create a new Post" section. */
-        public function showCreate(){            
+        public function showCreate(){
+            $categories = Categorie::with('user')->get();
+            $tags = Tag::with('user')->get();      
             return view('blog.post.create', [
-                //
+                'validation' => json_encode([
+                    'rules' => Post::$validation['create']['rules'],
+                    'messages' => Post::$validation['create']['messages'][$this->idiom],
+                ]),
+                'categories' => $categories,
+                'tags' => $tags,
             ]);
         }
 
@@ -64,12 +76,14 @@
                 
                 $post = Post::create($data);
 
-                foreach($data['tags'] as $id_tag){
-                    $auxData = [];
-                    $auxData['id_post'] = $post->id_post;
-                    $auxData['id_tag'] = $id_tag;
-
-                    Feature::create($auxData);
+                if(isset($data['tags'])){
+                    foreach($data['tags'] as $id_tag){
+                        $auxData = [];
+                        $auxData['id_post'] = $post->id_post;
+                        $auxData['id_tag'] = $id_tag;
+    
+                        Feature::create($auxData);
+                    }
                 }
             }
         }
@@ -82,7 +96,8 @@
         public function edit(Request $request, $id_post){
             $validator = $this->doEdit($request, $id_post);
             if($validator){
-                return redirect('/blog#post-' . $id_post)->withErrors($validator)->withInput();
+                $post = Post::find($id_post);
+                return redirect("/publicacion/$post->slug/editar")->withErrors($validator)->withInput();
             }
             return redirect('/panel#posts')->with('status', 'Publicación editada correctamente.');
         }
@@ -92,9 +107,27 @@
          * @param $slug - The Post's slug.
          */
         public function showEdit($slug){      
-            $post = Post::findBySlug($slug);      
+            $post = Post::findBySlug($slug);
+            $features = Feature::where('id_post', '=', $post->id_post)->get();
+            $categories = Categorie::with('user')->get();
+            $tags = Tag::with('user')->get();
+            if($features != null){
+                foreach($features as $feature){
+                    foreach($tags as $tag){
+                        if($feature->id_tag == $tag->id_tag){
+                            $tag->selected = true;
+                        }
+                    }
+                }
+            }
             return view('blog.post.edit', [
+                'validation' => json_encode([
+                    'rules' => Post::$validation['edit']['rules'],
+                    'messages' => Post::$validation['edit']['messages'][$this->idiom],
+                ]),
                 'post' => $post,
+                'categories' => $categories,
+                'tags' => $tags,
             ]);
         }
 
@@ -105,11 +138,11 @@
          */
         public function doEdit(Request $request, $id_post){
             $data = $request->all();
-
+            
             $post = Post::find($id_post);
             
             $validator = Validator::make($request->all(), Post::$validation['edit']['rules'], Post::$validation['edit']['messages'][$this->idiom]);
-            
+
             if($validator->fails()){
                 return $validator;
             }else{                
@@ -145,12 +178,14 @@
                     $feature->delete();
                 }
 
-                foreach($data['tags'] as $id_tag){
-                    $auxData = [];
-                    $auxData['id_post'] = $post->id_post;
-                    $auxData['id_tag'] = $id_tag;
-
-                    Feature::create($auxData);
+                if(isset($data['tags'])){
+                    foreach($data['tags'] as $id_tag){
+                        $auxData = [];
+                        $auxData['id_post'] = $post->id_post;
+                        $auxData['id_tag'] = $id_tag;
+    
+                        Feature::create($auxData);
+                    }
                 }
             }
         }
