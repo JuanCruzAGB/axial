@@ -1,3 +1,9 @@
+@font-face{
+    src: url('/public/fonts/Gotham-Medium.otf');
+    font-family: Gotham-Medium;
+}
+
+
 /* banner */
 
 .jumbotron{
@@ -45,11 +51,16 @@
 
 .separador-banner p{
     font-size: 1.3rem;
+    font-family: Gotham-Medium;
 }
 
 /* contenido */
 .nuestros-servicios{
     background-color: #55C9D8;
+}
+
+.cartas-servicios .iconos-servicios{
+    color: #78C7FA;
 }
 
 .cartas-servicios .card-title{
@@ -59,4 +70,53 @@
 
 .cartas-servicios .card-text{
     color: var(--color-uno);
+}
+
+/* team */
+
+/* galeria */
+.galeria{
+    width: 100%;
+    overflow: hidden;
+}
+
+.galeria .row{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.galeria .row > div{
+    flex-basis: 300px;
+    min-width: 300px;
+    height: 300px;
+}
+
+.tz-gallery .empty-image{
+    width: 100%;
+    height: 300px;
+    border-radius: .25rem;
+    border: 2px solid var(--color-tres);
+}
+
+.tz-gallery .empty-image .empty-content{
+    width: 100%;
+    height: 100%;
+    background: var(--color-tres);
+}
+
+#baguetteBox-overlay .full-image img{
+    object-fit: cover !important;
+    height: 400px !important;
+    width: 100% !important;
+    box-shadow: none;
+}
+
+.tz-gallery .lightbox img{
+    height: 300px;
+    object-fit: cover;
+    background: white;
+}
+
+.load_gallery{
+    background-color: var(--color-uno);
 }
