@@ -10,9 +10,9 @@
          * @return void
          */
         public function up(){
-            Schema::table('posts', function(Blueprint $table){
+            /* Schema::table('posts', function(Blueprint $table){
                 $table->foreign('id_user')->references('id_usuario')->on('usuarios');
-            });
+            }); */
         }
 
         /**
