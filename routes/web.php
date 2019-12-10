@@ -24,6 +24,7 @@
             Route::get('/publicacion/{slug}/editar', 'Blog\PostController@showEdit')->name('post.showEdit');
             Route::put('/publicacion/{id_post}/editar', 'Blog\PostController@edit')->name('post.edit');
             // Route::put('/publicacion/{id_post}/editar', 'Blog\PostController@doEdit')->name('post.doEdit');
+            Route::delete('/publicacion/{id_post}/eliminar', 'Blog\PostController@delete')->name('post.delete');
         });
         
 // CategorieController
@@ -33,6 +34,7 @@
         Route::get('/categoria/{slug}/editar', 'Blog\CategorieController@showEdit')->name('categorie.showEdit');
         Route::put('/categoria/{id_categorie}/editar', 'Blog\CategorieController@edit')->name('categorie.edit');
         // Route::put('/categoria/{id_categorie}/editar', 'Blog\CategorieController@doEdit')->name('categorie.doEdit');
+        Route::delete('/categoria/{id_categorie}/eliminar', 'Blog\CategorieController@delete')->name('categorie.delete');
         
 // TagController
         Route::get('/etiqueta/crear', 'Blog\TagController@showCreate')->name('tag.showCreate');
@@ -41,6 +43,7 @@
         Route::get('/etiqueta/{slug}/editar', 'Blog\TagController@showEdit')->name('tag.showEdit');
         Route::put('/etiqueta/{id_tag}/editar', 'Blog\TagController@edit')->name('tag.edit');
         // Route::put('/etiqueta/{id_tag}/editar', 'Blog\TagController@doEdit')->name('tag.doEdit');
+        Route::delete('/etiqueta/{id_tag}/eliminar', 'Blog\TagController@delete')->name('tag.delete');
 
 // UserController
         Route::middleware('owner')->group(function(){

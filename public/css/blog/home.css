@@ -1,3 +1,7 @@
+.modal.show .modal-dialog{
+    height: 100%;
+}
+
 .tabs{
     flex-wrap: wrap;
     --primary-color: #222;

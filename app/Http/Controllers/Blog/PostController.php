@@ -191,11 +191,24 @@
         }
 
         /**
+         * Delete a Post.
+         * @param $id_post - The Post's PK.
+         */
+        public function delete($id_post){
+            $this->doDelete($id_post);
+            return redirect('/panel#publicacion')->with('status', 'Publicación eliminada correctamente.');
+        }
+
+        /**
          * Delete the Post.
          * @param $id_post - The Post PK.
          */
         public function doDelete($id_post){
             $post = Post::find($id_post);
+            $currentImage = $post->image;
             $post->delete();
+            if(isset($currentImage) && !empty($currentImage)){
+                Storage::delete($currentImage);
+            }
         }
     }

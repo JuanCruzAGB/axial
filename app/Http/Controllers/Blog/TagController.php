@@ -1,6 +1,7 @@
 <?php
     namespace App\Http\Controllers\Blog;
 
+    use App\Models\Blog\Feature;
     use App\Models\Blog\Tag;
     use App\Http\Controllers\BlogController;
     use Auth;
@@ -110,10 +111,23 @@
         }
 
         /**
+         * Delete a Tag.
+         * @param $id_tag - The Tag's PK.
+         */
+        public function delete($id_tag){
+            $this->doDelete($id_tag);
+            return redirect('/panel#tags')->with('status', 'Etiqueta eliminada correctamente.');
+        }
+
+        /**
          * Delete the Tag.
          * @param $id_tag - The Tag PK.
          */
         public function doDelete($id_tag){
+            $features = Feature::where('id_tag', '=', $id_tag)->get();
+            foreach($features as $feature){
+                $feature->delete();
+            }
             $tag = Tag::find($id_tag);
             $tag->delete();
         }

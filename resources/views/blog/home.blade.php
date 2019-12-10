@@ -6,6 +6,7 @@
 @extends('layout.index')
 
 @section('css')
+    <meta name="csrf-token" content="{{csrf_token()}}">
     <link href="{{asset('css/blog/home.css')}}" rel="stylesheet">
     <link href="{{asset('ValidationJS/css/styles.css')}}" rel="stylesheet">
     <link href="{{asset('css/InputFileMaker.css')}}" rel="stylesheet">
@@ -93,6 +94,11 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('extras')
+    @component('blog.components.modal.delete')
+    @endcomponent
 @endsection
 
 @section('footer')

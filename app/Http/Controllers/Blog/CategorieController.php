@@ -2,6 +2,7 @@
     namespace App\Http\Controllers\Blog;
 
     use App\Models\Blog\Categorie;
+    use App\Models\Blog\Post;
     use App\Http\Controllers\BlogController;
     use Auth;
     use Cviebrock\EloquentSluggable\Services\SlugService;
@@ -110,11 +111,29 @@
         }
 
         /**
+         * Delete a Categorie.
+         * @param $id_categorie - The Categorie's PK.
+         */
+        public function delete($id_categorie){
+            $validator = $this->doDelete($id_categorie);
+            if($validator){
+                $categorie = Categorie::find($id_categorie);
+                return redirect("/panel#posts")->with('status', 'Una publicación contiene al menos la categoría seleccionada.');
+            }
+            return redirect('/panel#categories')->with('status', 'Categoría eliminada correctamente.');
+        }
+
+        /**
          * Delete the Categorie.
          * @param $id_categorie - The Categorie PK.
          */
         public function doDelete($id_categorie){
-            $categorie = Categorie::find($id_categorie);
-            $categorie->delete();
+            $posts = Post::where('id_categorie', '=', $id_categorie)->get();
+            if(!count($posts)){
+                $categorie = Categorie::find($id_categorie);
+                $categorie->delete();
+            }else{
+                return true;
+            }
         }
     }

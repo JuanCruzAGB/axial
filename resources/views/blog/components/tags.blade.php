@@ -28,7 +28,7 @@
                                         <span class="button-text mr-2">Editar</span>
                                         <i class="button-icon fas fa-pen"></i>
                                     </a>
-                                    <button type="button" class="btn btn-primary ml-2" data-toggle="modal" data-target="#exampleModal">
+                                    <button type="button" class="btn btn-primary ml-2" data-title="Borrar etiqueta" data-body="¿Estás seguro de que querés borrar la etiqueta?" data-url="/etiqueta/{{$tag->id_tag}}/eliminar" data-toggle="modal" data-target="#delete-modal">
                                         <span class="button-text mr-2">Borrar</span>
                                         <i class="button-icon fas fa-trash"></i>
                                     </button>

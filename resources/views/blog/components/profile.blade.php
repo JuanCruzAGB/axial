@@ -67,7 +67,7 @@
                                         <span class="button-text mr-2">Editar</span>
                                         <i class="button-icon fas fa-pen"></i>
                                     </a>
-                                    <button type="button" class="btn btn-primary ml-2" data-toggle="modal" data-target="#exampleModal">
+                                    <button type="button" class="btn btn-primary ml-2" data-title="Borrar publicación" data-body="¿Estás seguro de que querés borrar la publicación?" data-url="/publicacion/{{$post->id_post}}/eliminar" data-toggle="modal" data-target="#delete-modal">
                                         <span class="button-text mr-2">Borrar</span>
                                         <i class="button-icon fas fa-trash"></i>
                                     </button>
