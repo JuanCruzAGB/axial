@@ -1,9 +1,9 @@
 let InputFileMaker = {
-    /** @var {HTMLElement[]} - Array of Inputs type file. */
+    /** @var {HTMLElement[]} inputs - Array of Inputs type file. */
     inputs: [],
-    /** @var {object} - Image functions. */
+    /** @var {object} image - Image functions. */
     image: {
-        /** @var {boolean} - Check if the image was generated or not. */
+        /** @var {boolean} exist - Check if the image was generated or not. */
         exist: false,
         /**
          * Create a new image.

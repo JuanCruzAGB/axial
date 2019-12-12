@@ -196,7 +196,7 @@
          */
         public function delete($id_post){
             $this->doDelete($id_post);
-            return redirect('/panel#publicacion')->with('status', 'Publicación eliminada correctamente.');
+            return redirect('/panel#posts')->with('status', 'Publicación eliminada correctamente.');
         }
 
         /**

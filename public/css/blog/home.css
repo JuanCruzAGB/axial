@@ -57,7 +57,7 @@
 .tabs .tab-menu .tab-button.opened .tab-icon{
     color: var(--secondary-color);
     background: var(--secondary-color-hover);
-    z-index: 3;
+    z-index: 1;
     font-size: 1.5rem;
     box-shadow: 0px 0px;
 }
@@ -67,7 +67,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 1;
     transition: 500ms;
 }
 
@@ -124,6 +124,7 @@
     border: none;
 }
 
+.tabs .tab-body .tab-content section .accions a,
 .tabs .tab-body .tab-content section button{
     background: var(--primary-color);
     border-radius: .25rem;
@@ -184,6 +185,11 @@
     flex-basis: 100%;
 }
 
+.tabs .tab-body .tab-content section .content table tr a:hover,
+.tabs .tab-body .tab-content section .content table tr a:focus{
+    color: var(--primary-color);
+}
+
 .tabs .tab-body .tab-content section .content table tr .accions a span{
     white-space: nowrap;
 }
@@ -195,6 +201,13 @@
     justify-content: center;
     width: 25vw;
     height: fit-content;
+}
+
+.tabs .tab-body .tab-content section .content table tr .accions a:hover,
+.tabs .tab-body .tab-content section .content table tr .accions a:focus,
+.tabs .tab-body .tab-content section .content table tr .accions button:hover,
+.tabs .tab-body .tab-content section .content table tr .accions button:focus{
+    color: white;
 }
 
 /* Posts */

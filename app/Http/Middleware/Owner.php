@@ -5,12 +5,13 @@
     use Closure;
 
     class Owner{
-        /** @var string - routes were could be an owner. */
-        protected $routes = [
-            'publicacion/{slug}/editar' => '\App\Models\Blog\Post',
-            'publicacion/{id_post}/editar' => '\App\Models\Blog\Post',
-            'usuario/{slug}/editar' => '\App\User',
-            'usuario/{id_user}/editar' => '\App\User',
+        /** @var array - Controllers functions where his principal Model have an owner who is the one who execute. */
+        protected $functions = [
+            'App\Http\Controlers\Blog\PostController@showEdit' => '\App\Models\Blog\Post',
+            'App\Http\Controlers\Blog\PostController@doEdit' => '\App\Models\Blog\Post',
+            'App\Http\Controlers\Blog\PostController@doDelete' => '\App\Models\Blog\Post',
+            'App\Http\Controlers\Blog\UsersController@showEdit' => '\App\User',
+            'App\Http\Controlers\Blog\UsersController@doEdit' => '\App\User',
         ];
 
         /**
@@ -22,8 +23,8 @@
          */
         public function handle($request, Closure $next){
             $found = false;
-            foreach($this->routes as $route => $model){
-                if($request->route()->uri == $route){
+            foreach($this->functions as $function => $model){
+                if($request->route()->uri == $function){
                     foreach($request->route()->parameters as $parameter => $value){
                         if(preg_match('/slug/', $parameter)){
                             $object = $model::findBySlug($value);
@@ -31,8 +32,7 @@
                             $object = $model::find($value);
                         }
                     }
-                    $model = new $model;
-                    if(Auth::user()->id_user == $object[$model->getKeyName()]){
+                    if(Auth::user()->id_user == $object->id_user){
                         return $next($request);
                     }
                     $found = true;

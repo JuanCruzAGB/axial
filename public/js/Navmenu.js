@@ -1,7 +1,7 @@
 let Collapsable = {
-    /** @var {array} - Collapsable array of HTML elements. */
+    /** @var {array} HTMLs - Collapsable array of HTML elements. */
     HTMLs: [],
-    /** @var {HTMLElement} - Collapsable array of buttons. */
+    /** @var {HTMLElement} btns - Collapsable array of buttons. */
     btns: [],
     /** Collapsable loader */
     load(){
@@ -60,22 +60,32 @@ let Collapsable = {
 };
 
 let Sidebar = {
-    /** @var {HTMLElement} - Sidebar HTML element. */
+    /** @var {HTMLElement} HTML - Sidebar HTML element. */
     HTML: null,
-    /** @var {HTMLElement} - button opener. */
+    /** @var {HTMLElement} btnOpener - Button opener. */
     btnOpener: null,
-    /** @var {HTMLElement} - button opener. */
+    /** @var {HTMLElement} btnCloser - Button opener. */
     btnCloser: null,
+    /** @var {HTMLElement[]} links - All the links inside the Sidebar. */
+    links: null,
     /** Sidebar loader */
     load(){
         this.HTML = document.querySelector('.nav-menu .sidebar');
         this.btnOpener = document.querySelector('.nav-menu > .sidebar-button');
         this.btnCloser = document.querySelector('.nav-menu .sidebar .sidebar-button');
+        this.links = document.querySelectorAll('.nav-menu .sidebar .sidebar-content .nav-link');
 
         this.btnOpener.addEventListener("click", function(e){
             e.preventDefault();
             Sidebar.open();
         })
+
+        for(let i = 0; i< this.links.length; i++){
+            this.links[i].addEventListener('click', function(e){
+                console.log('click');
+                Sidebar.close();
+            });
+        }
     },
     /**
      * Check if there is Sidebar.

@@ -19,8 +19,8 @@
             <li><a href="/demo#cirugia-mini-invasiva" class="nav-link">
                 Cirugía mini invasiva
             </a></li>
-            <li><a href="/demo#escoliosis" class="nav-link">
-                Escoliosis
+            <li><a href="/demo#patologia-de-la-columna" class="nav-link">
+                Patología de la columna
             </a></li>
             <li><a href="/demo#equipo" class="nav-link">
                 Equipo
