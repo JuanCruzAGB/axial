@@ -70,6 +70,27 @@
 .separador-banner p{
     font-size: 1.3rem;
     font-family: 'Gotham Medium';
+    z-index: 2;
+}
+
+.quotes{
+    position: absolute;
+    color: rgba(0,0,0,.3);
+}
+
+.quote-left{
+    top: 10px;
+    left: 10px;
+}
+
+.quote-right{
+    bottom: 10px;
+    right: 10px;
+}
+
+.quote-icon{
+    font-size: 2rem;
+    z-index: 1;
 }
 
 /* contenido */
@@ -131,7 +152,8 @@
     transition: 500ms;
 }
 
-.miembro.card:target .card-body{
+.miembro.card:target .card-body,
+.miembro.card.active .card-body{
     height: 100%;
 }
 
@@ -141,7 +163,8 @@
     color: var(--color-dos);
 }
 
-.miembro.card:target .card-body .card-title{
+.miembro.card:target .card-body .card-title,
+.miembro.card.active .card-body .card-title{
     margin-bottom: .75rem !important;
     padding-bottom: .75rem;
     border-bottom: 2px solid var(--color-tres);
@@ -163,7 +186,8 @@
     transform: translateY(-50%);
 }
 
-.miembro.card:target .card-body .card-title .title-icon{
+.miembro.card:target .card-body .card-title .title-icon,
+.miembro.card.active .card-body .card-title .title-icon{
     top: 25%;
     transform: translateY(-25%);
 }
@@ -181,7 +205,8 @@
     overflow: hidden;
 }
 
-.miembro.card:target .card-body .card-content{
+.miembro.card:target .card-body .card-content,
+.miembro.card.active .card-body .card-content{
     height: fit-content;
 }
 

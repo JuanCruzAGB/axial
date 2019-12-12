@@ -30,6 +30,8 @@
 
 @section('main')
     <div class="separador-banner col-12 p-3">
+        <span class="quotes quote-left"><i class="quote-icon fas fa-quote-left"></i></span>
+        <span class="quotes quote-right"><i class="quote-icon fas fa-quote-right"></i></span>
         <p class="text-white text-center m-0">El dolor de espalda es un problema que afecta al 80% de la población mundial.</p>
     </div>    
 
@@ -74,14 +76,14 @@
 
         <div class="listado">
             <div class="miembros cards mx-3 pb-0">
-                <div id="nombre-del-usuario" class="miembro card mr-3 p-0">
+                <div id="nombre-del-usuario" class="miembro collapsable-card card mr-3 p-0">
                     <div class="card-background">
                         <img class="mb-0" src="/img/bg-demo.jpg" alt="example image">
                     </div>
                     <div class="card-body p-3">
-                        <a href="#nombre-del-usuario" class="card-title m-0">
+                        <a href="#nombre-del-usuario" class="collapsable-btn card-title m-0">
                             <h3 class="m-0">Pepe Diaz</h3>
-                            <i class="title-icon fas fa-sort-up"></i>
+                            <i class="collapsable-icon title-icon fas fa-sort-up"></i>
                         </a>
                         <div class="card-content px-3">
                             <div class="row d-flex justify-content-end">
