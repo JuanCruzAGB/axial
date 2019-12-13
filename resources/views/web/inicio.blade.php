@@ -17,9 +17,9 @@
 
 @section('banner')
     <div class="jumbotron jumbotron-fluid p-0 mb-0">
-        <div class="container d-flex align-items-center">
-            <div>
-                <h2 class="h2-responsive text-white text-center mb-3">Abordamos todas las dolencias y patologías <span>de la columna</span></h2>
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <h2 class="h2-responsive text-white text-center mb-3">Abordamos todas las dolencias y <span>patologías <span>de la columna</span></span></h2>
                 <div class="d-flex justify-content-center">
                     <a class="enviar-mensaje btn btn-primary" href="#" role="button">Envianos un mensaje</a>
                 </div>
@@ -29,10 +29,10 @@
 @endsection
 
 @section('main')
-    <div class="separador-banner col-12 p-3">
+    <div class="separador-banner col-12 p-3 px-md-5">
         <span class="quotes quote-left"><i class="quote-icon fas fa-quote-left"></i></span>
         <span class="quotes quote-right"><i class="quote-icon fas fa-quote-right"></i></span>
-        <p class="text-white text-center m-0">El dolor de espalda es un problema que afecta al 80% de la población mundial.</p>
+        <p class="col-12 col-md-10 col-lg-8 text-white text-center m-0 px-md-5">El dolor de espalda es un problema que afecta al 80% de la población mundial.</p>
     </div>    
 
     <div id="nuestros-servicios" class="nuestros-servicios col-12">
@@ -94,19 +94,19 @@
                                     <li>Y ya tah</li>
                                 </ul>
                                 <p class="col-12 p-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium tempora amet animi recusandae odio ad culpa voluptates quod repellat consequuntur blanditiis, molestias nesciunt. Nihil, numquam exercitationem temporibus consectetur qui laboriosam.</p>
-                                <a href="#" class="btn btn-primary">Ver más</a>
+                                <a target="_blank" href="#" class="btn btn-primary">Ver más</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="nombre-del-usuario-2" class="miembro card mr-3 p-0">
+                <div id="nombre-del-usuario-2" class="miembro collapsable-card card mr-3 p-0">
                     <div class="card-background">
                         <img class="mb-0" src="/img/bg-demo.jpg" alt="example image">
                     </div>
                     <div class="card-body p-3">
-                        <a href="#nombre-del-usuario-2" class="card-title m-0">
+                        <a href="#nombre-del-usuario-2" class="collapsable-btn card-title m-0">
                             <h3 class="m-0">Manolo Gomez</h3>
-                            <i class="title-icon fas fa-sort-up"></i>
+                            <i class="collapsable-icon title-icon fas fa-sort-up"></i>
                         </a>
                         <div class="card-content px-3">
                             <div class="row d-flex justify-content-end">
@@ -118,7 +118,7 @@
                                     <li>Terciaria - especializada en peces</li>
                                 </ul>
                                 <p class="col-12 p-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium tempora amet animi recusandae odio ad culpa voluptates quod repellat consequuntur blanditiis, molestias nesciunt. Nihil, numquam exercitationem temporibus consectetur qui laboriosam.</p>
-                                <a href="#" class="btn btn-primary">Ver más</a>
+                                <a target="_blank" href="#" class="btn btn-primary">Ver más</a>
                             </div>
                         </div>
                     </div>

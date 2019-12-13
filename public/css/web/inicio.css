@@ -11,6 +11,7 @@
     display: block;
     background: rgba(0, 0, 0, 0.1);
     width: 100%;
+    min-width: 100%;
     height: 100%;
     top: 0;
 }
@@ -21,7 +22,7 @@
     font-weight: bold;
 }
 
-.jumbotron .container h2 span{
+.jumbotron .container h2 span > span{
     color: var(--color-uno);
 }
 
@@ -79,13 +80,13 @@
 }
 
 .quote-left{
-    top: 10px;
-    left: 10px;
+    top: 5px;
+    left: 5px;
 }
 
 .quote-right{
-    bottom: 10px;
-    right: 10px;
+    bottom: 5px;
+    right: 5px;
 }
 
 .quote-icon{
@@ -212,10 +213,32 @@
 
 /* MD */
 @media(min-width: 768px){
+    .jumbotron .container h2 span{
+        color: var(--color-uno);
+    }
+
     .miembro.card{
         min-width: 50vw;
         flex-basis: 50vw;
         height: 450px;
+    }
+
+    .separador-banner::before{
+        top: -48px;
+        height: 50px;
+    }
+    
+    .separador-banner::after{
+        bottom: -48px;
+        height: 50px;
+    }
+
+    .quote-left{
+        left: 15%;
+    }
+    
+    .quote-right{
+        right: 15%;
     }
 }
 
@@ -240,6 +263,14 @@
     .miembro.card:not(:nth-of-type(2)),
     .miembro.card:not(:nth-of-type(3)){
         margin-top: 1rem;
+    }
+
+    .quote-left{
+        left: 20%;
+    }
+    
+    .quote-right{
+        right: 20%;
     }
 }
 

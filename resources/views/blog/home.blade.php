@@ -114,5 +114,6 @@
     <script type="text/javascript" src="{{asset('ValidationJS/js/Validator.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script> -->
     <script type="text/javascript" src="{{asset('js/InputFileMaker.js')}}"></script>
+    <script src="{{asset('vendors/ckeditor/ckeditor.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/blog/home.js')}}"></script>
 @endsection

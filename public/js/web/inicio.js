@@ -10,7 +10,7 @@ let CollapsableCard = {
         for(let i = 0; i < this.btns.length; i++){
             this.btns[i].addEventListener('click', function(e){
                 e.preventDefault();
-                CollapsableCard.open(i);
+                CollapsableCard.switch(i);
             });
         }
     },
@@ -19,6 +19,7 @@ let CollapsableCard = {
      * @param {number} position - The position from the this.cards array.
      */
     switch(position){
+        console.log(this.cards[position].classList.contains('active'));
         if(!this.cards[position].classList.contains('active')){
             this.open(position);
         }else{

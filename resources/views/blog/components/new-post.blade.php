@@ -46,7 +46,11 @@
                             name="id_categorie"
                             class="form-control">
                             @foreach($categories as $categorie)
-                                <option value="{{$categorie->id_categorie}}">{{$categorie->name}}</option>
+                                @if(old('id_categorie') == $categorie->id_categorie)
+                                    <option value="{{$categorie->id_categorie}}" selected>{{$categorie->name}}</option>
+                                @else
+                                    <option value="{{$categorie->id_categorie}}">{{$categorie->name}}</option>
+                                @endif
                             @endforeach
                         </select>
                         <div @if($errors->has('id_categorie'))
@@ -67,11 +71,20 @@
                         </div>
                         @foreach($tags as $tag)
                             <div class="form-check form-check-inline">
+                            @if($tag->id_tag == old('id_tag'))
+                                <input id="{{$tag->slug}}"
+                                    name="tags[]"
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    checked
+                                    value="{{$tag->id_tag}}">
+                            @else
                                 <input id="{{$tag->slug}}"
                                     name="tags[]"
                                     class="form-check-input"
                                     type="checkbox"
                                     value="{{$tag->id_tag}}">
+                            @endif
                                 <label for="{{$tag->slug}}"
                                     class="form-check-label">{{$tag->name}}</label>
                             </div>
@@ -112,10 +125,10 @@
                         </label>
                         <textarea id="content"
                             name="content"
-                            class="form-control"
+                            class="form-control ckeditor"
                             cols="30"
                             rows="10"
-                            placeholder="Contenido"></textarea>
+                            placeholder="Contenido">{!!old('content')!!}</textarea>
                         <div @if($errors->has('content'))
                             class="invalid-tooltip showed"
                         @else

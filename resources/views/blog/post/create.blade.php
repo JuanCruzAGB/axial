@@ -131,10 +131,10 @@
                                 </label>
                                 <textarea id="content"
                                     name="content"
-                                    class="form-control"
+                                    class="form-control ckeditor"
                                     cols="30"
                                     rows="10"
-                                    placeholder="Contenido"></textarea>
+                                    placeholder="Contenido">{!!old('content')!!}</textarea>
                                 <div @if($errors->has('content'))
                                     class="invalid-tooltip showed"
                                 @else
@@ -169,5 +169,6 @@
     <script type="text/javascript" src="{{asset('ValidationJS/js/Validator.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script> -->
     <script type="text/javascript" src="{{asset('js/InputFileMaker.js')}}"></script>
+    <script src="{{asset('vendors/ckeditor/ckeditor.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/blog/post/create.js')}}"></script>
 @endsection
