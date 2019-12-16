@@ -35,7 +35,7 @@
                                         <p class="text-muted">Ninguna</p>
                                     @endif
                                 </td>
-                                <td>{{$post->user->name}}</td>
+                                <td><a href="/usuario/{{$post->user->slug}}">{{$post->user->name}}</a></td>
                                 <td class="accions d-flex justify-content-end">
                                     <a href="/publicacion/{{$post->slug}}" class="btn btn-primary">
                                         <span class="button-text mr-2">Ver más</span>

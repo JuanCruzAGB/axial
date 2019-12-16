@@ -22,7 +22,7 @@
                             <tr>
                                 <th class="id">{{$tag->id_tag}}</th>
                                 <td><a href="/{{$tag->slug}}/publicaciones">{{$tag->name}}</a></td>
-                                <td>{{$tag->user->name}}</td>
+                                <td><a href="/usuario/{{$tag->user->slug}}">{{$tag->user->name}}</a></td>
                                 <td class="accions d-flex justify-content-end">
                                     <a href="/etiqueta/{{$tag->slug}}/editar" class="btn btn-primary">
                                         <span class="button-text mr-2">Editar</span>

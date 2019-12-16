@@ -6,7 +6,9 @@
     use App\Models\Blog\Feature;
     use App\Models\Blog\Tag;
     use App\Http\Controllers\BlogController;
+    use App\User;
     use Auth;
+    use Carbon\Carbon;
     use Cviebrock\EloquentSluggable\Services\SlugService;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\File;
@@ -17,6 +19,41 @@
     class PostController extends BlogController{
         /** @var string - The UserController principal Model. */
         protected $model = 'Post';
+
+        /**
+         * The Post information view.
+         * @param $slug - The Post slug.
+         */
+        public function info($slug){
+            $post = Post::findBySlug($slug);
+            $post->date = $this->createDate($post);
+
+            $categorie = Categorie::find($post->id_categorie);
+            $user = User::find($post->id_user);
+
+            $tags = collect([]);
+            $features = Feature::where('id_post', '=', $post->id_post)->get();
+            foreach($features as $feature){
+                $tag = Tag::find($feature->id_tag);
+                $tags->push($tag);
+            }
+            return view('blog.post.info', [
+                'categorie' => $categorie,
+                'post' => $post,
+                'tags' => $tags,
+                'user' => $user,
+            ]);
+        }
+        /**
+         * Create the Post date format text.
+         * @param $post - The Post.
+         */
+        public function createDate($post){
+            Carbon::setLocale('es');
+            $date = new Carbon($post->updated_at);
+            $date = $date->diffForHumans();
+            return $date;
+        }
 
         /**
          * Create a new Post.

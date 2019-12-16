@@ -19,6 +19,17 @@
         protected $model = 'User';
 
         /**
+         * The User information view.
+         * @param $slug - The User slug.
+         */
+        public function info($slug){
+            $user = User::findBySlug($slug);
+            return view('blog.user.info', [
+                'user' => $user,
+            ]);
+        }
+
+        /**
          * Edit an User.
          * @param $request - Request.
          * @param $id_user - The User's PK.

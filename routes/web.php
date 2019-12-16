@@ -15,9 +15,12 @@
 // BlogController
         Route::get('/blog', 'BlogController@home')->name('blog.home');
         Route::get('/panel', 'BlogController@home')->name('blog.home');
-        
+    });
+    
 // PostController
-        Route::get('/publicacion/crear', 'Blog\PostController@showCreate')->name('post.showCreate');
+    Route::get('/publicacion/{slug}', 'Blog\PostController@info')->name('post.info');
+
+    Route::middleware('auth')->group(function(){
         Route::post('/publicacion/crear', 'Blog\PostController@create')->name('post.create');
         // Route::post('/publicacion/crear', 'Blog\PostController@doCreate')->name('post.doCreate');
         Route::middleware('owner')->group(function(){
@@ -44,10 +47,14 @@
         Route::put('/etiqueta/{id_tag}/editar', 'Blog\TagController@edit')->name('tag.edit');
         // Route::put('/etiqueta/{id_tag}/editar', 'Blog\TagController@doEdit')->name('tag.doEdit');
         Route::delete('/etiqueta/{id_tag}/eliminar', 'Blog\TagController@delete')->name('tag.delete');
+    });
 
 // UserController
+    Route::get('/usuario/{slug}', 'Blog\UserController@info')->name('user.info');
+
+    Route::middleware('auth')->group(function(){
         Route::middleware('owner')->group(function(){
-            Route::get('/usuario/{slug}/editar', 'Blog\UserController@showEdit')->name('tag.showEdit');
-            Route::put('/usuario/{id_user}/editar', 'Blog\UserController@edit')->name('tag.edit');
+            Route::get('/usuario/{slug}/editar', 'Blog\UserController@showEdit')->name('user.showEdit');
+            Route::put('/usuario/{id_user}/editar', 'Blog\UserController@edit')->name('user.edit');
         });
     });

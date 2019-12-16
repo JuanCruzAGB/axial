@@ -76,17 +76,17 @@
 
 .quotes{
     position: absolute;
-    color: rgba(0,0,0,.3);
+    color: rgba(0,0,0,.5);
 }
 
 .quote-left{
-    top: 5px;
-    left: 5px;
+    top: 15px;
+    left: 15px;
 }
 
 .quote-right{
-    bottom: 5px;
-    right: 5px;
+    bottom: 15px;
+    right: 15px;
 }
 
 .quote-icon{
@@ -148,7 +148,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: fit-content;
+    height: 4.25rem;
     background: white;
     transition: 500ms;
 }

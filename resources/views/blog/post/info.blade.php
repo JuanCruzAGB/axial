@@ -1,5 +1,8 @@
 <?php
+    /** @var Categorie $categorie */
     /** @var Post $post */
+    /** @var Tag[] $tags */
+    /** @var User $user */
 ?>
 @extends('layout.index')
 
@@ -8,7 +11,7 @@
 @endsection
 
 @section('title')
-    {{$post->title}}
+    Blog - {{$post->title}}
 @endsection
 
 @section('nav')
@@ -17,9 +20,51 @@
 @endsection
 
 @section('main')
-    <div class="col-12">
-        
-    </div>
+    <section class="col-12">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="m-0">{{$post->title}}</h1>
+                <a class="d-inline-block mb-3" href="/categoria/{{$categorie->slug}}">
+                    <i class="fas fa-caret-right"></i>
+                    {{$categorie->name}}
+                </a>
+            </div>
+            <div class="image col-12 mb-3">
+                <img src='{{asset("storage/$post->image")}}' alt="{{$post->title}} image" class="post-image"/>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 mb-1">
+                        <i class="far fa-clock"></i>
+                        <span>{{$post->date}}</span>
+                    </div>
+                    <div class="col-12 mb-3 d-flex">
+                        <i class="tag-icon fas fa-tags d-flex align-items-center"></i>
+                        <ul class="tags mb-0 ml-1 d-flex">
+                            @foreach($tags as $tag)
+                                <li>
+                                    <a class="tag-link mr-1" href="/etiqueta/{{$tag->slug}}">{{$tag->name}}</a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="content mb-3">{!!$post->content!!}</div>
+            </div>
+            <div class="col-12">
+                <div class="row mx-0">
+                    <div class="picture col-4 px-0">
+                        <img class="picture-image" src='{{asset("storage/$user->picture")}}' alt="{{$user->name}} profile's picture">
+                    </div>
+                    <div class="title col-8 d-flex align-items-center p-0">
+                        <a href="/usuario/{{$user->slug}}"><h2 class="mb-0">{{$user->name}}</h2></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
 
 @section('footer')

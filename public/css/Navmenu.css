@@ -10,7 +10,7 @@
     max-height: 4.6rem;
     background: var(--primary-color);
     font-family: verdana;
-    z-index: 2;
+    z-index: 3;
 }
 
 .nav-menu.neon{

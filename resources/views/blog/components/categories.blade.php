@@ -22,7 +22,7 @@
                             <tr class="py-2">
                                 <th class="id">{{$categorie->id_categorie}}</th>
                                 <td><a href="/{{$categorie->slug}}/publicaciones">{{$categorie->name}}</a></td>
-                                <td>{{$categorie->user->name}}</td>
+                                <td><a href="/usuario/{{$categorie->user->slug}}">{{$categorie->user->name}}</a></td>
                                 <td class="accions d-flex justify-content-end">
                                     <a href="/categoria/{{$categorie->slug}}/editar" class="btn btn-primary">
                                         <span class="button-text mr-2">Editar</span>
