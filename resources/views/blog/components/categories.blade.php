@@ -1,5 +1,5 @@
 <?php
-    /** @var Categorie[] $categories */
+    /** @var Category[] $categories */
 ?>
 <section>
     <div class="title">
@@ -18,17 +18,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($categories as $categorie)
+                        @foreach($categories as $category)
                             <tr class="py-2">
-                                <th class="id">{{$categorie->id_categorie}}</th>
-                                <td><a href="/{{$categorie->slug}}/publicaciones">{{$categorie->name}}</a></td>
-                                <td><a href="/usuario/{{$categorie->user->slug}}">{{$categorie->user->name}}</a></td>
+                                <th class="id">{{$category->id_category}}</th>
+                                <td><a href="/{{$category->slug}}/publicaciones">{{$category->name}}</a></td>
+                                <td><a href="/usuario/{{$category->user->slug}}">{{$category->user->name}}</a></td>
                                 <td class="accions d-flex justify-content-end">
-                                    <a href="/categoria/{{$categorie->slug}}/editar" class="btn btn-primary">
+                                    <a href="/categoria/{{$category->slug}}/editar" class="btn btn-primary">
                                         <span class="button-text mr-2">Editar</span>
                                         <i class="button-icon fas fa-pen"></i>
                                     </a>
-                                    <button type="button" class="btn btn-primary ml-2" data-title="Borrar categoría" data-body="¿Estás seguro de que querés borrar la categoría?" data-url="/categoria/{{$categorie->id_categorie}}/eliminar" data-toggle="modal" data-target="#delete-modal">
+                                    <button type="button" class="btn btn-primary ml-2" data-title="Borrar categoría" data-body="¿Estás seguro de que querés borrar la categoría?" data-url="/categoria/{{$category->id_category}}/eliminar" data-toggle="modal" data-target="#delete-modal">
                                         <span class="button-text mr-2">Borrar</span>
                                         <i class="button-icon fas fa-trash"></i>
                                     </button>
@@ -38,7 +38,7 @@
                     </tbody>
                 </table>
             @else
-                <p class="text-muted">Ninguna categoría encontrada</p>
+                <p class="px-3 px-ld-0 text-muted">Ninguna categoría encontrada</p>
             @endif
         </div>
     </div>

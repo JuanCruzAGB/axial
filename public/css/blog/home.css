@@ -217,7 +217,7 @@
 }
 
 /* Categories */
-.tabs .tab-body .tab-content section .content table.categories tr .accions{
+.tabs .tab-body .tab-content section .content table.categorys tr .accions{
     min-width: calc((25vw * 2) + 2rem);
 }
 
@@ -278,7 +278,7 @@
     }
     
     /* Categories */
-    .tabs .tab-body .tab-content section .content table.categories tr .accions{
+    .tabs .tab-body .tab-content section .content table.categorys tr .accions{
         min-width: calc((15vw * 2) + 1rem);
     }
     
@@ -330,24 +330,24 @@
     }
     
     /* Categories */
-    .tabs .tab-body .tab-content section .content table.categories tr th,
-    .tabs .tab-body .tab-content section .content table.categories tr td{
+    .tabs .tab-body .tab-content section .content table.categorys tr th,
+    .tabs .tab-body .tab-content section .content table.categorys tr td{
         min-width: calc((100% / 15) * 2);
         width: calc((100% / 15) * 2);
     }
     
-    .tabs .tab-body .tab-content section .content table.categories tr .id{
+    .tabs .tab-body .tab-content section .content table.categorys tr .id{
         width: calc(100% / 15);
         min-width: calc(100% / 15);
     }
 
-    .tabs .tab-body .tab-content section .content table.categories tr .accions{
+    .tabs .tab-body .tab-content section .content table.categorys tr .accions{
         min-width: calc(((100% / 15) * 2) * 3);
         margin-left: calc(((100% / 15) * 2) * 2);
     }
     
-    .tabs .tab-body .tab-content section .content table.categories tr .accions a,
-    .tabs .tab-body .tab-content section .content table.categories tr .accions button{
+    .tabs .tab-body .tab-content section .content table.categorys tr .accions a,
+    .tabs .tab-body .tab-content section .content table.categorys tr .accions button{
         width: calc((100% - 1rem) / 3);
     }
     

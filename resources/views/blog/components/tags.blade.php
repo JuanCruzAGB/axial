@@ -38,7 +38,7 @@
                     </tbody>
                 </table>
             @else
-                <p class="text-muted">Ninguna etiqueta encontrada</p>
+                <p class="px-3 px-ld-0 text-muted">Ninguna etiqueta encontrada</p>
             @endif
         </div>
     </div>

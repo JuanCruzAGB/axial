@@ -29,17 +29,19 @@
             Route::delete('/publicacion/{id_post}/eliminar', 'Blog\PostController@delete')->name('post.delete');
         });
     });
+    Route::get('/categoria/{slug}/publicaciones', 'Blog\PostController@catList')->name('cat.post.list');
+    Route::get('/etiqueta/{slug}/publicaciones', 'Blog\PostController@tagList')->name('tag.post.list');
     Route::get('/publicacion/{slug}', 'Blog\PostController@info')->name('post.info');
         
     Route::middleware('auth')->group(function(){
-// CategorieController
-        Route::get('/categoria/crear', 'Blog\CategorieController@showCreate')->name('categorie.showCreate');
-        Route::post('/categoria/crear', 'Blog\CategorieController@create')->name('categorie.create');
-        // Route::post('/categoria/crear', 'Blog\CategorieController@doCreate')->name('categorie.doCreate');
-        Route::get('/categoria/{slug}/editar', 'Blog\CategorieController@showEdit')->name('categorie.showEdit');
-        Route::put('/categoria/{id_categorie}/editar', 'Blog\CategorieController@edit')->name('categorie.edit');
-        // Route::put('/categoria/{id_categorie}/editar', 'Blog\CategorieController@doEdit')->name('categorie.doEdit');
-        Route::delete('/categoria/{id_categorie}/eliminar', 'Blog\CategorieController@delete')->name('categorie.delete');
+// CategoryController
+        Route::get('/categoria/crear', 'Blog\CategoryController@showCreate')->name('category.showCreate');
+        Route::post('/categoria/crear', 'Blog\CategoryController@create')->name('category.create');
+        // Route::post('/categoria/crear', 'Blog\CategoryController@doCreate')->name('category.doCreate');
+        Route::get('/categoria/{slug}/editar', 'Blog\CategoryController@showEdit')->name('category.showEdit');
+        Route::put('/categoria/{id_category}/editar', 'Blog\CategoryController@edit')->name('category.edit');
+        // Route::put('/categoria/{id_category}/editar', 'Blog\CategoryController@doEdit')->name('category.doEdit');
+        Route::delete('/categoria/{id_category}/eliminar', 'Blog\CategoryController@delete')->name('category.delete');
         
 // TagController
         Route::get('/etiqueta/crear', 'Blog\TagController@showCreate')->name('tag.showCreate');

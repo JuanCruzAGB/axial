@@ -4,7 +4,7 @@
 @extends('layout.index')
 
 @section('css')
-    <link href="{{asset('css/blog/categorie/create.css')}}" rel="stylesheet">
+    <link href="{{asset('css/blog/category/create.css')}}" rel="stylesheet">
     <link href="{{asset('ValidationJS/css/styles.css')}}" rel="stylesheet">
 @endsection
 
@@ -18,7 +18,7 @@
 @endsection
 
 @section('main')
-    <div id="new-categorie" class="new-categorie col-12 col-md-10 col-xl-8 mx-auto d-flex justify-content-between">
+    <div id="new-category" class="new-category col-12 col-md-10 col-xl-8 mx-auto d-flex justify-content-between">
         <section>
             <div class="title">
                 <h2 class="mb-3 p-3">Nueva categoría</h2>
@@ -75,5 +75,5 @@
     <script type="text/javascript" src="{{asset('ValidationJS/js/Requirements.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Validator.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script> -->
-    <script type="text/javascript" src="{{asset('js/blog/categorie/create.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/blog/category/create.js')}}"></script>
 @endsection

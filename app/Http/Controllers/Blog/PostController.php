@@ -2,7 +2,7 @@
     namespace App\Http\Controllers\Blog;
 
     use App\Models\Blog\Post;
-    use App\Models\Blog\Categorie;
+    use App\Models\Blog\Category;
     use App\Models\Blog\Feature;
     use App\Models\Blog\Tag;
     use App\Http\Controllers\BlogController;
@@ -28,7 +28,7 @@
             $post = Post::findBySlug($slug);
             $post->date = $this->createDate($post);
 
-            $categorie = Categorie::find($post->id_categorie);
+            $category = Category::find($post->id_category);
             $user = User::find($post->id_user);
 
             $tags = collect([]);
@@ -38,12 +38,63 @@
                 $tags->push($tag);
             }
             return view('blog.post.info', [
-                'categorie' => $categorie,
+                'category' => $category,
                 'post' => $post,
                 'tags' => $tags,
                 'user' => $user,
             ]);
         }
+
+        /**
+         * The list of Posts that are loaded according to the Category.
+         * @param $slug - The Category slug.
+         */
+        public function catList($slug){
+            $post = Post::findBySlug($slug);
+            $post->date = $this->createDate($post);
+
+            $category = Category::find($post->id_category);
+            $user = User::find($post->id_user);
+
+            $tags = collect([]);
+            $features = Feature::where('id_post', '=', $post->id_post)->get();
+            foreach($features as $feature){
+                $tag = Tag::find($feature->id_tag);
+                $tags->push($tag);
+            }
+            return view('blog.post.info', [
+                'category' => $category,
+                'post' => $post,
+                'tags' => $tags,
+                'user' => $user,
+            ]);
+        }
+
+        /**
+         * The list of Posts that are loaded according to the Tag.
+         * @param $slug - The Tag slug.
+         */
+        public function tagList($slug){
+            $post = Post::findBySlug($slug);
+            $post->date = $this->createDate($post);
+
+            $category = Category::find($post->id_category);
+            $user = User::find($post->id_user);
+
+            $tags = collect([]);
+            $features = Feature::where('id_post', '=', $post->id_post)->get();
+            foreach($features as $feature){
+                $tag = Tag::find($feature->id_tag);
+                $tags->push($tag);
+            }
+            return view('blog.post.info', [
+                'category' => $category,
+                'post' => $post,
+                'tags' => $tags,
+                'user' => $user,
+            ]);
+        }
+
         /**
          * Create the Post date format text.
          * @param $post - The Post.
@@ -69,7 +120,7 @@
 
         /** Load the "Create a new Post" section. */
         public function showCreate(){
-            $categories = Categorie::with('user')->get();
+            $categories = Category::with('user')->get();
             $tags = Tag::with('user')->get();      
             return view('blog.post.create', [
                 'validation' => json_encode([
@@ -146,7 +197,7 @@
         public function showEdit($slug){      
             $post = Post::findBySlug($slug);
             $features = Feature::where('id_post', '=', $post->id_post)->get();
-            $categories = Categorie::with('user')->get();
+            $categories = Category::with('user')->get();
             $tags = Tag::with('user')->get();
             if($features != null){
                 foreach($features as $feature){

@@ -1,7 +1,7 @@
 <?php
     namespace App\Http\Controllers\Blog;
 
-    use App\Models\Blog\Categorie;
+    use App\Models\Blog\Category;
     use App\Models\Blog\Post;
     use App\Models\Blog\Presentation;
     use App\Models\Blog\Tag;
@@ -30,7 +30,7 @@
                 $user->logged = true;
             }
 
-            $posts = Post::where('id_user', '=', $user->id_user)->with('features', 'categorie')->get();
+            $posts = Post::where('id_user', '=', $user->id_user)->with('features', 'category')->get();
             $count = 0;
             foreach($posts as $post){
                 if(isset($post->features)){

@@ -1,16 +1,16 @@
 <?php
     /** @var array $validations */
-    /** @var Categorie $categorie */
+    /** @var Category $category */
 ?>
 @extends('layout.index')
 
 @section('css')
-    <link href="{{asset('css/blog/categorie/edit.css')}}" rel="stylesheet">
+    <link href="{{asset('css/blog/category/edit.css')}}" rel="stylesheet">
     <link href="{{asset('ValidationJS/css/styles.css')}}" rel="stylesheet">
 @endsection
 
 @section('title')
-    Editar "{{$categorie->name}}"
+    Editar "{{$category->name}}"
 @endsection
 
 @section('nav')
@@ -19,13 +19,13 @@
 @endsection
 
 @section('main')
-    <div id="edit-categorie" class="edit-categorie col-12 col-md-10 col-xl-8 mx-auto d-flex justify-content-between">
+    <div id="edit-category" class="edit-category col-12 col-md-10 col-xl-8 mx-auto d-flex justify-content-between">
         <section>
             <div class="title">
-                <h2 class="mb-3 p-3">Editar "{{$categorie->name}}"</h2>
+                <h2 class="mb-3 p-3">Editar "{{$category->name}}"</h2>
             </div>
             <div class="content">
-                <form action="/categoria/{{$categorie->id_categorie}}/editar"
+                <form action="/categoria/{{$category->id_category}}/editar"
                     class="form-validate"
                     method="post"
                     enctype="multipart/form-data"
@@ -42,7 +42,7 @@
                                     name="name"
                                     type="text"
                                     class="form-control"
-                                    value="{{old('name', $categorie->name)}}"
+                                    value="{{old('name', $category->name)}}"
                                     placeholder="Nombre">
                                 <div @if($errors->has('name'))
                                     class="invalid-tooltip showed"
@@ -77,5 +77,5 @@
     <script type="text/javascript" src="{{asset('ValidationJS/js/Requirements.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Validator.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script> -->
-    <script type="text/javascript" src="{{asset('js/blog/categorie/edit.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/blog/category/edit.js')}}"></script>
 @endsection

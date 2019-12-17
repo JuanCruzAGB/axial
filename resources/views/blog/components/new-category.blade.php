@@ -15,10 +15,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="categorie-name" class="input-name">
+                        <label for="category-name" class="input-name">
                             <span class="input-text">Nombre</span>
                         </label>
-                        <input id="categorie-name"
+                        <input id="category-name"
                             name="name"
                             type="text"
                             class="form-control"

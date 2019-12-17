@@ -37,7 +37,7 @@
                     <i class="tab-icon far fa-calendar"></i>
                     <span class="tab-text p-2">Categorias</span>
                 </a></li>
-                <li><a class="tab-button" href="#new-categorie">
+                <li><a class="tab-button" href="#new-category">
                     <i class="tab-icon far fa-calendar"></i>
                     <span class="tab-text p-2">Nueva categoría</span>
                 </a></li>
@@ -72,8 +72,8 @@
                 @component('blog.components.categories', ['categories' => $data['categories']])
                 @endcomponent
             </div>
-            <div id="new-categorie" class="new-categorie tab-content">
-                @component('blog.components.new-categorie', ['validation' => $validations['categorie']])
+            <div id="new-category" class="new-category tab-content">
+                @component('blog.components.new-category', ['validation' => $validations['category']])
                 @endcomponent
             </div>
             <div id="tags" class="tags tab-content">

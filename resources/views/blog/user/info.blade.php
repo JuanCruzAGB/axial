@@ -66,7 +66,7 @@
                                 <tr class="py-2">
                                     <th class="id">{{$post->id_post}}</th>
                                     <td>{{$post->title}}</td>
-                                    <td><a href="/{{$post->categorie->slug}}/publicaciones">{{$post->categorie->name}}</a></td>
+                                    <td><a href="/{{$post->category->slug}}/publicaciones">{{$post->category->name}}</a></td>
                                     <td class="multiple">
                                         @if(count($post->tags))
                                             @foreach($post->tags as $tag)

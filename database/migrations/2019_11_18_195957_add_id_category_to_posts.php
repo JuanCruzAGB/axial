@@ -3,7 +3,7 @@
     use Illuminate\Database\Schema\Blueprint;
     use Illuminate\Database\Migrations\Migration;
 
-    class AddIdCategorieToPosts extends Migration{
+    class AddIdCategoryToPosts extends Migration{
         /**
          * Run the migrations.
          *
@@ -11,7 +11,7 @@
          */
         public function up(){
             Schema::table('posts', function(Blueprint $table){
-                $table->foreign('id_categorie')->references('id_categorie')->on('categories');
+                $table->foreign('id_category')->references('id_category')->on('categories');
             });
         }
 

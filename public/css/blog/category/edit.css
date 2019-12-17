@@ -1,4 +1,4 @@
-.new-categorie{
+.edit-category{
     flex-wrap: wrap;
     --primary-color: #222;
     --primary-color-hover: #dddddd0d;
@@ -7,21 +7,21 @@
     --tertiary-color: #222;
 }
 
-.new-categorie section{
+.edit-category section{
     width: 100%;
 }
 
-.new-categorie section > .title{
+.edit-category section > .title{
     background: var(--primary-color);
     position: relative;
 }
 
-.new-categorie section > .title h2{
+.edit-category section > .title h2{
     font-size: 1.2rem;
     color: var(--secondary-color);
 }
 
-.new-categorie section > .title .title-button{
+.edit-category section > .title .title-button{
     position: absolute;
     top: 0;
     right: 1rem;
@@ -30,13 +30,13 @@
     align-items: center;
 }
 
-.new-categorie section > .content{
+.edit-category section > .content{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1rem;
 }
 
-.new-categorie section button{
+.edit-category section button{
     background: var(--primary-color);
     border-radius: .25rem;
     color: var(--secondary-color);
@@ -44,7 +44,7 @@
     border: none;
 }
 
-.new-categorie section > .content form{
+.edit-category section > .content form{
     width: 100%;
 }
 

@@ -38,7 +38,7 @@
                     <li class="m-0"><a href="/panel#posts" class="collapsable-link">Publicaciones</a></li>
                     <li class="m-0"><a href="/panel#new-post" class="collapsable-link">Nueva publicación</a></li>
                     <li class="m-0"><a href="/panel#categories" class="collapsable-link">Categorías</a></li>
-                    <li class="m-0"><a href="/panel#new-categorie" class="collapsable-link">Nueva categoría</a></li>
+                    <li class="m-0"><a href="/panel#new-category" class="collapsable-link">Nueva categoría</a></li>
                     <li class="m-0"><a href="/panel#tags" class="collapsable-link">Etiquetas</a></li>
                     <li class="m-0"><a href="/panel#new-tag" class="collapsable-link">Nueva etiqueta</a></li>
                     <li class="m-0"><a href="/panel#config" class="collapsable-link">Configuración</a></li>

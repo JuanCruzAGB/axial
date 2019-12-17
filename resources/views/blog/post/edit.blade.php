@@ -1,7 +1,7 @@
 <?php
     /** @var array $validations */
     /** @var Post $post */
-    /** @var Categorie[] $categories */
+    /** @var Category[] $categories */
     /** @var Tag[] $tags */
 ?>
 @extends('layout.index')
@@ -60,27 +60,27 @@
                         </div>
                         <div class="col-12">
                             <div class="form-group">
-                                <label for="id_categorie" class="input-name">
+                                <label for="id_category" class="input-name">
                                     <span class="input-text">Categoría</span>
                                 </label>
-                                <select id="id_categorie"
-                                    name="id_categorie"
+                                <select id="id_category"
+                                    name="id_category"
                                     class="form-control">
-                                    @foreach($categories as $categorie)
-                                        @if(old('id_categorie') == $categorie->id_categorie || $post->id_categorie == $categorie->id_categorie)
-                                            <option value="{{$categorie->id_categorie}}" selected>{{$categorie->name}}</option>
+                                    @foreach($categories as $category)
+                                        @if(old('id_category') == $category->id_category || $post->id_category == $category->id_category)
+                                            <option value="{{$category->id_category}}" selected>{{$category->name}}</option>
                                         @else
-                                            <option value="{{$categorie->id_categorie}}">{{$categorie->name}}</option>
+                                            <option value="{{$category->id_category}}">{{$category->name}}</option>
                                         @endif
                                     @endforeach
                                 </select>
-                                <div @if($errors->has('id_categorie'))
+                                <div @if($errors->has('id_category'))
                                     class="invalid-tooltip showed"
                                 @else
                                     class="invalid-tooltip"
                                 @endif>
-                                    @if($errors->has('id_categorie'))
-                                        <small>{{$errors->first('id_categorie')}}</small>
+                                    @if($errors->has('id_category'))
+                                        <small>{{$errors->first('id_category')}}</small>
                                     @endif
                                 </div>
                             </div>

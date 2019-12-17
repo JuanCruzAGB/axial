@@ -7,14 +7,14 @@
     use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
     use Illuminate\Database\Eloquent\Model;
 
-    class Categorie extends Model{
+    class Category extends Model{
         use Sluggable, SluggableScopeHelpers;
 
         /** @var string - The table name. */
         protected $table = 'categories';
         
         /** @var string - The PK name. */
-        protected $primaryKey = 'id_categorie';
+        protected $primaryKey = 'id_category';
 
         /** @var array - The attributes that are mass assignable. */
         protected $fillable = [

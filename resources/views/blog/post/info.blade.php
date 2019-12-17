@@ -1,5 +1,5 @@
 <?php
-    /** @var Categorie $categorie */
+    /** @var Category $category */
     /** @var Post $post */
     /** @var Tag[] $tags */
     /** @var User $user */
@@ -23,9 +23,9 @@
     <section class="col-12 col-md-10 col-xl-8 mx-auto">
         <div class="title">
             <h1 class="mb-1 p-3">{{$post->title}}</h1>
-            <a class="d-inline-block mb-3" href="/categoria/{{$categorie->slug}}">
+            <a class="d-inline-block mb-3" href="/categoria/{{$category->slug}}">
                 <i class="fas fa-caret-right"></i>
-                {{$categorie->name}}
+                {{$category->name}}
             </a>
         </div>
         <div class="image mb-3">

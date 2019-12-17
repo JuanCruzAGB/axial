@@ -11,7 +11,7 @@
          */
         public function up(){
             Schema::create('categories', function(Blueprint $table){
-                $table->increments('id_categorie');
+                $table->increments('id_category');
                 $table->string('name');
                 $table->unsignedInteger('id_user');
                 $table->string('slug');
