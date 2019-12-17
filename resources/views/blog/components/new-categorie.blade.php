@@ -3,7 +3,7 @@
 ?>
 <section>
     <div class="title">
-        <h2 class="mb-3 p-3">Nueva categoría</h2>
+        <h1 class="mb-3 p-3">Nueva categoría</h1>
     </div>
     <div class="content">
         <form action="/categoria/crear"
@@ -15,10 +15,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="name" class="input-name">
+                        <label for="categorie-name" class="input-name">
                             <span class="input-text">Nombre</span>
                         </label>
-                        <input id="name"
+                        <input id="categorie-name"
                             name="name"
                             type="text"
                             class="form-control"

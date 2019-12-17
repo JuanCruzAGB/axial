@@ -4,7 +4,7 @@
 ?>
 <section>
     <div class="title">
-        <h2 class="mb-3 p-3">Publicaciones</h2>
+        <h1 class="mb-3 p-3">Publicaciones</h1>
     </div>
     <div class="content row">
         <div class="parent-table col-12 p-0 px-lg-3">

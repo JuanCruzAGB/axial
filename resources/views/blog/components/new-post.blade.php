@@ -5,7 +5,7 @@
 ?>
 <section>
     <div class="title">
-        <h2 class="mb-3 p-3">Nueva publicación</h2>
+        <h1 class="mb-3 p-3">Nueva publicación</h1>
     </div>
     <div class="content">
         <form action="/publicacion/crear"
@@ -71,7 +71,7 @@
                         </div>
                         @foreach($tags as $tag)
                             <div class="form-check form-check-inline">
-                            @if($tag->id_tag == old('id_tag'))
+                            @if(is_array(old('tags')) && in_array($tag->id_tag, old('tags')))
                                 <input id="{{$tag->slug}}"
                                     name="tags[]"
                                     class="form-check-input"

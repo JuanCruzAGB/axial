@@ -97,7 +97,7 @@
                     $filepath = $request->file('image')->hashName('posts');
                     
                     $img = Image::make($request->file('image'))
-                            ->resize(525, 525, function($constrait){
+                            ->resize(750, 750, function($constrait){
                                 $constrait->aspectRatio();
                                 $constrait->upsize();
                             });

@@ -4,7 +4,7 @@
 ?>
 <section>
     <div class="title">
-        <h2 class="mb-3 p-3">{{Auth::user()->name}}</h2>
+        <h1 class="mb-3 p-3">{{Auth::user()->name}}</h1>
         <div class="title-button">
             <a href="/usuario/{{Auth::user()->slug}}/editar" class="btn btn-primary">
                 <span class="button-text mr-2">Editar</span>
@@ -13,15 +13,15 @@
         </div>
     </div>
     <div class="content row mx-0">
-        <div class="picture col-lg-4 px-0">
+        <div class="picture col-12 col-lg-4 mb-3 px-0">
             <img class="picture-image" src="/storage/{{Auth::user()->picture}}" alt="{{Auth::user()->name}} profile's picture">
         </div>
-        <div class="presentation col-lg-8 px-0">
+        <div class="presentation col-12 col-lg-8 px-0">
             <div class="title">
-                <h3>{{Auth::user()->presentation->title}}</h3>
+                <h2 class="mb-3">{{Auth::user()->presentation->title}}</h2>
             </div>
             <div class="content">
-                <p>{{Auth::user()->presentation->content}}</p>
+                <p class="mb-0">{{Auth::user()->presentation->content}}</p>
             </div>
         </div>
     </div>
@@ -38,7 +38,6 @@
                             <th>Título</th>
                             <th>Categoría</th>
                             <th>Etiquetas</th>
-                            <th>Creada por:</th>
                             <th class="accions"></th>
                         </tr>
                     </thead>
@@ -57,7 +56,6 @@
                                         <p class="text-muted">Ninguna</p>
                                     @endif
                                 </td>
-                                <td>{{$post->user->name}}</td>
                                 <td class="accions d-flex justify-content-end">
                                     <a href="/publicacion/{{$post->slug}}" class="btn btn-primary">
                                         <span class="button-text mr-2">Ver más</span>

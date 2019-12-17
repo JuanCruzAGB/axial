@@ -100,6 +100,7 @@
     position: relative;
 }
 
+.tabs .tab-body .tab-content section > .title h1,
 .tabs .tab-body .tab-content section > .title h2{
     font-size: 1.2rem;
     color: var(--secondary-color);

@@ -22,7 +22,7 @@
 @endsection
 
 @section('main')
-    <div id="edit-post" class="edit-post col-12 d-flex justify-content-between">
+    <div id="edit-post" class="edit-post col-12 col-md-10 col-xl-8 mx-auto d-flex justify-content-between">
         <section>
             <div class="title">
                 <h2 class="mb-3 p-3">Editar "{{$post->title}}"</h2>
@@ -67,7 +67,7 @@
                                     name="id_categorie"
                                     class="form-control">
                                     @foreach($categories as $categorie)
-                                        @if($post->id_categorie == $categorie->id_categorie)
+                                        @if(old('id_categorie') == $categorie->id_categorie || $post->id_categorie == $categorie->id_categorie)
                                             <option value="{{$categorie->id_categorie}}" selected>{{$categorie->name}}</option>
                                         @else
                                             <option value="{{$categorie->id_categorie}}">{{$categorie->name}}</option>
@@ -92,7 +92,14 @@
                                 </div>
                                 @foreach($tags as $tag)
                                     <div class="form-check form-check-inline">
-                                        @if($tag->selected)
+                                        @if(is_array(old('tags')) && in_array($tag->id_tag, old('tags')))
+                                            <input id="{{$tag->slug}}"
+                                                name="tags[]"
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                checked
+                                                value="{{$tag->id_tag}}">
+                                        @elseif($tag->selected && !is_array(old('tags')))
                                             <input id="{{$tag->slug}}"
                                                 name="tags[]"
                                                 class="form-check-input"

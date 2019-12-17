@@ -18,9 +18,8 @@
     });
     
 // PostController
-    Route::get('/publicacion/{slug}', 'Blog\PostController@info')->name('post.info');
-
     Route::middleware('auth')->group(function(){
+        Route::get('/publicacion/crear', 'Blog\PostController@showCreate')->name('post.showCreate');
         Route::post('/publicacion/crear', 'Blog\PostController@create')->name('post.create');
         // Route::post('/publicacion/crear', 'Blog\PostController@doCreate')->name('post.doCreate');
         Route::middleware('owner')->group(function(){
@@ -29,7 +28,10 @@
             // Route::put('/publicacion/{id_post}/editar', 'Blog\PostController@doEdit')->name('post.doEdit');
             Route::delete('/publicacion/{id_post}/eliminar', 'Blog\PostController@delete')->name('post.delete');
         });
+    });
+    Route::get('/publicacion/{slug}', 'Blog\PostController@info')->name('post.info');
         
+    Route::middleware('auth')->group(function(){
 // CategorieController
         Route::get('/categoria/crear', 'Blog\CategorieController@showCreate')->name('categorie.showCreate');
         Route::post('/categoria/crear', 'Blog\CategorieController@create')->name('categorie.create');
@@ -50,11 +52,10 @@
     });
 
 // UserController
-    Route::get('/usuario/{slug}', 'Blog\UserController@info')->name('user.info');
-
     Route::middleware('auth')->group(function(){
         Route::middleware('owner')->group(function(){
             Route::get('/usuario/{slug}/editar', 'Blog\UserController@showEdit')->name('user.showEdit');
             Route::put('/usuario/{id_user}/editar', 'Blog\UserController@edit')->name('user.edit');
         });
     });
+    Route::get('/usuario/{slug}', 'Blog\UserController@info')->name('user.info');

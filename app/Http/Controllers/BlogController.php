@@ -14,33 +14,32 @@
         /** Load the blog's home. */
         public function home(){
             $categories = Categorie::with('user')->get();
-            $posts = Post::with('user', 'features', 'categorie')->get();
-            $auth_posts = Post::where('id_user', '=', Auth::user()->id_user)->with('user', 'features', 'categorie')->get();
             $tags = Tag::with('user')->get();
-            foreach($posts as $post){
-                if(isset($post->features)){
-                    $post->tags = collect([]);
-                    foreach($post->features as $feature){
-                        $post->tags->push(Tag::find($feature->id_tag));
-                    }
-                }
-            }
-            foreach($auth_posts as $post){
-                if(isset($post->features)){
-                    $post->tags = collect([]);
-                    foreach($post->features as $feature){
-                        $post->tags->push(Tag::find($feature->id_tag));
-                    }
-                }
-            }
+
+            $posts = Post::with('user', 'features', 'categorie')->get();
             $posts_count = 0;
             foreach($posts as $post){
+                if(isset($post->features)){
+                    $post->tags = collect([]);
+                    foreach($post->features as $feature){
+                        $post->tags->push(Tag::find($feature->id_tag));
+                    }
+                }
                 $posts_count++;
             }
+
+            $auth_posts = Post::where('id_user', '=', Auth::user()->id_user)->with('user', 'features', 'categorie')->get();
             $auth_posts_count = 0;
             foreach($auth_posts as $post){
+                if(isset($post->features)){
+                    $post->tags = collect([]);
+                    foreach($post->features as $feature){
+                        $post->tags->push(Tag::find($feature->id_tag));
+                    }
+                }
                 $auth_posts_count++;
             }
+
             return view('blog.home', [
                 'validations' => [
                     'categorie' => json_encode([

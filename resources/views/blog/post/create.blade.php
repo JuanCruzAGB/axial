@@ -21,7 +21,7 @@
 @endsection
 
 @section('main')
-    <div id="new-post" class="new-post col-12 d-flex justify-content-between">
+    <div id="new-post" class="new-post col-12 col-md-10 col-xl-8 mx-auto d-flex justify-content-between">
         <section>
             <div class="title">
                 <h2 class="mb-3 p-3">Nueva publicación</h2>
@@ -65,7 +65,11 @@
                                     name="id_categorie"
                                     class="form-control">
                                     @foreach($categories as $categorie)
-                                        <option value="{{$categorie->id_categorie}}">{{$categorie->name}}</option>
+                                        @if(old('id_categorie') == $categorie->id_categorie)
+                                            <option value="{{$categorie->id_categorie}}" selected>{{$categorie->name}}</option>
+                                        @else
+                                            <option value="{{$categorie->id_categorie}}">{{$categorie->name}}</option>
+                                        @endif
                                     @endforeach
                                 </select>
                                 <div @if($errors->has('id_categorie'))
@@ -86,11 +90,20 @@
                                 </div>
                                 @foreach($tags as $tag)
                                     <div class="form-check form-check-inline">
-                                        <input id="{{$tag->slug}}"
-                                            name="tags[]"
-                                            class="form-check-input"
-                                            type="checkbox"
-                                            value="{{$tag->id_tag}}">
+                                        @if(is_array(old('tags')) && in_array($tag->id_tag, old('tags')))
+                                            <input id="{{$tag->slug}}"
+                                                name="tags[]"
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                checked
+                                                value="{{$tag->id_tag}}">
+                                        @else
+                                            <input id="{{$tag->slug}}"
+                                                name="tags[]"
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                value="{{$tag->id_tag}}">
+                                        @endif
                                         <label for="{{$tag->slug}}"
                                             class="form-check-label">{{$tag->name}}</label>
                                     </div>

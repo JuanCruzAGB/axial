@@ -1,8 +1,9 @@
 <?php
     namespace App\Http\Controllers\Blog;
 
-    use App\Models\Blog\Presentation;
     use App\Models\Blog\Categorie;
+    use App\Models\Blog\Post;
+    use App\Models\Blog\Presentation;
     use App\Models\Blog\Tag;
     use App\Http\Controllers\BlogController;
     use App\User;
@@ -24,7 +25,26 @@
          */
         public function info($slug){
             $user = User::findBySlug($slug);
+            if(Auth::user()->id_user == $user->id_user){
+                $user = Auth::user();
+                $user->logged = true;
+            }
+
+            $posts = Post::where('id_user', '=', $user->id_user)->with('features', 'categorie')->get();
+            $count = 0;
+            foreach($posts as $post){
+                if(isset($post->features)){
+                    $post->tags = collect([]);
+                    foreach($post->features as $feature){
+                        $post->tags->push(Tag::find($feature->id_tag));
+                    }
+                }
+                $count++;
+            }
+
             return view('blog.user.info', [
+                'posts' => $posts,
+                'count' => $count,
                 'user' => $user,
             ]);
         }
@@ -98,7 +118,7 @@
                         $filepath = $request->file('picture')->hashName('users');
                         
                         $img = Image::make($request->file('picture'))
-                                ->resize(525, 525, function($constrait){
+                                ->resize(750, 750, function($constrait){
                                     $constrait->aspectRatio();
                                     $constrait->upsize();
                                 });

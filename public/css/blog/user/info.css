@@ -1,0 +1,177 @@
+section{
+    --primary-color: #222;
+    --primary-color-hover: #dddddd0d;
+    --secondary-color: #ddd;
+    --secondary-color-hover: #0d4a7a00;
+    --tertiary-color: #222;
+}
+
+section > .title{
+    position: relative;
+}
+
+section > .title h1,
+section > .title h2{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    background: var(--primary-color);
+}
+
+section > .title .title-button{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+section .content table{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+section .content table thead,
+section .content table tbody{
+    width: auto;
+    overflow-x: unset;
+}
+
+section .content table tr{
+    display: flex;
+    width: auto;
+}
+
+section .content table tbody tr{
+    border-top: 2px solid rgba(0,0,0,0.09);
+}
+
+section .content table tr th,
+section .content table tr td{
+    min-width: 25vw;
+    width: 25vw;
+    display: flex;
+    border: none;
+}
+
+section .content table tr .id{
+    justify-content: center;
+    width: 12.5vw;
+    min-width: 12.5vw;
+}
+
+section .content table tr .multiple{
+    flex-wrap: wrap;
+}
+
+section .content table tr .multiple a{
+    flex-basis: 100%;
+}
+
+section .content table tr a:hover,
+section .content table tr a:focus{
+    color: var(--primary-color);
+}
+
+section .content table tr .accions a span{
+    white-space: nowrap;
+}
+
+section .content table tr .accions a,
+section .content table tr .accions button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    height: fit-content;
+    background: var(--primary-color);
+    border-radius: .25rem;
+    color: var(--secondary-color);
+    outline: none;
+    border: none;
+}
+
+section .content table tr .accions a:hover,
+section .content table tr .accions a:focus,
+section .content table tr .accions button:hover,
+section .content table tr .accions button:focus{
+    color: white;
+}
+
+section .content table.posts tr .accions{
+    min-width: calc((25vw * 3) + 2rem);
+}
+
+.picture{
+    overflow: hidden;
+    clip-path: circle(40%);
+}
+
+.picture .picture-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* MD */
+@media(min-width: 768px){
+    section .content table tr th,
+    section .content table tr td{
+        min-width: 20vw;
+        width: 20vw;
+    }
+    
+    section .content table tr .id{
+        width: 10vw;
+        min-width: 10vw;
+    }
+
+    section .content table tr .accions a,
+    section .content table tr .accions button{
+        width: 15vw;
+    }
+    
+    section .content table.posts tr .accions{
+        min-width: calc((15vw * 3) + 1rem);
+    }
+}
+
+/* LG */
+@media(min-width: 1024px){
+    section .content table{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    section .content table thead,
+    section .content table tbody{
+        width: 100%;
+    }
+    
+    section .content table.posts tr th,
+    section .content table.posts tr td{
+        min-width: calc((100% / 15) * 2);
+        width: calc((100% / 15) * 2);
+    }
+    
+    section .content table.posts tr .id{
+        width: calc(100% / 15);
+        min-width: calc(100% / 15);
+    }
+
+    section .content table.posts tr .accions{
+        min-width: calc(((100% /15) * 2) * 3);
+    }
+    
+    section .content table.posts tr .accions a,
+    section .content table.posts tr .accions button{
+        width: calc((100% - 1rem) / 3);
+    }
+}
+
+/* XL */
+@media(min-width: 1200px){
+    /**/
+}

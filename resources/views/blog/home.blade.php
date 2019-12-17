@@ -59,7 +59,7 @@
                 </a></li>
             </ul>
         </div>
-        <div class="tab-body pl-md-3 pt-3 pt-lg-0">
+        <div class="tab-body pl-md-3 pt-3 pt-md-0">
             <div id="posts" class="posts tab-content opened">
                 @component('blog.components.posts', ['posts' => $data['posts'], 'count' => $counts['posts']])
                 @endcomponent
