@@ -31,17 +31,15 @@
             $category = Category::find($post->id_category);
             $user = User::find($post->id_user);
 
-            $tags = collect([]);
+            $post->tags = collect([]);
             $features = Feature::where('id_post', '=', $post->id_post)->get();
             foreach($features as $feature){
                 $tag = Tag::find($feature->id_tag);
-                $tags->push($tag);
+                $post->tags->push($tag);
             }
             return view('blog.post.info', [
-                'category' => $category,
+                'model' => $category,
                 'post' => $post,
-                'tags' => $tags,
-                'user' => $user,
             ]);
         }
 
@@ -50,23 +48,24 @@
          * @param $slug - The Category slug.
          */
         public function catList($slug){
-            $post = Post::findBySlug($slug);
-            $post->date = $this->createDate($post);
-
-            $category = Category::find($post->id_category);
-            $user = User::find($post->id_user);
-
-            $tags = collect([]);
-            $features = Feature::where('id_post', '=', $post->id_post)->get();
-            foreach($features as $feature){
-                $tag = Tag::find($feature->id_tag);
-                $tags->push($tag);
+            $category = Category::findBySlug($slug);
+            $posts = Post::where('id_category', '=', $category->id_category)->with('category', 'features')->get();
+            $count = 0;
+            foreach($posts as $post){
+                $post->date = $this->createDate($post);
+                if(isset($post->features) && count($post->features)){
+                    $post->tags = collect([]);
+                    foreach($post->features as $feature){
+                        $tag = Tag::find($feature->id_tag);
+                        $post->tags->push($tag);
+                    }
+                }
+                $count++;
             }
-            return view('blog.post.info', [
-                'category' => $category,
-                'post' => $post,
-                'tags' => $tags,
-                'user' => $user,
+            return view('blog.post.list', [
+                'count' => $count,
+                'model' => $category,
+                'posts' => $posts,
             ]);
         }
 
@@ -75,23 +74,24 @@
          * @param $slug - The Tag slug.
          */
         public function tagList($slug){
-            $post = Post::findBySlug($slug);
-            $post->date = $this->createDate($post);
-
-            $category = Category::find($post->id_category);
-            $user = User::find($post->id_user);
-
-            $tags = collect([]);
-            $features = Feature::where('id_post', '=', $post->id_post)->get();
-            foreach($features as $feature){
-                $tag = Tag::find($feature->id_tag);
-                $tags->push($tag);
+            $tag = Tag::findBySlug($slug);
+            $posts = Post::where('id_tag', '=', $tag->id_tag)->with('category', 'features')->get();
+            $count = 0;
+            foreach($posts as $post){
+                $post->date = $this->createDate($post);
+                if(isset($post->features) && count($post->features)){
+                    $post->tags = collect([]);
+                    foreach($post->features as $feature){
+                        $tag = Tag::find($feature->id_tag);
+                        $post->tags->push($tag);
+                    }
+                }
+                $count++;
             }
-            return view('blog.post.info', [
-                'category' => $category,
-                'post' => $post,
-                'tags' => $tags,
-                'user' => $user,
+            return view('blog.post.list', [
+                'count' => $count,
+                'tag' => $tag,
+                'posts' => $posts,
             ]);
         }
 

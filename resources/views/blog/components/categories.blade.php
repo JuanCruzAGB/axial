@@ -21,7 +21,7 @@
                         @foreach($categories as $category)
                             <tr class="py-2">
                                 <th class="id">{{$category->id_category}}</th>
-                                <td><a href="/{{$category->slug}}/publicaciones">{{$category->name}}</a></td>
+                                <td><a href="/categoria/{{$category->slug}}/publicaciones">{{$category->name}}</a></td>
                                 <td><a href="/usuario/{{$category->user->slug}}">{{$category->user->name}}</a></td>
                                 <td class="accions d-flex justify-content-end">
                                     <a href="/categoria/{{$category->slug}}/editar" class="btn btn-primary">

@@ -36,16 +36,18 @@
                 <i class="far fa-clock"></i>
                 <span>{{$post->date}}</span>
             </div>
-            <div class="col-12 mb-3 d-flex">
-                <i class="tag-icon fas fa-tags d-flex align-items-center"></i>
-                <ul class="tags mb-0 ml-1 d-flex">
-                    @foreach($tags as $tag)
-                        <li>
-                            <a class="tag-link mr-1" href="/etiqueta/{{$tag->slug}}">{{$tag->name}}</a>
-                        </li>
-                    @endforeach
-                </ul>
-            </div>
+            @if(isset($post->tags))
+                <div class="col-12 mb-3 d-flex">
+                    <i class="tag-icon fas fa-tags d-flex align-items-center"></i>
+                    <ul class="tags mb-0 ml-1 d-flex">
+                        @foreach($post->tags as $tag)
+                            <li>
+                                <a class="tag-link mr-1" href="/etiqueta/{{$tag->slug}}">{{$tag->name}}</a>
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
         </div>
         <div class="content mb-3">{!!$post->content!!}</div>
         <div class="d-flex">

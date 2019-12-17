@@ -25,11 +25,11 @@
                             <tr class="py-2">
                                 <th class="id">{{$post->id_post}}</th>
                                 <td>{{$post->title}}</td>
-                                <td><a href="/{{$post->category->slug}}/publicaciones">{{$post->category->name}}</a></td>
+                                <td><a href="/categoria/{{$post->category->slug}}/publicaciones">{{$post->category->name}}</a></td>
                                 <td class="multiple">
-                                    @if(count($post->tags))
+                                    @if(isset($post->tags))
                                         @foreach($post->tags as $tag)
-                                            <a href="/{{$tag->slug}}/publicaciones">#{{$tag->name}}</a>
+                                            <a href="/etqieuta/{{$tag->slug}}/publicaciones">#{{$tag->name}}</a>
                                         @endforeach
                                     @else
                                         <p class="px-3 px-ld-0 text-muted">Ninguna</p>
