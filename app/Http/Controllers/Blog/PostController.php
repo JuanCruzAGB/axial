@@ -38,8 +38,9 @@
                 $post->tags->push($tag);
             }
             return view('blog.post.info', [
-                'model' => $category,
+                'category' => $category,
                 'post' => $post,
+                'user' => $user,
             ]);
         }
 
@@ -49,7 +50,7 @@
          */
         public function catList($slug){
             $category = Category::findBySlug($slug);
-            $posts = Post::where('id_category', '=', $category->id_category)->with('category', 'features')->get();
+            $posts = Post::where('id_category', '=', $category->id_category)->with('category', 'features', 'user')->get();
             $count = 0;
             foreach($posts as $post){
                 $post->date = $this->createDate($post);
@@ -90,7 +91,7 @@
             }
             return view('blog.post.list', [
                 'count' => $count,
-                'tag' => $tag,
+                'model' => $tag,
                 'posts' => $posts,
             ]);
         }

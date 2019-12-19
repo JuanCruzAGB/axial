@@ -1,8 +1,8 @@
 /* banner */
-
 .jumbotron{
     position: relative;
     background: url('/img/bg-demo.jpg') center center no-repeat;
+    background-attachment: fixed;
     height: 70vh;
     background-size: cover;
 }
@@ -113,6 +113,10 @@
 }
 
 /* team */
+.equipo{
+    /* background: var(--color-cinco); */
+}
+
 .listado{
     overflow-x: auto;
     width: 100%;
@@ -224,7 +228,6 @@
     opacity: .7;
 } */
 
-
 .container-contact100{
     padding: 0 !important;
 }
@@ -233,8 +236,10 @@
     resize: none !important;
 }
 
-
-
+.contact-data{
+    background-image: url('/img/bg-01.jpg');
+    background-attachment: fixed;
+}
 
 /* MD */
 @media(min-width: 768px){

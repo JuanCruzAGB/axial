@@ -22,39 +22,39 @@
 @endsection
 
 @section('main')
-    <div class="tabs col-12 d-flex justify-content-between">
+    <div class="tabs col-12 d-flex justify-content-between pt-3">
         <div class="tab-menu p-2">
             <ul class="d-flex justify-content-around m-0 p-0">
                 <li class="mb-2"><a class="tab-button opened" href="#posts">
-                    <i class="tab-icon fas fa-edit"></i>
+                    <i class="tab-icon fas fa-file"></i>
                     <span class="tab-text p-2">Publicaciones</span>
                 </a></li>
                 <li class="mb-2"><a class="tab-button" href="#new-post">
-                    <i class="tab-icon fas fa-images"></i>
+                    <i class="tab-icon fas fa-plus"></i>
                     <span class="tab-text p-2">Nueva publicación</span>
                 </a></li>
                 <li><a class="tab-button" href="#categories">
-                    <i class="tab-icon far fa-calendar"></i>
+                    <i class="tab-icon fas fa-project-diagram"></i>
                     <span class="tab-text p-2">Categorias</span>
                 </a></li>
                 <li><a class="tab-button" href="#new-category">
-                    <i class="tab-icon far fa-calendar"></i>
+                    <i class="tab-icon fas fa-plus"></i>
                     <span class="tab-text p-2">Nueva categoría</span>
                 </a></li>
                 <li><a class="tab-button" href="#tags">
-                    <i class="tab-icon far fa-calendar"></i>
+                    <i class="tab-icon fas fa-tags"></i>
                     <span class="tab-text p-2">Etiquetas</span>
                 </a></li>
                 <li><a class="tab-button" href="#new-tag">
-                    <i class="tab-icon far fa-calendar"></i>
+                    <i class="tab-icon fas fa-plus"></i>
                     <span class="tab-text p-2">Nueva etiqueta</span>
                 </a></li>
                 <li><a class="tab-button" href="#profile">
-                    <i class="tab-icon far fa-calendar"></i>
+                    <i class="tab-icon fas fa-user"></i>
                     <span class="tab-text p-2">Mí Perfil</span>
                 </a></li>
                 <li><a class="tab-button" href="#config">
-                    <i class="tab-icon far fa-calendar"></i>
+                    <i class="tab-icon fas fa-cog"></i>
                     <span class="tab-text p-2">Configuración</span>
                 </a></li>
             </ul>

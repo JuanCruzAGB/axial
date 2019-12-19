@@ -19,7 +19,6 @@ let CollapsableCard = {
      * @param {number} position - The position from the this.cards array.
      */
     switch(position){
-        console.log(this.cards[position].classList.contains('active'));
         if(!this.cards[position].classList.contains('active')){
             this.open(position);
         }else{

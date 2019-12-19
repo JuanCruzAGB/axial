@@ -21,7 +21,7 @@
 @endsection
 
 @section('main')
-    <div id="new-post" class="new-post col-12 col-md-10 col-xl-8 mx-auto d-flex justify-content-between">
+    <div id="new-post" class="new-post col-12 col-md-10 col-xl-8 mx-auto d-flex justify-content-between pt-3">
         <section>
             <div class="title">
                 <h2 class="mb-3 p-3">Nueva publicación</h2>

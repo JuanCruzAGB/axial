@@ -36,7 +36,7 @@ section > .title .title-button{
     object-fit: cover;
 }
 
-.tags{
+.tags-list{
     list-style: none;
 }
 
@@ -54,7 +54,10 @@ section > .title .title-button{
 
 /* MD */
 @media(min-width: 768px){
-    /**/
+    .image{
+        width: calc(((100% / 12) * 10) - 30px);
+        background-attachment: initial !important;
+    }
 }
 
 /* LG */

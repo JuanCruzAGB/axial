@@ -1,9 +1,6 @@
 @extends('layout.index')
 
 @section('css')
-    <link href="{{asset('css/galeria/baguetteBox.min.css')}}" rel="stylesheet">
-    <link href="{{asset('css/galeria/grid/gallery-grid.css')}}" rel="stylesheet">
-    <link href="{{asset('css/web/inicio.css')}}" rel="stylesheet">
     <link href="{{asset('css/form/form.css')}}" rel="stylesheet">
     <link href="{{asset('css/form/util.css')}}" rel="stylesheet">
     <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -14,7 +11,7 @@
     <link href="{{asset('vendor/animsition/css/animsition.min.css')}}" rel="stylesheet">
     <link href="{{asset('vendor/select2/select2.min.css')}}" rel="stylesheet">
     <link href="{{asset('vendor/daterangepicker/daterangepicker.css')}}" rel="stylesheet">
-
+    <link href="{{asset('css/web/inicio.css')}}" rel="stylesheet">
 @endsection
 
 @section('title')
@@ -137,34 +134,14 @@
             </div>
         </div>
     </div>
-
-    <!-- <div class="row text-white d-flex justify-content-center contacto">
-    <div class="info-fondo d-flex justify-content-center align-items-center">
-        <ul class="pt-5 text-center">
-            <li class="my-4">
-                <i class="fas fa-map-marker-alt mx-2"></i>
-                Adress
-            </li>
-
-            <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, possimus!</p>
-
-            <li class="my-4">
-                <i class="fas fa-phone-volume mx-2"></i>
-                Let's Talk
-            </li>
-            <p class="text-primary">0800-444-777</p>
+    </div>
+</div>
             
-            <li class="my-4">
-                <i class="far fa-envelope mx-2"></i>
-                General Support
-            </li>
-            <p class="text-primary pb-5">digitalo@solutions.com</p>
-        </ul>
-    </div> -->
-
-    <div class="container-contact100">
+<div class="container-fluid contenedor p-0">
+    <div class="row">
+    <div class="col-12 container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+			<form class="contact-form contact100-form validate-form mx-3">
 				<span class="contact100-form-title">
 					Envianos un mensaje
 				</span>
@@ -200,7 +177,7 @@
 				</div>
 			</form>
 
-			<div class="contact100-more flex-col-c-m" style="background-image: url('img/bg-01.jpg');">
+			<div class="contact-data contact100-more flex-col-c-m" style="">
 				<div class="flex-w size1 p-b-47">
 					<div class="txt1 p-r-25">
 						<span class="lnr lnr-map-marker"></span>
@@ -296,9 +273,6 @@
 
 @section('js')
     <script type="text/javascript" src="{{asset('js/web/inicio.js')}}"></script>
-   <!--  <script type="text/javascript" src="{{asset('vendor/jquery/jquery-3.2.1.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('vendor/bootstrap/js/popper.js')}}"></script>
-    <script type="text/javascript" src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script> -->
     <script src="vendor/animsition/js/animsition.min.js"></script>
     <script type="text/javascript" src="{{asset('vendor/select2/select2.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('vendor/animsition/js/animsition.min.js')}}"></script>
@@ -313,6 +287,7 @@
     <script type="text/javascript" src="{{asset('vendor/daterangepicker/daterangepicker.js')}}"></script>
     <script type="text/javascript" src="{{asset('vendor/countdowntime/countdowntime.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/form/form.js')}}"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script>
@@ -322,5 +297,4 @@
 
 	  gtag('config', 'UA-23581568-13');
 	</script>
-
 @endsection

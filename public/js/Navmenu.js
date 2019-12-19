@@ -82,7 +82,6 @@ let Sidebar = {
 
         for(let i = 0; i< this.links.length; i++){
             this.links[i].addEventListener('click', function(e){
-                console.log('click');
                 Sidebar.close();
             });
         }

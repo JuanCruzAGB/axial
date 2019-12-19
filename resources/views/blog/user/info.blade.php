@@ -18,7 +18,7 @@
 @endsection
 
 @section('main')
-    <section class="col-12 col-md-10 col-xl-8 mx-auto">
+    <section class="col-12 col-md-10 col-xl-8 mx-auto pt-3">
         <div class="title">
             <h1 class="mb-3 p-3">{{$user->name}}</h1>
             @if($user->logged)
