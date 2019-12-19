@@ -5,8 +5,10 @@
         <meta name="description" content="">
         <meta SameSite=None>
 
-        <!-- Font Awesome -->
+        <!-- Font Awesome and utilities -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>    
+        
 
         <!-- Fuentes -->
         <link href="{{asset('fonts/stylesheet.css')}}" rel="stylesheet">

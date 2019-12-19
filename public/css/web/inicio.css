@@ -211,6 +211,31 @@
     height: fit-content;
 }
 
+
+/* form */
+
+/* .contacto{
+    background: url('/img/bg-form.jpg') no-repeat center center;
+}
+
+.contacto .info-fondo{
+    height: 20rem;
+    background-color: black;
+    opacity: .7;
+} */
+
+
+.container-contact100{
+    padding: 0 !important;
+}
+
+.container-contact100 #message{
+    resize: none !important;
+}
+
+
+
+
 /* MD */
 @media(min-width: 768px){
     .jumbotron .container h2 span{
