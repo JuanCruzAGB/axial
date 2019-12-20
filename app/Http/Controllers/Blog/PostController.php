@@ -24,7 +24,7 @@
          * The Post information view.
          * @param $slug - The Post slug.
          */
-        public function info($slug){
+        public function panel($slug){
             $post = Post::findBySlug($slug);
             $post->date = $this->createDate($post);
 

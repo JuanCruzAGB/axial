@@ -19,7 +19,7 @@
         <!-- Mi CSS -->
         <link href="{{ asset('css/index.css') }}" rel="stylesheet">       
         <link href="{{ asset('css/web/construccion.css') }}" rel="stylesheet">     
-        <title>Title</title>
+        <title>Axial - En construcción</title>
         <style>
             .logo{
                 width: 10rem;
@@ -46,8 +46,8 @@
                 width: 3rem;
             }
 
-                /* MD */
-                @media(min-width: 768px){
+            /* MD */
+            @media(min-width: 768px){
                 .logo{
                     width: 12rem;
                     border-radius: .75rem;
@@ -79,24 +79,7 @@
         </style>
     </head>
     <body>
-       <!--  <div class="container-fluid">
-            <div class="row">
-                <div class="background-construction">
-                <h1>Title</h1>
-                    <div class="text-div card mt-4 m-auto text-center">
-                        <div class="card-body frase">
-                            <p class="card-text">El sitio estará listo pronto</p>
-                        </div>
-                        <div class="card-body contacto">
-                            <p class="card-text">ejemplo@correo.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <div class="coverPage">
-        
             <div class="__coverPage-content">
             <img src="/img/logo.jpg" class="img-fluid logo" alt="Responsive image">
                 <h1>Medicina especializada en Columna</h1>
@@ -112,13 +95,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- Bootstrap Ukit -->
-        <!-- <script type="text/javascript" src="{{ asset('js/jquery-popper/jquery-3.4.1.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('js/jquery-popper/popper.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>   -->
-
-        <!-- Mi JS -->      
+            
         <script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/web/construccion.js') }}"></script>
     </body>

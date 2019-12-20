@@ -9,7 +9,7 @@
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Validator;
 
-    class CategoryController extends BlogController{
+    class CategorieController extends BlogController{
         /** @var string - The UserController principal Model. */
         protected $model = 'Category';
 

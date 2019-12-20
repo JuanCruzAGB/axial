@@ -55,7 +55,7 @@
 
             <div id="tratamiento-del-dolor" class="cartas-servicios card col-12 text-center mb-3 p-3">
                 <div class="card-body">
-                    <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
+                    <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
                     <h3 class="card-title mb-3">Tratamiento del dolor</h3>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
@@ -71,7 +71,7 @@
 
             <div id="patologia-de-la-columna" class="cartas-servicios card col-12 text-center mb-3 p-3">
                 <div class="card-body">
-                    <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
+                    <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
                     <h3 class="card-title mb-3">Patología de la columna</h3>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
@@ -185,11 +185,11 @@
 
 					<div class="flex-col size2">
 						<span class="txt1 p-b-20">
-							Address
+							Dirección
 						</span>
 
 						<span class="txt2">
-							Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+                            Huergo 366 6 "A" , Cañitas, CABA
 						</span>
 					</div>
 				</div>
@@ -201,11 +201,11 @@
 
 					<div class="flex-col size2">
 						<span class="txt1 p-b-20">
-							Lets Talk
+							Telefonó de contacto
 						</span>
 
 						<span class="txt3">
-							+1 800 1236879
+                            (011) 4772-7679
 						</span>
 					</div>
 				</div>
@@ -217,11 +217,11 @@
 
 					<div class="flex-col size2">
 						<span class="txt1 p-b-20">
-							General Support
+							Correo de contacto
 						</span>
 
 						<span class="txt3">
-							contact@example.com
+                            info@grupoaxial.org
 						</span>
 					</div>
 				</div>
@@ -229,9 +229,9 @@
 		</div>
 	</div>
 
-	<div id="dropDownSelect1"></div>
+	<!--  <div id="dropDownSelect1"></div>
         
-       <!--  <form class="bg-white text-dark w-100">
+       <form class="bg-white text-dark w-100">
             <h2 class="text-dark text-center py-4">Envianos un mensaje</h2>
             <div class="form-group w-75 mx-auto">
                 <label for="nombre">Nombre</label>

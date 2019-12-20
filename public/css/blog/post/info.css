@@ -57,6 +57,7 @@ section > .title .title-button{
     .image{
         width: calc(((100% / 12) * 10) - 30px);
         background-attachment: initial !important;
+        background-size: cover !important;
     }
 }
 
