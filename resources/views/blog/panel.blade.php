@@ -7,13 +7,14 @@
 
 @section('css')
     <meta name="csrf-token" content="{{csrf_token()}}">
-    <link href="{{asset('css/blog/home.css')}}" rel="stylesheet">
+    <link href="{{asset('css/blog/panel.css')}}" rel="stylesheet">
+    <link href="{{asset('css/web/panel.css')}}" rel="stylesheet">
     <link href="{{asset('ValidationJS/css/styles.css')}}" rel="stylesheet">
     <link href="{{asset('css/InputFileMaker.css')}}" rel="stylesheet">
 @endsection
 
 @section('title')
-    Blog
+    Panel de administración
 @endsection
 
 @section('nav')
@@ -25,11 +26,11 @@
     <div class="tabs col-12 d-flex justify-content-between pt-3">
         <div class="tab-menu p-2">
             <ul class="d-flex justify-content-around m-0 p-0">
-                <li class="mb-2"><a class="tab-button opened" href="#posts">
+                <li class="mb-2"><a class="tab-button opened" href="#noticias">
                     <i class="tab-icon fas fa-file"></i>
                     <span class="tab-text p-2">Noticias</span>
                 </a></li>
-                <li class="mb-2"><a class="tab-button" href="#new-post">
+                <li class="mb-2"><a class="tab-button" href="#nueva-noticia">
                     <i class="tab-icon fas fa-plus"></i>
                     <span class="tab-text p-2">Nueva noticia</span>
                 </a></li>
@@ -48,22 +49,24 @@
             </ul>
         </div>
         <div class="tab-body pl-md-3 pt-3 pt-md-0">
-            <div id="posts" class="posts tab-content opened">
-                @component('blog.components.posts', ['posts' => $data['posts'], 'count' => $counts['posts']])
+            <div id="noticias" class="noticias tab-content opened">
+                @component('components.noticias', ['noticias' => $data['noticias'], 'count' => $counts['noticias']])
                 @endcomponent
             </div>
-            <div id="new-post" class="new-post tab-content">
-                @component('blog.components.new-post', ['validation' => $validations['post'], 'categories' => $data['categories'], 'tags' => $data['tags']])
+            <div id="nueva-noticia" class="nueva-noticia tab-content">
+                @component('components.nueva-noticia', ['validation' => $validations['noticia']])
                 @endcomponent
             </div>
-            <div id="miembros" class="miembros tab-content opened">
-                <!--Componente de miembros-->
-            </div>
-            <div id="nuevo-miembro" class="nuevo-miembro tab-content">
-                <!--Componente de nuevo miembros-->
+            <div id="miembros" class="miembros tab-content">
+                @component('components.miembros', ['miembros' => $data['miembros'], 'count' => $counts['miembros']])
+                @endcomponent
             </div>
             <div id="config" class="config tab-content">
                 @component('blog.components.config')
+                @endcomponent
+            </div>
+            <div id="nuevo-miembro" class="nuevo-miembro tab-content">
+                @component('components.nuevo-miembro', ['validation' => $validations['miembro']])
                 @endcomponent
             </div>
         </div>
@@ -89,5 +92,6 @@
     <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script> -->
     <script type="text/javascript" src="{{asset('js/InputFileMaker.js')}}"></script>
     <script src="{{asset('vendors/ckeditor/ckeditor.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/blog/home.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/blog/panel.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/web/panel.js')}}"></script>
 @endsection

@@ -1,36 +1,36 @@
 <?php
     namespace App\Http\Controllers;
 
-    use App\Models\Blog\Noticia;
+    use App\Models\Blog\Miembro;
     use Auth;
     use Cviebrock\EloquentSluggable\Services\SlugService;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Validator;
 
-    class NoticiaController extends Controller{
+    class MiembroController extends Controller{
         /** @var string - El idioma a manejar. */
         protected $idiom = 'es';
 
         /**
-         * Crea una nueva Noticia.
+         * Crea un nuevo Miembro.
          * @param $request - Request.
          */
         public function create(Request $request){
             $validator = $this->doCreate($request);
             if($validator){
-                return redirect('/panel#nueva-noticia')->withErrors($validator)->withInput();
+                return redirect('/panel#nuevo-miembro')->withErrors($validator)->withInput();
             }
-            return redirect('/panel#noticias')->with('status', 'Noticia creada correctamente.');
+            return redirect('/panel#miembros')->with('status', 'Miembro creado correctamente.');
         }
 
         /**
-         * Valida y crea la Noticia.
+         * Valida y crea el Miembro.
          * @param $request Request.
          */
         public function doCreate(Request $request){
             $data = $request->all();
 
-            $validator = Validator::make($request->all(), Noticia::$validation['create']['rules'], Noticia::$validation['create']['messages'][$this->idiom]);
+            $validator = Validator::make($request->all(), Miembro::$validation['create']['rules'], Miembro::$validation['create']['messages'][$this->idiom]);
 
             if($validator->fails()){
                 return $validator;
@@ -51,9 +51,9 @@
 
                 $data['id_user'] = Auth::user()->id_user;
 
-                $data['slug'] = SlugService::createSlug(Noticia::class, 'slug', $data['title']);
+                $data['slug'] = SlugService::createSlug(Miembro::class, 'slug', $data['title']);
                 
-                $post = Noticia::create($data);
+                $post = Miembro::create($data);
 
                 if(isset($data['tags'])){
                     foreach($data['tags'] as $id_tag){

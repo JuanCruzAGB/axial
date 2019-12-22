@@ -2,6 +2,9 @@
 // WebController
     Route::get('/', 'WebController@construccion')->name('web.construccion');
     Route::get('/demo', 'WebController@inicio')->name('web.inicio');
+    Route::middleware('auth')->group(function(){
+        Route::get('/panel', 'WebController@panel')->name('noticia.panel');
+    });
     
 // CorreoController
     Route::post('/contactar', 'CorreoController@contactar')->name('correo.contactar');
@@ -13,20 +16,18 @@
 
     Route::middleware('auth')->group(function(){
 // NoticiaController
-        Route::get('/panel', 'NoticiaController@panel')->name('noticia.panel');
+        Route::post('/noticia/crear', 'NoticiaController@create')->name('noticia.create');
+        Route::get('/noticia/{slug}/editar', 'NoticiaController@showEdit')->name('noticia.showEdit');
+        Route::put('/noticia/{id_noticia}/editar', 'NoticiaController@edit')->name('noticia.edit');
+        Route::delete('/noticia/{id_noticia}/eliminar', 'NoticiaController@delete')->name('noticia.delete');
     });
-    
-// PostController
+    Route::get('/noticias', 'NoticiaController@info')->name('noticia.info');
+
     Route::middleware('auth')->group(function(){
-        Route::get('/noticia/crear', 'Blog\PostController@showCreate')->name('post.showCreate');
-        Route::post('/noticia/crear', 'Blog\PostController@create')->name('post.create');
-        // Route::post('/noticia/crear', 'Blog\PostController@doCreate')->name('post.doCreate');
-        Route::middleware('owner')->group(function(){
-            Route::get('/noticia/{slug}/editar', 'Blog\PostController@showEdit')->name('post.showEdit');
-            Route::put('/noticia/{id_post}/editar', 'Blog\PostController@edit')->name('post.edit');
-            // Route::put('/noticia/{id_post}/editar', 'Blog\PostController@doEdit')->name('post.doEdit');
-            Route::delete('/noticia/{id_post}/eliminar', 'Blog\PostController@delete')->name('post.delete');
-        });
+// MiembroController
+        Route::post('/miembro/crear', 'MiembroController@create')->name('miembro.create');
+        Route::get('/miembro/{slug}/editar', 'MiembroController@showEdit')->name('miembro.showEdit');
+        Route::put('/miembro/{id_miembro}/editar', 'MiembroController@edit')->name('miembro.edit');
+        Route::delete('/miembro/{id_miembro}/eliminar', 'MiembroController@delete')->name('miembro.delete');
     });
-    // Route::get('/noticias', 'Blog\PostController@catList')->name('cat.post.list');
-    Route::get('/noticia/{slug}', 'Blog\PostController@info')->name('post.info');
+    Route::get('/miembros', 'MiembroController@info')->name('miembro.info');

@@ -35,12 +35,10 @@
             <li class="collapsable closed">
                 <a href="/panel" class="collapsable-button">Panel<i class="collapsable-icon fas fa-sort-down"></i></a>
                 <ul class="collapsable-menu">
-                    <li class="m-0"><a href="/panel#posts" class="collapsable-link">Publicaciones</a></li>
-                    <li class="m-0"><a href="/panel#new-post" class="collapsable-link">Nueva publicación</a></li>
-                    <li class="m-0"><a href="/panel#categories" class="collapsable-link">Categorías</a></li>
-                    <li class="m-0"><a href="/panel#new-category" class="collapsable-link">Nueva categoría</a></li>
-                    <li class="m-0"><a href="/panel#tags" class="collapsable-link">Etiquetas</a></li>
-                    <li class="m-0"><a href="/panel#new-tag" class="collapsable-link">Nueva etiqueta</a></li>
+                    <li class="m-0"><a href="/panel#noticias" class="collapsable-link">Noticias</a></li>
+                    <li class="m-0"><a href="/panel#nueva-noticia" class="collapsable-link">Nueva noticia</a></li>
+                    <li class="m-0"><a href="/panel#miembros" class="collapsable-link">Miembros del equipo</a></li>
+                    <li class="m-0"><a href="/panel#nuevo-miembro" class="collapsable-link">Nuevo miembro</a></li>
                     <li class="m-0"><a href="/panel#config" class="collapsable-link">Configuración</a></li>
                 </ul>
             </li>

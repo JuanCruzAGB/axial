@@ -11,8 +11,8 @@
         /** @var string - The Blog's idiom. */
         protected $idiom = 'es';
 
-        /** Load the blog's home. */
-        public function home(){
+        /** Load the blog's panel. */
+        public function panel(){
             $categories = Category::with('user')->get();
             $tags = Tag::with('user')->get();
 
@@ -40,7 +40,7 @@
                 $auth_posts_count++;
             }
 
-            return view('blog.home', [
+            return view('blog.panel', [
                 'validations' => [
                     'category' => json_encode([
                         'rules' => Category::$validation['create']['rules'],

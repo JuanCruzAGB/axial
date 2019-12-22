@@ -71,7 +71,11 @@ let Tabs = {
             target = target[1];
             for(let i = 0; i < this.contents.length; i++){
                 if(this.contents[i].classList.contains(target)){
-                    this.open(i);
+                    for(let j = 0; j < this.buttons.length; j++){
+                        if(this.buttons[j].href.split("#").pop() == target){
+                            this.open(j);
+                        }
+                    }
                 }
             }
         }
