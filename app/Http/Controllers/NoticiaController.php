@@ -2,14 +2,47 @@
     namespace App\Http\Controllers;
 
     use App\Models\Blog\Noticia;
+    use App\User;
     use Auth;
     use Cviebrock\EloquentSluggable\Services\SlugService;
     use Illuminate\Http\Request;
+    use Illuminate\Support\Facades\File;
     use Illuminate\Support\Facades\Validator;
+    use Intervention\Image\ImageManagerStatic as Image;
+    use Storage;
 
     class NoticiaController extends Controller{
         /** @var string - El idioma a manejar. */
         protected $idiom = 'es';
+
+        /**
+         * La vista donde se ve la información de la Noticia.
+         * @param $slug - El slug de la Noticia.
+         */
+        public function info($slug){
+            $noticia = Noticia::findBySlug($slug);
+            $noticia->date = $this->createDate($this->idiom, $noticia);
+            
+            $user = User::find($noticia->id_usuario);
+            return view('noticia.info', [
+                'noticia' => $noticia,
+                'user' => $user,
+            ]);
+        }
+
+        /** La vista donde se ve las Noticias creadas. */
+        public function list(){
+            $noticias = Noticia::all();
+            $count = 0;
+            foreach($noticias as $noticia){
+                $noticia->date = $this->createDate($this->idiom, $noticia);
+                $count++;
+            }
+            return view('noticia.list', [
+                'count' => $count,
+                'noticias' => $noticias,
+            ]);
+        }
 
         /**
          * Crea una nueva Noticia.
@@ -35,10 +68,10 @@
             if($validator->fails()){
                 return $validator;
             }else{
-                if($request->hasFile('image')){
-                    $filepath = $request->file('image')->hashName('posts');
+                if($request->hasFile('imagen')){
+                    $filepath = $request->file('imagen')->hashName('noticias');
                     
-                    $img = Image::make($request->file('image'))
+                    $img = Image::make($request->file('imagen'))
                             ->resize(750, 750, function($constrait){
                                 $constrait->aspectRatio();
                                 $constrait->upsize();
@@ -46,24 +79,110 @@
                             
                     Storage::put($filepath, (string) $img->encode());
                     
-                    $data['image'] = $filepath;
+                    $data['imagen'] = $filepath;
                 }
+                $data['id_usuario'] = Auth::user()->id_user;
 
-                $data['id_user'] = Auth::user()->id_user;
-
-                $data['slug'] = SlugService::createSlug(Noticia::class, 'slug', $data['title']);
+                $data['slug'] = SlugService::createSlug(Noticia::class, 'slug', $data['titulo']);
+                // dd($data);
                 
-                $post = Noticia::create($data);
+                $noticia = Noticia::create($data);
+            }
+        }
 
-                if(isset($data['tags'])){
-                    foreach($data['tags'] as $id_tag){
-                        $auxData = [];
-                        $auxData['id_post'] = $post->id_post;
-                        $auxData['id_tag'] = $id_tag;
-    
-                        Feature::create($auxData);
-                    }
+        /**
+         * Edita una Noticia.
+         * @param $request - Request.
+         * @param $id_noticia - El PK de la Noticia.
+         */
+        public function edit(Request $request, $id_noticia){
+            $validator = $this->doEdit($request, $id_noticia);
+            if($validator){
+                $noticia = Noticia::find($id_noticia);
+                return redirect("/noticia/$noticia->slug/editar")->withErrors($validator)->withInput();
+            }
+            return redirect('/panel#noticias')->with('status', 'Noticia editada correctamente.');
+        }
+
+        /**
+         * La vista donde se edita la Noticia.
+         * @param $slug - El slug de la Noticia.
+         */
+        public function showEdit($slug){      
+            $noticia = Noticia::findBySlug($slug);
+            return view('noticia.edit', [
+                'validation' => json_encode([
+                    'rules' => Noticia::$validation['edit']['rules'],
+                    'messages' => Noticia::$validation['edit']['messages'][$this->idiom],
+                ]),
+                'noticia' => $noticia,
+            ]);
+        }
+
+        /**
+         * Valida y actualiza la Noticia.
+         * @param $request - Request.
+         * @param $id_noticia - El PK de la Noticia.
+         */
+        public function doEdit(Request $request, $id_noticia){
+            $data = $request->all();
+            
+            $noticia = Noticia::find($id_noticia);
+            
+            $validator = Validator::make($request->all(), Noticia::$validation['edit']['rules'], Noticia::$validation['edit']['messages'][$this->idiom]);
+
+            if($validator->fails()){
+                return $validator;
+            }else{                
+                $data['id_usuario'] = Auth::user()->id_user;
+
+                if($data['titulo'] != $noticia->titulo){
+                    $data['slug'] = SlugService::createSlug(Noticia::class, 'slug', $data['titulo']);
                 }
+
+                if($request->hasFile('imagen')){
+                    $currentImage = $noticia->imagen;
+                    
+                    $filepath = $request->file('imagen')->hashName('noticias');
+                    
+                    $img = Image::make($request->file('imagen'))
+                            ->resize(750, 750, function($constrait){
+                                $constrait->aspectRatio();
+                                $constrait->upsize();
+                            });
+                            
+                    Storage::put($filepath, (string) $img->encode());
+                    
+                    $data['imagen'] = $filepath;
+                }
+
+                $noticia->update($data);
+            
+                if(isset($currentImage) && !empty($currentImage)){
+                    Storage::delete($currentImage);
+                }
+            }
+        }
+
+        /**
+         * Elimina una Noticia.
+         * @param $id_noticia - El PK de la Noticia.
+         */
+        public function delete($id_noticia){
+            $this->doDelete($id_noticia);
+            return redirect('/panel#noticias')->with('status', 'Noticia eliminada correctamente.');
+        }
+
+        /**
+         * Elimina una Noticia.
+         * @param $id_noticia - El PK de la Notici.
+         */
+        public function doDelete($id_noticia){
+            $post = Noticia::find($id_noticia);
+            $currentImage = $post->imagen;
+            $post->delete();
+            if(isset($currentImage) && !empty($currentImage)){
+                Storage::delete($currentImage);
             }
         }
     }

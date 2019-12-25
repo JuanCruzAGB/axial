@@ -21,7 +21,8 @@
         Route::put('/noticia/{id_noticia}/editar', 'NoticiaController@edit')->name('noticia.edit');
         Route::delete('/noticia/{id_noticia}/eliminar', 'NoticiaController@delete')->name('noticia.delete');
     });
-    Route::get('/noticias', 'NoticiaController@info')->name('noticia.info');
+    Route::get('/noticia/{slug}', 'NoticiaController@info')->name('noticia.info');
+    Route::get('/noticias', 'NoticiaController@list')->name('noticia.list');
 
     Route::middleware('auth')->group(function(){
 // MiembroController

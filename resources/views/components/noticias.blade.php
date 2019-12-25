@@ -9,7 +9,7 @@
     <div class="content row">
         <div class="parent-table col-12 p-0 px-lg-3">
             @if($count)
-                <table class="noticias table table-sm mx-3 mb-0 mx-lg-0">
+                <table class="posts table table-sm mx-3 mb-0 mx-lg-0">
                     <thead>
                         <tr class="py-2">
                             <th class="id"></th>
@@ -21,7 +21,7 @@
                         @foreach($noticias as $noticia)
                             <tr class="py-2">
                                 <th class="id">{{$noticia->id_noticia}}</th>
-                                <td>{{$noticia->titulo}}</td>
+                                <td class="preview">{{$noticia->titulo}}</td>
                                 <td class="accions d-flex justify-content-end">
                                     <a href="/noticia/{{$noticia->slug}}" class="btn btn-primary">
                                         <span class="button-text mr-2">Ver más</span>

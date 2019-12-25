@@ -15,7 +15,7 @@
                 $table->string('titulo');
                 $table->string('imagen');
                 $table->text('contenido');
-                $table->unsignedInteger('id_user');
+                $table->unsignedInteger('id_usuario');
                 $table->string('slug');
                 $table->timestamps();
             });

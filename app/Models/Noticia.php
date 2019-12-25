@@ -17,12 +17,12 @@
 
         /** @var array - The attributes that are mass assignable. */
         protected $fillable = [
-            'titulo', 'imagen', 'contenido', 'id_user', 'slug',
+            'titulo', 'imagen', 'contenido', 'id_usuario', 'slug',
         ];
         
         /** Get the User that match the PK. */
         public function user(){
-            return $this->belongsTo(User::class, 'id_user', 'id_user');
+            return $this->belongsTo(User::class, 'id_usuario', 'id_user');
         }
         
         /** @var array - Validation messages and rules. */
