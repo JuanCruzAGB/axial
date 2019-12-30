@@ -49,31 +49,32 @@
                 <div class="row">
                     <span class="col-12 lead text-center w-100 my-3 text-white">- Nuestros servicios -</span>
                     <h2 class="col-12 text-center w-100 px-3 m-0 text-white">Todo lo que podemos hacer por usted</h2>
-                    <p class="col-12 px-4 mt-3 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, sapiente ad? Possimus, quam aperiam tempore molestias sed quos natus adipisci?</p>
+                    <p class="col-12 px-4 mt-3 text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, sapiente ad? Possimus, quam aperiam tempore molestias sed quos natus adipisci?</p>
                 </div>
             </div>
+            <div class="cards d-flex justify-content-around">
+                <div id="tratamiento-del-dolor" class="cartas-servicios card col-12 col-lg-3 text-center mb-3 p-3">
+                        <div class="card-body">
+                            <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
+                            <h3 class="card-title mb-3">Tratamiento del dolor</h3>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
 
-            <div id="tratamiento-del-dolor" class="cartas-servicios card col-12 text-center mb-3 p-3">
-                <div class="card-body">
-                    <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
-                    <h3 class="card-title mb-3">Tratamiento del dolor</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-            </div>
+                    <div id="cirugia-mini-invasiva" class="cartas-servicios card col-12 col-lg-3 text-center mb-3 p-3">
+                        <div class="card-body">
+                            <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
+                            <h3 class="card-title mb-3">Cirugía mini invasiva</h3>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
 
-            <div id="cirugia-mini-invasiva" class="cartas-servicios card col-12 text-center mb-3 p-3">
-                <div class="card-body">
-                    <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
-                    <h3 class="card-title mb-3">Cirugía mini invasiva</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-            </div>
-
-            <div id="patologia-de-la-columna" class="cartas-servicios card col-12 text-center mb-3 p-3">
-                <div class="card-body">
-                    <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
-                    <h3 class="card-title mb-3">Patología de la columna</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <div id="patologia-de-la-columna" class="cartas-servicios card col-12 col-lg-3 text-center mb-3 p-3">
+                        <div class="card-body">
+                            <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
+                            <h3 class="card-title mb-3">Patología de la columna</h3>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
                 </div>
             </div>
         </div>

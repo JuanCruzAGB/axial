@@ -270,6 +270,18 @@
     .quote-right{
         right: 15%;
     }
+
+    .rs1-wrap-input100, .rs2-wrap-input100{
+        width: 100% !important;
+    }
+
+    .contact100-form{
+        width: 100% !important;
+    }
+
+    .contact100-more{
+        width: 100% !important;
+    }
 }
 
 /* LG */
