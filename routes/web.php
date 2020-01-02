@@ -29,6 +29,6 @@
         Route::post('/miembro/crear', 'MiembroController@create')->name('miembro.create');
         Route::get('/miembro/{slug}/editar', 'MiembroController@showEdit')->name('miembro.showEdit');
         Route::put('/miembro/{id_miembro}/editar', 'MiembroController@edit')->name('miembro.edit');
-        Route::delete('/miembro/{id_miembro}/eliminar', 'MiembroController@delete')->name('miembro.delete');
+        Route::delete('/miembro/{id_miembro}/echar', 'MiembroController@delete')->name('miembro.delete');
     });
     Route::get('/miembros', 'MiembroController@info')->name('miembro.info');

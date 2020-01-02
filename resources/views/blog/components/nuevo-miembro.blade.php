@@ -161,7 +161,8 @@
                         <label class="input-name">
                             <span class="input-text">CV</span>
                         </label>
-                        <textarea name="cv"
+                        <textarea id="cv"
+                            name="cv"
                             class="form-control ckeditor"
                             cols="30"
                             rows="10"

@@ -23,7 +23,7 @@
 @endsection
 
 @section('main')
-    <div class="tabs col-12 d-flex justify-content-between pt-3">
+    <div class="tabs col-12 d-flex justify-content-between pt-5">
         <div class="tab-menu p-2">
             <ul class="d-flex justify-content-around m-0 p-0">
                 <li class="mb-2"><a class="tab-button opened" href="#noticias">
@@ -50,15 +50,15 @@
         </div>
         <div class="tab-body pl-md-3 pt-3 pt-md-0">
             <div id="noticias" class="noticias tab-content opened">
-                @component('components.noticias', ['noticias' => $data['noticias'], 'count' => $counts['noticias']])
+                @component('blog.components.noticias', ['noticias' => $data['noticias'], 'count' => $counts['noticias']])
                 @endcomponent
             </div>
             <div id="nueva-noticia" class="nueva-noticia tab-content">
-                @component('components.nueva-noticia', ['validation' => $validations['noticia']])
+                @component('blog.components.nueva-noticia', ['validation' => $validations['noticia']])
                 @endcomponent
             </div>
             <div id="miembros" class="miembros tab-content">
-                @component('components.miembros', ['miembros' => $data['miembros'], 'count' => $counts['miembros']])
+                @component('blog.components.miembros', ['miembros' => $data['miembros'], 'count' => $counts['miembros']])
                 @endcomponent
             </div>
             <div id="config" class="config tab-content">
@@ -66,7 +66,7 @@
                 @endcomponent
             </div>
             <div id="nuevo-miembro" class="nuevo-miembro tab-content">
-                @component('components.nuevo-miembro', ['validation' => $validations['miembro']])
+                @component('blog.components.nuevo-miembro', ['validation' => $validations['miembro']])
                 @endcomponent
             </div>
         </div>
@@ -84,14 +84,14 @@
 @endsection
 
 @section('js')
-    <!-- <script type="text/javascript" src="{{asset('ValidationJS/js/Validation.js')}}"></script>
+    <script src="{{asset('vendors/ckeditor/ckeditor.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Validation.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Rules.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Messages.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Requirements.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Validator.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script> -->
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/InputFileMaker.js')}}"></script>
-    <script src="{{asset('vendors/ckeditor/ckeditor.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/blog/panel.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/web/panel.js')}}"></script>
 @endsection

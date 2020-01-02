@@ -58,15 +58,16 @@
                         <label class="input-name">
                             <span class="input-text">Contenido</span>
                         </label>
-                        <textarea name="contenido"
+                        <textarea id="contenido"
+                            name="contenido"
                             class="form-control ckeditor"
                             cols="30"
                             rows="10"
                             placeholder="Contenido">{!!old('contenido')!!}</textarea>
                         <div @if($errors->has('contenido'))
-                            class="invalid-tooltip showed"
+                            class="invalid-tooltip showed mt-3"
                         @else
-                            class="invalid-tooltip"
+                            class="invalid-tooltip mt-3"
                         @endif>
                             @if($errors->has('contenido'))
                                 <small>{{$errors->first('contenido')}}</small>

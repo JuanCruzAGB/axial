@@ -7,7 +7,7 @@
 @section('css')
     <link href="{{asset('ValidationJS/css/styles.css')}}" rel="stylesheet">
     <link href="{{asset('css/InputFileMaker.css')}}" rel="stylesheet">
-    <link href="{{asset('css/noticia/edit.css')}}" rel="stylesheet">
+    <link href="{{asset('css/blog/noticia/edit.css')}}" rel="stylesheet">
 @endsection
 
 @section('title')
@@ -121,5 +121,5 @@
     <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script> -->
     <script type="text/javascript" src="{{asset('js/InputFileMaker.js')}}"></script>
     <script src="{{asset('vendors/ckeditor/ckeditor.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/noticia/edit.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/blog/noticia/edit.js')}}"></script>
 @endsection

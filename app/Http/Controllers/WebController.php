@@ -18,9 +18,10 @@
         }
 
         /** Carga la seccion principal. */
-        public function inicio(){            
+        public function inicio(){       
+            $miembros = Miembro::all();
             return view('web.inicio', [
-                //
+                'miembros' => $miembros,
             ]);
         }
 

@@ -1,6 +1,7 @@
 <?php
     namespace App\Models\Blog;
 
+    use App\Models\Blog\Estudio;
     use App\User;
     use Cviebrock\EloquentSluggable\Sluggable;
     use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
@@ -17,12 +18,17 @@
 
         /** @var array - The attributes that are mass assignable. */
         protected $fillable = [
-            'nombre', 'titulo', 'puesto', 'imagen', 'estudios', 'cv', 'link', 'id_user', 'slug',
+            'nombre', 'titulo', 'puesto', 'imagen', 'cv', 'link', 'id_user', 'slug',
         ];
         
         /** Get the User that match the PK. */
         public function user(){
             return $this->belongsTo(User::class, 'id_user', 'id_user');
+        }
+        
+        /** Get all the Estudios that match the PK. */
+        public function estudios(){
+            return $this->hasMany(Estudio::class, 'id_miembro', 'id_miembro');
         }
         
         /** @var array - Validation messages and rules. */
@@ -51,7 +57,7 @@
                         'imagen.required' => 'La imagen es obligatoria.',
                         'imagen.mimetypes' => 'La imagen debe ser formato jpeg/jpg o png.',
                         'estudios.array' => 'Los estudios deben ser un array.',
-                        'estudios.*.required' => 'Al menos un estudio es obligatorio.',
+                        'estudios.*.required' => 'Al menos un estudio es obligatorio, no genere campos innecesarios.',
                         'estudios.*.string' => 'Los estudios deben ser formato texto.',
                         'cv.required' => 'La cv es obligatoria.',
                         'link.required' => 'El link debe ser una URL.',

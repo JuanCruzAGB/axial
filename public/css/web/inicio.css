@@ -94,7 +94,12 @@
     z-index: 1;
 }
 
-/* contenido */
+/* servicios */
+.cartas-servicios.col-md-3 {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
 .nuestros-servicios{
     background-color: var(--color-dos);
 }
@@ -113,10 +118,6 @@
 }
 
 /* team */
-.equipo{
-    /* background: var(--color-cinco); */
-}
-
 .listado{
     overflow-x: auto;
     width: 100%;
@@ -126,6 +127,7 @@
     display: flex;
     flex-wrap: nowrap;
     width: fit-content;
+    min-width: 100%;
 }
 
 .miembro.card{
@@ -145,6 +147,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
 }
 
 .miembro.card .card-body{
@@ -215,19 +218,6 @@
     height: fit-content;
 }
 
-
-/* form */
-
-/* .contacto{
-    background: url('/img/bg-form.jpg') no-repeat center center;
-}
-
-.contacto .info-fondo{
-    height: 20rem;
-    background-color: black;
-    opacity: .7;
-} */
-
 .container-contact100{
     padding: 0 !important;
 }
@@ -239,12 +229,55 @@
 .contact-data{
     background-image: url('/img/bg-01.jpg');
     background-attachment: fixed;
+    z-index: 1;
+    padding-top: 40px;
+}
+
+.empty-miembro.card{
+    min-width: 83vw;
+    flex-basis: 83vw;
+    height: 500px;
+    border-radius: .25rem;
+}
+
+.empty-miembro .empty-background{
+    width: 100%;
+    height: 100%;
+    background-color: #C6C6C6;
+}
+
+.empty-miembro .empty-nombre{
+    width: 100%;
+    height: 2rem;
+    background-color: #C6C6C6;
+}
+
+.wrap-contact100 form{
+    position: relative;
+    padding: 1rem !important;
+}
+
+.wrap-contact100 form::before{
+    content: "";
+    position: absolute;
+    bottom: -23px;
+    left: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 25px), 0% 100%);
+    background: white;
+    z-index: 2;
+    width: calc(100% + 2px);
+    height: 25px;
+    transform: translateX(-1px);
 }
 
 /* MD */
 @media(min-width: 768px){
     .jumbotron .container h2 span{
         color: var(--color-uno);
+    }
+
+    .miembros{
+        justify-content: center;
     }
 
     .miembro.card{
@@ -270,6 +303,12 @@
     .quote-right{
         right: 15%;
     }
+
+    .empty-miembro.card{
+        min-width: 50vw;
+        flex-basis: 50vw;
+        height: 450px;
+    }
 }
 
 /* LG */
@@ -284,9 +323,13 @@
     }
 
     .miembro.card{
-        min-width: calc((100% / 3) - 1rem);
-        flex-basis: calc((100% / 3) - 1rem);
+        min-width: calc(((100% - 2rem) / 3) - 1rem);
+        flex-basis: calc(((100% - 2rem) / 3) - 1rem);
         height: 500px;
+    }
+
+    .miembros .miembro.card:nth-child(3n){
+        margin-right: 0 !important;
     }
 
     .miembro.card:not(:first-of-type),
@@ -296,11 +339,17 @@
     }
 
     .quote-left{
-        left: 20%;
+        left: 25%;
     }
     
     .quote-right{
-        right: 20%;
+        right: 25%;
+    }
+
+    .empty-miembro.card{
+        min-width: calc(((100% - 2rem) / 3) - 1rem);
+        flex-basis: calc(((100% - 2rem) / 3) - 1rem);
+        height: 500px;
     }
 }
 

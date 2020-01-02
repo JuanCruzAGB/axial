@@ -24,7 +24,7 @@
             $noticia->date = $this->createDate($this->idiom, $noticia);
             
             $user = User::find($noticia->id_usuario);
-            return view('noticia.info', [
+            return view('blog.noticia.info', [
                 'noticia' => $noticia,
                 'user' => $user,
             ]);
@@ -38,7 +38,7 @@
                 $noticia->date = $this->createDate($this->idiom, $noticia);
                 $count++;
             }
-            return view('noticia.list', [
+            return view('blog.noticia.list', [
                 'count' => $count,
                 'noticias' => $noticias,
             ]);
@@ -110,7 +110,7 @@
          */
         public function showEdit($slug){      
             $noticia = Noticia::findBySlug($slug);
-            return view('noticia.edit', [
+            return view('blog.noticia.edit', [
                 'validation' => json_encode([
                     'rules' => Noticia::$validation['edit']['rules'],
                     'messages' => Noticia::$validation['edit']['messages'][$this->idiom],

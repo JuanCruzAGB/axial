@@ -25,8 +25,8 @@
             <li><a href="/demo#equipo" class="nav-link">
                 Equipo
             </a></li>
-            <li><a href="/blog" class="nav-link">
-                Blog
+            <li><a href="/noticias" class="nav-link">
+                Noticias
             </a></li>
             @if(Auth::check())
             <li><a href="/panel" class="nav-link">

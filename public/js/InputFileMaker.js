@@ -10,33 +10,34 @@ let InputFileMaker = {
          * @param {HTMLElement} input - The input.
          */
         create(input){
-            let parent = input.parentNode;
-            let img;
-            if(!this.exist){
-                this.exist = true;
-                img = document.createElement('img');
-                img.alt = 'Example image';
-                img.classList.add('file-img');
-            }else{
-                img = document.querySelector('.file-img');
-            }
             if(FileReader && input.files && input.files.length){
                 let reader = new FileReader();
                 reader.onload = function(){
                     img.src = reader.result;
                 }
                 reader.readAsDataURL(input.files[0]);
+                
+                let parent = input.parentNode;
+                let img;
+                if(!this.exist){
+                    this.exist = true;
+                    img = document.createElement('img');
+                    img.alt = 'Example image';
+                    img.classList.add('file-img');
+                }else{
+                    img = document.querySelector('.file-img');
+                }
+                if(!img.classList.contains('generated-image')){
+                    img.classList.add('generated-image');
+                    img.addEventListener('click', function(e){
+                        e.preventDefault();
+                        InputFileMaker.execute(input);
+                    });
+                }
+                parent.insertBefore(img, input);
             }else{
                 // PENDIENTE
             }
-            if(!img.classList.contains('generated-image')){
-                img.classList.add('generated-image');
-                img.addEventListener('click', function(e){
-                    e.preventDefault();
-                    InputFileMaker.execute(input);
-                });
-            }
-            parent.insertBefore(img, input);
         },
         /**
          * Generate an default image.
@@ -65,6 +66,7 @@ let InputFileMaker = {
             if(document.querySelector('.file-img.generated-image')){
                 parent.removeChild(document.querySelector('.file-img.generated-image'));
             }
+            this.exist = false;
         },
     },
     /** InputFileMaker loader. */

@@ -9,11 +9,11 @@
     <div class="content row">
         <div class="parent-table col-12 p-0 px-lg-3">
             @if($count)
-                <table class="posts table table-sm mx-3 mb-0 mx-lg-0">
+                <table class="noticias table table-sm mx-3 mb-0 mx-lg-0">
                     <thead>
                         <tr class="py-2">
                             <th class="id"></th>
-                            <th>Título</th>
+                            <th class="titulo">Título</th>
                             <th class="accions"></th>
                         </tr>
                     </thead>

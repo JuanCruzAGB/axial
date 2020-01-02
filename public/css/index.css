@@ -22,6 +22,34 @@ body{
     margin: 0;
 }
 
+.nav-menu{
+    --primary-color: var(--color-uno);
+    --tertiary-color: rgba(0,0,0,.5);
+}
+
+.nav-menu .nav-title{
+    width: 50%;
+    background: url(../img/recursos/logo.png) no-repeat center center;
+    background-size: contain;
+}
+
+.nav-menu .nav-title h1{
+    font-size: 0;
+    width: 100px;
+}
+
+.nav-menu::before{
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 25px), 0% 100%);
+    background: var(--color-uno);
+    z-index: 2;
+    width: calc(100% + 2px);
+    height: 25px;
+}
+
 a:hover{
     color: transparent;
     text-decoration: none;
@@ -38,4 +66,32 @@ a:hover{
     left: 50%;
     top: 50%;
     transform: translateY(-50%) translateX(-50%);
+}
+
+/* WhatsApp */
+.whatsapp{
+    background: #25D366;
+}
+
+/* MD */
+@media(min-width: 768px){
+    .nav-menu::before{
+        bottom: -33px;
+        height: 35px;
+    }
+}
+
+/* LG */
+@media(min-width: 1024px){
+    .nav-menu .nav-row.first-row:first-of-type{
+        display: flex;
+        justify-content: center;
+        flex-basis: 25%;
+        height: 6.3rem;
+    }
+    
+    .nav-menu .second-row{
+        flex-basis: 70%;
+        height: 6.3rem;
+    }
 }

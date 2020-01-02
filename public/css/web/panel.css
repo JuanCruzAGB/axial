@@ -6,3 +6,91 @@
     width: 100%;
     height: 100%;
 }
+
+.preview{
+    text-align: left;
+    max-height: 3rem;
+}
+
+.preview:before{
+    right: 0;
+    bottom: .3rem;
+    padding-right: .5rem;
+}
+
+.tabs .tab-body .tab-content section .content table.noticias tr .accions{
+    min-width: calc((25vw * 3) + 2rem);
+}
+
+.tabs .tab-body .tab-content section .content table tr th,
+.tabs .tab-body .tab-content section .content table tr td{
+    width: 35vw;
+    min-width: 35vw;
+    display: flex;
+    border: none;
+}
+
+/* MD */
+@media(min-width: 768px){
+    .tabs .tab-body .tab-content section .content table.noticias tr .accions{
+        min-width: calc((15vw * 3) + 1rem);
+    }
+
+    .tabs .tab-body .tab-content section .content table.miembros tr th,
+    .tabs .tab-body .tab-content section .content table.miembros tr td{
+        width: 25vw;
+        min-width: 25vw;
+    }
+}
+
+/* LG */
+@media(min-width: 1024px){
+    .tabs .tab-body .tab-content section .content table.noticias tr th,
+    .tabs .tab-body .tab-content section .content table.noticias tr td{
+        width: 33.33%;
+        min-width: 33.33%;
+    }
+
+    .titulo,
+    .preview{
+        margin-right: 22.23%;
+    }
+    
+    .tabs .tab-body .tab-content section .content table.noticias tr .id{
+        width: 11.11%;
+        min-width: 11.11%;
+    }
+
+    .tabs .tab-body .tab-content section .content table.noticias tr .accions{
+        width: 33.33%;
+        min-width: 33.33%;
+    }
+    
+    .tabs .tab-body .tab-content section .content table.noticias tr .accions a,
+    .tabs .tab-body .tab-content section .content table.noticias tr .accions button{
+        width: calc((100% - 1rem) / 3);
+        min-width: calc((100% - 1rem) / 3);
+    }
+
+    .tabs .tab-body .tab-content section .content table.miembros tr th,
+    .tabs .tab-body .tab-content section .content table.miembros tr td{
+        width: 22.22%;
+        min-width: 22.22%;
+    }
+    
+    .tabs .tab-body .tab-content section .content table.miembros tr .id{
+        width: 11.11%;
+        min-width: 11.11%;
+    }
+
+    .tabs .tab-body .tab-content section .content table.miembros tr .accions{
+        width: 22.22%;
+        min-width: 22.22%;
+    }
+    
+    .tabs .tab-body .tab-content section .content table.miembros tr .accions a,
+    .tabs .tab-body .tab-content section .content table.miembros tr .accions button{
+        width: calc((100% - 1rem) / 2);
+        min-width: calc((100% - 1rem) / 2);
+    }
+}
