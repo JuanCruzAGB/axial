@@ -351,6 +351,18 @@
     text-transform: none;
 }
 
+.contact100-more::before{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(35, 31, 32, 0.6);
+}
+
 .input100{
     font-family: gotham-book;
     font-size: 1rem;
@@ -364,6 +376,10 @@
 .txt3{
     color: var(--color-tres);
     font-family: gotham-light;
+}
+
+.input100:focus + .focus-input100{
+    border: 1px solid var(--color-uno);
 }
 
 /* MD */
@@ -455,6 +471,10 @@
         width: 100%;
     }
 
+    .separador-banner p{
+        font-size: 1.3rem;
+    }
+
     .miembros{
         flex-wrap: wrap;
     }
@@ -476,11 +496,11 @@
     }
 
     .quote-left{
-        left: 27%;
+        left: 25%;
     }
     
     .quote-right{
-        right: 27%;
+        right: 25%;
     }
 
     .empty-miembro.card{
@@ -489,16 +509,24 @@
         height: 500px;
     }
 
+    .wrap-contact100 form{
+        order: 2;
+    }
+
     .wrap-contact100 form::before{
         top: 0;
         height: 50px;
-        left: 0;
+        left: calc((-100% / 8) * 4);
         clip-path: polygon(0% 0%, 120% 0%, 0% 100%);
         width: calc(((100% / 8) * 4) + 100%);
     }
 
+    .contact100-more{
+        order: 1;
+    }
+
     .contact100-form{
-        background: var(--color-cinco);
+        background: #dddddda8;
     }
 }
 

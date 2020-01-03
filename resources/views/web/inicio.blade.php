@@ -131,13 +131,13 @@
     </div>
 </div>
             
-<div id="contacto" class="container-fluid contenedor p-0">
+<div id="contacto" class="container-fluid contenedor p-0 mt-4">
     <div class="row">
     <div class="col-12 container-contact100">
 		<div class="row wrap-contact100">
-			<form class="col-12 col-md-10 col-lg-8 contact-form contact100-form validate-form py-3 mx-auto">
+			<form class="col-12 col-md-10 col-lg-8 contact-form contact100-form validate-form pb-3 pt-0 mx-auto">
                 <div class="row px-3 pt-lg-5">
-                    <span class="col-12 contact100-form-title pb-4">
+                    <span class="col-12 contact100-form-title pb-4 mt-4 pt-3">
                         Envianos un mensaje
                     </span>
 
@@ -183,7 +183,7 @@
                 </div>
 			</form>
 
-			<div class="col-12 col-lg-4 contact-data contact100-more flex-col-c-m pt-4" style="">
+			<div class="col-12 col-lg-4 contact-data contact100-more flex-col-c-m pt-4">
 				<div class="flex-w size1 p-b-47 mt-3 mt-md-5">
 					<div class="txt1 p-r-25">
 						<span class="lnr lnr-map-marker"></span>
