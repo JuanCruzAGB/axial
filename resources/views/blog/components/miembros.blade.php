@@ -8,7 +8,7 @@
     </div>
     <div class="content row">
         <div class="parent-table col-12 p-0 px-lg-3">
-            @if($count)
+           <!--  @if($count)
                 <table class="miembros table table-sm mx-3 mb-0 mx-lg-0">
                     <thead>
                         <tr class="py-2">
@@ -42,7 +42,37 @@
                 </table>
             @else
                 <p class="px-3 px-ld-0 text-muted">Ninguna miembro encontrado</p>
-            @endif
+            @endif -->
+
+            <div class="table-responsive px-2">
+       
+            <table id="mytable" class="table table-bordred table-striped">
+                <thead>
+                    <tr>
+                        <th id="id"></th>
+                        <th>Nombre</th>
+                        <th>Título</th>
+                        <th>Puesto</th>
+                        <th id="iconos-tabla"></th>
+                        <th id="iconos-tabla"></th>
+                        <th id="iconos-tabla"></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                    <td id="id"></td>
+                    <td class="preview">nombre</td>
+                    <td class="preview">titulo</td>
+                    <td class="preview">puesto</td>
+                    <td id="iconos-tabla"><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="button-icon fas fa-eye"></span></button></p></td>
+                    <td id="iconos-tabla"><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="button-icon fas fa-pen"></span></button></p></td>
+                    <td id="iconos-tabla"><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="button-icon fas fa-trash"></span></button></p></td>
+                    </tr>                                   
+                </tbody>
+            </table>
+            
+    </div>
         </div>
     </div>
 </section>
