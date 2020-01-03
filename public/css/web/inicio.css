@@ -19,7 +19,8 @@
 .jumbotron .container h2{
     color: var(--color-uno);
     text-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
-    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: gotham-bold;
 }
 
 .jumbotron .container h2 span > span{
@@ -29,6 +30,18 @@
 .enviar-mensaje{
     background-color: var(--color-uno);
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 200px;
+    height: 50px;
+    border-radius: .25rem;
+    font-family: gotham-bold;
+    font-size: .8rem;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 1px;
 }
 
 /* main */
@@ -69,8 +82,8 @@
 }
 
 .separador-banner p{
-    font-size: 1.3rem;
-    font-family: 'Gotham Medium';
+    font-size: 1rem;
+    font-family: gotham-light;
     z-index: 2;
 }
 
@@ -95,29 +108,50 @@
 }
 
 /* servicios */
-.cartas-servicios.col-md-3 {
-    flex: 0 0 30%;
-    max-width: 30%;
-}
-
 .nuestros-servicios{
     background-color: var(--color-dos);
 }
 
+#nuestros-servicios h2{
+    font-family: gotham-bold;
+}
+
 .cartas-servicios .iconos-servicios{
-    color: var(--color-dos);
+    color: var(--color-tres);
+    transition: 500ms;
+}
+
+.cartas-servicios:hover .iconos-servicios{
+    color: var(--color-uno);
 }
 
 .cartas-servicios .card-title{
+    color: var(--color-tres);
+    font-family: gotham-light;
+    transition: 500ms;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.cartas-servicios:hover .card-title{
     color: var(--color-uno);
-    font-weight: bold;
 }
 
 .cartas-servicios .card-text{
-    color: var(--color-uno);
+    color: var(--color-tres);
 }
 
 /* team */
+#equipo h2{
+    width: 100%;
+    display: block;
+    font-family: gotham-bold;
+    font-size: 2rem;
+    color: var(--color-cuatro);
+    line-height: 1.2;
+    text-align: center;
+}
+
 .listado{
     overflow-x: auto;
     width: 100%;
@@ -168,13 +202,21 @@
 .miembro.card .card-body .card-title{
     position: relative;
     display: block;
-    color: var(--color-dos);
+    color: var(--color-uno);
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    margin-bottom: .75rem !important;
+    padding-bottom: .75rem;
+    font-family: gotham-book;
+    transition: 500ms;
+}
+
+.miembro.card .card-body:hover .card-title{
+    border-bottom: 2px solid var(--color-tres);
 }
 
 .miembro.card:target .card-body .card-title,
 .miembro.card.active .card-body .card-title{
-    margin-bottom: .75rem !important;
-    padding-bottom: .75rem;
     border-bottom: 2px solid var(--color-tres);
 }
 
@@ -192,6 +234,7 @@
     background: var(--color-uno);
     color: white;
     transform: translateY(-50%);
+    margin-bottom: .75rem !important;
 }
 
 .miembro.card:target .card-body .card-title .title-icon,
@@ -216,6 +259,12 @@
 .miembro.card:target .card-body .card-content,
 .miembro.card.active .card-body .card-content{
     height: fit-content;
+}
+
+.miembro.card .btn.btn-primary{
+    background-color: var(--color-dos);
+    border-color: var(--color-dos);
+    font-family: gotham-light;
 }
 
 .container-contact100{
@@ -252,9 +301,13 @@
     background-color: #C6C6C6;
 }
 
+.wrap-contact100{
+    width: 100%;
+    flex-direction: row;
+}
+
 .wrap-contact100 form{
     position: relative;
-    padding: 1rem !important;
 }
 
 .wrap-contact100 form::before{
@@ -262,7 +315,7 @@
     position: absolute;
     bottom: -23px;
     left: 0;
-    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 25px), 0% 100%);
+    clip-path: polygon(0% 0%, 120% 0%, 0% 100%);
     background: white;
     z-index: 2;
     width: calc(100% + 2px);
@@ -270,10 +323,58 @@
     transform: translateX(-1px);
 }
 
+.contact100-form-title{
+    font-family: gotham-bold;
+    font-size: 2rem;
+    color: var(--color-cuatro);
+}
+
+.wrap-contact100 form .label-input100{
+    border: none;
+}
+
+.contact100-form-btn{
+    background-color: var(--color-uno);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 200px;
+    height: 50px;
+    border-radius: .25rem;
+    font-family: gotham-bold;
+    font-size: .8rem;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+
+.input100{
+    font-family: gotham-book;
+    font-size: 1rem;
+}
+
+.txt1{
+    font-family: gotham-bold;
+}
+
+.txt2,
+.txt3{
+    color: var(--color-tres);
+    font-family: gotham-light;
+}
+
 /* MD */
 @media(min-width: 768px){
-    .jumbotron .container h2 span{
+    .jumbotron .container h2 span:last-child{
         color: var(--color-uno);
+    }
+
+    .cartas-servicios.col-md-3{
+        flex: 0 0 30%;
+        max-width: 30%;
     }
 
     .miembros{
@@ -286,6 +387,10 @@
         height: 450px;
     }
 
+    .separador-banner p{
+        font-size: 1.2rem;
+    }
+
     .separador-banner::before{
         top: -48px;
         height: 50px;
@@ -294,6 +399,10 @@
     .separador-banner::after{
         bottom: -48px;
         height: 50px;
+    }
+
+    .cartas-servicios .card-title{
+        font-size: 1.1rem;
     }
 
     .quote-left{
@@ -321,10 +430,26 @@
     .contact100-more{
         width: 100% !important;
     }
+
+    .wrap-contact100 form::before{
+        left: calc((-100% / 10) * 2);
+        bottom: -48px;
+        height: 50px;
+        width: calc(((100% / 10) * 3) + 100%);
+    }
 }
 
 /* LG */
 @media(min-width: 1024px){
+    .jumbotron .container h2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .jumbotron .container h2 .text-row{
+        flex-basis: 100%;
+    }
+
     .listado{
         overflow-x: hidden;
         width: 100%;
@@ -351,17 +476,29 @@
     }
 
     .quote-left{
-        left: 25%;
+        left: 27%;
     }
     
     .quote-right{
-        right: 25%;
+        right: 27%;
     }
 
     .empty-miembro.card{
         min-width: calc(((100% - 2rem) / 3) - 1rem);
         flex-basis: calc(((100% - 2rem) / 3) - 1rem);
         height: 500px;
+    }
+
+    .wrap-contact100 form::before{
+        top: 0;
+        height: 50px;
+        left: 0;
+        clip-path: polygon(0% 0%, 120% 0%, 0% 100%);
+        width: calc(((100% / 8) * 4) + 100%);
+    }
+
+    .contact100-form{
+        background: var(--color-cinco);
     }
 }
 

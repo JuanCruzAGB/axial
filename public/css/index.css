@@ -14,7 +14,7 @@ body{
     --color-uno: rgb(0, 69, 125);
     --color-dos: #55c9d8;
     --color-tres: rgb(148, 149, 142);
-    --color-cuatro: #222222;
+    --color-cuatro: #231F20;
     --color-cinco: #dddddd;
     --color-fondo: linear-gradient(to top, #efefef 0%, #f5f8f9b5 75%, #e7e8e9 100%);
     --fuente-encabezados: 'Quicksand', sans-serif;
@@ -36,6 +36,10 @@ body{
 .nav-menu .nav-title h1{
     font-size: 0;
     width: 100px;
+}
+
+.sidebar .sidebar-content .sidebar-menu .nav-link{
+    font-family: gotham-light;
 }
 
 .nav-menu::before{

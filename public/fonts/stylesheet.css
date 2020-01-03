@@ -1,39 +1,17 @@
 /* Gotham */
 @font-face{
     src: url(Gotham/Gotham-Book.otf);
-    font-family: 'Gotham Book';
+    font-family: gotham-book;
 }
 @font-face{
     src: url(Gotham/Gotham-Light.otf);
-    font-family: 'Gotham Light';
+    font-family: gotham-light;
 }
 @font-face{
-    src: url(Gotham/Gotham-Medium.otf);
-    font-family: 'Gotham Medium';
-}
-@font-face{
-    src: url(Gotham/Gotham-Thin.otf);
-    font-family: 'Gotham Thin';
+    src: url(Gotham/Gotham-Bold_0.otf);
+    font-family: gotham-bold;
 }
 @font-face{
     src: url(Gotham/Gotham-Ultra.otf);
-    font-family: 'Gotham Ultra';
-}
-
-/* Gotham Narrow */
-@font-face{
-    src: url(Gotham/GothamNarrow-Black.otf);
-    font-family: 'Gotham Narrow Black';
-}
-@font-face{
-    src: url(Gotham/GothamNarrow-Book.otf);
-    font-family: 'Gotham Narrow Book';
-}
-@font-face{
-    src: url(Gotham/GothamNarrow-Thin.otf);
-    font-family: 'Gotham Narrow Thin';
-}
-@font-face{
-    src: url(Gotham/GothamNarrow-Ultra.otf);
-    font-family: 'Gotham Narrow Ultra';
+    font-family: gotham-ultra;
 }

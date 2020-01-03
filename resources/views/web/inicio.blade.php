@@ -26,10 +26,12 @@
 @section('banner')
     <div class="jumbotron jumbotron-fluid p-0 mb-0">
         <div class="container d-flex justify-content-center align-items-center">
-            <div class="col-12 col-md-10 col-lg-6">
-                <h2 class="h2-responsive text-white text-center mb-3">Abordamos todas las dolencias y <span>patologías <span>de la columna</span></span></h2>
+            <div class="col-12 col-md-10 col-lg-7">
+                <h2 class="h2-responsive text-white text-center mb-3">
+                    <span class="text-row">Abordamos todas las dolencias y </span>    
+                    <span class="text-row">patologías <span>de la columna</span></span></h2>
                 <div class="d-flex justify-content-center">
-                    <a class="enviar-mensaje btn btn-primary" href="#" role="button">Envianos un mensaje</a>
+                    <a class="enviar-mensaje btn btn-primary" href="#contacto" role="button">Envianos un mensaje</a>
                 </div>
             </div>
         </div>
@@ -40,7 +42,7 @@
     <div class="separador-banner col-12 p-3 px-md-5">
         <span class="quotes quote-left"><i class="quote-icon fas fa-quote-left"></i></span>
         <span class="quotes quote-right"><i class="quote-icon fas fa-quote-right"></i></span>
-        <p class="col-12 col-md-10 col-lg-6 text-white text-center m-0 py-4 py-lg-2 px-md-5">El dolor de espalda es un problema que afecta al 80% de la población mundial.</p>
+        <p class="col-12 col-md-10 col-lg-6 text-white text-center m-0 py-4 py-lg-2 px-md-5 px-lg-4">El dolor de espalda es un problema que afecta al 80% de la población mundial.</p>
     </div>    
 
     <div id="nuestros-servicios" class="nuestros-servicios col-12">
@@ -53,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="cards row d-flex justify-content-around pb-3">
+            <div class="cards row d-flex justify-content-around pb-3 mx-0">
                 <div id="tratamiento-del-dolor" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
                     <div class="card-body">
                         <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
@@ -82,10 +84,10 @@
     </div>
 
     <div id="equipo" class="equipo row py-4 p-0">
-        <h2 class="col-12 text-center mb-3">Equipo</h2>
+        <h2 class="col-12 text-center mt-3 mb-4">Equipo</h2>
 
         <div class="listado">
-            <div class="miembros cards mx-3 pb-0">
+            <div class="miembros cards mt-4 mx-3 pb-0">
                 @if(count($miembros))
                     @foreach($miembros as $miembro)
                         <div id="{{$miembro->nombre}}" class="miembro collapsable-card card mr-3 p-0">
@@ -93,7 +95,7 @@
                                 <img class="mb-0" src="{{asset('storage/' . $miembro->imagen)}}" alt="{{$miembro->nombre}}">
                             </div>
                             <div class="card-body p-3">
-                                <a href="#{{$miembro->nombre}}" class="collapsable-btn card-title m-0">
+                                <a href="#{{$miembro->slug}}" class="collapsable-btn card-title m-0">
                                     <h3 class="m-0">{{$miembro->nombre}}</h3>
                                     <i class="collapsable-icon title-icon fas fa-sort-up"></i>
                                 </a>
@@ -129,48 +131,60 @@
     </div>
 </div>
             
-<div class="container-fluid contenedor p-0">
+<div id="contacto" class="container-fluid contenedor p-0">
     <div class="row">
     <div class="col-12 container-contact100">
-		<div class="wrap-contact100">
-			<form class="contact-form contact100-form validate-form mx-3">
-				<span class="contact100-form-title">
-					Envianos un mensaje
-				</span>
+		<div class="row wrap-contact100">
+			<form class="col-12 col-md-10 col-lg-8 contact-form contact100-form validate-form py-3 mx-auto">
+                <div class="row px-3 pt-lg-5">
+                    <span class="col-12 contact100-form-title pb-4">
+                        Envianos un mensaje
+                    </span>
 
-				<label class="label-input100" for="nombre">Nombre *</label>
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-					<input id="nombre" class="input100" type="text" name="nombre" placeholder="Nombre">
-					<span class="focus-input100"></span>
-				</div>
+                    <div class="col-12">
+                        <label class="label-input100 mt-0" for="nombre">Nombre *</label>
+                        <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+                            <input id="nombre" class="input100" type="text" name="nombre" placeholder="Nombre">
+                            <span class="focus-input100"></span>
+                        </div>
+                    </div>
 
-				<label class="label-input100" for="email">Email *</label>
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input id="email" class="input100" type="text" name="email" placeholder="email@email.com">
-					<span class="focus-input100"></span>
-				</div>
+                    <div class="col-12">
+                        <label class="label-input100 mt-3" for="email">Email *</label>
+                        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                            <input id="email" class="input100" type="text" name="email" placeholder="email@email.com">
+                            <span class="focus-input100"></span>
+                        </div>
+                    </div>
 
-				<label class="label-input100" for="phone">Teléfono</label>
-				<div class="wrap-input100">
-					<input id="phone" class="input100" type="text" name="phone" placeholder="+54 800 000000">
-					<span class="focus-input100"></span>
-				</div>
+                    <div class="col-12">
+                        <label class="label-input100 mt-3" for="phone">Teléfono</label>
+                        <div class="wrap-input100">
+                            <input id="phone" class="input100" type="text" name="phone" placeholder="+54 800 000000">
+                            <span class="focus-input100"></span>
+                        </div>
+                    </div>
 
-				<label class="label-input100" for="message">Mensaje *</label>
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<textarea id="message" class="input100" name="message" placeholder="Escribenos tu mensaje"></textarea>
-					<span class="focus-input100"></span>
-				</div>
+                    <div class="col-12">
+                        <label class="label-input100 mt-3" for="message">Mensaje *</label>
+                        <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                            <textarea id="message" class="input100" name="message" placeholder="Escribenos tu mensaje"></textarea>
+                            <span class="focus-input100"></span>
+                        </div>
+                    </div>
 
-				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
-						Enviar mensaje
-					</button>
-				</div>
+                    <div class="col-12">
+                        <div class="container-contact100-form-btn">
+                            <button class="contact100-form-btn">
+                                Enviar mensaje
+                            </button>
+                        </div>
+                    </div>
+                </div>
 			</form>
 
-			<div class="contact-data contact100-more flex-col-c-m" style="">
-				<div class="flex-w size1 p-b-47">
+			<div class="col-12 col-lg-4 contact-data contact100-more flex-col-c-m pt-4" style="">
+				<div class="flex-w size1 p-b-47 mt-3 mt-md-5">
 					<div class="txt1 p-r-25">
 						<span class="lnr lnr-map-marker"></span>
 					</div>
