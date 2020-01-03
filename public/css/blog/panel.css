@@ -256,16 +256,6 @@
     padding-left: 1rem;
 }
 
-.preview:after{
-    content: '';
-    position: absolute;
-    right: 0;
-    width: 1rem;
-    height: 1rem;
-    margin-top: 0.2rem;
-    background: white;
-}
-
 /* MD */
 @media(min-width: 768px){
     .tabs .tab-menu{

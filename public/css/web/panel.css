@@ -30,6 +30,58 @@
     border: none;
 }
 
+#id{
+    min-width: 3.5rem;
+    width: 3.5rem;
+}
+
+#iconos-tabla{
+    min-width: 3.5rem;
+    width: 3.5rem;
+}
+
+.contenido{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.preview:before{
+    right: 0;
+    bottom: 0;
+    z-index: -999;
+    padding: 0;
+}
+
+.tab-menu{
+    background-color: transparent !important;
+}
+
+.tabs .tab-menu .tab-button{
+    color: var(--color-uno) !important;
+}
+
+.tabs .tab-menu .tab-button.opened .tab-icon{
+    color: var(--color-uno) !important;
+}
+
+.title{
+    background-color: transparent !important;
+}
+
+.title h1{
+    color: var(--color-cuatro) !important;
+}
+
+.tabs .tab-body .tab-content section .accions a, .tabs .tab-body .tab-content section button{
+    background-color: var(--color-uno);
+}
+
+form .crear-noticia{
+    background-color: var(--color-cuatro) !important;
+}
+
+
 /* MD */
 @media(min-width: 768px){
     .tabs .tab-body .tab-content section .content table.noticias tr .accions{

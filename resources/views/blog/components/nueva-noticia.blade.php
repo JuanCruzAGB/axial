@@ -21,7 +21,7 @@
                         <input id="titulo"
                             name="titulo"
                             type="text"
-                            class="form-control mb-3"
+                            class="form-control mb-3 w-75"
                             value="{{old('titulo')}}"
                             placeholder="Título">
                         <div @if($errors->has('titulo'))
@@ -37,7 +37,7 @@
                 </div>
                 <div class="col-12">
                     <div class="form-group">
-                        <input class="make-a-file make-an-image"
+                        <input class="make-a-file make-an-image w-75"
                             type="file"
                             name="imagen"
                             data-text="Imagen"
@@ -60,7 +60,7 @@
                         </label>
                         <textarea id="contenido"
                             name="contenido"
-                            class="form-control ckeditor"
+                            class="form-control ckeditor w-75"
                             cols="30"
                             rows="10"
                             placeholder="Contenido">{!!old('contenido')!!}</textarea>
@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="form-submit btn btn-primary">Crear</button>
+                    <button type="submit" class="form-submit btn btn-primary crear-noticia">Crear</button>
                 </div>
             </div>
         </form>
