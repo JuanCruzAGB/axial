@@ -86,9 +86,11 @@
 @section('js')
     <script src="{{asset('vendors/ckeditor/ckeditor.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Validation.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Rules.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Messages.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Requirements.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Form.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Input.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Rule.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Requirement.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Message.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Validator.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/InputFileMaker.js')}}"></script>

@@ -40,7 +40,7 @@
                     'puesto' => 'required|min:5|max:200',
                     'imagen' => 'required|mimetypes:image/jpeg,image/png',
                     'estudios' => 'required|array',
-                    'estudios.*' => 'required|string',
+                    'estudios.*' => 'string',
                     'cv' => 'required',
                     'link' => 'nullable|url',
                 ], 'messages' => [
@@ -56,8 +56,8 @@
                         'puesto.max' => 'El puesto no puede tener más de :max caracteres.',
                         'imagen.required' => 'La imagen es obligatoria.',
                         'imagen.mimetypes' => 'La imagen debe ser formato jpeg/jpg o png.',
+                        'estudios.required' => 'Al menos un estudio es obligatorio, no genere campos innecesarios.',
                         'estudios.array' => 'Los estudios deben ser un array.',
-                        'estudios.*.required' => 'Al menos un estudio es obligatorio, no genere campos innecesarios.',
                         'estudios.*.string' => 'Los estudios deben ser formato texto.',
                         'cv.required' => 'La cv es obligatoria.',
                         'link.required' => 'El link debe ser una URL.',
