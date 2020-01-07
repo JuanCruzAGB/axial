@@ -18,13 +18,13 @@
 @endsection
 
 @section('nav')
-    @component('components.nav.global')
+    @component('components.nav.panel')
     @endcomponent
 @endsection
 
 @section('main')
-    <div class="tabs col-12 d-flex justify-content-between pt-5">
-        <div class="tab-menu p-2">
+    <div class="tabs col-12 d-flex justify-content-between p-0">
+        <div class="tab-menu p-2 pt-5">
             <ul class="d-flex justify-content-around m-0 p-0">
                 <li class="mb-2"><a class="tab-button opened" href="#noticias">
                     <i class="tab-icon fas fa-file"></i>
@@ -35,20 +35,16 @@
                     <span class="tab-text p-2">Nueva noticia</span>
                 </a></li>
                 <li class="mb-2"><a class="tab-button" href="#miembros">
-                    <i class="tab-icon fas fa-file"></i>
+                    <i class="tab-icon fas fa-user-friends"></i>
                     <span class="tab-text p-2">Miembros del equipo</span>
                 </a></li>
                 <li class="mb-2"><a class="tab-button" href="#nuevo-miembro">
                     <i class="tab-icon fas fa-plus"></i>
                     <span class="tab-text p-2">Nuevo miembro</span>
                 </a></li>
-                <li><a class="tab-button" href="#config">
-                    <i class="tab-icon fas fa-cog"></i>
-                    <span class="tab-text p-2">Configuración</span>
-                </a></li>
             </ul>
         </div>
-        <div class="tab-body pl-md-3 pt-3 pt-md-0">
+        <div class="tab-body pt-3 pt-md-5">
             <div id="noticias" class="noticias tab-content opened">
                 @component('blog.components.noticias', ['noticias' => $data['noticias'], 'count' => $counts['noticias']])
                 @endcomponent
@@ -59,10 +55,6 @@
             </div>
             <div id="miembros" class="miembros tab-content">
                 @component('blog.components.miembros', ['miembros' => $data['miembros'], 'count' => $counts['miembros']])
-                @endcomponent
-            </div>
-            <div id="config" class="config tab-content">
-                @component('blog.components.config')
                 @endcomponent
             </div>
             <div id="nuevo-miembro" class="nuevo-miembro tab-content">

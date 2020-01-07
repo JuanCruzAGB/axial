@@ -3,9 +3,9 @@
 ?>
 <section>
     <div class="title">
-        <h1 class="mb-3 p-3">Nuevo miembro</h1>
+        <h1 class="d-flex justify-content-center justify-content-md-start mb-3 p-3">Nuevo miembro</h1>
     </div>
-    <div class="content">
+    <div class="content px-3">
         <form action="/miembro/crear"
             class="form-validate"
             method="post"

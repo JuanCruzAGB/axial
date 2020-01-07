@@ -96,6 +96,7 @@ a:hover{
     
     .nav-menu .second-row{
         flex-basis: 70%;
+        min-width: 70%;
         height: 6.3rem;
     }
 }
