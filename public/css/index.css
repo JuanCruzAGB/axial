@@ -77,12 +77,27 @@ a:hover{
     background: #25D366;
 }
 
+#footer{
+    background-color: var(--color-cuatro);
+    color: #fff
+}
+
+#footer a{
+    color: #fff;
+}
+
 /* MD */
 @media(min-width: 768px){
     .nav-menu::before{
         bottom: -33px;
         height: 35px;
     }
+
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;}
 }
 
 /* LG */

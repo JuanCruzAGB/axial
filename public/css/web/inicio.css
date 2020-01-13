@@ -382,6 +382,10 @@
     border: 1px solid var(--color-uno);
 }
 
+.listado .miembro{
+    height: 350px !important;
+}
+
 /* MD */
 @media(min-width: 768px){
     .jumbotron .container h2 span:last-child{
