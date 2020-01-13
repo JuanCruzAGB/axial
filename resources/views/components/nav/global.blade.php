@@ -29,7 +29,7 @@
                 Equipo
             </a></li>
             <li><a href="/noticias" class="nav-link">
-                Noticias
+                Blog
             </a></li>
             @if(Auth::check())
             <li class="collapsable closed">

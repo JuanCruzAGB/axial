@@ -122,6 +122,16 @@ section{
     color: white;
 }
 
+.cards .btn{
+    background-color: var(--color-uno) !important;
+    outline: none;
+    border: transparent;
+}
+
+.cards .card-footer a{
+    color: var(--color-uno);
+}
+
 /* MD */
 @media(min-width: 768px){
     .post{

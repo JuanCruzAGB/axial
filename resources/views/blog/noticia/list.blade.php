@@ -8,7 +8,7 @@
 @endsection
 
 @section('title')
-    Noticias
+    Blog
 @endsection
 
 @section('nav')
@@ -17,8 +17,8 @@
 @endsection
 
 @section('main')
-    <section class="col-12 col-md-10 col-xl-8 mx-auto pt-3 px-3">
-        <div class="title">
+    <section class="col-12 col-md-10 col-lg-12 mx-auto pt-3 px-3">
+       <!--  <div class="title">
             <h1 class="mb-3">Listado de noticias</h1>
         </div>
         <div class="row mx-0">
@@ -43,8 +43,84 @@
                     </a>
                 @endforeach
             @endif
+        </div> -->
+        <!-- Page Content -->
+
+
+
+  <!-- Blog Entries Column -->
+
+    <h1 class="my-4 text-center">Noticias</h1>
+
+    <!-- Blog Post -->
+    <div class="cards row d-flex justify-content-around">
+        <div class="card mb-4  mx-lg-1 col-12 col-lg-3 p-0">
+        <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+        <div class="card-body">
+            <h2 class="card-title">Titulo de la noticia</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <a href="#" class="btn btn-primary">Leer más &rarr;</a>
         </div>
-    </section>
+        <div class="card-footer text-muted">
+            Posteado el 4 de enero, 2033
+        </div>
+        </div>
+        <div class="card mb-4 mx-lg-1 col-12 col-lg-3 p-0">
+        <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+        <div class="card-body">
+            <h2 class="card-title">Titulo de la noticia</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <a href="#" class="btn btn-primary">Leer más &rarr;</a>
+        </div>
+        <div class="card-footer text-muted">
+            Posteado el 4 de enero, 2033
+        </div>
+        </div>
+        <div class="card mb-4 mx-lg-1  col-12 col-lg-3 p-0">
+        <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+        <div class="card-body">
+            <h2 class="card-title">Titulo de la noticia</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <a href="#" class="btn btn-primary">Leer más &rarr;</a>
+        </div>
+        <div class="card-footer text-muted">
+            Posteado el 4 de enero, 2033
+        </div>
+        </div>
+        <div class="card mb-4 mx-lg-1  col-12 col-lg-3 p-0">
+            <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+            <div class="card-body">
+                <h2 class="card-title">Titulo de la noticia</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                <a href="#" class="btn btn-primary">Leer más &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+                Posteado el 4 de enero, 2033
+            </div>
+        </div>
+        <div class="card mb-4 mx-lg-1  col-12 col-lg-3 p-0">
+            <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+            <div class="card-body">
+                <h2 class="card-title">Titulo de la noticia</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                <a href="#" class="btn btn-primary">Leer más &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+                Posteado el 4 de enero, 2033
+            </div>
+        </div>
+        <div class="card mb-4 mx-lg-1  col-12 col-lg-3 p-0">
+            <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+            <div class="card-body">
+                <h2 class="card-title">Titulo de la noticia</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                <a href="#" class="btn btn-primary">Leer más &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+                Posteado el 4 de enero, 2033
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('footer')
