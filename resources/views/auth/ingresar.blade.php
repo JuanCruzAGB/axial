@@ -28,58 +28,60 @@
             enctype="multipart/form-data"
             data-validation="{{$validation}}">
             @csrf
-            <div class="row">
-                <div class="form-group form-group-sm col-12 mb-2">
-                    <label for="email" class="input-name m-0 p-0">
-                        <span class="input-text">Correo</span>
-                    </label>
-                    <input id="email"
-                        name="email"
-                        type="text"
-                        class="form-control m-0 p-2"
-                        value="{{old('email')}}"
-                        placeholder="ejemplo@email.com">
-                    <div @if($errors->has('email'))
-                        class="invalid-tooltip showed"
-                    @else
-                        class="invalid-tooltip"
-                    @endif>
-                        @if($errors->has('email'))
-                            <small>{{$errors->first('email')}}</small>
-                        @endif
+            <div class="login-container">
+                <div class="row">
+                    <div class="form-group form-group-sm col-12 mb-2 ml-5">
+                        <label for="email" class="input-name m-0 p-0">
+                            <span class="input-text">Correo</span>
+                        </label>
+                        <input id="email"
+                            name="email"
+                            type="text"
+                            class="form-control m-0 p-2 w-75"
+                            value="{{old('email')}}"
+                            placeholder="ejemplo@email.com">
+                        <div @if($errors->has('email'))
+                            class="invalid-tooltip showed"
+                        @else
+                            class="invalid-tooltip"
+                        @endif>
+                            @if($errors->has('email'))
+                                <small>{{$errors->first('email')}}</small>
+                            @endif
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group form-group-sm col-12 mb-2">
-                    <label for="password" class="input-name m-0 p-0">
-                        <span class="input-text">Contraseña</span>
-                    </label>
-                    <input id="password" 
-                        name="password"
-                        type="password" 
-                        class="form-control m-0 p-2"
-                        placeholder="Contraseña">
-                    <div @if($errors->has('password'))
-                        class="invalid-tooltip showed"
-                    @else
-                        class="invalid-tooltip"
-                    @endif>
-                        @if($errors->has('password'))
-                            <small>{{$errors->first('password')}}</small>
-                        @endif
+                    <div class="form-group form-group-sm col-12 mb-2 ml-5">
+                        <label for="password" class="input-name m-0 p-0">
+                            <span class="input-text">Contraseña</span>
+                        </label>
+                        <input id="password" 
+                            name="password"
+                            type="password" 
+                            class="form-control m-0 p-2 w-75"
+                            placeholder="Contraseña">
+                        <div @if($errors->has('password'))
+                            class="invalid-tooltip showed"
+                        @else
+                            class="invalid-tooltip"
+                        @endif>
+                            @if($errors->has('password'))
+                                <small>{{$errors->first('password')}}</small>
+                            @endif
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-12 d-flex justify-content-end">
-                    <div class="form-check d-flex align-items-center mr-2 p-0">
-                        <input class="form-check-input m-0" type="checkbox" id="autoSizingCheck2" name="remember">
-                        <label class="form-check-label ml-4" for="autoSizingCheck2">Recordarme</label>
+                    <div class="col-12 d-flex justify-content-end mt-4 mb-5 loginDivSubmit">
+                        <div class="form-check d-flex align-items-center mr-3 p-0">
+                            <input class="form-check-input m-0" type="checkbox" id="autoSizingCheck2" name="remember">
+                            <label class="form-check-label ml-4" for="autoSizingCheck2">Recordarme</label>
+                        </div>
+                    
+                            <button class="form-submit btn btn-primary mr-5"
+                                type="submit"
+                                name="action">Ingresar
+                                <i class="submit-icon fas fa-caret-right"></i>
                     </div>
-                    <button class="form-submit btn btn-primary"
-                        type="submit"
-                        name="action">Ingresar
-                        <i class="submit-icon fas fa-caret-right"></i>
-                    </button>
                 </div>
             </div>
         </form>

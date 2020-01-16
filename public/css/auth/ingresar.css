@@ -12,9 +12,31 @@
 /* LG */
 @media(min-width: 1024px){
     /**/
+
+    .login-container{
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    #email, #password{
+        width: 40rem !important;
+    }
 }
 
 /* XL */
 @media(min-width: 1200px){
-    /**/
+
+    .form-group{
+        width: 10rem;
+    }
+
+    .login-container{
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    #email, #password{
+        width: 35rem !important;
+        margin-left: 10rem;
+    }
 }
