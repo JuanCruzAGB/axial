@@ -65,14 +65,14 @@
                                 <td>{{$miembro->puesto}}</td>
                                 <td id="iconos-tabla">
                                     <p data-placement="top" data-toggle="tooltip" title="Ver más">
-                                        <a href="/miembro/{{$miembro->slug}}" class="btn btn-primary btn-xs">
+                                        <a href="/miembro/{{$miembro->slug}}" class="btn btn-primary ver-mas btn-xs">
                                             <span class="button-icon fas fa-eye"></span>
                                         </a>
                                     </p>
                                 </td>
                                 <td id="iconos-tabla">
                                     <p data-placement="top" data-toggle="tooltip" title="Editar">
-                                        <a href="/miembro/{{$miembro->slug}}/editar" class="btn btn-primary btn-xs">
+                                        <a href="/miembro/{{$miembro->slug}}/editar" class="btn btn-primary editar btn-xs">
                                             <span class="button-icon fas fa-pen"></span>
                                         </a>
                                     </p>

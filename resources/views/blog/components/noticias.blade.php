@@ -65,23 +65,23 @@
                             <td class="preview">{!!$noticia->contenido!!}</td>
                             <td id="iconos-tabla">
                                 <p data-placement="top" data-toggle="tooltip" title="Ver más">
-                                    <a href="/noticia/{{$noticia->slug}}" class="btn btn-primary btn-xs">
+                                    <a href="/noticia/{{$noticia->slug}}" class="btn btn-primary ver-mas btn-xs">
                                         <span class="button-icon fas fa-eye"></span>
                                     </a>
                                 </p>
                             </td>
                             <td id="iconos-tabla">
                                 <p data-placement="top" data-toggle="tooltip" title="Editar">
-                                    <a href="/noticia/{{$noticia->slug}}/editar" class="btn btn-primary btn-xs">
+                                    <a href="/noticia/{{$noticia->slug}}/editar" class="btn btn-primary editar btn-xs">
                                         <span class="button-icon fas fa-pen"></span>
                                     </a>
                                 </p>
                             </td>
                             <td id="iconos-tabla">
                                 <p data-placement="top" data-toggle="tooltip" title="Borrar">
-                                    <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete" data-title="Borrar noticia" data-body="¿Estás seguro de que querés borrar la noticia?" data-url="/noticia/{{$noticia->id_noticia}}/eliminar" data-toggle="modal" data-target="#delete-modal">
+                                    <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete-modal" data-title="Borrar noticia" data-body="¿Estás seguro de que querés borrar la noticia?" data-url="/noticia/{{$noticia->id_noticia}}/eliminar" data-toggle="modal" data-target="#delete-modal">
                                         <span class="button-icon fas fa-trash"></span>
-                                    </button>
+                                    </button>                                    
                                 </p>
                             </td>
                         </tr>  

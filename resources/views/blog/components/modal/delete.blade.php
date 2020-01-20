@@ -9,11 +9,11 @@
             </div>
             <div class="modal-body"></div>
             <div class="modal-footer">
-                <button class="confirm-button btn btn-primary">
-                    <span class="input-text mr-2">Aceptar</span>
+                <button class="confirm-button btn btn-primary aceptar-modal">
+                    <span class="input-text mr-2 ">Aceptar</span>
                     <i class="input-icon fas fa-check"></i>
                 </button>
-                <button class="cancel-button btn btn-primary" data-dismiss="modal">
+                <button class="cancel-button btn btn-primary cancelar-modal" data-dismiss="modal">
                     <span class="input-text mr-2">Cancelar</span>
                     <i class="input-icon fas fa-times"></i>
                 </button>

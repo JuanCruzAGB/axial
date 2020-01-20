@@ -256,6 +256,30 @@
     padding-left: 1rem;
 }
 
+#iconos-tabla .editar{
+    background: var(--color-uno) !important;
+    color: #fff;
+    border: none;
+}
+
+#iconos-tabla .ver-mas{
+    background: var(--color-uno) !important;
+    color: #fff;
+    border: none;
+}
+
+
+.aceptar-modal{
+    background-color: var(--color-uno) !important;
+    border: none;
+}
+
+.cancelar-modal{
+    background-color: var(--color-uno) !important;
+    border: none;
+}
+
+
 /* MD */
 @media(min-width: 768px){
     .tabs .tab-menu{
