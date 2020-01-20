@@ -14,11 +14,11 @@
             @csrf
             <div class="row">
                 <div class="col-12">
-                    <div class="form-group">
-                        <label for="titulo" class="input-name">
+                    <div class="titulo form-group">
+                        <label for="noticia_titulo" class="input-name">
                             <span class="input-text">Título</span>
                         </label>
-                        <input id="titulo"
+                        <input id="noticia_titulo"
                             name="titulo"
                             type="text"
                             class="form-control mb-3 w-75"
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="form-group">
+                    <div class="imagen form-group">
                         <input class="make-a-file make-an-image w-75"
                             type="file"
                             name="imagen"
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="form-group">
+                    <div class="contenido form-group">
                         <label class="input-name">
                             <span class="input-text">Contenido</span>
                         </label>
@@ -65,9 +65,9 @@
                             rows="10"
                             placeholder="Contenido">{!!old('contenido')!!}</textarea>
                         <div @if($errors->has('contenido'))
-                            class="invalid-tooltip showed mt-3"
+                            class="mt-3 invalid-tooltip showed mt-3"
                         @else
-                            class="invalid-tooltip mt-3"
+                            class="mt-3 invalid-tooltip mt-3"
                         @endif>
                             @if($errors->has('contenido'))
                                 <small>{{$errors->first('contenido')}}</small>

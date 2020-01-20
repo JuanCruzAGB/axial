@@ -63,9 +63,27 @@
                                 <td>{{$miembro->nombre}}</td>
                                 <td>{{$miembro->titulo}}</td>
                                 <td>{{$miembro->puesto}}</td>
-                                <td id="iconos-tabla"><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="button-icon fas fa-eye"></span></button></p></td>
-                                <td id="iconos-tabla"><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="button-icon fas fa-pen"></span></button></p></td>
-                                <td id="iconos-tabla"><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="button-icon fas fa-trash"></span></button></p></td>
+                                <td id="iconos-tabla">
+                                    <p data-placement="top" data-toggle="tooltip" title="Ver más">
+                                        <a href="/miembro/{{$miembro->slug}}" class="btn btn-primary btn-xs">
+                                            <span class="button-icon fas fa-eye"></span>
+                                        </a>
+                                    </p>
+                                </td>
+                                <td id="iconos-tabla">
+                                    <p data-placement="top" data-toggle="tooltip" title="Editar">
+                                        <a href="/miembro/{{$miembro->slug}}/editar" class="btn btn-primary btn-xs">
+                                            <span class="button-icon fas fa-pen"></span>
+                                        </a>
+                                    </p>
+                                </td>
+                                <td id="iconos-tabla">
+                                    <p data-placement="top" data-toggle="tooltip" title="Sacar">
+                                        <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete" data-title="Sacar miembro" data-body="¿Estás seguro de que querés borrar la miembro?" data-url="/miembro/{{$miembro->id_miembro}}/eliminar" data-toggle="modal" data-target="#delete-modal">
+                                            <span class="button-icon fas fa-trash"></span>
+                                        </button>
+                                    </p>
+                                </td>
                             </tr>    
                         @endforeach                               
                     </tbody>

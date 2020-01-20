@@ -28,6 +28,13 @@ let AddOn = {
         }else{
             this.removeEstudio(btn.parentNode.parentNode);
         }
+        let parentClassNames = btn.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.classList;
+        let re = /form-validation-/;
+        for(let className of parentClassNames){
+            if(re.test(className)){
+                Validation.update(className);
+            }
+        }
         this.changeIcon(btn);
     },
     /**

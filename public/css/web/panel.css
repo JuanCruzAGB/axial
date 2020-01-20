@@ -34,11 +34,7 @@
     border: none;
 }
 
-#id{
-    min-width: 3.5rem;
-    width: 3.5rem;
-}
-
+#id,
 #iconos-tabla{
     min-width: 3.5rem;
     width: 3.5rem;
@@ -116,8 +112,8 @@ form .crear-noticia{
 @media(min-width: 1024px){
     .tabs .tab-body .tab-content section .content table.noticias tr th,
     .tabs .tab-body .tab-content section .content table.noticias tr td{
-        width: calc(((100vw - 20vw) / 8) * 2);
-        min-width: calc(((100vw - 20vw) / 8) * 2);
+        width: calc((100vw - 20vw - (3.5rem * 4)) / 2);
+        min-width: calc((100vw - 20vw - (3.5rem * 4)) / 2);
     }
     
     .tabs .tab-body .tab-content section .content table.noticias tr .id{
@@ -138,8 +134,8 @@ form .crear-noticia{
 
     .tabs .tab-body .tab-content section .content table.miembros tr th,
     .tabs .tab-body .tab-content section .content table.miembros tr td{
-        width: calc(((100vw - 20vw) / 10) * 2);
-        min-width: calc(((100vw - 20vw) / 10) * 2);
+        width: calc((100vw - 20vw - (3.5rem * 4)) / 3);
+        min-width: calc((100vw - 20vw - (3.5rem * 4)) / 3);
     }
     
     .tabs .tab-body .tab-content section .content table.miembros tr .id{

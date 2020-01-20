@@ -14,7 +14,7 @@
             @csrf
             <div class="row">
                 <div class="col-12">
-                    <div class="form-group">
+                    <div class="nombre form-group">
                         <label for="nombre" class="input-name">
                             <span class="input-text">Nombre</span>
                         </label>
@@ -36,11 +36,11 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="form-group">
-                        <label for="titulo" class="input-name">
+                    <div class="titulo form-group">
+                        <label for="miembro_titulo" class="input-name">
                             <span class="input-text">Título</span>
                         </label>
-                        <input id="titulo"
+                        <input id="miembro_titulo"
                             name="titulo"
                             type="text"
                             class="form-control mb-3"
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="form-group">
+                    <div class="puesto form-group">
                         <label for="puesto" class="input-name">
                             <span class="input-text">Puesto</span>
                         </label>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="form-group">
+                    <div class="imagen form-group">
                         <input class="make-a-file make-an-image"
                             type="file"
                             name="imagen"
@@ -125,6 +125,17 @@
                                             </button>
                                         </div>
                                     @endif
+                                    <div @if($errors->has('estudios') || $errors->has('estudios.*'))
+                                        class="invalid-tooltip showed mb-3"
+                                    @else
+                                        class="invalid-tooltip mb-3"
+                                    @endif>
+                                        @if($errors->has('estudios'))
+                                            <small>{{$errors->first('estudios')}}</small>
+                                        @elseif($errors->has('estudios.*'))
+                                            <small>{{$errors->first('estudios.*')}}</small>
+                                        @endif
+                                    </div>
                                 </div>
                             @endfor
                         @else
@@ -142,22 +153,12 @@
                                     </button>
                                 </div>
                             </div>
+                            <div class="invalid-tooltip mb-3"></div>
                         @endif
-                        <div @if($errors->has('estudios') || $errors->has('estudios.*'))
-                            class="invalid-tooltip showed mb-3"
-                        @else
-                            class="invalid-tooltip mb-3"
-                        @endif>
-                            @if($errors->has('estudios'))
-                                <small>{{$errors->first('estudios')}}</small>
-                            @elseif($errors->has('estudios.*'))
-                                <small>{{$errors->first('estudios.*')}}</small>
-                            @endif
-                        </div>
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="form-group">
+                    <div class="cv form-group">
                         <label class="input-name">
                             <span class="input-text">CV</span>
                         </label>
@@ -168,9 +169,9 @@
                             rows="10"
                             placeholder="CV">{!!old('cv')!!}</textarea>
                         <div @if($errors->has('cv'))
-                            class="invalid-tooltip showed"
+                            class="mt-3 invalid-tooltip showed"
                         @else
-                            class="invalid-tooltip"
+                            class="mt-3 invalid-tooltip"
                         @endif>
                             @if($errors->has('cv'))
                                 <small>{{$errors->first('cv')}}</small>
@@ -179,7 +180,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="form-group">
+                    <div class="link form-group">
                         <label for="link" class="input-name">
                             <span class="input-text">Link</span>
                         </label>

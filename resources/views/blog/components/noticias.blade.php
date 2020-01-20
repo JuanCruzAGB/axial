@@ -65,16 +65,16 @@
                             <td class="preview">{!!$noticia->contenido!!}</td>
                             <td id="iconos-tabla">
                                 <p data-placement="top" data-toggle="tooltip" title="Ver más">
-                                    <button class="btn btn-primary btn-xs" data-title="Ver más" data-toggle="modal" data-target="#edit">
+                                    <a href="/noticia/{{$noticia->slug}}" class="btn btn-primary btn-xs">
                                         <span class="button-icon fas fa-eye"></span>
-                                    </button>
+                                    </a>
                                 </p>
                             </td>
                             <td id="iconos-tabla">
                                 <p data-placement="top" data-toggle="tooltip" title="Editar">
-                                    <button class="btn btn-primary btn-xs" data-title="Editar noticia" data-toggle="modal" data-target="#edit">
+                                    <a href="/noticia/{{$noticia->slug}}/editar" class="btn btn-primary btn-xs">
                                         <span class="button-icon fas fa-pen"></span>
-                                    </button>
+                                    </a>
                                 </p>
                             </td>
                             <td id="iconos-tabla">
