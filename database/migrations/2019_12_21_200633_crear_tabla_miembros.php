@@ -14,12 +14,11 @@
                 $table->increments('id_miembro');
                 $table->string('nombre');
                 $table->string('titulo');
-                $table->string('puesto');
+                $table->string('puesto')->nullable();
                 $table->string('imagen');
-                $table->json('estudios');
                 $table->text('cv');
-                $table->text('link');
-                $table->unsignedInteger('id_user');
+                $table->text('link')->nullable();
+                $table->unsignedInteger('id_usuario');
                 $table->string('slug');
                 $table->timestamps();
             });

@@ -13,6 +13,7 @@
 // AuthController
     Route::get('/ingresar', 'Auth\LoginController@showIngresar')->name('auth.showIngresar');
     Route::post('/ingresar', 'Auth\LoginController@doIngresar')->name('auth.doIngresar');
+    Route::get('/salir', 'Auth\LoginController@doSalir')->name('auth.doSalir');
 
     Route::middleware('auth')->group(function(){
 // NoticiaController

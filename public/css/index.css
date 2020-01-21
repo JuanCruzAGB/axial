@@ -86,6 +86,11 @@ a:hover{
     color: #fff;
 }
 
+.popup-notification{
+    --primary-color: var(--color-cuatro);
+    --secondary-color: var(--color-cinco);
+}
+
 /* MD */
 @media(min-width: 768px){
     .nav-menu::before{

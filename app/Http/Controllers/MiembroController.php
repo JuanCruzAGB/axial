@@ -1,7 +1,6 @@
 <?php
     namespace App\Http\Controllers;
 
-    use App\Models\Blog\Estudio;
     use App\Models\Blog\Miembro;
     use Auth;
     use Cviebrock\EloquentSluggable\Services\SlugService;
@@ -53,21 +52,11 @@
                     $data['imagen'] = $filepath;
                 }
 
-                $data['id_user'] = Auth::user()->id_user;
+                $data['id_usuario'] = Auth::user()->id_user;
 
                 $data['slug'] = SlugService::createSlug(Miembro::class, 'slug', $data['nombre']);
                 
                 $miembro = Miembro::create($data);
-
-                if(isset($data['estudios'])){
-                    foreach($data['estudios'] as $estudio){
-                        $auxData = [];
-                        $auxData['id_miembro'] = $miembro->id_miembro;
-                        $auxData['titulo'] = $estudio;
-    
-                        Estudio::create($auxData);
-                    }
-                }
             }
         }
 
@@ -91,14 +80,12 @@
          */
         public function showEdit($slug){      
             $miembro = Miembro::findBySlug($slug);
-            $estudios = Estudio::where('id_miembro', '=', $miembro->id_miembro)->get();
             return view('blog.miembro.edit', [
                 'validation' => json_encode([
                     'rules' => Miembro::$validation['edit']['rules'],
                     'messages' => Miembro::$validation['edit']['messages'][$this->idiom],
                 ]),
                 'miembro' => $miembro,
-                'estudios' => $estudios,
             ]);
         }
 
@@ -140,21 +127,6 @@
                 }
 
                 $miembro->update($data);
-
-                $estudios = Estudio::where('id_miembro', '=', $miembro->id_miembro)->get();
-                foreach($estudios as $estudio){
-                    $estudio->delete();
-                }
-
-                if(isset($data['estudios'])){
-                    foreach($data['estudios'] as $estudio){
-                        $auxData = [];
-                        $auxData['id_miembro'] = $miembro->id_miembro;
-                        $auxData['titulo'] = $estudio;
-    
-                        Estudio::create($auxData);
-                    }
-                }
             
                 if(isset($currentImage) && !empty($currentImage)){
                     Storage::delete($currentImage);
@@ -177,14 +149,8 @@
          */
         public function doDelete($id_miembro){
             $miembro = Miembro::find($id_miembro);
-            $miembro->delete();
-
-            $estudios = Estudio::where('id_miembro', '=', $miembro->id_miembro)->get();
-            foreach($estudios as $estudio){
-                $estudio->delete();
-            }
-
             $currentImage = $miembro->imagen;
+            $miembro->delete();
             if(isset($currentImage) && !empty($currentImage)){
                 Storage::delete($currentImage);
             }

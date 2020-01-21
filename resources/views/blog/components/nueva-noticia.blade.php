@@ -16,7 +16,7 @@
                 <div class="col-12">
                     <div class="titulo form-group">
                         <label for="noticia_titulo" class="input-name">
-                            <span class="input-text">Título</span>
+                            <span class="input-text">Título *</span>
                         </label>
                         <input id="noticia_titulo"
                             name="titulo"
@@ -56,7 +56,7 @@
                 <div class="col-12">
                     <div class="contenido form-group">
                         <label class="input-name">
-                            <span class="input-text">Contenido</span>
+                            <span class="input-text">Contenido *</span>
                         </label>
                         <textarea id="contenido"
                             name="contenido"

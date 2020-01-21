@@ -13,6 +13,12 @@ let CollapsableCard = {
                 CollapsableCard.switch(i);
             });
         }
+        let href = window.location.href.split("#").pop();
+        for(let i = 0; i < this.cards.length; i++){
+            if(this.cards[i].id == href){
+                CollapsableCard.switch(i);
+            }
+        }
     },
     /**
      * Switch between Close and open the collapsable card.

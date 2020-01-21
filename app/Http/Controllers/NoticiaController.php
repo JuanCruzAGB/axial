@@ -21,7 +21,7 @@
          */
         public function info($slug){
             $noticia = Noticia::findBySlug($slug);
-            $noticia->date = $this->createDate($this->idiom, $noticia);
+            $noticia->fecha = $this->createDate($this->idiom, $noticia);
             
             $user = User::find($noticia->id_usuario);
             return view('blog.noticia.info', [
@@ -35,7 +35,7 @@
             $noticias = Noticia::all();
             $count = 0;
             foreach($noticias as $noticia){
-                $noticia->date = $this->createDate($this->idiom, $noticia);
+                $noticia->fecha = $this->createDate($this->idiom, $noticia);
                 $count++;
             }
             return view('blog.noticia.list', [

@@ -16,7 +16,7 @@
                 <div class="col-12">
                     <div class="nombre form-group">
                         <label for="nombre" class="input-name">
-                            <span class="input-text">Nombre</span>
+                            <span class="input-text">Nombre *</span>
                         </label>
                         <input id="nombre"
                             name="nombre"
@@ -38,7 +38,7 @@
                 <div class="col-12">
                     <div class="titulo form-group">
                         <label for="miembro_titulo" class="input-name">
-                            <span class="input-text">Título</span>
+                            <span class="input-text">Título *</span>
                         </label>
                         <input id="miembro_titulo"
                             name="titulo"
@@ -98,69 +98,9 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="estudios form-group mb-0 pr-3">
-                        <label class="input-name">
-                            <span class="input-text">Estudios</span>
-                        </label>
-                        @if(old('estudios'))
-                            @for($i = 0; $i < count(old('estudios')); $i++)
-                                <div class="row d-flex justify-content-between mb-3">
-                                    <div class="col-8">
-                                        <input name="estudios[]"
-                                            type="text"
-                                            class="form-control"
-                                            value="{{old('estudios.' . $i)}}"
-                                            placeholder="Estudio">
-                                    </div>
-                                    @if(($i + 1) < count(old('estudios')))
-                                        <div class="col-2">
-                                            <button class="less-button">
-                                                <i class="button-icon fas fa-minus"></i>
-                                            </button>
-                                        </div>
-                                    @else
-                                        <div class="col-2">
-                                            <button class="add-button">
-                                                <i class="button-icon fas fa-plus"></i>
-                                            </button>
-                                        </div>
-                                    @endif
-                                    <div @if($errors->has('estudios') || $errors->has('estudios.*'))
-                                        class="invalid-tooltip showed mb-3"
-                                    @else
-                                        class="invalid-tooltip mb-3"
-                                    @endif>
-                                        @if($errors->has('estudios'))
-                                            <small>{{$errors->first('estudios')}}</small>
-                                        @elseif($errors->has('estudios.*'))
-                                            <small>{{$errors->first('estudios.*')}}</small>
-                                        @endif
-                                    </div>
-                                </div>
-                            @endfor
-                        @else
-                            <div class="row d-flex justify-content-between mb-3">
-                                <div class="col-8">
-                                    <input name="estudios[]"
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="Estudio">
-                                </div>
-
-                                <div class="col-2">
-                                    <button class="add-button">
-                                        <i class="button-icon fas fa-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="invalid-tooltip mb-3"></div>
-                        @endif
-                    </div>
-                </div>
-                <div class="col-12">
                     <div class="cv form-group">
                         <label class="input-name">
-                            <span class="input-text">CV</span>
+                            <span class="input-text">CV *</span>
                         </label>
                         <textarea id="cv"
                             name="cv"

@@ -90,7 +90,7 @@
             <div class="miembros cards mt-4 mx-3 pb-0">
                 @if(count($miembros))
                     @foreach($miembros as $miembro)
-                        <div id="{{$miembro->nombre}}" class="miembro collapsable-card card mr-3 p-0">
+                        <div id="{{$miembro->slug}}" class="miembro collapsable-card card mr-3 p-0">
                             <div class="card-background">
                                 <img class="mb-0" src="{{asset('storage/' . $miembro->imagen)}}" alt="{{$miembro->nombre}}">
                             </div>
@@ -103,11 +103,6 @@
                                     <div class="row d-flex justify-content-end">
                                         <h4 class="col-12 m-0 p-0">{{$miembro->titulo}}</h4>
                                         <span class="col-12 m-0 p-0">{{$miembro->puesto}}</span>
-                                        <ul class="col-12 my-3 pl-4 p-0">
-                                            @foreach($miembro->estudios as $estudio)
-                                                <li>{{$estudio->titulo}}</li>
-                                            @endforeach
-                                        </ul>
                                         <div class="col-12 p-0">{!!$miembro->cv!!}</div>
                                         @if($miembro->link !== null && $miembro->link != '')
                                             <a target="_blank" href="{{$miembro->link}}" class="btn btn-primary">Ver más</a>
