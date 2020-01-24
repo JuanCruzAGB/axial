@@ -57,6 +57,10 @@
     width: 100%;
 }
 
+.editar-h1 h1{
+    background-color: #fff;
+}
+
 /* MD */
 @media(min-width: 768px){
     /**/

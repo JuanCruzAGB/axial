@@ -48,6 +48,11 @@
     width: 100%;
 }
 
+.crear-noticia{
+    background-color: var(--color-uno) !important;
+    border: none;
+}
+
 /* MD */
 @media(min-width: 768px){
     /**/
