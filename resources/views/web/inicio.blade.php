@@ -39,7 +39,7 @@
 @endsection
 
 @section('main')
-    <div class="separador-banner col-12 p-3 px-md-5">
+    <div class="separador-banner col-12 px-md-5">
         <span class="quotes quote-left"><i class="quote-icon fas fa-quote-left"></i></span>
         <span class="quotes quote-right"><i class="quote-icon fas fa-quote-right"></i></span>
         <p class="col-12 col-md-10 col-lg-6 text-white text-center m-0 py-4 py-lg-2 px-md-5 px-lg-4">El dolor de espalda es un problema que afecta al 80% de la población mundial.</p>
