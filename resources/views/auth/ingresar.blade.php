@@ -4,7 +4,7 @@
 @extends('layout.index')
 
 @section('css')
-    <link href="{{asset('css/Validation.css')}}" rel="stylesheet">
+    <link href="{{asset('ValidationJS/css/styles.css')}}" rel="stylesheet">
     <link href="{{asset('css/auth/ingresar.css')}}" rel="stylesheet">
 @endsection
 
@@ -94,11 +94,11 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="{{asset('js/Validation/Validation.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/Validation/Rules.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/Validation/Messages.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/Validation/Requirements.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/Validation/Validator.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/Validation/Invalidator.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Validation.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Rules.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Messages.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Requirements.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Validator.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/auth/ingresar.js')}}"></script>
 @endsection
