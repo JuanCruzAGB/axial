@@ -56,6 +56,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--color-uno);
+    padding: 3rem;
 }
 
 .separador-banner::before{
@@ -114,6 +115,10 @@
 
 #nuestros-servicios h2{
     font-family: gotham-bold;
+}
+
+#nuestros-servicios span{
+    padding-top: 2rem;
 }
 
 .cartas-servicios .iconos-servicios{
@@ -484,8 +489,8 @@
     }
 
     .miembro.card{
-        min-width: calc(((100% - 2rem) / 3) - 1rem);
-        flex-basis: calc(((100% - 2rem) / 3) - 1rem);
+        min-width: calc(((80% - 2rem) / 3) - 1rem);
+        flex-basis: calc(((80% - 2rem) / 3) - 1rem);
         height: 500px;
     }
 

@@ -11,20 +11,20 @@
         public function run(){
             if($user = User::find(1)){
                 $data = [
-                    'name' => 'Pepe Diaz',
-                    'email' => 'ejemplo@correo.com',
-                    'password' => \Hash::make('12345678'),
-                    'slug' => 'pepe-diaz',
+                    'name' => 'grupoaxi',
+                    'email' => 'info@grupoaxial.org',
+                    'password' => \Hash::make('characarca19'),
+                    'slug' => 'grupoaxi',
                     'picture' => 'users\1.jpg',
                     'id_presentation' => 1,
                 ];
                 $user->update($data);
             }else{
                 $user = User::create([
-                    'name' => 'Pepe Diaz',
-                    'email' => 'ejemplo@correo.com',
-                    'password' => \Hash::make('12345678'),
-                    'slug' => 'pepe-diaz',
+                    'name' => 'grupoaxi',
+                    'email' => 'info@grupoaxial.org',
+                    'password' => \Hash::make('characarca19'),
+                    'slug' => 'grupoaxi',
                     'picture' => 'users\1.jpg',
                     'id_presentation' => 1,
                 ]);
