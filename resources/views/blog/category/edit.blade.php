@@ -6,7 +6,7 @@
 
 @section('css')
     <link href="{{asset('css/blog/category/edit.css')}}" rel="stylesheet">
-    <link href="{{asset('ValidationJS/css/styles.css')}}" rel="stylesheet">
+    <link href="{{asset('public/ValidationJS/css/styles.css')}}" rel="stylesheet">
 @endsection
 
 @section('title')
@@ -71,11 +71,11 @@
 @endsection
 
 @section('js')
-    <!-- <script type="text/javascript" src="{{asset('ValidationJS/js/Validation.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Rules.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Messages.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Requirements.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Validator.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script> -->
+    <!-- <script type="text/javascript" src="{{asset('public/ValidationJS/js/Validation.js')}}"></script>
+    <script type="text/javascript" src="{{asset('public/ValidationJS/js/Rules.js')}}"></script>
+    <script type="text/javascript" src="{{asset('public/ValidationJS/js/Messages.js')}}"></script>
+    <script type="text/javascript" src="{{asset('public/ValidationJS/js/Requirements.js')}}"></script>
+    <script type="text/javascript" src="{{asset('public/ValidationJS/js/Validator.js')}}"></script>
+    <script type="text/javascript" src="{{asset('public/ValidationJS/js/Invalidator.js')}}"></script> -->
     <script type="text/javascript" src="{{asset('js/blog/category/edit.js')}}"></script>
 @endsection

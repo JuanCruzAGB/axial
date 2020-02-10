@@ -242,14 +242,14 @@
 @endsection
 
 @section('js')
-    <script src="{{asset('ValidationJS/js/Validation.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Rule.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Message.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Requirement.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Validator.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Invalidator.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Form.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Input.js')}}"></script>
+    <script src="{{asset('public/ValidationJS/js/Validation.js')}}"></script>
+    <script src="{{asset('public/ValidationJS/js/Rule.js')}}"></script>
+    <script src="{{asset('public/ValidationJS/js/Message.js')}}"></script>
+    <script src="{{asset('public/ValidationJS/js/Requirement.js')}}"></script>
+    <script src="{{asset('public/ValidationJS/js/Validator.js')}}"></script>
+    <script src="{{asset('public/ValidationJS/js/Invalidator.js')}}"></script>
+    <script src="{{asset('public/ValidationJS/js/Form.js')}}"></script>
+    <script src="{{asset('public/ValidationJS/js/Input.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/web/inicio.js')}}"></script>
     <script src="vendor/animsition/js/animsition.min.js"></script>
     <script type="text/javascript" src="{{asset('vendor/select2/select2.min.js')}}"></script>
