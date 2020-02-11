@@ -11,6 +11,7 @@
     <link href="{{asset('vendor/animsition/css/animsition.min.css')}}" rel="stylesheet">
     <link href="{{asset('vendor/select2/select2.min.css')}}" rel="stylesheet">
     <link href="{{asset('vendor/daterangepicker/daterangepicker.css')}}" rel="stylesheet">
+    <link href="{{asset('css/web/footer.css')}}" rel="stylesheet">
     <link href="{{asset('css/web/inicio.css')}}" rel="stylesheet">
 @endsection
 
