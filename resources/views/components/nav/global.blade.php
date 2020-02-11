@@ -14,9 +14,6 @@
             <li><a href="/demo" class="nav-link">
                 Inicio
             </a></li>
-            <li><a href="/demo#nosotros" class="nav-link">
-                Nosotros
-            </a></li>
             <li class="collapsable closed">
                 <a href="/demo#servicios" class="collapsable-button">Servicios<i class="collapsable-icon fas fa-sort-down"></i></a>
                 <ul class="collapsable-menu">
@@ -42,6 +39,9 @@
                     <li class="m-0"><a href="/panel#config" class="collapsable-link">Configuración</a></li>
                 </ul>
             </li>
+            <li><a href="/demo#contacto" class="nav-link">
+                Contacto
+            </a></li>
             <li><a href="/salir" class="nav-link">
                 Cerrar Sesión
             </a></li>

@@ -10,9 +10,6 @@
             <li><a href="/demo" class="nav-link">
                 Inicio
             </a></li>
-            <li><a href="/demo#nosotros" class="nav-link">
-                Nosotros
-            </a></li>
             <li><a href="/demo#tratamiento-del-dolor" class="nav-link">
                 Tratamiento del dolor
             </a></li>
@@ -27,6 +24,9 @@
             </a></li>
             <li><a href="/noticias" class="nav-link">
                 Noticias
+            </a></li>
+            <li><a href="/demo#contacto" class="nav-link">
+                Contacto
             </a></li>
             @if(Auth::check())
             <li><a href="/panel" class="nav-link">
