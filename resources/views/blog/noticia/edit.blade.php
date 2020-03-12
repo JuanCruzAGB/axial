@@ -45,9 +45,9 @@
                             value="{{old('titulo')}}"
                             placeholder="Título">
                         <div @if($errors->has('titulo'))
-                            class="invalid-tooltip showed"
+                            class="support-box showed"
                         @else
-                            class="invalid-tooltip"
+                            class="support-box"
                         @endif>
                             @if($errors->has('titulo'))
                                 <small>{{$errors->first('titulo')}}</small>
@@ -63,9 +63,9 @@
                             data-text="Imagen"
                             data-notfound="No se eligió ninguna imagen.">
                         <div @if($errors->has('imagen'))
-                            class="invalid-tooltip showed mt-3"
+                            class="support-box showed mt-3"
                         @else
-                            class="invalid-tooltip mt-3"
+                            class="support-box mt-3"
                         @endif>
                             @if($errors->has('imagen'))
                                 <small>{{$errors->first('imagen')}}</small>
@@ -85,9 +85,9 @@
                             rows="10"
                             placeholder="Contenido">{!!old('contenido')!!}</textarea>
                         <div @if($errors->has('contenido'))
-                            class="mt-3 invalid-tooltip showed mt-3"
+                            class="mt-3 support-box showed mt-3"
                         @else
-                            class="mt-3 invalid-tooltip mt-3"
+                            class="mt-3 support-box mt-3"
                         @endif>
                             @if($errors->has('contenido'))
                                 <small>{{$errors->first('contenido')}}</small>
@@ -130,9 +130,9 @@
                                     value="{{old('titulo', $noticia->titulo)}}"
                                     placeholder="Título">
                                 <div @if($errors->has('titulo'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('titulo'))
                                         <small>{{$errors->first('titulo')}}</small>
@@ -149,9 +149,9 @@
                                     data-src="{{asset('storage/' . $noticia->imagen)}}"
                                     data-notfound='Imagen de la noticia: "{{$noticia->titulo}}"'>
                                 <div @if($errors->has('imagen'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('imagen'))
                                         <small>{{$errors->first('imagen')}}</small>
@@ -171,9 +171,9 @@
                                     rows="10"
                                     placeholder="Contenido">{!!old('contenido', $noticia->contenido)!!}</textarea>
                                 <div @if($errors->has('contenido'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('contenido'))
                                         <small>{{$errors->first('contenido')}}</small>

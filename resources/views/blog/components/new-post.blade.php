@@ -27,9 +27,9 @@
                             value="{{old('title')}}"
                             placeholder="Título">
                         <div @if($errors->has('title'))
-                            class="invalid-tooltip showed"
+                            class="support-box showed"
                         @else
-                            class="invalid-tooltip"
+                            class="support-box"
                         @endif>
                             @if($errors->has('title'))
                                 <small>{{$errors->first('title')}}</small>
@@ -54,9 +54,9 @@
                             @endforeach
                         </select>
                         <div @if($errors->has('id_category'))
-                            class="invalid-tooltip showed"
+                            class="support-box showed"
                         @else
-                            class="invalid-tooltip"
+                            class="support-box"
                         @endif>
                             @if($errors->has('id_category'))
                                 <small>{{$errors->first('id_category')}}</small>
@@ -90,9 +90,9 @@
                             </div>
                         @endforeach
                         <div @if($errors->has('tags'))
-                            class="invalid-tooltip showed"
+                            class="support-box showed"
                         @else
-                            class="invalid-tooltip"
+                            class="support-box"
                         @endif>
                             @if($errors->has('tags'))
                                 <small>{{$errors->first('tags')}}</small>
@@ -108,9 +108,9 @@
                             data-text="Imagen"
                             data-notfound="No se eligió ninguna imagen.">
                         <div @if($errors->has('image'))
-                            class="invalid-tooltip showed"
+                            class="support-box showed"
                         @else
-                            class="invalid-tooltip"
+                            class="support-box"
                         @endif>
                             @if($errors->has('image'))
                                 <small>{{$errors->first('image')}}</small>
@@ -130,9 +130,9 @@
                             rows="10"
                             placeholder="Contenido">{!!old('content')!!}</textarea>
                         <div @if($errors->has('content'))
-                            class="invalid-tooltip showed"
+                            class="support-box showed"
                         @else
-                            class="invalid-tooltip"
+                            class="support-box"
                         @endif>
                             @if($errors->has('content'))
                                 <small>{{$errors->first('content')}}</small>

@@ -80,6 +80,7 @@
     <script type="text/javascript" src="{{asset('ValidationJS/js/Validation.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Form.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Input.js')}}"></script>
+    <script type="text/javascript" src="{{asset('ValidationJS/js/Support.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Rule.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Requirement.js')}}"></script>
     <script type="text/javascript" src="{{asset('ValidationJS/js/Message.js')}}"></script>

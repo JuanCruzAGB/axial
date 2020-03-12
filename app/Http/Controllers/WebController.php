@@ -3,6 +3,7 @@
 
     use App\Models\Blog\Miembro;
     use App\Models\Blog\Noticia;
+    use App\Models\Web;
     use Auth;
     use Illuminate\Http\Request;
 
@@ -22,6 +23,10 @@
             $miembros = Miembro::all();
             return view('web.inicio', [
                 'miembros' => $miembros,
+                'validation' => json_encode([
+                    'rules' => Web::$validation['contactar']['rules'],
+                    'messages' => Web::$validation['contactar']['messages'][$this->idiom],
+                ]),
             ]);
         }
 

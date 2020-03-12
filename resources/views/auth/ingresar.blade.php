@@ -41,9 +41,9 @@
                             value="{{old('email')}}"
                             placeholder="ejemplo@email.com">
                         <div @if($errors->has('email'))
-                            class="invalid-tooltip showed"
+                            class="support-box showed"
                         @else
-                            class="invalid-tooltip"
+                            class="support-box"
                         @endif>
                             @if($errors->has('email'))
                                 <small>{{$errors->first('email')}}</small>
@@ -61,9 +61,9 @@
                             class="form-control m-0 p-2 w-75"
                             placeholder="Contraseña">
                         <div @if($errors->has('password'))
-                            class="invalid-tooltip showed"
+                            class="support-box showed"
                         @else
-                            class="invalid-tooltip"
+                            class="support-box"
                         @endif>
                             @if($errors->has('password'))
                                 <small>{{$errors->first('password')}}</small>

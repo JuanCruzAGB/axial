@@ -46,9 +46,9 @@
                                     value="{{old('nombre', $miembro->nombre)}}"
                                     placeholder="Nombre">
                                 <div @if($errors->has('nombre'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('nombre'))
                                         <small>{{$errors->first('nombre')}}</small>
@@ -68,9 +68,9 @@
                                     value="{{old('titulo', $miembro->titulo)}}"
                                     placeholder="Título">
                                 <div @if($errors->has('titulo'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('titulo'))
                                         <small>{{$errors->first('titulo')}}</small>
@@ -90,9 +90,9 @@
                                     value="{{old('puesto', $miembro->puesto)}}"
                                     placeholder="Puesto">
                                 <div @if($errors->has('puesto'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('puesto'))
                                         <small>{{$errors->first('puesto')}}</small>
@@ -109,9 +109,9 @@
                                     data-src="{{asset('storage/' . $miembro->imagen)}}"
                                     data-notfound='Imagen del miembro del equipo: "{{$miembro->nombre}}"'>
                                 <div @if($errors->has('imagen'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('imagen'))
                                         <small>{{$errors->first('imagen')}}</small>
@@ -131,9 +131,9 @@
                                     rows="10"
                                     placeholder="CV">{!!old('cv', $miembro->cv)!!}</textarea>
                                 <div @if($errors->has('cv'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('cv'))
                                         <small>{{$errors->first('cv')}}</small>
@@ -153,9 +153,9 @@
                                     value="{{old('link', $miembro->link)}}"
                                     placeholder="Link">
                                 <div @if($errors->has('link'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('link'))
                                         <small>{{$errors->first('link')}}</small>
@@ -195,9 +195,9 @@
                             value="{{old('nombre')}}"
                             placeholder="Nombre">
                         <div @if($errors->has('nombre'))
-                            class="invalid-tooltip showed"
+                            class="support-box showed"
                         @else
-                            class="invalid-tooltip"
+                            class="support-box"
                         @endif>
                             @if($errors->has('nombre'))
                                 <small>{{$errors->first('nombre')}}</small>
@@ -217,9 +217,9 @@
                             value="{{old('titulo')}}"
                             placeholder="Título">
                         <div @if($errors->has('titulo'))
-                            class="invalid-tooltip showed"
+                            class="support-box showed"
                         @else
-                            class="invalid-tooltip"
+                            class="support-box"
                         @endif>
                             @if($errors->has('titulo'))
                                 <small>{{$errors->first('titulo')}}</small>
@@ -239,9 +239,9 @@
                             value="{{old('puesto')}}"
                             placeholder="Puesto">
                         <div @if($errors->has('puesto'))
-                            class="invalid-tooltip showed"
+                            class="support-box showed"
                         @else
-                            class="invalid-tooltip"
+                            class="support-box"
                         @endif>
                             @if($errors->has('puesto'))
                                 <small>{{$errors->first('puesto')}}</small>
@@ -257,9 +257,9 @@
                             data-text="Imagen"
                             data-notfound="No se eligió ninguna imagen.">
                         <div @if($errors->has('imagen'))
-                            class="invalid-tooltip showed mt-3"
+                            class="support-box showed mt-3"
                         @else
-                            class="invalid-tooltip mt-3"
+                            class="support-box mt-3"
                         @endif>
                             @if($errors->has('imagen'))
                                 <small>{{$errors->first('imagen')}}</small>
@@ -279,9 +279,9 @@
                             rows="10"
                             placeholder="CV">{!!old('cv')!!}</textarea>
                         <div @if($errors->has('cv'))
-                            class="mt-3 invalid-tooltip showed"
+                            class="mt-3 support-box showed"
                         @else
-                            class="mt-3 invalid-tooltip"
+                            class="mt-3 support-box"
                         @endif>
                             @if($errors->has('cv'))
                                 <small>{{$errors->first('cv')}}</small>
@@ -301,9 +301,9 @@
                             value="{{old('link')}}"
                             placeholder="Link">
                         <div @if($errors->has('link'))
-                            class="invalid-tooltip showed"
+                            class="support-box showed"
                         @else
-                            class="invalid-tooltip"
+                            class="support-box"
                         @endif>
                             @if($errors->has('link'))
                                 <small>{{$errors->first('link')}}</small>

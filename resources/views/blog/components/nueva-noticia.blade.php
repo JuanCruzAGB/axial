@@ -24,15 +24,6 @@
                             class="form-control mb-3 w-75"
                             value="{{old('titulo')}}"
                             placeholder="Título">
-                        <div @if($errors->has('titulo'))
-                            class="invalid-tooltip showed"
-                        @else
-                            class="invalid-tooltip"
-                        @endif>
-                            @if($errors->has('titulo'))
-                                <small>{{$errors->first('titulo')}}</small>
-                            @endif
-                        </div>
                     </div>
                 </div>
                 <div class="col-12">
@@ -43,9 +34,9 @@
                             data-text="Imagen"
                             data-notfound="No se eligió ninguna imagen.">
                         <div @if($errors->has('imagen'))
-                            class="invalid-tooltip showed mt-3"
+                            class="support-box showed mt-3"
                         @else
-                            class="invalid-tooltip mt-3"
+                            class="support-box mt-3"
                         @endif>
                             @if($errors->has('imagen'))
                                 <small>{{$errors->first('imagen')}}</small>
@@ -65,9 +56,9 @@
                             rows="10"
                             placeholder="Contenido">{!!old('contenido')!!}</textarea>
                         <div @if($errors->has('contenido'))
-                            class="mt-3 invalid-tooltip showed mt-3"
+                            class="mt-3 support-box showed mt-3"
                         @else
-                            class="mt-3 invalid-tooltip mt-3"
+                            class="mt-3 support-box mt-3"
                         @endif>
                             @if($errors->has('contenido'))
                                 <small>{{$errors->first('contenido')}}</small>
