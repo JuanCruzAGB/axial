@@ -23,12 +23,12 @@ body{
 }
 
 .nav-menu{
-    --primary-color: var(--color-uno);
+    --primary-color: white;
     --tertiary-color: rgba(0,0,0,.5);
 }
 
 .nav-menu .nav-title{
-    width: 50%;
+    flex-basis: 100%;
     background: url(../img/recursos/logo.png) no-repeat center center;
     background-size: contain;
 }
@@ -36,6 +36,18 @@ body{
 .nav-menu .nav-title h1{
     font-size: 0;
     width: 100px;
+}
+
+.nav-menu .menu-list .nav-link,
+.collapsable .collapsable-button,
+.collapsable .collapsable-menu .collapsable-link{
+    color: var(--color-cuatro);
+}
+
+.nav-menu .menu-list .nav-link:hover,
+.collapsable .collapsable-button:hover,
+.collapsable .collapsable-menu .collapsable-link:hover{
+    color: var(--color-uno);
 }
 
 .sidebar .sidebar-content .sidebar-menu .nav-link{
@@ -48,7 +60,7 @@ body{
     bottom: -24px;
     left: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 25px), 0% 100%);
-    background: var(--color-uno);
+    background: white;
     z-index: 2;
     width: calc(100% + 2px);
     height: 25px;
@@ -111,7 +123,7 @@ a:hover{
         display: flex;
         justify-content: center;
         flex-basis: 25%;
-        height: 6.3rem;
+        height: 8.3rem;
     }
     
     .nav-menu .second-row{

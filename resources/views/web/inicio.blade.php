@@ -11,7 +11,6 @@
     <link href="{{asset('vendor/animsition/css/animsition.min.css')}}" rel="stylesheet">
     <link href="{{asset('vendor/select2/select2.min.css')}}" rel="stylesheet">
     <link href="{{asset('vendor/daterangepicker/daterangepicker.css')}}" rel="stylesheet">
-    <link href="{{asset('css/web/footer.css')}}" rel="stylesheet">
     <link href="{{asset('css/web/inicio.css')}}" rel="stylesheet">
 @endsection
 
@@ -44,15 +43,13 @@
         <span class="quotes quote-left"><i class="quote-icon fas fa-quote-left"></i></span>
         <span class="quotes quote-right"><i class="quote-icon fas fa-quote-right"></i></span>
         <p class="col-12 col-md-10 col-lg-6 text-white text-center m-0 py-4 py-lg-2 px-md-5 px-lg-4">El dolor de espalda es un problema que afecta al 80% de la población mundial.</p>
-    </div>    
+    </div>
 
     <div id="nuestros-servicios" class="nuestros-servicios col-12">
         <div class="row mb-2 px-3">
             <div" class="col-12 mt-4 mb-3 p-0">
                 <div class="row d-flex justify-content-center">
-                    <span class="col-12 lead text-center w-100 my-3 text-white">- Nuestros servicios -</span>
-                    <h2 class="col-12 text-center w-100 px-3 m-0 text-white">Todo lo que podemos hacer por usted</h2>
-                    <p class="col-12 col-md-10 col-lg-7 text-center px-4 mt-3 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, sapiente ad? Possimus, quam aperiam tempore molestias sed quos natus adipisci?</p>
+                    <h2 class="col-12 text-center w-100 m-0 mt-3 pt-3 px-3">Servicios</h2>
                 </div>
             </div>
 
@@ -80,12 +77,36 @@
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     </div>
                 </div>
+                
+                <div id="tratamiento-del-dolor" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
+                    <div class="card-body">
+                        <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
+                        <h3 class="card-title mb-3">Tratamiento del dolor</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+
+                <div id="cirugia-mini-invasiva" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
+                    <div class="card-body">
+                        <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
+                        <h3 class="card-title mb-3">Cirugía mini invasiva</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+
+                <div id="patologia-de-la-columna" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
+                    <div class="card-body">
+                        <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
+                        <h3 class="card-title mb-3">Patología de la columna</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <div id="equipo" class="equipo row py-4 p-0">
-        <h2 class="col-12 text-center mt-3 mb-4">Equipo</h2>
+    
+    <div id="equipo" class="equipo col-12 py-4 p-0">
+        <h2 class="text-center mt-3 mb-4">Equipo</h2>
 
         <div class="listado">
             <div class="miembros cards mt-4 mx-3 pb-0">
@@ -124,112 +145,119 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
             
 <div id="contacto" class="container-fluid contenedor p-0 mt-4">
     <div class="row">
-    <div class="col-12 container-contact100">
-		<div class="row wrap-contact100">
-			<form class="col-12 col-md-10 col-lg-8 contact-form contact100-form validate-form pb-3 pt-0 mx-auto">
-                <div class="row px-3 pt-lg-5">
-                    <span class="col-12 contact100-form-title pb-4 mt-4 pt-3">
-                        Envianos un mensaje
-                    </span>
+        <div class="col-12 container-contact100">
+            <div class="row wrap-contact100">
+                <form class="col-12 col-md-10 col-lg-8 contact-form contact100-form validate-form pb-3 pt-0 mx-auto">
+                    <div class="row px-3 pt-lg-5">
+                        <span class="col-12 contact100-form-title pb-4 mt-4 pt-3">
+                            Envianos un mensaje
+                        </span>
 
-                    <div class="col-12">
-                        <label class="label-input100 mt-0" for="nombre">Nombre *</label>
-                        <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-                            <input id="nombre" class="input100" type="text" name="nombre" placeholder="Nombre">
-                            <span class="focus-input100"></span>
+                        <div class="col-12">
+                            <label class="label-input100 mt-0" for="nombre">Nombre *</label>
+                            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+                                <input id="nombre" class="input100" type="text" name="nombre" placeholder="Nombre">
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="label-input100 mt-3" for="email">Email *</label>
+                            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                                <input id="email" class="input100" type="text" name="email" placeholder="email@email.com">
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="label-input100 mt-3" for="phone">Teléfono</label>
+                            <div class="wrap-input100">
+                                <input id="phone" class="input100" type="text" name="phone" placeholder="+54 800 000000">
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="label-input100 mt-3" for="message">Mensaje *</label>
+                            <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                                <textarea id="message" class="input100" name="message" placeholder="Escribenos tu mensaje"></textarea>
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="container-contact100-form-btn">
+                                <button class="contact100-form-btn">
+                                    Enviar mensaje
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="col-12 col-lg-4 contact-data contact100-more flex-col-c-m pt-4">
+                    <div class="flex-w size1 p-b-47 mt-3 mt-md-5">
+                        <div class="txt1 p-r-25">
+                            <span class="lnr lnr-map-marker"></span>
+                        </div>
+
+                        <div class="flex-col size2">
+                            <span class="txt1 p-b-20">
+                                Dirección
+                            </span>
+
+                            <span class="txt2">
+                                Huergo 366 6 "A" , Cañitas, CABA
+                            </span>
                         </div>
                     </div>
 
-                    <div class="col-12">
-                        <label class="label-input100 mt-3" for="email">Email *</label>
-                        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                            <input id="email" class="input100" type="text" name="email" placeholder="email@email.com">
-                            <span class="focus-input100"></span>
+                    <div class="dis-flex size1 p-b-47">
+                        <div class="txt1 p-r-25">
+                            <span class="lnr lnr-phone-handset"></span>
+                        </div>
+
+                        <div class="flex-col size2">
+                            <span class="txt1 p-b-20">
+                                Telefonó de contacto
+                            </span>
+
+                            <span class="txt3">
+                                (011) 4772-7679
+                            </span>
                         </div>
                     </div>
 
-                    <div class="col-12">
-                        <label class="label-input100 mt-3" for="phone">Teléfono</label>
-                        <div class="wrap-input100">
-                            <input id="phone" class="input100" type="text" name="phone" placeholder="+54 800 000000">
-                            <span class="focus-input100"></span>
+                    <div class="dis-flex size1 p-b-47">
+                        <div class="txt1 p-r-25">
+                            <span class="lnr lnr-envelope"></span>
                         </div>
-                    </div>
 
-                    <div class="col-12">
-                        <label class="label-input100 mt-3" for="message">Mensaje *</label>
-                        <div class="wrap-input100 validate-input" data-validate = "Message is required">
-                            <textarea id="message" class="input100" name="message" placeholder="Escribenos tu mensaje"></textarea>
-                            <span class="focus-input100"></span>
-                        </div>
-                    </div>
+                        <div class="flex-col size2">
+                            <span class="txt1 p-b-20">
+                                Correo de contacto
+                            </span>
 
-                    <div class="col-12">
-                        <div class="container-contact100-form-btn">
-                            <button class="contact100-form-btn">
-                                Enviar mensaje
-                            </button>
+                            <span class="txt3">
+                                info@grupoaxial.org
+                            </span>
                         </div>
                     </div>
                 </div>
-			</form>
-
-			<div class="col-12 col-lg-4 contact-data contact100-more flex-col-c-m pt-4">
-				<div class="flex-w size1 p-b-47 mt-3 mt-md-5">
-					<div class="txt1 p-r-25">
-						<span class="lnr lnr-map-marker"></span>
-					</div>
-
-					<div class="flex-col size2">
-						<span class="txt1 p-b-20">
-							Dirección
-						</span>
-
-						<span class="txt2">
-                            Huergo 366 6 "A" , Cañitas, CABA
-						</span>
-					</div>
-				</div>
-
-				<div class="dis-flex size1 p-b-47">
-					<div class="txt1 p-r-25">
-						<span class="lnr lnr-phone-handset"></span>
-					</div>
-
-					<div class="flex-col size2">
-						<span class="txt1 p-b-20">
-							Telefonó de contacto
-						</span>
-
-						<span class="txt3">
-                            (011) 4772-7679
-						</span>
-					</div>
-				</div>
-
-				<div class="dis-flex size1 p-b-47">
-					<div class="txt1 p-r-25">
-						<span class="lnr lnr-envelope"></span>
-					</div>
-
-					<div class="flex-col size2">
-						<span class="txt1 p-b-20">
-							Correo de contacto
-						</span>
-
-						<span class="txt3">
-                            info@grupoaxial.org
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!-- <div class="row">
+    <a href="/noticias" class="separador-call-to-action col-12 px-md-5">
+        <p class="col-12 col-md-10 col-lg-6 text-white m-0 py-4 py-lg-2 px-md-5 px-lg-4">Recuerda revisar nuestro blog<i class="icon fas fa-arrow-right p-3"></i></p>
+    </a>
+</div> -->
 @endsection
 
 @section('extras')

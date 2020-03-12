@@ -59,7 +59,7 @@
             }
 
             if(Auth::attempt(['password' => $inputData['password'], 'email' => $inputData['email']], $remember)){
-                return redirect()->route('web.inicio')->with('status', 'Sesión Iniciada.');
+                return redirect()->route('web.panel')->with('status', 'Sesión Iniciada.');
             }else{
                 return redirect()->route('auth.showIngresar')->withInput()->with('status', 'Correo y/o clave incorrectos.');
             }

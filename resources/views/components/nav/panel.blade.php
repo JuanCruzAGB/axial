@@ -14,15 +14,26 @@
             <li><a href="/demo" class="nav-link">
                 Inicio
             </a></li>
+            <li><a href="/demo#servicios" class="nav-link">
+                Servicios
+            </a></li>
+            <li><a href="/demo#equipo" class="nav-link">
+                Equipo
+            </a></li>
+            <li><a href="/demo#contacto" class="nav-link">
+                Contacto
+            </a></li>
             <li><a href="/noticias" class="nav-link">
                 Blog
             </a></li>
+            @if(Auth::check())
             <li><a href="/panel" class="nav-link">
                 Panel
             </a></li>
             <li><a href="/salir" class="nav-link">
                 Cerrar Sesión
             </a></li>
+            @endif
         </ul>
     </div>
 

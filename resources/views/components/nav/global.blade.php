@@ -25,26 +25,26 @@
             <li><a href="/demo#equipo" class="nav-link">
                 Equipo
             </a></li>
+            <li><a href="/demo#contacto" class="nav-link">
+                Contacto
+            </a></li>
             <li><a href="/noticias" class="nav-link">
                 Blog
             </a></li>
             @if(Auth::check())
-            <li class="collapsable closed">
-                <a href="/panel" class="collapsable-button">Panel<i class="collapsable-icon fas fa-sort-down"></i></a>
-                <ul class="collapsable-menu">
-                    <li class="m-0"><a href="/panel#noticias" class="collapsable-link">Noticias</a></li>
-                    <li class="m-0"><a href="/panel#nueva-noticia" class="collapsable-link">Nueva noticia</a></li>
-                    <li class="m-0"><a href="/panel#miembros" class="collapsable-link">Miembros del equipo</a></li>
-                    <li class="m-0"><a href="/panel#nuevo-miembro" class="collapsable-link">Nuevo miembro</a></li>
-                    <li class="m-0"><a href="/panel#config" class="collapsable-link">Configuración</a></li>
-                </ul>
-            </li>
-            <li><a href="/demo#contacto" class="nav-link">
-                Contacto
-            </a></li>
-            <li><a href="/salir" class="nav-link">
-                Cerrar Sesión
-            </a></li>
+                <li class="collapsable closed">
+                    <a href="/panel" class="collapsable-button">Panel<i class="collapsable-icon fas fa-sort-down"></i></a>
+                    <ul class="collapsable-menu">
+                        <li class="m-0"><a href="/panel#noticias" class="collapsable-link">Noticias</a></li>
+                        <li class="m-0"><a href="/panel#nueva-noticia" class="collapsable-link">Nueva noticia</a></li>
+                        <li class="m-0"><a href="/panel#miembros" class="collapsable-link">Miembros del equipo</a></li>
+                        <li class="m-0"><a href="/panel#nuevo-miembro" class="collapsable-link">Nuevo miembro</a></li>
+                        <li class="m-0"><a href="/panel#config" class="collapsable-link">Configuración</a></li>
+                    </ul>
+                </li>
+                <li><a href="/salir" class="nav-link">
+                    Cerrar Sesión
+                </a></li>
             @endif
         </ul>
     </div>
