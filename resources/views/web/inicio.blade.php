@@ -29,7 +29,8 @@
             <div class="col-12 col-md-10 col-lg-7">
                 <h2 class="h2-responsive text-white text-center mb-3">
                     <span class="text-row">Abordamos todas las dolencias y </span>    
-                    <span class="text-row">patologías <span>de la columna</span></span></h2>
+                    <span class="text-row">patologías <span>de la columna</span></span>
+                </h2>
                 <div class="d-flex justify-content-center">
                     <a class="enviar-mensaje btn btn-primary" href="#contacto" role="button">Envianos un mensaje</a>
                 </div>
@@ -104,7 +105,23 @@
             </div>
         </div>
     </div>
+<!-- </div>
+
+<div class="separador-call-to-action container-fluid contenedor p-0">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="h2-responsive text-white text-center mt-4 mb-3">
+                <span class="text-row">¡Tenemos un blog!</span>    
+                <span class="text-row">Dale un vistazo</span>
+            </h2>
+            <div class="d-flex justify-content-center mb-4">
+                <a class="go-blog btn btn-primary" href="/noticias" role="button">Leer <i class="icon fas fa-arrow-right pl-3"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
     
+<div class="container-fluid contenedor p-0"> -->
     <div id="equipo" class="equipo col-12 py-4 p-0">
         <h2 class="text-center mt-3 mb-4">Equipo</h2>
 
@@ -252,12 +269,6 @@
         </div>
     </div>
 </div>
-    
-<!-- <div class="row">
-    <a href="/noticias" class="separador-call-to-action col-12 px-md-5">
-        <p class="col-12 col-md-10 col-lg-6 text-white m-0 py-4 py-lg-2 px-md-5 px-lg-4">Recuerda revisar nuestro blog<i class="icon fas fa-arrow-right p-3"></i></p>
-    </a>
-</div> -->
 @endsection
 
 @section('extras')
