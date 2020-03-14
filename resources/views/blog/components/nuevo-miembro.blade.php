@@ -38,7 +38,7 @@
                 <div class="col-12">
                     <div class="titulo form-group">
                         <label for="miembro_titulo" class="input-name">
-                            <span class="input-text">Título *</span>
+                            <span class="input-text">Título</span>
                         </label>
                         <input id="miembro_titulo"
                             name="titulo"
@@ -100,7 +100,7 @@
                 <div class="col-12">
                     <div class="cv form-group">
                         <label class="input-name">
-                            <span class="input-text">CV *</span>
+                            <span class="input-text">CV</span>
                         </label>
                         <textarea id="cv"
                             name="cv"

@@ -6,9 +6,9 @@
         Route::get('/panel', 'WebController@panel')->name('web.panel');
     });
     
-// CorreoController
-    Route::post('/contactar', 'CorreoController@contactar')->name('correo.contactar');
-    Route::get('/gracias', 'CorreoController@gracias')->name('correo.gracias');
+// MailController
+    Route::post('/contactar', 'MailController@contactar')->name('mail.contactar');
+    Route::get('/gracias', 'MailController@gracias')->name('mail.gracias');
     
 // AuthController
     Route::get('/ingresar', 'Auth\LoginController@showIngresar')->name('auth.showIngresar');

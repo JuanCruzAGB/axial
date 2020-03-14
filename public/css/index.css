@@ -18,6 +18,7 @@ body{
     --color-cinco: #dddddd;
     --color-fondo: linear-gradient(to top, #efefef 0%, #f5f8f9b5 75%, #e7e8e9 100%);
     --fuente-encabezados: 'Quicksand', sans-serif;
+    height: auto !important;
     min-height: 100vh;
     margin: 0;
 }
@@ -25,6 +26,19 @@ body{
 .nav-menu{
     --primary-color: white;
     --tertiary-color: rgba(0,0,0,.5);
+}
+
+.nav-menu.fixed{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    z-index: 14;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2) !important;
+}
+
+.nav-menu.fixed::before{
+    display: none;
 }
 
 .nav-menu .nav-title{
@@ -130,5 +144,13 @@ a:hover{
         flex-basis: 70%;
         min-width: 70%;
         height: 6.3rem;
+    }
+
+    .nav-menu.fixed .nav-row.first-row:first-of-type{
+        height: 5.3rem;
+    }
+
+    .nav-menu.fixed .second-row{
+        height: 5.3rem;
     }
 }

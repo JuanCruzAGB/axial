@@ -39,7 +39,6 @@
                         <li class="m-0"><a href="/panel#nueva-noticia" class="collapsable-link">Nueva noticia</a></li>
                         <li class="m-0"><a href="/panel#miembros" class="collapsable-link">Miembros del equipo</a></li>
                         <li class="m-0"><a href="/panel#nuevo-miembro" class="collapsable-link">Nuevo miembro</a></li>
-                        <li class="m-0"><a href="/panel#config" class="collapsable-link">Configuración</a></li>
                     </ul>
                 </li>
                 <li><a href="/salir" class="nav-link">

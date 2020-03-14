@@ -12,7 +12,7 @@
                     'correo' => 'required|email|max:100',
                     'telefono' => 'required|numeric',
                     'mensaje' => 'required|max:200',
-                    'g-recaptcha-response' => 'required|captcha',
+                    // 'g-recaptcha-response' => 'required|captcha',
                 ], 'messages' => [
                     'es' => [
                         'nombre.min' => 'El nombre no puede tener menos de :min caracteres.',
