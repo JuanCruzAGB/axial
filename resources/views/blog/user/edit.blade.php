@@ -46,9 +46,9 @@
                                     value="{{old('name', $user->name)}}"
                                     placeholder="Nombre">
                                 <div @if($errors->has('name'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('name'))
                                         <small>{{$errors->first('name')}}</small>
@@ -68,9 +68,9 @@
                                     value="{{old('email', $user->email)}}"
                                     placeholder="Correo">
                                 <div @if($errors->has('email'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('email'))
                                         <small>{{$errors->first('email')}}</small>
@@ -89,9 +89,9 @@
                                     class="form-control"
                                     placeholder="Clave">
                                 <div @if($errors->has('password'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('password'))
                                         <small>{{$errors->first('password')}}</small>
@@ -110,9 +110,9 @@
                                     class="form-control"
                                     placeholder="Confirmar clave">
                                 <div @if($errors->has('password_confirmation'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('password_confirmation'))
                                         <small>{{$errors->first('password_confirmation')}}</small>
@@ -129,9 +129,9 @@
                                     data-src="{{asset('storage/' . $user->picture)}}"
                                     data-notfound="{{$user->name}} picture">
                                 <div @if($errors->has('picture'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('picture'))
                                         <small>{{$errors->first('picture')}}</small>
@@ -151,9 +151,9 @@
                                     value="{{old('title', $user->presentation->title)}}"
                                     placeholder="Título de presentación">
                                 <div @if($errors->has('title'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('title'))
                                         <small>{{$errors->first('title')}}</small>
@@ -173,9 +173,9 @@
                                     rows="10"
                                     placeholder="Descripción de presentación">{!!old('content', $user->presentation->content)!!}</textarea>
                                 <div @if($errors->has('content'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('content'))
                                         <small>{{$errors->first('content')}}</small>

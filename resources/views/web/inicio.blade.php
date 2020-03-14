@@ -1,3 +1,6 @@
+<?php
+    /** @var array $validation */
+?>
 @extends('layout.index')
 
 @section('css')
@@ -167,47 +170,48 @@
     <div class="row">
         <div class="col-12 container-contact100">
             <div class="row wrap-contact100">
-                <form class="col-12 col-md-10 col-lg-8 contact-form contact100-form validate-form pb-3 pt-0 mx-auto">
+                <form class="col-12 col-md-10 col-lg-8 contact-form contact100-form form-validate pb-3 pt-0 mx-auto"
+                    data-validation="{{$validation}}">
                     <div class="row px-3 pt-lg-5">
                         <span class="col-12 contact100-form-title pb-4 mt-4 pt-3">
                             Envianos un mensaje
                         </span>
 
-                        <div class="col-12">
-                            <label class="label-input100 mt-0" for="nombre">Nombre *</label>
+                        <div class="nombre col-12">
+                            <label class="label-input100 mt-0 mb-3" for="nombre">Nombre</label>
                             <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
                                 <input id="nombre" class="input100" type="text" name="nombre" placeholder="Nombre">
                                 <span class="focus-input100"></span>
                             </div>
                         </div>
 
-                        <div class="col-12">
-                            <label class="label-input100 mt-3" for="email">Email *</label>
+                        <div class="correo col-12">
+                            <label class="label-input100 mt-0 mb-3" for="email">Email *</label>
                             <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                                <input id="email" class="input100" type="text" name="email" placeholder="email@email.com">
+                                <input id="email" class="input100" type="text" name="correo" placeholder="email@email.com">
                                 <span class="focus-input100"></span>
                             </div>
                         </div>
 
-                        <div class="col-12">
-                            <label class="label-input100 mt-3" for="phone">Teléfono</label>
+                        <div class="telefono col-12">
+                            <label class="label-input100 mt-0 mb-3" for="phone">Teléfono *</label>
                             <div class="wrap-input100">
-                                <input id="phone" class="input100" type="text" name="phone" placeholder="+54 800 000000">
+                                <input id="phone" class="input100" type="text" name="telefono" placeholder="+54 800 000000">
                                 <span class="focus-input100"></span>
                             </div>
                         </div>
 
-                        <div class="col-12">
-                            <label class="label-input100 mt-3" for="message">Mensaje *</label>
+                        <div class="mensaje col-12">
+                            <label class="label-input100 mt-0 mb-3" for="message">Mensaje *</label>
                             <div class="wrap-input100 validate-input" data-validate = "Message is required">
-                                <textarea id="message" class="input100" name="message" placeholder="Escribenos tu mensaje"></textarea>
+                                <textarea id="message" class="input100" name="mensaje" placeholder="Escribenos tu mensaje"></textarea>
                                 <span class="focus-input100"></span>
                             </div>
                         </div>
 
                         <div class="col-12">
                             <div class="container-contact100-form-btn">
-                                <button class="contact100-form-btn">
+                                <button class="form-submit contact100-form-btn">
                                     Enviar mensaje
                                 </button>
                             </div>
@@ -289,6 +293,7 @@
     <script src="{{asset('ValidationJS/js/Invalidator.js')}}"></script>
     <script src="{{asset('ValidationJS/js/Form.js')}}"></script>
     <script src="{{asset('ValidationJS/js/Input.js')}}"></script>
+    <script src="{{asset('ValidationJS/js/Support.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/web/inicio.js')}}"></script>
     <script src="vendor/animsition/js/animsition.min.js"></script>
     <script type="text/javascript" src="{{asset('vendor/select2/select2.min.js')}}"></script>

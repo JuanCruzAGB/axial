@@ -45,9 +45,9 @@
                                     value="{{old('name', $category->name)}}"
                                     placeholder="Nombre">
                                 <div @if($errors->has('name'))
-                                    class="invalid-tooltip showed"
+                                    class="support-box showed"
                                 @else
-                                    class="invalid-tooltip"
+                                    class="support-box"
                                 @endif>
                                     @if($errors->has('name'))
                                         <small>{{$errors->first('name')}}</small>

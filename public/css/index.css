@@ -71,7 +71,7 @@ a:hover{
     text-decoration: none;
 }
 
-.invalid-tooltip{
+.support-box{
     --primary-color: var(--color-cuatro);
     width: 100%;
 }
