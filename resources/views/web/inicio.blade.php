@@ -105,23 +105,22 @@
             </div>
         </div>
     </div>
-<!-- </div>
+</div>
 
 <div class="separador-call-to-action container-fluid contenedor p-0">
     <div class="row">
         <div class="col-12">
             <h2 class="h2-responsive text-white text-center mt-4 mb-3">
-                <span class="text-row">¡Tenemos un blog!</span>    
-                <span class="text-row">Dale un vistazo</span>
+                <span class="text-row">Visita nuestro blog</span>
             </h2>
             <div class="d-flex justify-content-center mb-4">
-                <a class="go-blog btn btn-primary" href="/noticias" role="button">Leer <i class="icon fas fa-arrow-right pl-3"></i></a>
+                <a class="go-blog btn btn-primary" href="/noticias" role="button">Leer</a>
             </div>
         </div>
     </div>
 </div>
     
-<div class="container-fluid contenedor p-0"> -->
+<div class="container-fluid contenedor p-0">
     <div id="equipo" class="equipo col-12 py-4 p-0">
         <h2 class="text-center mt-3 mb-4">Equipo</h2>
 
@@ -135,8 +134,8 @@
                             </div>
                             <div class="card-body p-3">
                                 <a href="#{{$miembro->slug}}" class="collapsable-btn card-title m-0">
-                                    <h3 class="m-0">{{$miembro->nombre}}</h3>
-                                    <i class="collapsable-icon title-icon fas fa-sort-up"></i>
+                                    <h3 class="m-0">{{$miembro->nombre}}<i class="collapsable-icon title-icon fas fa-sort-up"></i></h3>
+                                   
                                 </a>
                                 <div class="card-content px-3">
                                     <div class="row d-flex justify-content-end">
