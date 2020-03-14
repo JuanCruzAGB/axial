@@ -171,7 +171,7 @@
 
 /* servicios */
 .nuestros-servicios{
-    background-color: var(--color-cinco);
+    background-color: #fff;
 }
 
 #nuestros-servicios h2{
@@ -184,7 +184,7 @@
 }
 
 .cartas-servicios .iconos-servicios{
-    color: var(--color-tres);
+    color: var(--color-uno);
     transition: 500ms;
 }
 
@@ -192,8 +192,12 @@
     color: var(--color-uno);
 }
 
+.cartas-servicios .card-title:hover{
+    color: var(--color-uno);
+}
+
 .cartas-servicios .card-title{
-    color: var(--color-tres);
+    color: #000;
     font-family: gotham-light;
     transition: 500ms;
     font-size: 1.3rem;
@@ -205,7 +209,7 @@
 }
 
 .cartas-servicios .card-text{
-    color: var(--color-tres);
+    color: #000;
 }
 
 /* team */
@@ -242,13 +246,15 @@
 .card .card-background{
     width: 100%;
     height: 100%;
+    text-align: center;
 }
 
 .card .card-background img{
-    width: 100%;
-    height: 100%;
+    width: 225px;
+    height: 225px;
     object-fit: cover;
     object-position: top;
+    border-radius: 50%;
 }
 
 .miembro.card .card-body{
@@ -264,6 +270,7 @@
 .miembro.card:target .card-body,
 .miembro.card.active .card-body{
     height: 100%;
+    background-color: #ffffffd9;
 }
 
 .miembro.card .card-body .card-title{
@@ -276,6 +283,7 @@
     padding-bottom: .75rem;
     font-family: gotham-book;
     transition: 500ms;
+    text-align: center;
 }
 
 .miembro.card .card-body:hover .card-title{
@@ -284,13 +292,13 @@
 
 .miembro.card:target .card-body .card-title,
 .miembro.card.active .card-body .card-title{
-    border-bottom: 2px solid var(--color-tres);
+    border-bottom: none;
 }
 
 .miembro.card .card-body .card-title .title-icon{
-    position: absolute;
+   /*  position: absolute;
     top: 50%;
-    right: 0;
+    right: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,6 +334,7 @@
 .miembro.card:target .card-body .card-content,
 .miembro.card.active .card-body .card-content{
     height: fit-content;
+    text-align: center;
 }
 
 .miembro.card .btn.btn-primary{
@@ -340,6 +349,10 @@
 
 .container-contact100 #message{
     resize: none !important;
+}
+
+input.input100{
+    height: 38px !important;
 }
 
 .contact-data{
@@ -468,6 +481,8 @@
     .cartas-servicios.col-md-3{
         flex: 0 0 30%;
         max-width: 30%;
+        background-color: #fff;
+        border: none;
     }
 
     .miembros{
@@ -478,6 +493,7 @@
         min-width: 50vw;
         flex-basis: 50vw;
         height: 450px;
+        border: none;
     }
 
     .separador-banner p{
