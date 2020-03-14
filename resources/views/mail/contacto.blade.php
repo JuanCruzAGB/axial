@@ -5,10 +5,12 @@
 	<title>{{$data->nombre}} quiere contactar a alguien</title>
 	<style>
 		body{
-			--color-uno: #0D4A7B;
-			--color-dos: #197C3E;
-			--color-tres: #C6C6C6;
-			--color-cuatro: #222222;
+			--color-uno: rgb(0, 69, 125);
+			--color-dos: #55c9d8;
+			--color-tres: rgb(148, 149, 142);
+			--color-cuatro: #231F20;
+			--color-cinco: #dddddd;
+			--color-fondo: linear-gradient(to top, #efefef 0%, #f5f8f9b5 75%, #e7e8e9 100%);
 		}
 
 		table{
@@ -19,7 +21,7 @@
 		}
 
 		td{
-			background-color: #ecf0f1;
+			background-color: var(--color-fondo);
 		}
 
 		td > div{
@@ -43,7 +45,7 @@
 			margin: 2px;
 			font-size: 15px;
 			min-height: 100px;
-			background-color: #f8f8f8;
+			background-color: #fff;
 			padding: 1rem;
 			margin-bottom: 1.5rem;
 		}
@@ -136,7 +138,7 @@
 			text-decoration: none;
 			border-radius: 5px;
 			padding: 11px 23px;
-			color: white;
+			color: #fff;
 			transition: 500ms;
 			background-color: var(--color-uno);
 		}
@@ -146,7 +148,7 @@
 		}
 
 		.copyright{
-			color: #ffffff;
+			color: #fff;
 			font-size: 1.1rem;
 			text-align: center;
 			margin: 30px 0 0 0;

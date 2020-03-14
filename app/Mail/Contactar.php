@@ -29,7 +29,7 @@
         public function build(){
             $correo = $this->data->correo;
             $nombre = $this->data->nombre;
-            $asunto = "$correo desea contactarse";
+            $asunto = "Formulario web";
             // dd($this->data);
             return $this->view('mail.contacto')
                 ->from($correo, $nombre)
