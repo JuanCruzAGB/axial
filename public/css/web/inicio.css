@@ -1,4 +1,9 @@
 /* banner */
+.nav-menu{
+    height: 8rem !important;
+    max-height: 8rem !important;
+}
+
 .jumbotron{
     position: relative;
     background: url('/img/bg-demo.jpg') center center no-repeat;
@@ -485,6 +490,12 @@ input.input100{
         border: none;
     }
 
+    .cartas-servicios .card-text{
+        width: 15rem;
+        margin: auto;
+    }
+        
+
     .miembros{
         justify-content: center;
     }
@@ -523,7 +534,7 @@ input.input100{
     }
 
     .separador-call-to-action{
-        height: 200px;
+        height: 300px;
         clip-path: polygon(0% 0%, 120% 0%, 120% 150px, 0% 100%);
     }
     
@@ -554,6 +565,15 @@ input.input100{
         bottom: -48px;
         height: 50px;
         width: calc(((100% / 10) * 3) + 100%);
+    }
+
+    .donde-encontrarnos{
+        padding: 0 !important;
+        background: #e9ecef;
+    }
+    
+    .donde-encontrarnos iframe{
+        width: 100%;
     }
 }
 

@@ -45,6 +45,7 @@ body{
     flex-basis: 100%;
     background: url(../img/recursos/logo.png) no-repeat center center;
     background-size: contain;
+    height: 8.5rem;
 }
 
 .nav-menu .nav-title h1{
@@ -66,6 +67,7 @@ body{
 
 .sidebar .sidebar-content .sidebar-menu .nav-link{
     font-family: gotham-light;
+    color: var(--color-cuatro);
 }
 
 .nav-menu::before{
