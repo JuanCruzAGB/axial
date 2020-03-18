@@ -2,7 +2,8 @@ function topHeader(){
     if(document.querySelector('header .nav-menu.fixed')){
         let nav = document.querySelector('header .nav-menu.fixed'),
             header = document.querySelector('header');
-        setTimeout(() => { header.removeChild(nav); }, 200);
+        
+        setTimeout(() => { if(header.contains(nav)){ header.removeChild(nav); } }, 200);
     }
 }
 function fixedHeader(){

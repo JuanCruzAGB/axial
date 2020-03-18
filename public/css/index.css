@@ -48,6 +48,10 @@ body{
     height: 8.5rem;
 }
 
+.nav-menu.fixed .nav-title{
+    height: 8rem;
+}
+
 .nav-menu .nav-title h1{
     font-size: 0;
     width: 100px;
@@ -139,7 +143,15 @@ a:hover{
         display: flex;
         justify-content: center;
         flex-basis: 25%;
-        height: 8.3rem;
+        height: 8rem;
+    }
+
+    .nav-menu.fixed .nav-row.first-row:first-of-type{
+        padding: 0 1rem;
+    }
+
+    .nav-menu .nav-row.first-row:first-of-type .nav-title{
+        height: 8rem;
     }
     
     .nav-menu .second-row{
@@ -148,11 +160,11 @@ a:hover{
         height: 6.3rem;
     }
 
-    .nav-menu.fixed .nav-row.first-row:first-of-type{
-        height: 5.3rem;
+    .nav-menu.fixed .nav-row.first-row:first-of-type .nav-title{
+        height: 7.8rem;
     }
 
     .nav-menu.fixed .second-row{
-        height: 5.3rem;
+        height: 6.3rem;
     }
 }

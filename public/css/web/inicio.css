@@ -301,10 +301,7 @@
 }
 
 .miembro.card .card-body .card-title .title-icon{
-   /*  position: absolute;
-    top: 50%;
-    right: 0; */
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -313,14 +310,12 @@
     border-radius: 50%;
     background: var(--color-uno);
     color: white;
-    transform: translateY(-50%);
-    margin-bottom: .75rem !important;
+    margin-left: 1rem;
 }
 
 .miembro.card:target .card-body .card-title .title-icon,
 .miembro.card.active .card-body .card-title .title-icon{
     top: 25%;
-    transform: translateY(-25%);
 }
 
 .fa-sort-up:before{
@@ -343,8 +338,8 @@
 }
 
 .miembro.card .btn.btn-primary{
-    background-color: var(--color-dos);
-    border-color: var(--color-dos);
+    background-color: var(--color-uno);
+    border: none;
     font-family: gotham-light;
 }
 

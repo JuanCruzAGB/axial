@@ -173,15 +173,16 @@
     
         <section>
     <div class="title editar-h1">
-        <h1 class="d-flex justify-content-center justify-content-md-start mb-3 p-3">Nuevo miembro</h1>
+        <h1 class="d-flex justify-content-center justify-content-md-start mb-3 p-3">Editar "{{$miembro->nombre}}"</h1>
     </div>
     <div class="content px-3">
-        <form action="/miembro/crear"
+        <form action="/miembro/{{$miembro->id_miembro}}/editar"
             class="form-validate"
             method="post"
             enctype="multipart/form-data"
             data-validation="{{$validation}}">
             @csrf
+            @method('PUT')
             <div class="row">
                 <div class="col-12">
                     <div class="nombre form-group">
@@ -192,7 +193,7 @@
                             name="nombre"
                             type="text"
                             class="form-control mb-3"
-                            value="{{old('nombre')}}"
+                            value="{{old('nombre', $miembro->nombre)}}"
                             placeholder="Nombre">
                         <div @if($errors->has('nombre'))
                             class="support-box showed"
@@ -214,7 +215,7 @@
                             name="titulo"
                             type="text"
                             class="form-control mb-3"
-                            value="{{old('titulo')}}"
+                            value="{{old('titulo', $miembro->titulo)}}"
                             placeholder="Título">
                         <div @if($errors->has('titulo'))
                             class="support-box showed"
@@ -236,7 +237,7 @@
                             name="puesto"
                             type="text"
                             class="form-control mb-3"
-                            value="{{old('puesto')}}"
+                            value="{{old('puesto', $miembro->puesto)}}"
                             placeholder="Puesto">
                         <div @if($errors->has('puesto'))
                             class="support-box showed"
@@ -255,6 +256,7 @@
                             type="file"
                             name="imagen"
                             data-text="Imagen"
+                            data-src="{{asset('storage/' . $miembro->imagen)}}"
                             data-notfound="No se eligió ninguna imagen.">
                         <div @if($errors->has('imagen'))
                             class="support-box showed mt-3"
@@ -277,7 +279,7 @@
                             class="form-control ckeditor"
                             cols="30"
                             rows="10"
-                            placeholder="CV">{!!old('cv')!!}</textarea>
+                            placeholder="CV">{!!old('cv', $miembro->cv)!!}</textarea>
                         <div @if($errors->has('cv'))
                             class="mt-3 support-box showed"
                         @else
@@ -298,7 +300,7 @@
                             name="link"
                             type="text"
                             class="form-control mb-3"
-                            value="{{old('link')}}"
+                            value="{{old('link', $miembro->link)}}"
                             placeholder="Link">
                         <div @if($errors->has('link'))
                             class="support-box showed"

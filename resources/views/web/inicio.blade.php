@@ -138,15 +138,14 @@
                             <div class="card-body p-3">
                                 <a href="#{{$miembro->slug}}" class="collapsable-btn card-title m-0">
                                     <h3 class="m-0">{{$miembro->nombre}}<i class="collapsable-icon title-icon fas fa-sort-up"></i></h3>
-                                   
                                 </a>
                                 <div class="card-content px-3">
-                                    <div class="row d-flex justify-content-end">
+                                    <div class="row d-flex justify-content-center">
                                         <h4 class="col-12 m-0 p-0">{{$miembro->titulo}}</h4>
-                                        <span class="col-12 m-0 p-0">{{$miembro->puesto}}</span>
-                                        <div class="col-12 p-0">{!!$miembro->cv!!}</div>
+                                        <span class="col-12 m-0 mt-3 p-0">{{$miembro->puesto}}</span>
+                                        <div class="col-12 mt-3 p-0">{!!$miembro->cv!!}</div>
                                         @if($miembro->link !== null && $miembro->link != '')
-                                            <a target="_blank" href="{{$miembro->link}}" class="btn btn-primary">Ver más</a>
+                                            <a target="_blank" href="{{$miembro->link}}" class="btn btn-primary mt-3">Ver más</a>
                                         @endif
                                     </div>
                                 </div>
@@ -163,6 +162,11 @@
                 @endif
             </div>
         </div>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center col-12">
+        <img style="width:50%;height:400px;object-fit:cover;" src="{{asset('img/equipo-medico.jpg')}}" alt="Imagen de muestra">
+        <img style="width:30%;height:300px;object-fit:cover;" src="{{asset('img/operando.jpg')}}" alt="Imagen de muestra">
     </div>
 </div>
             

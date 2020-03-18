@@ -37,8 +37,8 @@ let CollapsableCard = {
      */
     open(position){
         this.cards[position].classList.add('active');
-        this.btns[position].children[1].classList.remove('fa-sort-up');
-        this.btns[position].children[1].classList.add('fa-sort-down');
+        this.btns[position].children[0].children[0].classList.remove('fa-sort-up');
+        this.btns[position].children[0].children[0].classList.add('fa-sort-down');
     },
     /**
      * Close the collapsable card.
@@ -46,8 +46,8 @@ let CollapsableCard = {
      */
     close(position){
         this.cards[position].classList.remove('active');
-        this.btns[position].children[1].classList.remove('fa-sort-down');
-        this.btns[position].children[1].classList.add('fa-sort-up');
+        this.btns[position].children[0].children[0].classList.remove('fa-sort-down');
+        this.btns[position].children[0].children[0].classList.add('fa-sort-up');
     },
 };
 
