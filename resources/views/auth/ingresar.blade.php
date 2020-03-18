@@ -18,8 +18,8 @@
 @endsection
 
 @section('main')
-    <div class="ingresar col-12 col-md-10 col-lg-8 pt-5">
-        <div class="title">
+    <div class="ingresar col-12 col-md-10 col-lg-8 pt-5 m-auto">
+        <div class="title text-center">
             <h2>Iniciar Sesión</h2>
         </div>
         <form action="/ingresar"

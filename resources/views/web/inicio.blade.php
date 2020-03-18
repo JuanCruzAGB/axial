@@ -296,7 +296,7 @@
 <div class="donde-encontrarnos col-12">
     <div class="row justify-content-center px-3">
         <div class="col-12 my-4">
-            <h2 class="text-center h2 m-0 text-dark">Ubicación</h2>
+            <h2 class="text-center h2 m-0 text-dark my-5">Ubicación</h2>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2480796792042!2d-58.434819084771135!3d-34.572588880467585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59624034bf3%3A0x4c5b8dd6024977f9!2sHuergo%20366%2C%20C1426%20BQF%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1583877457141!5m2!1ses!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>

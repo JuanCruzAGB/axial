@@ -13,6 +13,10 @@
 @media(min-width: 1024px){
     /**/
 
+    .ingresar form{
+        display: inline;
+    }
+
     .login-container{
         display: flex !important;
         justify-content: center !important;

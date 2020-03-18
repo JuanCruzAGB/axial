@@ -25,11 +25,11 @@
             <li><a href="/demo#equipo" class="nav-link">
                 Equipo
             </a></li>
-            <li><a href="/demo#contacto" class="nav-link">
-                Contacto
-            </a></li>
             <li><a href="/noticias" class="nav-link">
                 Blog
+            </a></li>
+            <li><a href="/demo#contacto" class="nav-link">
+                Contacto
             </a></li>
             @if(Auth::check())
                 <li class="collapsable closed">
