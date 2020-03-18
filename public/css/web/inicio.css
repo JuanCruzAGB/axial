@@ -1,6 +1,3 @@
-/* error tooltip 
-.support-tooltip.showed::before */
-
 /* banner */
 .nav-menu{
     height: 8.5rem !important;
@@ -646,6 +643,20 @@ input.input100{
 
     .contact100-form{
         background: #dddddda8;
+    }
+
+    /* error tooltip */
+    .support-tooltip.showed::before{
+        top: 50px;
+        left: 15px;
+        right: 0;
+        text-align: center;
+        max-width: 45%;
+    }
+
+    .support-tooltip.showed::after{
+    left: 150px;
+    right: 0;
     }
 }
 
