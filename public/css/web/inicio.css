@@ -1,7 +1,10 @@
+/* error tooltip 
+.support-tooltip.showed::before */
+
 /* banner */
 .nav-menu{
-    height: 8rem !important;
-    max-height: 8rem !important;
+    height: 8.5rem !important;
+    max-height: 8.5rem !important;
 }
 
 .jumbotron{
@@ -124,7 +127,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: fit-content;
+    height: 260px;
 }
 
 .separador-call-to-action .row h2{
@@ -530,11 +533,11 @@ input.input100{
 
     .separador-call-to-action{
         height: 300px;
-        clip-path: polygon(0% 0%, 120% 0%, 120% 150px, 0% 100%);
+        clip-path: polygon(0% 0%, 120% 0%, 120% 200px, 0% 100%);
     }
     
     .separador-call-to-action::before{
-        clip-path: polygon(0% 0%, 120% 0%, 120% 150px, 0% 100%);
+        clip-path: polygon(0% 0%, 120% 0%, 120% 200px, 0% 100%);
     }
 
     .empty-miembro.card{
