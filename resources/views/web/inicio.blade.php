@@ -164,6 +164,32 @@
         </div>
     </div>
 
+    
+    
+    <div>
+        <h2 class="text-center my-4 py-4">Lorem ipsum dolor sit amet.</h2>
+    </div>    
+    <div class="container-fluid contenedor py-5 my-5 seccion-aparte d-flex">       
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-5">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item ultima-list border-bottom">Vestibulum at eros</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-5 card-background">
+                <img style="width:100%;height:400px;object-fit:cover;" src="{{asset('img/columna.png')}}" alt="Imagen de muestra">
+            </div>
+        </div>
+    </div>
+
+
     <div class="d-flex justify-content-between align-items-center col-12">
         <img style="width:50%;height:400px;object-fit:cover;" src="{{asset('img/equipo-medico.jpg')}}" alt="Imagen de muestra">
         <img style="width:30%;height:300px;object-fit:cover;" src="{{asset('img/operando.jpg')}}" alt="Imagen de muestra">
