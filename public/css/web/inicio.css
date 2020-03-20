@@ -217,6 +217,14 @@
     color: #000;
 }
 
+.seccion-aparte{
+    background-color: #fafafa;
+}
+
+.seccion-aparte .row div ul li{
+    background-color: #fafafa !important;
+}
+
 /* team */
 #equipo h2{
     width: 100%;
@@ -593,7 +601,7 @@ input.input100{
     }
 
     .seccion-aparte .row{
-        margin: auto !important;
+        margin: auto !important;#fafafa;
     }
 
     .separador-banner p{
