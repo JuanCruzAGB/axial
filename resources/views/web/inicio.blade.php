@@ -108,7 +108,30 @@
             </div>
         </div>
     </div>
-</div>
+    
+    <div>
+        <h2 class="text-center my-4 py-">Lorem ipsum dolor sit amet.</h2>
+    </div>    
+    <div class="container-fluid contenedor py-5 my-5 seccion-aparte d-flex">       
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-5">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item ultima-list border-bottom">Vestibulum at eros</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-5 card-background">
+                <img style="width:100%;height:400px;object-fit:cover;" src="{{asset('img/columna.png')}}" alt="Imagen de muestra">
+            </div>
+        </div>
+    </div>
+
 
 <div class="separador-call-to-action container-fluid contenedor p-0">
     <div class="row">
@@ -163,32 +186,6 @@
             </div>
         </div>
     </div>
-
-    
-    
-    <div>
-        <h2 class="text-center my-4 py-4">Lorem ipsum dolor sit amet.</h2>
-    </div>    
-    <div class="container-fluid contenedor py-5 my-5 seccion-aparte d-flex">       
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-5">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                    <li class="list-group-item ultima-list border-bottom">Vestibulum at eros</li>
-                </ul>
-            </div>
-            <div class="col-12 col-lg-5 card-background">
-                <img style="width:100%;height:400px;object-fit:cover;" src="{{asset('img/columna.png')}}" alt="Imagen de muestra">
-            </div>
-        </div>
-    </div>
-
 
     <div class="d-flex justify-content-between align-items-center col-12">
         <img style="width:50%;height:400px;object-fit:cover;" src="{{asset('img/equipo-medico.jpg')}}" alt="Imagen de muestra">
@@ -323,15 +320,16 @@
     </div>
 </div>
 
-<div class="donde-encontrarnos col-12">
-    <div class="row justify-content-center px-3">
-        <div class="col-12 my-4">
-            <h2 class="text-center h2 m-0 text-dark my-5">Ubicación</h2>
+    <div class="donde-encontrarnos col-12">
+        <div class="row justify-content-center px-3">
+            <div class="col-12 my-4">
+                <h2 class="text-center h2 m-0 text-dark my-5">Ubicación</h2>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2480796792042!2d-58.434819084771135!3d-34.572588880467585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59624034bf3%3A0x4c5b8dd6024977f9!2sHuergo%20366%2C%20C1426%20BQF%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1583877457141!5m2!1ses!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2480796792042!2d-58.434819084771135!3d-34.572588880467585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59624034bf3%3A0x4c5b8dd6024977f9!2sHuergo%20366%2C%20C1426%20BQF%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1583877457141!5m2!1ses!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
-</div>
 
+</div>
 
 @endsection
 
