@@ -52,8 +52,7 @@
 
 /* main */
 .contenedor{
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding: 0;
 }
 
 .separador-banner,
@@ -390,6 +389,10 @@ input.input100{
     background-color: #C6C6C6;
 }
 
+.contact-form div{
+    background-color: #fafafa;
+}
+
 .wrap-contact100{
     width: 100%;
     flex-direction: row;
@@ -584,6 +587,10 @@ input.input100{
     border: none;
 }
 
+.seccion-aparte div div ul ño{
+    font-family: gotham-light !important; 
+}
+
 /* LG */
 @media(min-width: 1024px){
     .jumbotron .container h2{
@@ -601,7 +608,7 @@ input.input100{
     }
 
     .seccion-aparte .row{
-        margin: auto !important;#fafafa;
+        margin: auto !important;
     }
 
     .separador-banner p{
@@ -613,8 +620,8 @@ input.input100{
     }
 
     .miembro.card{
-        min-width: calc(((80% - 2rem) / 3) - 1rem);
-        flex-basis: calc(((80% - 2rem) / 3) - 1rem);
+        min-width: calc(((80% - 2rem) / 2) - 1rem);
+        flex-basis: calc(((80% - 2rem) / 2) - 1rem);
         height: 500px;
     }
 
@@ -676,8 +683,8 @@ input.input100{
     }
 
     .support-tooltip.showed::after{
-    left: 150px;
-    right: 0;
+        right: 35px;
+        top: 92px;
     }
 }
 

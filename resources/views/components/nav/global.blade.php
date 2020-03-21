@@ -14,16 +14,14 @@
             <li><a href="/demo" class="nav-link">
                 Inicio
             </a></li>
-            <li class="collapsable closed">
-                <a href="/demo#servicios" class="collapsable-button">Servicios<i class="collapsable-icon fas fa-sort-down"></i></a>
-                <ul class="collapsable-menu">
-                    <li class="m-0"><a href="/demo#tratamiento-del-dolor" class="collapsable-link">Tratamiento del dolor</a></li>
-                    <li class="m-0"><a href="/demo#cirugia-mini-invasiva" class="collapsable-link">Cirugía mini invasiva</a></li>
-                    <li class="m-0"><a href="/demo#escoliosis" class="collapsable-link">Escoliosis</a></li>
-                </ul>
-            </li>
+            <li><a href="/demo#nuestros-servicios" class="nav-link">
+            Servicios
+            </a></li>
             <li><a href="/demo#equipo" class="nav-link">
                 Equipo
+            </a></li>
+            <li><a href="/demo#patologias" class="nav-link">
+                Patologías
             </a></li>
             <li><a href="/noticias" class="nav-link">
                 Blog

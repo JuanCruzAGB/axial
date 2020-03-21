@@ -109,25 +109,25 @@
         </div>
     </div>
     
-    <div>
-        <h2 class="text-center my-4 py-">Lorem ipsum dolor sit amet.</h2>
-    </div>    
+    
     <div class="container-fluid contenedor py-5 my-5 seccion-aparte d-flex">       
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-5">
+            <div class="col-12">
+                <h2 id="patologias" class="text-center my-4">Patologías</h2>
+            </div>    
+            <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                    <li class="list-group-item ultima-list border-bottom">Vestibulum at eros</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Hernia de disco</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Infecciones en columna vertical</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Canal estrecho lumbar</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Canal estrecho cervical</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Tratamiento o bloqueo de dolor</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Escoliosis y deformidades infantiles</li>
+                    <li class="list-group-item ultima-list border-bottom"></li>
                 </ul>
             </div>
             <div class="col-12 col-lg-5 card-background">
-                <img style="width:100%;height:400px;object-fit:cover;" src="{{asset('img/columna.png')}}" alt="Imagen de muestra">
+                <img style="width:100%;height:550px;object-fit:contain;" src="{{asset('img/hurt.png')}}" alt="Imagen de muestra">
             </div>
         </div>
     </div>
@@ -137,10 +137,10 @@
     <div class="row">
         <div class="col-12">
             <h2 class="h2-responsive text-white text-center mt-4 mb-3">
-                <span class="text-row">Visita nuestro blog</span>
+                <span class="text-row">Ingresá a nuestro Blog</span>
             </h2>
             <div class="d-flex justify-content-center mb-4">
-                <a class="go-blog btn btn-primary" href="/noticias" role="button">Leer</a>
+                <a class="go-blog btn btn-primary" href="/noticias" role="button">Blog</a>
             </div>
         </div>
     </div>
@@ -344,15 +344,15 @@
 @endsection
 
 @section('js')
-    <script src="{{asset('ValidationJS/js/Validation.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Rule.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Message.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Requirement.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Validator.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Invalidator.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Form.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Input.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Support.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Validation.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Rule.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Message.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Requirement.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Validator.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Invalidator.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Form.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Input.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Support.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/web/inicio.js')}}"></script>
     <script src="vendor/animsition/js/animsition.min.js"></script>
     <script type="text/javascript" src="{{asset('vendor/select2/select2.min.js')}}"></script>
