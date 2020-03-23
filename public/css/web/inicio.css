@@ -540,6 +540,7 @@ input.input100{
 
     .cartas-servicios .card-title{
         font-size: 1.1rem;
+        height: 2rem;
     }
 
     .quote-left{
@@ -663,6 +664,7 @@ input.input100{
 
     .seccion-img-random{
         flex-wrap: nowrap;
+        justify-content: center;
     }
     
     .seccion-img-random .img-randoms{
@@ -691,10 +693,6 @@ input.input100{
         order: 1;
     }
 
-    .contact100-form{
-        background: #dddddda8;
-    }
-
     /* error tooltip */
     .support-tooltip.showed::before{
         top: 50px;
@@ -712,5 +710,8 @@ input.input100{
 
 /* XL */
 @media(min-width: 1200px){
-    /**/
+    .seccion-img-random{
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 }
