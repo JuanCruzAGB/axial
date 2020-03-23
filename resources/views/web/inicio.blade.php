@@ -51,7 +51,7 @@
 
     <div id="nuestros-servicios" class="nuestros-servicios col-12">
         <div class="row mb-2 px-3">
-            <div" class="col-12 mt-4 mb-3 p-0">
+            <div class="col-12 mt-4 mb-3 p-0">
                 <div class="row d-flex justify-content-center">
                     <h2 class="col-12 text-center w-100 m-0 mt-3 pt-3 px-3">Servicios</h2>
                 </div>
@@ -367,6 +367,8 @@
     <script type="text/javascript" src="{{asset('vendor/daterangepicker/moment.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('vendor/daterangepicker/daterangepicker.js')}}"></script>
     <script type="text/javascript" src="{{asset('vendor/countdowntime/countdowntime.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('https://unpkg.com/scrollreveal') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/scrollReveal.js') }}"></script>
     <script type="text/javascript" src="{{asset('js/form/form.js')}}"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
