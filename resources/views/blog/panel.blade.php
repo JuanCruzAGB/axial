@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{csrf_token()}}">
     <link href="{{asset('css/blog/panel.css')}}" rel="stylesheet">
     <link href="{{asset('css/web/panel.css')}}" rel="stylesheet">
-    <link href="{{asset('ValidationJS/css/styles.css')}}" rel="stylesheet">
+    <link href="{{asset('submodules/ValidationJS/css/styles.css')}}" rel="stylesheet">
     <link href="{{asset('css/InputFileMaker.css')}}" rel="stylesheet">
 @endsection
 
@@ -77,15 +77,15 @@
 
 @section('js')
     <script src="{{asset('vendors/ckeditor/ckeditor.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Validation.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Form.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Input.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Support.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Rule.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Requirement.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Message.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Validator.js')}}"></script>
-    <script type="text/javascript" src="{{asset('ValidationJS/js/Invalidator.js')}}"></script>
+    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Validation.js')}}"></script>
+    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Form.js')}}"></script>
+    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Input.js')}}"></script>
+    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Support.js')}}"></script>
+    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Rule.js')}}"></script>
+    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Requirement.js')}}"></script>
+    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Message.js')}}"></script>
+    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Validator.js')}}"></script>
+    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Invalidator.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/InputFileMaker.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/blog/panel.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/web/panel.js')}}"></script>

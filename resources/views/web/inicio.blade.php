@@ -51,73 +51,77 @@
 
     <div id="nuestros-servicios" class="nuestros-servicios col-12">
         <div class="row mb-2 px-3">
-            <div" class="col-12 mt-4 mb-3 p-0">
+            <div class="col-12 mt-4 mb-3 p-0">
                 <div class="row d-flex justify-content-center">
                     <h2 class="col-12 text-center w-100 m-0 mt-3 pt-3 px-3">Servicios</h2>
                 </div>
             </div>
 
-            <div class="cards row d-flex justify-content-center pb-3 px-0 mx-0">
-                <div id="tratamiento-del-dolor" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
-                    <div class="card-body">
-                        <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Tratamiento del dolor</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-
-                <div id="cirugia-mini-invasiva" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
+            <div class="cards row d-flex justify-content-center pb-3 px-0 mx-auto">
+                 <div id="cirugia-mini-invasiva" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
                     <div class="card-body">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <h3 class="card-title mb-3">Cirugía mini invasiva</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">El término minima invasion incluye a un tipo de técnica utilizada para el tratamiento de diversas afecciones espinales , la cual con el soporte de imágenes de alta resolución( microscopios ) e instrumental adecuado son óptimas para resolución de patologías con incisiones pequeñas.</p>
                     </div>
                 </div>
 
                 <div id="patologia-de-la-columna" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
                     <div class="card-body">
                         <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Patología de la columna</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <h3 class="card-title mb-3">Patología de Columna del Adulto</h3>
+                        <p class="card-text">Nuestro equipo está enfocado en la resolución de la patología de columna del adulto con el apoyo de un grupo de colaboradores médicos de diferentes especialidades (clínicos, cardiólogos, reumatólogos, fisioterapeutas , terapistas ocupacionales).</p>
                     </div>
                 </div>
                 
-                <div id="tratamiento-del-dolor" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
+                <div id="patologia-columna-pediatrica" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
                     <div class="card-body">
                         <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Tratamiento del dolor</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-
-                <div id="cirugia-mini-invasiva" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
-                    <div class="card-body">
-                        <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Cirugía mini invasiva</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-
-                <div id="patologia-de-la-columna" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
-                    <div class="card-body">
-                        <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Patología de la columna</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <h3 class="card-title mb-3">Patologia De columna Pediatrica</h3>
+                        <p class="card-text">El Servicio de cirugía de Columna Pediátrica de axial grupo medico realiza diagnostico y tratamiento de multiples afecciones espinales de aparición en la infancia y adolescencia siendo su gran mayoría escoliosis y cifosis . De manera multidisciplinaria con el equipo de neurocirugía se realizan tratamiento de afecciones raquimedulares.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    
+    
+    <div class="container-fluid contenedor py-5 my-5 seccion-aparte d-flex">       
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h2 id="patologias" class="text-center my-4">Patologías</h2>
+            </div>    
+            <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Hernia de disco</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Infecciones en columna vertical</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Canal estrecho lumbar / cervical</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Tratamiento o bloqueo de dolor</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Escoliosis Idiopática</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Escoliosis Congénitas</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Escoliosis Neuromusculares</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Cifosis / Cifosis congénita</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Espondilolistesis</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Tumores</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Infecciones</li>
+                    <li class="list-group-item ultima-list border-bottom"></li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-5 card-background">
+                <img style="width:100%;height:550px;object-fit:contain;" src="{{asset('img/hurt.png')}}" alt="Imagen de muestra">
+            </div>
+        </div>
+    </div>
+
 
 <div class="separador-call-to-action container-fluid contenedor p-0">
     <div class="row">
         <div class="col-12">
             <h2 class="h2-responsive text-white text-center mt-4 mb-3">
-                <span class="text-row">Visita nuestro blog</span>
+                <span class="text-row">Ingresá a nuestro Blog</span>
             </h2>
             <div class="d-flex justify-content-center mb-4">
-                <a class="go-blog btn btn-primary" href="/noticias" role="button">Leer</a>
+                <a class="go-blog btn btn-primary" href="/noticias" role="button">Blog</a>
             </div>
         </div>
     </div>
@@ -164,9 +168,9 @@
         </div>
     </div>
 
-    <div class="d-flex justify-content-between align-items-center col-12">
-        <img style="width:50%;height:400px;object-fit:cover;" src="{{asset('img/equipo-medico.jpg')}}" alt="Imagen de muestra">
-        <img style="width:30%;height:300px;object-fit:cover;" src="{{asset('img/operando.jpg')}}" alt="Imagen de muestra">
+    <div class="d-flex justify-content-around align-items-center col-12 seccion-img-random">
+        <img src="{{asset('img/equipo-medico.jpg')}}" class="img-randoms mb-4 mb-md-2 px-md-4" alt="Imagen de muestra">
+        <img src="{{asset('img/operando.jpg')}}" class="img-randoms mb-md-2 px-md-4" alt="Imagen de muestra">
     </div>
 </div>
             
@@ -296,15 +300,16 @@
     </div>
 </div>
 
-<div class="donde-encontrarnos col-12">
-    <div class="row justify-content-center px-3">
-        <div class="col-12 my-4">
-            <h2 class="text-center h2 m-0 text-dark my-5">Ubicación</h2>
+    <div class="donde-encontrarnos col-12">
+        <div class="row justify-content-center px-3">
+            <div class="col-12 my-4">
+                <h2 class="text-center h2 m-0 text-dark my-5">Ubicación</h2>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2480796792042!2d-58.434819084771135!3d-34.572588880467585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59624034bf3%3A0x4c5b8dd6024977f9!2sHuergo%20366%2C%20C1426%20BQF%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1583877457141!5m2!1ses!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2480796792042!2d-58.434819084771135!3d-34.572588880467585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59624034bf3%3A0x4c5b8dd6024977f9!2sHuergo%20366%2C%20C1426%20BQF%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1583877457141!5m2!1ses!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
-</div>
 
+</div>
 
 @endsection
 
@@ -319,15 +324,15 @@
 @endsection
 
 @section('js')
-    <script src="{{asset('ValidationJS/js/Validation.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Rule.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Message.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Requirement.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Validator.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Invalidator.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Form.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Input.js')}}"></script>
-    <script src="{{asset('ValidationJS/js/Support.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Validation.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Rule.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Message.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Requirement.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Validator.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Invalidator.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Form.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Input.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Support.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/web/inicio.js')}}"></script>
     <script src="vendor/animsition/js/animsition.min.js"></script>
     <script type="text/javascript" src="{{asset('vendor/select2/select2.min.js')}}"></script>
@@ -342,6 +347,8 @@
     <script type="text/javascript" src="{{asset('vendor/daterangepicker/moment.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('vendor/daterangepicker/daterangepicker.js')}}"></script>
     <script type="text/javascript" src="{{asset('vendor/countdowntime/countdowntime.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('https://unpkg.com/scrollreveal') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/scrollReveal.js') }}"></script>
     <script type="text/javascript" src="{{asset('js/form/form.js')}}"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
