@@ -51,7 +51,7 @@
 
     <div id="nuestros-servicios" class="nuestros-servicios col-12">
         <div class="row mb-2 px-3">
-            <div class="col-12 mt-4 mb-3 p-0">
+            <div class="col-12 mt-4 p-0">
                 <div class="row d-flex justify-content-center">
                     <h2 class="col-12 text-center w-100 m-0 mt-3 pt-3 px-3">Servicios</h2>
                 </div>
@@ -86,7 +86,7 @@
     </div>
     
     
-    <div class="container-fluid contenedor py-5 my-5 seccion-aparte d-flex">       
+    <div class="container-fluid contenedor seccion-aparte d-flex">       
         <div class="row justify-content-center">
             <div class="col-12">
                 <h2 id="patologias" class="text-center my-4">Patologías</h2>
@@ -104,11 +104,12 @@
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Espondilolistesis</li>
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Tumores</li>
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Infecciones</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Qustes Sinoviales</li>
                     <li class="list-group-item ultima-list border-bottom"></li>
                 </ul>
             </div>
             <div class="col-12 col-lg-5 card-background">
-                <img style="width:100%;height:550px;object-fit:contain;" src="{{asset('img/hurt.png')}}" alt="Imagen de muestra">
+                <img style="width:100%;height:650px;object-fit:contain;" src="{{asset('img/hurt.png')}}" alt="Imagen de muestra">
             </div>
         </div>
     </div>
