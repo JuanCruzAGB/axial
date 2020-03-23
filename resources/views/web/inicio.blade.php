@@ -141,7 +141,7 @@
                                 <img class="mb-0" src="{{asset('storage/' . $miembro->imagen)}}" alt="{{$miembro->nombre}}">
                             </div>
                             <div class="card-body p-3">
-                                <a href="#{{$miembro->slug}}" class="collapsable-btn card-title m-0">
+                                <a href="#{{$miembro->slug}}" class="ver-mas collapsable-btn card-title m-0">
                                     <h3 class="m-0">{{$miembro->nombre}}<i class="collapsable-icon title-icon fas fa-sort-up"></i></h3>
                                 </a>
                                 <div class="card-content px-3">

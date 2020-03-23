@@ -22,10 +22,15 @@ function fixedHeader(){
         btnOpener.addEventListener("click", function(e){
             e.preventDefault();
             Sidebar.open();
-        })
+        });
+
+        let smooth = new SmoothScroll(document.querySelectorAll('.nav-menu.fixed a'));
     }
 }
 document.addEventListener('DOMContentLoaded', function(event){
-    let scroll = new ScrollDetection({min: 0, max:130}, 'Y', {success: topHeader, error: fixedHeader});
+    let scroll = {
+        detection: new ScrollDetection({min: 0, max:130}, 'Y', {success: topHeader, error: fixedHeader}),
+        smooth: new SmoothScroll(document.querySelectorAll('a:not(.ver-mas)')),
+    };
     topHeader();
 });

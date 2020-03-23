@@ -66,6 +66,7 @@
         <script type="text/javascript" src="{{ asset('js/PopUpNotification.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/Navmenu.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/ScrollDetection.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/SmoothScroll.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
         @yield('js')
     </body>
