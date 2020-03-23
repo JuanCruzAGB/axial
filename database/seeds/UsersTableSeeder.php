@@ -9,25 +9,13 @@
          * @return void
          */
         public function run(){
-            if($user = User::find(1)){
-                $data = [
-                    'name' => 'grupoaxi',
-                    'email' => 'info@grupoaxial.org',
-                    'password' => \Hash::make('characarca19'),
-                    'slug' => 'grupoaxi',
-                    'picture' => 'users\1.jpg',
-                    'id_presentation' => 1,
-                ];
-                $user->update($data);
-            }else{
-                $user = User::create([
-                    'name' => 'grupoaxi',
-                    'email' => 'info@grupoaxial.org',
-                    'password' => \Hash::make('characarca19'),
-                    'slug' => 'grupoaxi',
-                    'picture' => 'users\1.jpg',
-                    'id_presentation' => 1,
-                ]);
-            }
+            $user = User::create([
+                'name' => 'Dummy',
+                'email' => 'ejemplo@correo.com',
+                'password' => \Hash::make('12345678'),
+                'slug' => 'dummy',
+                'picture' => 'users\1.jpg',
+                'id_presentation' => 1,
+            ]);
         }
     }

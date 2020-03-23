@@ -213,7 +213,6 @@
                             </div>
                         </div>
 
-
                         @if($errors->has('telefono'))
                             <div class="telefono col-12 support-tooltip showed" data-tooltip="{{$errors->first('telefono')}}">
                         @else

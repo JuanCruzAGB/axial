@@ -98,23 +98,24 @@
 }
 
 .separador-call-to-action{
+    position: relative;
     background-color: transparent;
     align-items: flex-start;
-    height: 200px;
+    height: fit-content;
     background-image: url('/img/bg-call.png');
     background-size: cover;
     background-attachment: fixed;
-    clip-path: polygon(0% 0%, 120% 0%, 120% 175px, 0% 100%);
+    clip-path: polygon(0% 25px, 100% 0%, 100% calc(100% - 25px), 0% 100%);
 }
 
 .separador-call-to-action::before{
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    clip-path: polygon(0% 0%, 120% 0%, 120% 175px, 0% 100%);
+    clip-path: polygon(0% 25px, 100% 0%, 100% calc(100% - 25px), 0% 100%);
     background: rgba(35, 31, 32, 0.6);
 }
 
@@ -123,7 +124,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 260px;
+    height: 300px;
 }
 
 .separador-call-to-action .row h2{
@@ -532,6 +533,14 @@ input.input100{
         top: -48px;
         height: 50px;
     }
+
+    .separador-call-to-action{
+        clip-path: polygon(0% 50px, 100% 0%, 100% calc(100% - 50px), 0% 100%);
+    }
+    
+    .separador-call-to-action::before{
+        clip-path: polygon(0% 50px, 100% 0%, 100% calc(100% - 50px), 0% 100%);
+    }
     
     .separador-banner::after{
         bottom: -48px;
@@ -549,15 +558,6 @@ input.input100{
     
     .quote-right{
         right: 15%;
-    }
-
-    .separador-call-to-action{
-        height: 300px;
-        clip-path: polygon(0% 0%, 120% 0%, 120% 200px, 0% 100%);
-    }
-    
-    .separador-call-to-action::before{
-        clip-path: polygon(0% 0%, 120% 0%, 120% 200px, 0% 100%);
     }
 
     .empty-miembro.card{
