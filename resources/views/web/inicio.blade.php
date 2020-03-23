@@ -57,52 +57,28 @@
                 </div>
             </div>
 
-            <div class="cards row d-flex justify-content-center pb-3 px-0 mx-0">
-                <div id="tratamiento-del-dolor" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
-                    <div class="card-body">
-                        <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Tratamiento del dolor</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-
-                <div id="cirugia-mini-invasiva" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
+            <div class="cards row d-flex justify-content-center pb-3 px-0 mx-auto">
+                 <div id="cirugia-mini-invasiva" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
                     <div class="card-body">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <h3 class="card-title mb-3">Cirugía mini invasiva</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">El término minima invasion incluye a un tipo de técnica utilizada para el tratamiento de diversas afecciones espinales , la cual con el soporte de imágenes de alta resolución( microscopios ) e instrumental adecuado son óptimas para resolución de patologías con incisiones pequeñas.</p>
                     </div>
                 </div>
 
                 <div id="patologia-de-la-columna" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
                     <div class="card-body">
                         <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Patología de la columna</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <h3 class="card-title mb-3">Patología de Columna del Adulto</h3>
+                        <p class="card-text">Nuestro equipo está enfocado en la resolución de la patología de columna del adulto con el apoyo de un grupo de colaboradores médicos de diferentes especialidades (clínicos, cardiólogos, reumatólogos, fisioterapeutas , terapistas ocupacionales).</p>
                     </div>
                 </div>
                 
-                <div id="tratamiento-del-dolor" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
+                <div id="patologia-columna-pediatrica" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
                     <div class="card-body">
                         <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Tratamiento del dolor</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-
-                <div id="cirugia-mini-invasiva" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
-                    <div class="card-body">
-                        <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Cirugía mini invasiva</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-
-                <div id="patologia-de-la-columna" class="cartas-servicios card col-12 col-md-3 text-center mb-3 p-3">
-                    <div class="card-body">
-                        <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Patología de la columna</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <h3 class="card-title mb-3">Patologia De columna Pediatrica</h3>
+                        <p class="card-text">El Servicio de cirugía de Columna Pediátrica de axial grupo medico realiza diagnostico y tratamiento de multiples afecciones espinales de aparición en la infancia y adolescencia siendo su gran mayoría escoliosis y cifosis . De manera multidisciplinaria con el equipo de neurocirugía se realizan tratamiento de afecciones raquimedulares.</p>
                     </div>
                 </div>
             </div>
@@ -119,10 +95,15 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Hernia de disco</li>
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Infecciones en columna vertical</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Canal estrecho lumbar</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Canal estrecho cervical</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Canal estrecho lumbar / cervical</li>
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Tratamiento o bloqueo de dolor</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Escoliosis y deformidades infantiles</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Escoliosis Idiopática</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Escoliosis Congénitas</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Escoliosis Neuromusculares</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Cifosis / Cifosis congénita</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Espondilolistesis</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Tumores</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2"></i>Infecciones</li>
                     <li class="list-group-item ultima-list border-bottom"></li>
                 </ul>
             </div>
@@ -187,9 +168,9 @@
         </div>
     </div>
 
-    <div class="d-flex justify-content-between align-items-center col-12">
-        <img style="width:50%;height:400px;object-fit:cover;" src="{{asset('img/equipo-medico.jpg')}}" alt="Imagen de muestra">
-        <img style="width:30%;height:300px;object-fit:cover;" src="{{asset('img/operando.jpg')}}" alt="Imagen de muestra">
+    <div class="d-flex justify-content-around align-items-center col-12 seccion-img-random">
+        <img src="{{asset('img/equipo-medico.jpg')}}" class="img-randoms mb-4 mb-md-2 px-md-4" alt="Imagen de muestra">
+        <img src="{{asset('img/operando.jpg')}}" class="img-randoms mb-md-2 px-md-4" alt="Imagen de muestra">
     </div>
 </div>
             

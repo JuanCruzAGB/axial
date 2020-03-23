@@ -389,6 +389,16 @@ input.input100{
     background-color: #C6C6C6;
 }
 
+.seccion-img-random{
+    flex-wrap: wrap;
+}
+
+.seccion-img-random .img-randoms{
+    width: 100% !important;
+    height: 300px;
+    object-fit: cover;
+}
+
 .contact-form div{
     background-color: #fafafa;
 }
@@ -555,6 +565,8 @@ input.input100{
         height: 450px;
     }
 
+   
+
     .rs1-wrap-input100, .rs2-wrap-input100{
         width: 100% !important;
     }
@@ -647,6 +659,16 @@ input.input100{
         min-width: calc(((100% - 2rem) / 3) - 1rem);
         flex-basis: calc(((100% - 2rem) / 3) - 1rem);
         height: 500px;
+    }
+
+    .seccion-img-random{
+        flex-wrap: nowrap;
+    }
+    
+    .seccion-img-random .img-randoms{
+        width: 400px !important;
+        height: 400px !important;
+        object-fit: cover;
     }
 
     .ultima-list{
