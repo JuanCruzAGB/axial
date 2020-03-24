@@ -23,9 +23,11 @@
             $objDemo->telefono = $inputData['telefono'];
             $objDemo->mensaje = $inputData['mensaje'];
             
-            Mail::to('juancarmentia@gmail.com')->send(new Contactar($objDemo));
+            Mail::to('info@grupoaxial.org')->send(new Contactar($objDemo));
 
-            return redirect()->route('mail.gracias');
+            if(!Mail::failures()){
+                return redirect()->route('mail.gracias');
+            }
         }
 
         /** De vuelve la visgta de mensaje de exito. */
