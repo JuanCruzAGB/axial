@@ -6,7 +6,7 @@
 
 .jumbotron{
     position: relative;
-    background: url('/img/bg-demo.jpg') center center no-repeat;
+    background: url('/img/bg-demo.jpg') -215px center no-repeat;
     background-attachment: fixed;
     height: 70vh;
     background-size: cover;
@@ -29,7 +29,7 @@
 }
 
 .jumbotron .container h2 span > span{
-    color: var(--color-uno);
+    color: #fff;
     display: block;
 }
 
@@ -184,6 +184,10 @@
     font-family: gotham-bold;
 }
 
+#nuestros-servicios p{
+    font-family: gotham-light;
+}
+
 #nuestros-servicios span{
     padding-top: 2rem;
 }
@@ -223,7 +227,13 @@
 
 .seccion-aparte .row div ul li{
     background-color: #fafafa !important;
+    padding-bottom: 0 !important;
 }
+
+.lista-patologias li{
+    font-family: gotham-light;
+}
+
 
 /* team */
 #equipo h2{
@@ -491,13 +501,22 @@ input.input100{
 
 /* MD */
 @media(min-width: 768px){
+
+    .jumbotron{
+        position: relative;
+        background: url('/img/bg-demo.jpg') center center no-repeat;
+        background-attachment: fixed;
+        height: 70vh;
+        background-size: cover;
+    }
+
     .jumbotron .container h2 > span:last-child{
-        color: var(--color-uno);
+        color: #fff;
         display: block;
     }
 
     .jumbotron .container h2 span > span{
-        color: var(--color-uno);
+        color: #fff;
         display: inline;
     }
 

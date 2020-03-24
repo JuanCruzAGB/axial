@@ -7,3 +7,15 @@ sr.reveal('.nuestros-servicios .cards .cartas-servicios .card-body', {
     distance: '300px',
     origin: 'left'
 });
+
+sr.reveal('.lista-patologias', {
+    duration: 2000,
+    distance: '300px',
+    origin: 'left'
+});
+
+sr.reveal('.img-patologias', {
+    duration: 2000,
+    distance: '300px',
+    origin: 'right'
+});

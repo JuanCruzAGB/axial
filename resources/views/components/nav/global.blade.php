@@ -17,11 +17,11 @@
             <li><a href="/demo#nuestros-servicios" class="nav-link">
                 Servicios
             </a></li>
-            <li><a href="/demo#equipo" class="nav-link">
-                Equipo
-            </a></li>
             <li><a href="/demo#patologias" class="nav-link">
                 Patologías
+            </a></li>
+            <li><a href="/demo#equipo" class="nav-link">
+                Equipo
             </a></li>
             <li><a href="/noticias" class="nav-link">
                 Blog
