@@ -43,46 +43,45 @@
 @endsection
 
 @section('main')
-    <div class="separador-banner col-12 px-md-5">
-        <span class="quotes quote-left"><i class="quote-icon fas fa-quote-left"></i></span>
-        <span class="quotes quote-right"><i class="quote-icon fas fa-quote-right"></i></span>
-        <p class="col-12 col-md-10 col-lg-6 text-white text-center m-0 py-4 py-lg-2 px-md-5 px-lg-4">El dolor de espalda es un problema que afecta al 80% de la población mundial.</p>
+    <div class="separador-banner col-12 p-md-5">
+        <p class="col-12 col-md-10 col-lg-6 text-white text-center m-0 p-0">Somos un equipo de médicos, secretarias, instrumentadores, madres, padres, amigos, personas con vocación de servicio, apasionados por nuestra labor.</p>
     </div>
 
     <div id="nuestros-servicios" class="nuestros-servicios col-12">
-        <div class="row mb-2 px-3">
-            <div class="col-12 mt-4 p-0">
+        <div class="row">
+            <div class="col-12 m-0 p-0">
                 <div class="row d-flex justify-content-center">
-                    <h2 class="col-12 text-center w-100 m-0 mt-3 pt-3 px-3">Servicios</h2>
+                    <h2 class="col-12 text-center w-100 m-0 pt-5">Servicios</h2>
                 </div>
             </div>
 
-            <div class="cards row d-flex justify-content-center pb-3 px-0 mx-auto">
-                 <div id="cirugia-mini-invasiva" class="cartas-servicios card col-12 col-md-5 text-center mb-3 p-3 border-0">
-                    <div class="card-body">
+            <div class="cards row d-flex justify-content-center pb-4 px-0 mx-auto">
+                 <div id="cirugia-mini-invasiva" class="cartas-servicios card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 px-4 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <h3 class="card-title mb-3">Cirugía mini invasiva</h3>
                         <p class="card-text">El término minima invasion incluye a un tipo de técnica utilizada para el tratamiento de diversas afecciones espinales , la cual con el soporte de imágenes de alta resolución( microscopios ) e instrumental adecuado son óptimas para resolución de patologías con incisiones pequeñas.</p>
                     </div>
                 </div>
 
-                <div id="patologia-de-la-columna" class="cartas-servicios card col-12 col-md-5 text-center mb-3 p-3 border-0">
-                    <div class="card-body">
+                <div id="patologia-de-la-columna" class="cartas-servicios card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 px-4 px-md-0">
                         <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
                         <h3 class="card-title mb-3">Patología de Columna del Adulto</h3>
                         <p class="card-text">Nuestro equipo está enfocado en la resolución de la patología de columna del adulto con el apoyo de un grupo de colaboradores médicos de diferentes especialidades (clínicos, cardiólogos, reumatólogos, fisioterapeutas , terapistas ocupacionales).</p>
                     </div>
                 </div>
                 
-                <div id="patologia-columna-pediatrica" class="cartas-servicios card col-12 col-md-5 text-center mb-3 p-3 border-0">
-                    <div class="card-body">
+                <div id="patologia-columna-pediatrica" class="cartas-servicios card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 px-4 px-md-0">
                         <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
                         <h3 class="card-title mb-3">Patologia De columna Pediatrica</h3>
                         <p class="card-text">El Servicio de cirugía de Columna Pediátrica de axial grupo medico realiza diagnostico y tratamiento de multiples afecciones espinales de aparición en la infancia y adolescencia siendo su gran mayoría escoliosis y cifosis . De manera multidisciplinaria con el equipo de neurocirugía se realizan tratamiento de afecciones raquimedulares.</p>
                     </div>
                 </div>
-                <div id="tratamiento-de-dolor" class="cartas-servicios card col-12 col-md-5 text-center mb-3 p-3 border-0">
-                    <div class="card-body">
+
+                <div id="tratamiento-de-dolor" class="cartas-servicios card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 px-4 px-md-0">
                         <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
                         <h3 class="card-title mb-3">Tratamiento de dolor</h3>
                         <p class="card-text">El Servicio de cirugía de Columna Pediátrica de axial grupo medico realiza diagnostico y tratamiento de multiples afecciones espinales de aparición en la infancia y adolescencia siendo su gran mayoría escoliosis y cifosis . De manera multidisciplinaria con el equipo de neurocirugía se realizan tratamiento de afecciones raquimedulares.</p>
@@ -93,17 +92,16 @@
     </div>
     
     
-    <div class="container-fluid contenedor seccion-aparte d-flex">       
+    <div id="patologias" class="patologias container-fluid contenedor seccion-aparte d-flex pt-4">       
         <div class="row justify-content-center">
             <div class="col-12">
-                <h2 id="patologias" class="text-center mb-4">Patologías</h2>
+                <h2 class="text-center mb-4">Patologías</h2>
             </div>    
             <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
                 <ul class="list-group list-group-flush lista-patologias">
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Infecciones en columna vertical</li>
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Hernia de disco</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Canal estrecho lumbar / cervical</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Tratamiento o bloqueo de dolor</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Canal estrecho / lumbar</li>
+                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Quistes Sinoviales</li>
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Escoliosis Idiopática</li>
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Escoliosis Congénitas</li>
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Escoliosis Neuromusculares</li>
@@ -111,12 +109,11 @@
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Espondilolistesis</li>
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Tumores</li>
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Infecciones</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Qustes Sinoviales</li>
                     <li class="list-group-item ultima-list border-bottom"></li>
                 </ul>
             </div>
-            <div class="col-12 col-lg-5 card-background img-patologias">
-                <img style="width:100%;height:650px;object-fit:contain;" src="{{asset('img/hurt.png')}}" alt="Imagen de muestra">
+            <div class="col-12 col-lg-5 card-background img-patologias text-center">
+                <img src="{{asset('img/hurt.png')}}" alt="Imagen de muestra">
             </div>
         </div>
     </div>
@@ -137,13 +134,13 @@
     
 <div class="container-fluid contenedor p-0">
     <div id="equipo" class="equipo col-12 py-4 p-0">
-        <h2 class="text-center mt-3 mb-4">Equipo</h2>
+        <h2 class="text-center mb-4">Staff médico</h2>
 
         <div class="listado">
-            <div class="miembros cards mt-4 mx-3 pb-0">
+            <div class="miembros cards mx-4 mx-lg-0 pb-0">
                 @if(count($miembros))
                     @foreach($miembros as $miembro)
-                        <div id="{{$miembro->slug}}" class="miembro collapsable-card card mr-3 p-0">
+                        <div id="{{$miembro->slug}}" class="miembro collapsable-card card mr-4 mr-lg-0 p-0">
                             <div class="card-background">
                                 <img class="mb-0" src="{{asset('storage/' . $miembro->imagen)}}" alt="{{$miembro->nombre}}">
                             </div>
@@ -192,8 +189,8 @@
                     method="post">
                     @csrf
                     <div class="row px-3 pt-lg-5">
-                        <span class="col-12 contact100-form-title pb-4 mt-4 pt-3">
-                            Envianos un mensaje
+                        <span class="col-12 contact100-form-title py-4">
+                            Contacto
                         </span>
 
                         @if($errors->has('nombre'))
@@ -310,8 +307,8 @@
 
     <div class="donde-encontrarnos col-12">
         <div class="row justify-content-center px-3">
-            <div class="col-12 my-4">
-                <h2 class="text-center h2 m-0 text-dark my-5">Ubicación</h2>
+            <div class="col-12 my-5">
+                <h2 class="text-center h2 m-0 text-dark p-0">Ubicación</h2>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2480796792042!2d-58.434819084771135!3d-34.572588880467585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59624034bf3%3A0x4c5b8dd6024977f9!2sHuergo%20366%2C%20C1426%20BQF%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1583877457141!5m2!1ses!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>

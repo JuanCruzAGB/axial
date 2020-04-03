@@ -1,3 +1,7 @@
+.parent-row{
+    margin: 0 !important;
+}
+
 /* banner */
 .nav-menu{
     height: 8.5rem !important;
@@ -230,10 +234,20 @@
     padding-bottom: 0 !important;
 }
 
-.lista-patologias li{
+.patologias h2{
+    color: var(--color-cuatro);
+    font-family: gotham-bold;
+}
+
+.patologias li{
     font-family: gotham-light;
 }
 
+.patologias img{
+    width: 95%;
+    height: 650px;
+    object-fit: contain;
+}
 
 /* team */
 #equipo h2{
@@ -410,13 +424,14 @@ input.input100{
     object-fit: cover;
 }
 
-.contact-form div{
+.contact-form{
     background-color: #fafafa;
 }
 
 .wrap-contact100{
     width: 100%;
     flex-direction: row;
+    background-color: #fafafa;
 }
 
 .wrap-contact100 form{
@@ -429,7 +444,7 @@ input.input100{
     bottom: -23px;
     left: 0;
     clip-path: polygon(0% 0%, 120% 0%, 0% 100%);
-    background: white;
+    background-color: #fafafa;
     z-index: 2;
     width: calc(100% + 2px);
     height: 25px;
@@ -501,7 +516,6 @@ input.input100{
 
 /* MD */
 @media(min-width: 768px){
-
     .jumbotron{
         position: relative;
         background: url('/img/bg-demo.jpg') center center no-repeat;
@@ -531,7 +545,10 @@ input.input100{
         width: 15rem;
         margin: auto;
     }
-        
+
+    .patologias img{
+        width: 100%;
+    }
 
     .miembros{
         justify-content: center;
@@ -706,6 +723,7 @@ input.input100{
         left: calc((-100% / 8) * 4);
         clip-path: polygon(0% 0%, 120% 0%, 0% 100%);
         width: calc(((100% / 8) * 4) + 100%);
+        background-color: white;
     }
 
     .contact100-more{

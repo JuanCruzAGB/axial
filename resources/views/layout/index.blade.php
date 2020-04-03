@@ -45,7 +45,7 @@
             @yield('banner')
             
             <div class="container-fluid contenedor">
-                <div class="row">
+                <div class="parent-row row">
                     @yield('main')
                 </div>
             </div>

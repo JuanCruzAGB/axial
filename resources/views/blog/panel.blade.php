@@ -18,7 +18,7 @@
 @endsection
 
 @section('nav')
-    @component('components.nav.panel')
+    @component('components.nav.global')
     @endcomponent
 @endsection
 
