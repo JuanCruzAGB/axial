@@ -1,0 +1,29 @@
+.container-fluid{
+    font-family: gotham-light !important;
+    padding: 0;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.parallax {
+    background: url("/img/thanks.jpg") no-repeat center -20rem;
+    min-height: 15rem;
+    filter: brightness(60%);
+}
+
+
+.volverBtn{
+    border: 1px solid#fff;
+    outline: none !important;
+}
+
+.volverBtn:hover{
+    transition: 800ms;
+    background-color:#2980d6;
+    text-decoration: none;
+    border: 1px solid #fff;
+} 
+
