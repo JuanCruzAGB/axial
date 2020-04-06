@@ -31,11 +31,10 @@
         <div class="container d-flex justify-content-center align-items-center">
             <div class="col-12 col-md-10 col-lg-7">
                 <h2 class="h2-responsive text-white text-center mb-3">
-                    <span class="text-row">Abordamos todas las dolencias y </span>    
-                    <span class="text-row">patologías <span>de la columna</span></span>
+                    <span class="text-row">Especialistas en patologías de la columna vertebral
                 </h2>
                 <div class="d-flex justify-content-center">
-                    <a class="enviar-mensaje btn btn-primary" href="#contacto" role="button">Envianos un mensaje</a>
+                    <a class="enviar-mensaje btn btn-primary" href="#contacto" role="button">Contacto</a>
                 </div>
             </div>
         </div>
@@ -107,7 +106,6 @@
             </div>    
             <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
                 <ul class="list-group list-group-flush lista-patologias">
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Hernia de disco</li>
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Canal estrecho / lumbar</li>
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Quistes Sinoviales</li>
                     <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Escoliosis Idiopática</li>

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>{{$data->nombre}} quiere contactar a alguien</title>
+	<title>Grupo Axial - Contacto</title>
 	<style>
 		body{
 			--color-uno: rgb(0, 69, 125);
@@ -34,6 +34,7 @@
 		h2{
 			color: var(--color-uno);
 			margin:0 0 7px;
+			text-align: center !important;
 		}
 
 		ul{
@@ -162,13 +163,13 @@
 	<tr>
 		<td>
 			<div>
-				<h2>{{ $data->nombre }} quiere contactar a alguien</h2>
+				<h2 class="text-center">Grupo Axial contacto web</h2>
 
 				<ul>
 					@if(isset($data->nombre))
-						<li><strong>Se ha contactado:</strong> {{ $data->nombre }} desde tu sitio web.</li>
+						<li><strong>Se ha contactado:</strong> {{ $data->nombre }}</li>
 					@else
-						<li><strong>Se ha contactado:</strong> alguien, sin dejar su nombre, desde tu sitio web.</li>
+						<li><strong>Se ha contactado:</strong> alguien, sin dejar su nombre</li>
 					@endif
 					<li><strong>Email:</strong> {{ $data->correo }}</li>
 					<li><strong>Telefono:</strong>  {{ $data->telefono }}</li>
