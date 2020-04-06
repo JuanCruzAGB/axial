@@ -37,8 +37,8 @@ let CollapsableCard = {
      */
     open(position){
         this.cards[position].classList.add('active');
-        this.btns[position].children[0].children[0].classList.remove('fa-sort-up');
-        this.btns[position].children[0].children[0].classList.add('fa-sort-down');
+        this.btns[position].children[0].children[0].classList.remove('fa-angle-up');
+        this.btns[position].children[0].children[0].classList.add('fa-angle-down');
     },
     /**
      * Close the collapsable card.
@@ -46,11 +46,49 @@ let CollapsableCard = {
      */
     close(position){
         this.cards[position].classList.remove('active');
-        this.btns[position].children[0].children[0].classList.remove('fa-sort-down');
-        this.btns[position].children[0].children[0].classList.add('fa-sort-up');
+        this.btns[position].children[0].children[0].classList.remove('fa-angle-down');
+        this.btns[position].children[0].children[0].classList.add('fa-angle-up');
     },
+};
+
+class ShowInfo{
+    constructor(){
+        this.btns = document.querySelectorAll('.show-data');
+        for(const btn of this.btns){
+            this.addEvent(btn);
+        }
+    };
+    addEvent(btn){
+        btn.addEventListener('click', function(e){
+            e.preventDefault();
+            ShowInfo.switch(this);
+        });
+    };
+    static switch(btn){
+        let href = btn.href.split("#").pop();
+        if(!btn.classList.contains('clicked')){
+            btn.classList.add('clicked');
+            btn.children[0].children[0].classList.add('fa-angle-down');
+            btn.children[0].children[0].classList.remove('fa-angle-up');
+            ShowInfo.show(href);
+        }else{
+            btn.classList.remove('clicked');
+            btn.children[0].children[0].classList.add('fa-angle-up');
+            btn.children[0].children[0].classList.remove('fa-angle-down');
+            ShowInfo.hide(href);
+        }
+    };
+    static show(href){
+        document.querySelector('#' + href).classList.remove('invisible');
+        console.log(document.querySelector('#' + href));
+    };
+    static hide(href){
+        document.querySelector('#' + href).classList.add('invisible');
+        console.log(document.querySelector('#' + href));
+    };
 };
 
 document.addEventListener('DOMContentLoaded', function(){
     CollapsableCard.load();
+    let showinfo = new ShowInfo();
 });

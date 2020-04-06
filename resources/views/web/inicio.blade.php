@@ -56,34 +56,42 @@
             </div>
 
             <div class="cards row d-flex justify-content-center pb-4 px-0 mx-auto">
-                 <div id="cirugia-mini-invasiva" class="cartas-servicios card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
+                 <div id="cirugia-mini-invasiva" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
                     <div class="card-body p-0 px-4 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Cirugía mini invasiva</h3>
+                        <a href="#cirugia-mini-invasiva" class="ver-mas show-data card-title m-0">
+                            <h3 class="card-title mb-3">Cirugía mini invasiva<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                        </a>
                         <p class="card-text">El término minima invasion incluye a un tipo de técnica utilizada para el tratamiento de diversas afecciones espinales , la cual con el soporte de imágenes de alta resolución( microscopios ) e instrumental adecuado son óptimas para resolución de patologías con incisiones pequeñas.</p>
                     </div>
                 </div>
 
-                <div id="patologia-de-la-columna" class="cartas-servicios card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
+                <div id="patologia-de-la-columna" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
                     <div class="card-body p-0 px-4 px-md-0">
                         <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Patología de Columna del Adulto</h3>
+                        <a href="#patologia-de-la-columna" class="ver-mas show-data card-title m-0">
+                            <h3 class="card-title mb-3">Patología de Columna del Adulto<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                        </a>
                         <p class="card-text">Nuestro equipo está enfocado en la resolución de la patología de columna del adulto con el apoyo de un grupo de colaboradores médicos de diferentes especialidades (clínicos, cardiólogos, reumatólogos, fisioterapeutas , terapistas ocupacionales).</p>
                     </div>
                 </div>
                 
-                <div id="patologia-columna-pediatrica" class="cartas-servicios card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
+                <div id="patologia-columna-pediatrica" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
                     <div class="card-body p-0 px-4 px-md-0">
                         <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Patologia De columna Pediatrica</h3>
+                        <a href="#patologia-columna-pediatrica" class="ver-mas show-data card-title m-0">
+                            <h3 class="card-title mb-3">Patologia De columna Pediatrica<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                        </a>
                         <p class="card-text">El Servicio de cirugía de Columna Pediátrica de axial grupo medico realiza diagnostico y tratamiento de multiples afecciones espinales de aparición en la infancia y adolescencia siendo su gran mayoría escoliosis y cifosis . De manera multidisciplinaria con el equipo de neurocirugía se realizan tratamiento de afecciones raquimedulares.</p>
                     </div>
                 </div>
 
-                <div id="tratamiento-de-dolor" class="cartas-servicios card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
+                <div id="tratamiento-de-dolor" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
                     <div class="card-body p-0 px-4 px-md-0">
                         <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
-                        <h3 class="card-title mb-3">Tratamiento de dolor</h3>
+                        <a href="#tratamiento-de-dolor" class="ver-mas show-data card-title m-0">
+                            <h3 class="card-title mb-3">Tratamiento de dolor<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                        </a>
                         <p class="card-text">El Servicio de cirugía de Columna Pediátrica de axial grupo medico realiza diagnostico y tratamiento de multiples afecciones espinales de aparición en la infancia y adolescencia siendo su gran mayoría escoliosis y cifosis . De manera multidisciplinaria con el equipo de neurocirugía se realizan tratamiento de afecciones raquimedulares.</p>
                     </div>
                 </div>
@@ -146,7 +154,7 @@
                             </div>
                             <div class="card-body p-3">
                                 <a href="#{{$miembro->slug}}" class="ver-mas collapsable-btn card-title m-0">
-                                    <h3 class="m-0">{{$miembro->nombre}}<i class="collapsable-icon title-icon fas fa-sort-up"></i></h3>
+                                    <h3 class="m-0">{{$miembro->nombre}}<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
                                 </a>
                                 <div class="card-content px-3">
                                     <div class="row d-flex justify-content-center">

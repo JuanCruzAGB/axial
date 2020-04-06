@@ -23,14 +23,15 @@ function fixedHeader(){
             e.preventDefault();
             Sidebar.open();
         });
-
-        let smooth = new SmoothScroll(document.querySelectorAll('.nav-menu.fixed a'));
+        let pixels = 16 * 8.5;
+        let smooth = new SmoothScroll(document.querySelectorAll('.nav-menu.fixed a'), pixels);
     }
 }
 document.addEventListener('DOMContentLoaded', function(event){
+    let pixels = 16 * 8.5;
     let scroll = {
         detection: new ScrollDetection({min: 0, max:130}, 'Y', {success: topHeader, error: fixedHeader}),
-        smooth: new SmoothScroll(document.querySelectorAll('a:not(.ver-mas)')),
+        smooth: new SmoothScroll(document.querySelectorAll('a:not(.ver-mas)'), pixels),
     };
     topHeader();
 });

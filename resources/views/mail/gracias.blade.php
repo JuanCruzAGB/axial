@@ -4,7 +4,7 @@
     <link href="{{ asset('css/correo/gracias.css') }}" rel="stylesheet">
 @endsection
 
-@section('titile')
+@section('title')
     Muchas Gracias
 @endsection
 

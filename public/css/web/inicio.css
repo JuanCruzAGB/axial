@@ -225,6 +225,16 @@
     color: #000;
 }
 
+.cartas-servicios.invisible p{
+    height: 0;
+}
+
+.cartas-servicios p{
+    height: 250px;
+    transition: 500ms;
+    overflow: hidden;
+}
+
 .seccion-aparte{
     background-color: #fafafa;
 }
@@ -331,19 +341,6 @@
 .miembro.card:target .card-body .card-title,
 .miembro.card.active .card-body .card-title{
     border-bottom: none;
-}
-
-.miembro.card .card-body .card-title .title-icon{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: var(--color-uno);
-    color: white;
-    margin-left: 1rem;
 }
 
 .miembro.card:target .card-body .card-title .title-icon,
