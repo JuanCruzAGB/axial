@@ -52,18 +52,33 @@ let CollapsableCard = {
 };
 
 class ShowInfo{
+    /**
+     * Creates an instance of ShowInfo.
+     * @memberof ShowInfo
+     */
     constructor(){
         this.btns = document.querySelectorAll('.show-data');
         for(const btn of this.btns){
             this.addEvent(btn);
         }
     };
+    /**
+     * Add the event to the btn.
+     * @param {HTMLElement} btn - The button clicked.
+     * @memberof ShowInfo
+     */
     addEvent(btn){
         btn.addEventListener('click', function(e){
             e.preventDefault();
             ShowInfo.switch(this);
         });
     };
+    /**
+     * Switch between show or hide adction.
+     * @static
+     * @param {HTMLElement} btn - The button clicked.
+     * @memberof ShowInfo
+     */
     static switch(btn){
         let href = btn.href.split("#").pop();
         if(!btn.classList.contains('clicked')){
@@ -78,13 +93,25 @@ class ShowInfo{
             ShowInfo.hide(href);
         }
     };
-    static show(href){
-        document.querySelector('#' + href).classList.remove('invisible');
-        console.log(document.querySelector('#' + href));
+    /**
+     * Show the data.
+     * @static
+     * @param {string} id - The data's ID.
+     * @memberof ShowInfo
+     */
+    static show(id){
+        document.querySelector('#' + id).classList.remove('invisible');
+        console.log(document.querySelector('#' + id));
     };
-    static hide(href){
-        document.querySelector('#' + href).classList.add('invisible');
-        console.log(document.querySelector('#' + href));
+    /**
+     * Hide the data.
+     * @static
+     * @param {string} id - The data's ID.
+     * @memberof ShowInfo
+     */
+    static hide(id){
+        document.querySelector('#' + id).classList.add('invisible');
+        console.log(document.querySelector('#' + id));
     };
 };
 
