@@ -695,17 +695,6 @@ input.input100{
         height: 500px;
     }
 
-    .seccion-img-random{
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-    
-    .seccion-img-random .img-randoms{
-        width: 400px !important;
-        height: 400px !important;
-        object-fit: cover;
-    }
-
     .ultima-list{
         border-bottom: none !important;
     }
@@ -739,13 +728,15 @@ input.input100{
     .support-tooltip.showed::after{
         right: 35px;
         top: 92px;
-    }
+    }    
 }
 
 /* XL */
 @media(min-width: 1200px){
-    .seccion-img-random{
-        flex-wrap: nowrap;
-        justify-content: center;
+    
+    .seccion-img-random .img-randoms{
+        width: 100% !important;
+        height: 450px !important;
     }
 }
+

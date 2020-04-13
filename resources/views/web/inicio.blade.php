@@ -179,7 +179,7 @@
         </div>
     </div>
 
-    <div class="d-flex justify-content-around align-items-center col-12 seccion-img-random">
+    <div class="d-flex justify-content-around align-items-center col-12 seccion-img-random bg">
         <img src="{{asset('img/equipo-medico.jpg')}}" class="img-randoms mb-4 mb-md-2 px-md-4" alt="Imagen de muestra">
         <img src="{{asset('img/operando.jpg')}}" class="img-randoms mb-md-2 px-md-4" alt="Imagen de muestra">
     </div>
