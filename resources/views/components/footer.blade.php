@@ -7,15 +7,15 @@
 		<ul>
 		<li>
 			<a href=""><i class="fa fa-angle-double-right"></i>Inicio</a></li>
-			<li><a href="/demo#tratamiento-del-dolor"><i class="fa fa-angle-double-right"></i>Tratamiento del dolor</a></li>
-			<li><a href="/demo#cirugia-mini-invasiva"><i class="fa fa-angle-double-right"></i>Cirugía mini invasiva</a></li>
-			<li><a href="/demo#escoliosis"><i class="fa fa-angle-double-right"></i>Escoliosis</a></li>
+			<li><a href="/#tratamiento-del-dolor"><i class="fa fa-angle-double-right"></i>Tratamiento del dolor</a></li>
+			<li><a href="/#cirugia-mini-invasiva"><i class="fa fa-angle-double-right"></i>Cirugía mini invasiva</a></li>
+			<li><a href="/#escoliosis"><i class="fa fa-angle-double-right"></i>Escoliosis</a></li>
 		</ul>
     </div>
     <div class="ft-main-item mt-5">
 		<ul>
-			<li><a href="/demo#equipo"><i class="fa fa-angle-double-right"></i>Equipo</a></li>
-			<li><a href="/demo#contacto"><i class="fa fa-angle-double-right"></i>Contacto</a></li>
+			<li><a href="/#equipo"><i class="fa fa-angle-double-right"></i>Equipo</a></li>
+			<li><a href="/#contacto"><i class="fa fa-angle-double-right"></i>Contacto</a></li>
 			<li><a href="/noticias"><i class="fa fa-angle-double-right"></i>Blog</a></li>
 		</ul>
     </div>

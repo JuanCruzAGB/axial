@@ -4,29 +4,29 @@
     </a>
 
     <div class="nav-row first-row">
-        <a href="/demo" class="nav-title">
+        <a href="/" class="nav-title">
             <h1 class="text-md-center">Axial - Grupo médico</h1>
         </a>
     </div>
 
     <div class="nav-row second-row">
         <ul class="menu-list">
-            <li><a href="/demo" class="nav-link">
+            <li><a href="/" class="nav-link">
                 Inicio
             </a></li>
-            <li><a href="/demo#nuestros-servicios" class="nav-link">
+            <li><a href="/#nuestros-servicios" class="nav-link">
                 Servicios
             </a></li>
-            <li><a href="/demo#patologias" class="nav-link">
+            <li><a href="/#patologias" class="nav-link">
                 Patologías
             </a></li>
-            <li><a href="/demo#equipo" class="nav-link">
+            <li><a href="/#equipo" class="nav-link">
                 Equipo
             </a></li>
             <li><a href="/noticias" class="nav-link">
                 Blog
             </a></li>
-            <li><a href="/demo#contacto" class="nav-link">
+            <li><a href="/#contacto" class="nav-link">
                 Contacto
             </a></li>
             @if(Auth::check())

@@ -1,7 +1,8 @@
 <?php
 // WebController
-    Route::get('/', 'WebController@construccion')->name('web.construccion');
-    Route::get('/demo', 'WebController@inicio')->name('web.inicio');
+    Route::get('/', 'WebController@inicio')->name('web.inicio');
+    // Route::get('/', 'WebController@construccion')->name('web.construccion');
+    // Route::get('/demo', 'WebController@inicio')->name('web.inicio');
     Route::middleware('auth')->group(function(){
         Route::get('/panel', 'WebController@panel')->name('web.panel');
     });

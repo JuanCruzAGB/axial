@@ -30,7 +30,7 @@
                                 <td>{{$miembro->puesto}}</td>
                                 <td id="iconos-tabla">
                                     <p data-placement="top" data-toggle="tooltip" title="Ver más">
-                                        <a href="/demo#equipo" class="btn btn-primary ver-mas btn-xs">
+                                        <a href="/#equipo" class="btn btn-primary ver-mas btn-xs">
                                             <span class="button-icon fas fa-eye"></span>
                                         </a>
                                     </p>
