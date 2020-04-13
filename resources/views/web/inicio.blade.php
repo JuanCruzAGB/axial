@@ -34,7 +34,7 @@
                     <span class="text-row">Especialistas en patologías de la columna vertebral
                 </h2>
                 <div class="d-flex justify-content-center">
-                    <a class="enviar-mensaje btn btn-primary" href="#contacto" role="button">Contacto</a>
+                    <a class="enviar-mensaje btn btn-primary" href="#contacto" role="button">Solicitar Turno</a>
                 </div>
             </div>
         </div>
