@@ -43,57 +43,102 @@
 
 @section('main')
     <div class="separador-banner col-12 p-md-5">
-        <p class="col-12 col-md-10 col-lg-6 text-white text-center m-0 p-0">Somos un equipo de médicos, secretarias, instrumentadores, madres, padres, amigos, personas con vocación de servicio, apasionados por nuestra labor.</p>
+        <p class="col-12 col-md-10 col-lg-6 text-white text-center m-0 p-0">Nuestra Misión es evolucionar, enfocando nuestras actividades y esfuerzos para mejorar la calidad de vida de las personas con patologías de la columna vertebral. Convirtiéndonos en una institución de referencia local, regional e internacional en evaluación, tratamiento y formación médica continua, relacionada con Patologías de la Columna Vertebral Pediátrica y Adultos</p>
     </div>
 
     <div id="nuestros-servicios" class="nuestros-servicios col-12">
         <div class="row">
             <div class="col-12 m-0 p-0">
                 <div class="row d-flex justify-content-center">
-                    <h2 class="col-12 text-center w-100 m-0 pt-5">Servicios</h2>
+                    <h2 class="col-12 text-center w-100 m-0 pt-5">Especialidades</h2>
                 </div>
             </div>
 
             <div class="cards row d-flex justify-content-center pb-4 px-0 mx-auto">
+                 <div id="escoliosis" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 px-4 px-md-0">
+                        <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
+                        <a href="#escoliosis" class="ver-mas show-data card-title m-0">
+                            <h3 class="card-title mb-3">Escoliosis – Cifosis<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                        </a>
+                        <p class="card-text">
+                        Somos un equipo altamente especializados en deformidades de la columna vertebral. Participamos en forma permanente en cursos de formación médica como participantes y expositores. Escoliosis y cifosis son algunas de las patologías mas relevantes al referirnos a curvas patológicas de la columna vertebral. Evaluamos, diagnosticamos y tratamos a pacientes pediátricos y adultos de forma interdisciplinaria.</p>
+                    </div>
+                </div>
+
                  <div id="cirugia-mini-invasiva" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
                     <div class="card-body p-0 px-4 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#cirugia-mini-invasiva" class="ver-mas show-data card-title m-0">
-                            <h3 class="card-title mb-3">Cirugía mini invasiva<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                            <h3 class="card-title mb-3">Cirugías mínimamente invasiva<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
                         </a>
-                        <p class="card-text">El término minima invasion incluye a un tipo de técnica utilizada para el tratamiento de diversas afecciones espinales , la cual con el soporte de imágenes de alta resolución( microscopios ) e instrumental adecuado son óptimas para resolución de patologías con incisiones pequeñas.</p>
+                        <p class="card-text">Las modernas técnicas quirúrgicas, cada vez menos agresivas, utilizan incisiones de pocos milímetros para introducir minúsculos instrumentos, cuyo manejo es controlado en una pantalla de alta definición o por medio de visión aumentada a través de un microscopio. Las mensionadas técnicas quirúrgicas son de utilidad para tratar una gran cantidad de patologías de la columna vertebral tanto en el pacientes adultos como en pacientes pediátricos.</p>
                     </div>
                 </div>
 
-                <div id="patologia-de-la-columna" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
+                 <div id="departamento-cirugia-pediatrica" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
                     <div class="card-body p-0 px-4 px-md-0">
-                        <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
-                        <a href="#patologia-de-la-columna" class="ver-mas show-data card-title m-0">
-                            <h3 class="card-title mb-3">Patología de Columna del Adulto<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                        <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
+                        <a href="#departamento-cirugia-pediatrica" class="ver-mas show-data card-title m-0">
+                            <h3 class="card-title mb-3">Departamento de cirugía pediátrica de la columna vertebral<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
                         </a>
-                        <p class="card-text">Nuestro equipo está enfocado en la resolución de la patología de columna del adulto con el apoyo de un grupo de colaboradores médicos de diferentes especialidades (clínicos, cardiólogos, reumatólogos, fisioterapeutas , terapistas ocupacionales).</p>
+                        <p class="card-text">Una de nuestras fortalezas es la formación médica de todos los integrantes del equipo en enfermedades pediátricas. Participamos como referentes de la patología en cursos nacionales e internacionales. Evaluamos, diagnosticamos y tratamos todas las patologías pediátricas que afectan la columna vertebral. Trabajamos permanentemente de forma interdisciplinaria disponiendo de todas las especialidades relacionadas a las patologías que afectan la columna vertebral.</p>
+                    </div>
+                </div>
+
+                 <div id="evaluacion-interdisciplinaria" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 px-4 px-md-0">
+                        <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
+                        <a href="#evaluacion-interdisciplinaria" class="ver-mas show-data card-title m-0">
+                            <h3 class="card-title mb-3">Evaluación interdisciplinaria<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                        </a>
+                        <p class="card-text">Pediatras, neumonólogos, endoscopistas, nutricionistas, anestesiólogos, psicólogos, clínicos, kinesiólogos, cirujano y/o cualquier otra especialidad que sea requerida según la enfermedad del paciente; nos reunimos para evaluar diagnosticar y definir conductas a seguir ante patologías complejas. Creemos que el trabajo en equipo potencia las habilidades individuales redundando en beneficios para los pacientes y sus familias.Imagen que contiene florero, texto, botella, interior.</p>
+                    </div>
+                </div>
+
+                 <div id="columna-cervical" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 px-4 px-md-0">
+                        <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
+                        <a href="#columna-cervical" class="ver-mas show-data card-title m-0">
+                            <h3 class="card-title mb-3">Descripción generada automáticamente Columna cervical<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                        </a>
+                        <p class="card-text">La columna cervical es asiento de múltiples patologías, por envejecimiento, congénitas, traumáticas, tumorales, infecciosas y otras. El trabajo en equipo entre traumatólogos y neurocirujanos nos brindan un abordaje integral de las patología que alteran la columna cervical tanto en adultos como en niños.</p>
+                    </div>
+                </div>
+
+                 <div id="columna-lumbar" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 px-4 px-md-0">
+                        <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
+                        <a href="#columna-lumbar" class="ver-mas show-data card-title m-0">
+                            <h3 class="card-title mb-3">Columna lumbar<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                        </a>
+                        <p class="card-text">La región lumbar es donde asienten la mayor cantidad de patologías del adulto. Siendo el dolor lumbar la consulta mas frecuente. Canal estrecho, hernias de discos, espondilolistesis, escoliosis y fracturas son algunas de las patologías que afectan la columna lumbar.
+                        La visión conjunta entre traumatólogos, neurocirujanos, kinesiólogos y entrenadores físicos que siempre realizamos en nuestro equipo, nos permite considerar los mejores tratamientos para cada dolencia que afecta la región lumbar.</p>
                     </div>
                 </div>
                 
-                <div id="patologia-columna-pediatrica" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
+                 <div id="kinesiologia" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
                     <div class="card-body p-0 px-4 px-md-0">
-                        <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
-                        <a href="#patologia-columna-pediatrica" class="ver-mas show-data card-title m-0">
-                            <h3 class="card-title mb-3">Patologia De columna Pediatrica<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                        <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
+                        <a href="#kinesiologia" class="ver-mas show-data card-title m-0">
+                            <h3 class="card-title mb-3">Kinesiología y Actividad física<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
                         </a>
-                        <p class="card-text">El Servicio de cirugía de Columna Pediátrica de axial grupo medico realiza diagnostico y tratamiento de multiples afecciones espinales de aparición en la infancia y adolescencia siendo su gran mayoría escoliosis y cifosis . De manera multidisciplinaria con el equipo de neurocirugía se realizan tratamiento de afecciones raquimedulares.</p>
+                        <p class="card-text">El equipo de Axial considera indispensable interactuar con kinesiólogos y entrenadores físicos para el tratamiento de las patologías que afectan a la columna vertebral. La interdisciplina con diálogo permanente sobre la evolución de los pacientes permite adecuar las terapéuticas y consecuentemente obtener una mejor y más temprana recuperación. Nuestro equipo está especializado tanto en pacientes adultos como pediátricos.</p>
                     </div>
                 </div>
 
-                <div id="tratamiento-de-dolor" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
+                <div id="intervencionismo-asistido" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
                     <div class="card-body p-0 px-4 px-md-0">
-                        <i class="fas fa-diagnoses fa-3x mb-3 iconos-servicios"></i>
-                        <a href="#tratamiento-de-dolor" class="ver-mas show-data card-title m-0">
-                            <h3 class="card-title mb-3">Tratamiento de dolor<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                        <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
+                        <a href="#intervencionismo-asistido" class="ver-mas show-data card-title m-0">
+                            <h3 class="card-title mb-3">Intervencionismo asistido por imágenes<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
                         </a>
-                        <p class="card-text">El Servicio de cirugía de Columna Pediátrica de axial grupo medico realiza diagnostico y tratamiento de multiples afecciones espinales de aparición en la infancia y adolescencia siendo su gran mayoría escoliosis y cifosis . De manera multidisciplinaria con el equipo de neurocirugía se realizan tratamiento de afecciones raquimedulares.</p>
+                        <p class="card-text">Contamos con un equipo altamente especializado en las más modernas técnicas de intervencionismos asistidas por imágenes de alta resolución.
+                        Son una herramienta indispensable, en continuo crecimiento y desarrollo. Son de utilidad para diagnósticos y tratamientos de un gran número de patologías en toda la extensión de la columna vertebral. Son aplicadas tanto en patologías del adulto como en niños.</p>
                     </div>
                 </div>
+                
+                
             </div>
         </div>
     </div>
@@ -179,9 +224,8 @@
         </div>
     </div>
 
-    <div class="d-flex justify-content-around align-items-center col-12 seccion-img-random bg">
-        <img src="{{asset('img/equipo-medico.jpg')}}" class="img-randoms mb-4 mb-md-2 px-md-4" alt="Imagen de muestra">
-        <img src="{{asset('img/operando.jpg')}}" class="img-randoms mb-md-2 px-md-4" alt="Imagen de muestra">
+    <div class="d-flex justify-content-around align-items-center col-12 seccion-img-random bg p-0">
+        <img src="{{asset('img/operando.jpg')}}" class="img-randoms mb-md-2 px-md-0" alt="Imagen de muestra">
     </div>
 </div>
             
