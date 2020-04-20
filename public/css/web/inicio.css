@@ -2,6 +2,11 @@
     margin: 0 !important;
 }
 
+h2{
+    font-family: 'PT Serif', serif !important;
+    font-size: 2.5rem !important;
+}
+
 /* banner */
 .nav-menu{
     height: 8.5rem !important;
@@ -190,6 +195,7 @@
 
 #nuestros-servicios p{
     font-family: gotham-light;
+    height: 300px;
 }
 
 #nuestros-servicios span{
@@ -450,8 +456,8 @@ input.input100{
 }
 
 .contact100-form-title{
-    font-family: gotham-bold;
-    font-size: 2rem;
+    font-family: 'PT Serif', serif;
+    font-size: 2.5rem;
     color: var(--color-cuatro);
 }
 
@@ -530,6 +536,11 @@ input.input100{
     .jumbotron .container h2 span > span{
         color: #fff;
         display: inline;
+    }
+
+    #nuestros-servicios p{
+        height: 400px;
+        padding-top: 20px;
     }
 
     .cartas-servicios.col-md-3{
@@ -647,6 +658,11 @@ input.input100{
 
     .jumbotron .container h2 .text-row{
         flex-basis: 100%;
+    }
+
+    #nuestros-servicios p{
+        height: 200px;
+        width: 400px;
     }
 
     .listado{
