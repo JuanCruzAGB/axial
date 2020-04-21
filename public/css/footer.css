@@ -82,8 +82,7 @@
   .ft-social-list {
     display: flex;
     justify-content: center;
-    border-top: 1px #777 solid;
-    padding-top: 1.25rem;
+    padding-top: 1rem;
   }
   .ft-social-list li {
     margin: 0.5rem;
@@ -98,6 +97,8 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
   .ft-legal-list li {
     margin: 0.125rem 0.625rem;
@@ -106,4 +107,12 @@
   /* one before the last child */
   .ft-legal-list li:nth-last-child(2) {
       flex: 1;
+  }
+
+  .logo-footer{
+    padding-top: 2rem;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
   }

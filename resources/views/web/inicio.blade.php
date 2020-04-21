@@ -246,9 +246,9 @@
                         @if($errors->has('nombre'))
                             <div class="nombre col-12 support-tooltip showed" data-tooltip="{{$errors->first('nombre')}}">
                         @else
-                            <div class="nombre col-12">
+                            <div class="nombre col-12 mb-3">
                         @endif
-                            <label class="label-input100 mt-0 mb-3" for="nombre">Nombre</label>
+                           <!--  <label class="label-input100 mt-0 mb-3" for="nombre">Nombre</label> -->
                             <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
                                 <input id="nombre" class="input100" type="text" name="nombre" placeholder="Nombre">
                                 <span class="focus-input100"></span>
@@ -258,9 +258,9 @@
                         @if($errors->has('correo'))
                             <div class="correo col-12 support-tooltip showed" data-tooltip="{{$errors->first('correo')}}">
                         @else
-                            <div class="correo col-12">
+                            <div class="correo col-12 mb-3">
                         @endif
-                            <label class="label-input100 mt-0 mb-3" for="email">Email *</label>
+                            <!-- <label class="label-input100 mt-0 mb-3" for="email">Email *</label> -->
                             <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
                                 <input id="email" class="input100" type="text" name="correo" placeholder="email@email.com">
                                 <span class="focus-input100"></span>
@@ -270,9 +270,9 @@
                         @if($errors->has('telefono'))
                             <div class="telefono col-12 support-tooltip showed" data-tooltip="{{$errors->first('telefono')}}">
                         @else
-                            <div class="telefono col-12">
+                            <div class="telefono col-12 mb-3">
                         @endif
-                            <label class="label-input100 mt-0 mb-3" for="phone">Teléfono *</label>
+                            <!-- <label class="label-input100 mt-0 mb-3" for="phone">Teléfono *</label> -->
                             <div class="wrap-input100">
                                 <input id="phone" class="input100" type="text" name="telefono" placeholder="+54 800 000000">
                                 <span class="focus-input100"></span>
@@ -282,9 +282,9 @@
                         @if($errors->has('mensaje'))
                             <div class="mensaje col-12 support-tooltip showed" data-tooltip="{{$errors->first('mensaje')}}">
                         @else
-                            <div class="mensaje col-12">
+                            <div class="mensaje col-12 mb-3">
                         @endif
-                            <label class="label-input100 mt-0 mb-3" for="message">Mensaje *</label>
+                           <!--  <label class="label-input100 mt-0 mb-3" for="message">Mensaje *</label> -->
                             <div class="wrap-input100 validate-input" data-validate = "Message is required">
                                 <textarea id="message" class="input100" name="mensaje" placeholder="Escribenos tu mensaje"></textarea>
                                 <span class="focus-input100"></span>

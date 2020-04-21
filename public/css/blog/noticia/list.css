@@ -6,11 +6,24 @@ section{
     --tertiary-color: #222;
 }
 
+h1{
+    font-size: 1.1rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+.card-footer{
+    padding: 0.75rem 0;
+    border: 0;
+}
+
 .preview{
     overflow: hidden;
     position: relative;
-    line-height: 2rem;
-    max-height: 4rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
 }
 
 .preview:before{
@@ -22,9 +35,25 @@ section{
     padding-left: .5rem;
 }
 
+.preview.card-title{
+    color: #000;
+    font-weight: 600;
+}
+
 .preview.card-text{
-    line-height: 1rem;
+    line-height: 1.5rem;
     text-align: justify;
+    color: #000;
+}
+
+.preview.card-text h1{
+    font-size: 2rem;
+}
+.preview.card-text h2{
+    font-size: 1.5rem;
+}
+.preview.card-text h3{
+    font-size: 1.2rem;
 }
 
 .preview p{
@@ -32,7 +61,8 @@ section{
 }
 
 .cards .btn{
-    background-color: var(--color-uno) !important;
+    background: none;
+    color: var(--color-uno);
     outline: none;
     border: transparent;
 }
@@ -43,8 +73,9 @@ section{
 
 img.card-img-top{
     width: 100%;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
+    object-position: top;
 }
 
 /* MD */
