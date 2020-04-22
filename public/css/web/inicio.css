@@ -201,7 +201,7 @@ h2{
 }
 
 #nuestros-servicios p{
-    font-family: gotham-light;
+    font-family: 'Montserrat', sans-serif;
     height: 350px;
 }
 
@@ -655,8 +655,8 @@ input.input100{
     border: none;
 }
 
-.seccion-aparte div div ul ño{
-    font-family: gotham-light !important; 
+.seccion-aparte div div ul{
+    font-family: 'Montserrat', sans-serif !important; 
 }
 
 /* LG */
@@ -671,8 +671,9 @@ input.input100{
     }
 
     #nuestros-servicios p{
-        height: 200px;
+        height: 300px;
         width: 400px;
+        font-size: .93rem;
     }
 
     .listado{
