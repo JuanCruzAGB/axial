@@ -18,7 +18,7 @@
 
 @section('main')
     <section class="col-12 col-md-10 col-lg-12 mx-auto pt-3 px-3">
-    <h1 class="my-4 text-center">Blog</h1>
+    <h1 class="my-4 text-center blog-h1">Blog</h1>
 
     @if($count)
         <div class="cards row d-flex justify-content-around">

@@ -55,8 +55,8 @@
             </div>
 
             <div class="cards row d-flex justify-content-center pb-4 px-0 mx-auto">
-                 <div id="escoliosis" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
-                    <div class="card-body px-0 py-5 px-4 px-md-0">
+                 <div id="escoliosis" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body px-0 py-md-5 px-4 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#escoliosis" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Escoliosis – Cifosis<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -66,8 +66,8 @@
                     </div>
                 </div>
 
-                 <div id="cirugia-mini-invasiva" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
-                    <div class="card-body px-0 py-5 px-md-0">
+                 <div id="cirugia-mini-invasiva" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body px-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#cirugia-mini-invasiva" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Cirugías mínimamente invasiva<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -76,8 +76,8 @@
                     </div>
                 </div>
 
-                 <div id="departamento-cirugia-pediatrica" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
-                    <div class="card-body px-0 py-5 px-md-0">
+                 <div id="departamento-cirugia-pediatrica" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body px-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#departamento-cirugia-pediatrica" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Departamento de cirugía pediátrica de la columna vertebral<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -86,8 +86,8 @@
                     </div>
                 </div>
 
-                 <div id="evaluacion-interdisciplinaria" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
-                    <div class="card-body px-0 py-5 px-md-0">
+                 <div id="evaluacion-interdisciplinaria" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body px-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#evaluacion-interdisciplinaria" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Evaluación interdisciplinaria<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -96,8 +96,8 @@
                     </div>
                 </div>
 
-                 <div id="columna-cervical" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
-                    <div class="card-body px-0 py-5 px-md-0">
+                 <div id="columna-cervical" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body px-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#columna-cervical" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Descripción generada automáticamente Columna cervical<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -106,8 +106,8 @@
                     </div>
                 </div>
 
-                 <div id="columna-lumbar" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-0 px-md-3 border-0">
-                    <div class="card-body p-0 py-5 px-md-0">
+                 <div id="columna-lumbar" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#columna-lumbar" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Columna lumbar<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -117,8 +117,8 @@
                     </div>
                 </div>
                 
-                 <div id="kinesiologia" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-0px-md-3 border-0">
-                    <div class="card-body p-0 py-5 px-md-0">
+                 <div id="kinesiologia" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#kinesiologia" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Kinesiología y Actividad física<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -127,8 +127,8 @@
                     </div>
                 </div>
 
-                <div id="intervencionismo-asistido" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-5 pt-md-4 px-0 px-md-3 border-0">
-                    <div class="card-body p-0 py-5 px-md-0">
+                <div id="intervencionismo-asistido" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 py-md-5 px-md-0">
                         <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
                         <a href="#intervencionismo-asistido" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Intervencionismo asistido por imágenes<i class="fas fa-angle-up pl-2 pb-0"></i></h3>

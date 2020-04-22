@@ -6,6 +6,12 @@ section{
     --tertiary-color: #222;
 }
 
+.blog-h1{
+    font-size: 2.5rem;
+    font-family: 'Tajawal', sans-serif;
+    color: #333;
+}
+
 h1{
     font-size: 1.1rem;
 }
@@ -48,16 +54,20 @@ h2{
 
 .preview.card-text h1{
     font-size: 2rem;
+    font-family: 'Tajawal', sans-serif;
 }
 .preview.card-text h2{
     font-size: 1.5rem;
+    font-family: 'Tajawal', sans-serif;
 }
 .preview.card-text h3{
     font-size: 1.2rem;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .preview p{
-    margin-bottom: 0;
+    margin: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .cards .btn{

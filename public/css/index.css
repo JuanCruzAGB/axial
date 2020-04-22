@@ -23,6 +23,11 @@ body{
     margin: 0;
 }
 
+.btn:active{
+    background: none !important;
+    color: var(--color-uno) !important;
+}
+
 .nav-menu{
     --primary-color: white;
     --tertiary-color: rgba(0,0,0,.5);
