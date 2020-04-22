@@ -24,7 +24,7 @@
 
 @section('main')
     <div class="tabs col-12 d-flex justify-content-between p-0">
-        <div class="tab-menu p-2 pt-5">
+        <div class="tab-menu p-0 pt-5">
             <ul class="d-flex justify-content-around m-0 p-0">
                 <li class="mb-2"><a class="tab-button opened" href="#noticias">
                     <i class="tab-icon fas fa-file"></i>

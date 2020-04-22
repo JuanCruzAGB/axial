@@ -4,6 +4,16 @@ section{
     --secondary-color: #ddd;
     --secondary-color-hover: #0d4a7a00;
     --tertiary-color: #222;
+    color: #000;
+}
+
+section p{
+    margin: 2rem 0;
+    line-height: 1.8rem;
+}
+
+section h1, h2, h3{
+    color: #000;
 }
 
 img.img-fluid.rounded{

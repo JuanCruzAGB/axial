@@ -3,7 +3,7 @@
 }
 
 h2{
-    font-family: 'PT Serif', serif !important;
+    font-family: 'Tajawal', sans-serif !important;
     font-size: 2.5rem !important;
 }
 
@@ -34,13 +34,19 @@ h2{
     color: var(--color-uno);
     text-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
     font-size: 1.8rem;
-    font-family: gotham-bold;
+    font-family: 'Tajawal', sans-serif !important;
 }
 
 .jumbotron .container h2 span > span{
     color: #fff;
     display: block;
 }
+
+.jumbotron .container h2 > span:last-child{
+        color: #fff;
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+    }
 
 .enviar-mensaje{
     background-color: var(--color-uno);
@@ -195,7 +201,7 @@ h2{
 
 #nuestros-servicios p{
     font-family: gotham-light;
-    height: 300px;
+    height: 350px;
 }
 
 #nuestros-servicios span{
@@ -253,11 +259,10 @@ h2{
 
 .patologias h2{
     color: var(--color-cuatro);
-    font-family: gotham-bold;
 }
 
 .patologias li{
-    font-family: gotham-light;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .patologias img{
@@ -270,7 +275,6 @@ h2{
 #equipo h2{
     width: 100%;
     display: block;
-    font-family: gotham-bold;
     font-size: 2rem;
     color: var(--color-cuatro);
     line-height: 1.2;
@@ -322,6 +326,10 @@ h2{
     transition: 500ms;
 }
 
+.miembro.card .card-body h3{
+    font-size: 1.3rem;
+}
+
 .miembro.card:target .card-body,
 .miembro.card.active .card-body{
     height: 100%;
@@ -336,13 +344,13 @@ h2{
     border-bottom: 2px solid white;
     margin-bottom: .75rem !important;
     padding-bottom: .75rem;
-    font-family: gotham-book;
+    font-family: 'Montserrat', sans-serif;
     transition: 500ms;
     text-align: center;
 }
 
 .miembro.card .card-body:hover .card-title{
-    border-bottom: 2px solid var(--color-tres);
+    /* border-bottom: 2px solid var(--color-tres); */
 }
 
 .miembro.card:target .card-body .card-title,
@@ -424,7 +432,7 @@ input.input100{
 
 .seccion-img-random .img-randoms{
     width: 100% !important;
-    height: 300px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -553,6 +561,7 @@ input.input100{
     .cartas-servicios .card-text{
         width: 15rem;
         margin: auto;
+        font-family: 'Montserrat', sans-serif !important;
     }
 
     .patologias img{
@@ -676,6 +685,7 @@ input.input100{
 
     .separador-banner p{
         font-size: 1.3rem;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .miembros{
@@ -754,6 +764,10 @@ input.input100{
     .seccion-img-random .img-randoms{
         width: 100% !important;
         height: 450px !important;
+    }
+
+    #nuestros-servicios p{
+        width: 600px;
     }
 }
 

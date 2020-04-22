@@ -28,6 +28,10 @@ body{
     --tertiary-color: rgba(0,0,0,.5);
 }
 
+.menu-list .nav-link{
+    font-family: 'Montserrat', sans-serif !important; 
+}
+
 .nav-menu.fixed{
     position: fixed;
     top: -100%;
@@ -139,6 +143,11 @@ a:hover{
 
 /* LG */
 @media(min-width: 1024px){
+    
+    .nav-menu .menu-list li{
+        margin-left: 0;
+    }
+    
     .nav-menu .nav-row.first-row:first-of-type{
         display: flex;
         justify-content: center;

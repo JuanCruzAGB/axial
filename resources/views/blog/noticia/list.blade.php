@@ -23,7 +23,7 @@
     @if($count)
         <div class="cards row d-flex justify-content-around">
             @foreach($noticias as $noticia)
-                <div class="card mb-4 mx-lg-1 col-12 col-lg-2 p-0 border-0">
+                <div class="card mb-4 mx-lg-1 col-12 col-lg-3 col-xl-3 p-0 border-0">
                     <img class="card-img-top px-4" src="{{asset('storage/' . $noticia->imagen)}}" alt="{{$noticia->titulo}}">
                     <div class="card-body">
                     <div class="card-footer text-muted">

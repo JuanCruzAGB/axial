@@ -1,3 +1,12 @@
+/* cambios en el nav dentro del panel */
+.nav-row.first-row{
+    height: 8.5rem !important;
+}
+
+.nav-menu::before{
+    background: none !important;
+}
+
 .modal.show .modal-dialog{
     height: 100%;
 }
@@ -15,6 +24,8 @@
     flex-basis: 100%;
     background: var(--primary-color);
     border-radius: .25rem;
+    margin-top: 4rem;
+    padding-top: 0 !important;
 }
 
 .tabs .tab-menu ul{
@@ -69,10 +80,16 @@
     align-items: center;
     z-index: 1;
     transition: 500ms;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .tabs .tab-menu .tab-button.opened .tab-text{
-    background: var(--primary-color-hover);
+    background: var(--color-uno) !important;
+    color: #fff;
+}
+
+.tabs .tab-menu .tab-button i{
+    color: #fff !important;
 }
 
 .tabs .tab-body{
@@ -162,6 +179,7 @@
 
 .tabs .tab-body .tab-content section .content table tbody tr{
     border-top: 2px solid rgba(0,0,0,0.09);
+    padding: 0 2rem;
 }
 
 .tabs .tab-body .tab-content section .content table tr th,
@@ -245,6 +263,10 @@
     max-height: 3.6rem; 
     text-align: justify;  
     padding-right: 1rem;
+}
+
+.preview h1{
+    font-size: 1rem;
 }
 
 .preview:before{
