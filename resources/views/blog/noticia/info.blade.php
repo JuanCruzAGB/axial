@@ -18,18 +18,12 @@
 @endsection
 
 @section('main')
-    <section class="col-12 col-md-10 col-xl-8 mx-auto pt-3">
+    <section class="col-12 col-md-10 col-xl-8 mx-auto pt-3 mb-5">
         <h1 class="mt-5">{{$noticia->titulo}}</h1>
         
         <p>{{$noticia->fecha}}</p>
-
-        <hr>
-        
         <img class="img-fluid rounded" src="{{asset('storage/' . $noticia->imagen)}}" alt="{{$noticia->titulo}}">
-
-        <hr>
-
-        <div>
+        <div class="my-5">
             {!!$noticia->contenido!!}
         </div>
     </section>

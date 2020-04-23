@@ -55,8 +55,8 @@
             </div>
 
             <div class="cards row d-flex justify-content-center pb-4 px-0 mx-auto">
-                 <div id="escoliosis" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
-                    <div class="card-body p-0 px-4 px-md-0">
+                 <div id="escoliosis" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body px-0 py-md-5 px-4 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#escoliosis" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Escoliosis – Cifosis<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -66,8 +66,8 @@
                     </div>
                 </div>
 
-                 <div id="cirugia-mini-invasiva" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
-                    <div class="card-body p-0 px-4 px-md-0">
+                 <div id="cirugia-mini-invasiva" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body px-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#cirugia-mini-invasiva" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Cirugías mínimamente invasiva<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -76,8 +76,8 @@
                     </div>
                 </div>
 
-                 <div id="departamento-cirugia-pediatrica" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
-                    <div class="card-body p-0 px-4 px-md-0">
+                 <div id="departamento-cirugia-pediatrica" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body px-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#departamento-cirugia-pediatrica" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Departamento de cirugía pediátrica de la columna vertebral<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -86,8 +86,8 @@
                     </div>
                 </div>
 
-                 <div id="evaluacion-interdisciplinaria" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
-                    <div class="card-body p-0 px-4 px-md-0">
+                 <div id="evaluacion-interdisciplinaria" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body px-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#evaluacion-interdisciplinaria" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Evaluación interdisciplinaria<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -96,8 +96,8 @@
                     </div>
                 </div>
 
-                 <div id="columna-cervical" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
-                    <div class="card-body p-0 px-4 px-md-0">
+                 <div id="columna-cervical" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body px-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#columna-cervical" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Descripción generada automáticamente Columna cervical<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -106,8 +106,8 @@
                     </div>
                 </div>
 
-                 <div id="columna-lumbar" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
-                    <div class="card-body p-0 px-4 px-md-0">
+                 <div id="columna-lumbar" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#columna-lumbar" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Columna lumbar<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -117,8 +117,8 @@
                     </div>
                 </div>
                 
-                 <div id="kinesiologia" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-4 px-5 px-md-3 border-0">
-                    <div class="card-body p-0 px-4 px-md-0">
+                 <div id="kinesiologia" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#kinesiologia" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Kinesiología y Actividad física<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -127,8 +127,8 @@
                     </div>
                 </div>
 
-                <div id="intervencionismo-asistido" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-5 pt-md-4 px-5 px-md-3 border-0">
-                    <div class="card-body p-0 px-4 px-md-0">
+                <div id="intervencionismo-asistido" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
+                    <div class="card-body p-0 py-md-5 px-md-0">
                         <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
                         <a href="#intervencionismo-asistido" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Intervencionismo asistido por imágenes<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
@@ -184,7 +184,7 @@
 </div>
     
 <div class="container-fluid contenedor p-0">
-    <div id="equipo" class="equipo col-12 py-4 p-0">
+    <div id="equipo" class="equipo col-12 p-0 my-5">
         <h2 class="text-center mb-4">Staff médico</h2>
 
         <div class="listado">
@@ -224,12 +224,12 @@
         </div>
     </div>
 
-    <div class="d-flex justify-content-around align-items-center col-12 seccion-img-random bg p-0">
+    <div class="d-flex justify-content-around align-items-center col-12 seccion-img-random bg px-0 py-4 my-5">
         <img src="{{asset('img/operando.jpg')}}" class="img-randoms mb-md-2 px-md-0" alt="Imagen de muestra">
     </div>
 </div>
             
-<div id="contacto" class="container-fluid contenedor p-0 mt-4">
+<div id="contacto" class="container-fluid contenedor px-0 pt-5">
     <div class="row">
         <div class="col-12 container-contact100">
             <div class="row wrap-contact100">
@@ -246,9 +246,9 @@
                         @if($errors->has('nombre'))
                             <div class="nombre col-12 support-tooltip showed" data-tooltip="{{$errors->first('nombre')}}">
                         @else
-                            <div class="nombre col-12">
+                            <div class="nombre col-12 mb-3">
                         @endif
-                            <label class="label-input100 mt-0 mb-3" for="nombre">Nombre</label>
+                           <!--  <label class="label-input100 mt-0 mb-3" for="nombre">Nombre</label> -->
                             <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
                                 <input id="nombre" class="input100" type="text" name="nombre" placeholder="Nombre">
                                 <span class="focus-input100"></span>
@@ -258,9 +258,9 @@
                         @if($errors->has('correo'))
                             <div class="correo col-12 support-tooltip showed" data-tooltip="{{$errors->first('correo')}}">
                         @else
-                            <div class="correo col-12">
+                            <div class="correo col-12 mb-3">
                         @endif
-                            <label class="label-input100 mt-0 mb-3" for="email">Email *</label>
+                            <!-- <label class="label-input100 mt-0 mb-3" for="email">Email *</label> -->
                             <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
                                 <input id="email" class="input100" type="text" name="correo" placeholder="email@email.com">
                                 <span class="focus-input100"></span>
@@ -270,9 +270,9 @@
                         @if($errors->has('telefono'))
                             <div class="telefono col-12 support-tooltip showed" data-tooltip="{{$errors->first('telefono')}}">
                         @else
-                            <div class="telefono col-12">
+                            <div class="telefono col-12 mb-3">
                         @endif
-                            <label class="label-input100 mt-0 mb-3" for="phone">Teléfono *</label>
+                            <!-- <label class="label-input100 mt-0 mb-3" for="phone">Teléfono *</label> -->
                             <div class="wrap-input100">
                                 <input id="phone" class="input100" type="text" name="telefono" placeholder="+54 800 000000">
                                 <span class="focus-input100"></span>
@@ -282,9 +282,9 @@
                         @if($errors->has('mensaje'))
                             <div class="mensaje col-12 support-tooltip showed" data-tooltip="{{$errors->first('mensaje')}}">
                         @else
-                            <div class="mensaje col-12">
+                            <div class="mensaje col-12 mb-3">
                         @endif
-                            <label class="label-input100 mt-0 mb-3" for="message">Mensaje *</label>
+                           <!--  <label class="label-input100 mt-0 mb-3" for="message">Mensaje *</label> -->
                             <div class="wrap-input100 validate-input" data-validate = "Message is required">
                                 <textarea id="message" class="input100" name="mensaje" placeholder="Escribenos tu mensaje"></textarea>
                                 <span class="focus-input100"></span>
@@ -301,7 +301,7 @@
                     </div>
                 </form>
 
-                <div class="col-12 col-lg-4 contact-data contact100-more flex-col-c-m pt-4">
+                <div class="col-12 col-lg-4 contact-data contact100-more flex-col-c-m pt-5">
                     <div class="flex-w size1 p-b-47 mt-3 mt-md-5">
                         <div class="txt1 p-r-25">
                             <span class="lnr lnr-map-marker"></span>
@@ -355,7 +355,7 @@
     </div>
 </div>
 
-    <div class="donde-encontrarnos col-12">
+    <div class="donde-encontrarnos col-12 p-0">
         <div class="row justify-content-center px-3">
             <!-- <div class="col-12 my-5">
                 <h2 class="text-center h2 m-0 text-dark p-0">Ubicación</h2>

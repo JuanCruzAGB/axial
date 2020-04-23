@@ -1,7 +1,7 @@
 <!-- Footer -->
 <section id="footer">
 	 <!-- Footer main -->
-	<section class="ft-main">
+	<!-- <section class="ft-main">
     <div class="ft-main-item">
 		<h2 class="ft-title">Grupo Axial</h2>
 		<ul>
@@ -18,10 +18,13 @@
 			<li><a href="/#equipo"><i class="fa fa-angle-double-right"></i>Equipo</a></li>
 		</ul>
     </div>
-</section>
+</section> -->
 
 <!-- Footer social -->
 <section class="ft-social">
+<div class="logo-footer">
+	<img src="/img/recursos/logo-bn.png" class="img-fluid" alt="logo de axial">
+</div>
 	<ul class="ft-social-list">
 		<li><a href="#"><i class="fab fa-facebook fa-lg"></i></a></li>
 		<li><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
