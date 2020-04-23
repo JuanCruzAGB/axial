@@ -46,7 +46,7 @@
         <p class="col-12 col-md-10 col-lg-6 text-white text-center m-0 p-0">Nuestra Misión es evolucionar, enfocando nuestras actividades y esfuerzos para mejorar la calidad de vida de las personas con patologías de la columna vertebral. Convirtiéndonos en una institución de referencia local, regional e internacional en evaluación, tratamiento y formación médica continua, relacionada con Patologías de la Columna Vertebral Pediátrica y Adultos</p>
     </div>
 
-    <div id="nuestros-servicios" class="nuestros-servicios col-12">
+    <div id="especialidades" class="especialidades col-12">
         <div class="row">
             <div class="col-12 m-0 p-0">
                 <div class="row d-flex justify-content-center">

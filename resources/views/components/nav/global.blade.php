@@ -14,8 +14,8 @@
             <li><a href="/" class="nav-link">
                 Inicio
             </a></li>
-            <li><a href="/#nuestros-servicios" class="nav-link">
-                Servicios
+            <li><a href="/#especialidades" class="nav-link">
+                Especialidades
             </a></li>
             <li><a href="/#patologias" class="nav-link">
                 Patologías

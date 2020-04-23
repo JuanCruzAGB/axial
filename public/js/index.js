@@ -23,12 +23,12 @@ function fixedHeader(){
             e.preventDefault();
             Sidebar.open();
         });
-        let pixels = 16 * 8.5;
+        let pixels = 16 * 4.8;
         let smooth = new SmoothScroll(document.querySelectorAll('.nav-menu.fixed a'), pixels);
     }
 }
 document.addEventListener('DOMContentLoaded', function(event){
-    let pixels = 16 * 8.5;
+    let pixels = 16 * 4.8;
     let scroll = {
         detection: new ScrollDetection({min: 0, max:130}, 'Y', {success: topHeader, error: fixedHeader}),
         smooth: new SmoothScroll(document.querySelectorAll('a:not(.ver-mas)'), pixels),

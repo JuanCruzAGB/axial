@@ -101,7 +101,6 @@ class ShowInfo{
      */
     static show(id){
         document.querySelector('#' + id).classList.remove('invisible');
-        console.log(document.querySelector('#' + id));
     };
     /**
      * Hide the data.
@@ -111,7 +110,6 @@ class ShowInfo{
      */
     static hide(id){
         document.querySelector('#' + id).classList.add('invisible');
-        console.log(document.querySelector('#' + id));
     };
 };
 
