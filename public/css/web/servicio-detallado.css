@@ -1,0 +1,49 @@
+section{
+    --primary-color: #222;
+    --primary-color-hover: #dddddd0d;
+    --secondary-color: #ddd;
+    --secondary-color-hover: #0d4a7a00;
+    --tertiary-color: #222;
+    color: #000;
+}
+
+section p{
+    margin: 2rem 0;
+    line-height: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section h1, h2, h3{
+    color: #000;
+    font-family: 'Tajawal', sans-serif;
+
+}
+
+img.img-fluid.rounded{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/* MD */
+@media(min-width: 768px){
+    /**/
+
+    img.img-fluid.rounded{
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+/* LG */
+@media(min-width: 1024px){
+    /**/
+}
+
+/* XL */
+@media(min-width: 1200px){
+    /**/
+}

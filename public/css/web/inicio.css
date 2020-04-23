@@ -76,12 +76,15 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(0deg, rgb(37, 36, 36) 0%, rgba(0,69,124,1) 100%);
+    background: url("/img/recursos/textura-3.jpg") no-repeat center center;
+    background-size: cover;
+    /* background: linear-gradient(0deg, rgb(37, 36, 36) 0%, rgba(0,69,124,1) 100%); */
     padding: 3rem;
     z-index: 5;
+    height: 30rem;
 }
 
-.separador-banner::before{
+/* .separador-banner::before{
     content: "";
     position: absolute;
     top: -23px;
@@ -102,7 +105,7 @@ h2{
     background: #242424;
     clip-path: polygon(0% 0%, 120% 0%, 0% 100%);
     z-index: 1;
-}
+} */
 
 .separador-banner p{
     position: relative;
@@ -228,6 +231,7 @@ h2{
     transition: 500ms;
     font-size: 1.3rem;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .cartas-servicios:hover .card-title{
@@ -247,6 +251,17 @@ h2{
     height: 250px;
     transition: 500ms;
     overflow: hidden;
+}
+
+.flechita-servicio{
+    color: var(--color-uno);
+}
+
+.btn-servicios{
+    color: var(--color-uno);
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none !important;
 }
 
 .seccion-aparte{
