@@ -34,3 +34,11 @@
         Route::delete('/miembro/{id_miembro}/echar', 'MiembroController@delete')->name('miembro.delete');
     });
     Route::get('/miembros', 'MiembroController@info')->name('miembro.info');
+
+
+
+    Route::get('/servicios', 'WebController@servicios')->name('web.servicios');
+
+
+
+    

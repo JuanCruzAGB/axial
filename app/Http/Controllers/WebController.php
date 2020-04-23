@@ -63,4 +63,12 @@
                 ],
             ]);
         }
+
+        public function servicios(){
+            return view('web.servicios');
+        }
+
+        public function quienes(){
+            return view('web.quienes-somos');
+        }
     }

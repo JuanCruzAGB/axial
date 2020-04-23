@@ -31,7 +31,7 @@
         <div class="container d-flex justify-content-center align-items-center">
             <div class="col-12 col-md-10 col-lg-7">
                 <h2 class="h2-responsive text-white text-center mb-3">
-                    <span class="text-row">Especialistas en patologías de la columna vertebral
+                    <span class="text-row pb-4">Especialistas en patologías de la columna vertebral
                 </h2>
                 <div class="d-flex justify-content-center">
                     <a class="enviar-mensaje btn btn-primary" href="#contacto" role="button">Solicitar Turno</a>
@@ -57,12 +57,12 @@
             <div class="cards row d-flex justify-content-center pb-4 px-0 mx-auto">
                  <div id="escoliosis" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
                     <div class="card-body px-0 py-md-5 px-4 px-md-0">
-                        <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
+                        <i class="fas fa-microscope fa-3x mb-3 iconos-servicios icon"></i>
                         <a href="#escoliosis" class="ver-mas show-data card-title m-0">
-                            <h3 class="card-title mb-3">Escoliosis – Cifosis<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                            <h3 class="card-title mb-3">Escoliosis – Cifosis</h3>
+                            <i class="fas fa-chevron-right pr-2 pb-0 flechita-servicio"></i>
+                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
-                        <p class="card-text">
-                        Somos un equipo altamente especializados en deformidades de la columna vertebral. Participamos en forma permanente en cursos de formación médica como participantes y expositores. Escoliosis y cifosis son algunas de las patologías mas relevantes al referirnos a curvas patológicas de la columna vertebral. Evaluamos, diagnosticamos y tratamos a pacientes pediátricos y adultos de forma interdisciplinaria.</p>
                     </div>
                 </div>
 
@@ -70,9 +70,9 @@
                     <div class="card-body px-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#cirugia-mini-invasiva" class="ver-mas show-data card-title m-0">
-                            <h3 class="card-title mb-3">Cirugías mínimamente invasiva<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                            <h3 class="card-title mb-3">Cirugías mínimamente invasiva</h3>
+                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
-                        <p class="card-text">Las modernas técnicas quirúrgicas, cada vez menos agresivas, utilizan incisiones de pocos milímetros para introducir minúsculos instrumentos, cuyo manejo es controlado en una pantalla de alta definición o por medio de visión aumentada a través de un microscopio. Las mensionadas técnicas quirúrgicas son de utilidad para tratar una gran cantidad de patologías de la columna vertebral tanto en el pacientes adultos como en pacientes pediátricos.</p>
                     </div>
                 </div>
 
@@ -80,9 +80,9 @@
                     <div class="card-body px-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#departamento-cirugia-pediatrica" class="ver-mas show-data card-title m-0">
-                            <h3 class="card-title mb-3">Departamento de cirugía pediátrica de la columna vertebral<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                            <h3 class="card-title mb-3">Departamento de cirugía pediátrica de la columna vertebral</h3>
+                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
-                        <p class="card-text">Una de nuestras fortalezas es la formación médica de todos los integrantes del equipo en enfermedades pediátricas. Participamos como referentes de la patología en cursos nacionales e internacionales. Evaluamos, diagnosticamos y tratamos todas las patologías pediátricas que afectan la columna vertebral. Trabajamos permanentemente de forma interdisciplinaria disponiendo de todas las especialidades relacionadas a las patologías que afectan la columna vertebral.</p>
                     </div>
                 </div>
 
@@ -90,9 +90,9 @@
                     <div class="card-body px-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#evaluacion-interdisciplinaria" class="ver-mas show-data card-title m-0">
-                            <h3 class="card-title mb-3">Evaluación interdisciplinaria<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                            <h3 class="card-title mb-3">Evaluación interdisciplinaria</h3>
+                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
-                        <p class="card-text">Pediatras, neumonólogos, endoscopistas, nutricionistas, anestesiólogos, psicólogos, clínicos, kinesiólogos, cirujano y/o cualquier otra especialidad que sea requerida según la enfermedad del paciente; nos reunimos para evaluar diagnosticar y definir conductas a seguir ante patologías complejas. Creemos que el trabajo en equipo potencia las habilidades individuales redundando en beneficios para los pacientes y sus familias.Imagen que contiene florero, texto, botella, interior.</p>
                     </div>
                 </div>
 
@@ -100,9 +100,9 @@
                     <div class="card-body px-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#columna-cervical" class="ver-mas show-data card-title m-0">
-                            <h3 class="card-title mb-3">Descripción generada automáticamente Columna cervical<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                            <h3 class="card-title mb-3">Descripción generada automáticamente Columna cervical</h3>
+                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
-                        <p class="card-text">La columna cervical es asiento de múltiples patologías, por envejecimiento, congénitas, traumáticas, tumorales, infecciosas y otras. El trabajo en equipo entre traumatólogos y neurocirujanos nos brindan un abordaje integral de las patología que alteran la columna cervical tanto en adultos como en niños.</p>
                     </div>
                 </div>
 
@@ -110,10 +110,9 @@
                     <div class="card-body p-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#columna-lumbar" class="ver-mas show-data card-title m-0">
-                            <h3 class="card-title mb-3">Columna lumbar<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                            <h3 class="card-title mb-3">Columna lumbar</h3>
+                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
-                        <p class="card-text">La región lumbar es donde asienten la mayor cantidad de patologías del adulto. Siendo el dolor lumbar la consulta mas frecuente. Canal estrecho, hernias de discos, espondilolistesis, escoliosis y fracturas son algunas de las patologías que afectan la columna lumbar.
-                        La visión conjunta entre traumatólogos, neurocirujanos, kinesiólogos y entrenadores físicos que siempre realizamos en nuestro equipo, nos permite considerar los mejores tratamientos para cada dolencia que afecta la región lumbar.</p>
                     </div>
                 </div>
                 
@@ -121,9 +120,9 @@
                     <div class="card-body p-0 py-md-5 px-md-0">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#kinesiologia" class="ver-mas show-data card-title m-0">
-                            <h3 class="card-title mb-3">Kinesiología y Actividad física<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                            <h3 class="card-title mb-3">Kinesiología y Actividad física</h3>
+                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
-                        <p class="card-text">El equipo de Axial considera indispensable interactuar con kinesiólogos y entrenadores físicos para el tratamiento de las patologías que afectan a la columna vertebral. La interdisciplina con diálogo permanente sobre la evolución de los pacientes permite adecuar las terapéuticas y consecuentemente obtener una mejor y más temprana recuperación. Nuestro equipo está especializado tanto en pacientes adultos como pediátricos.</p>
                     </div>
                 </div>
 
@@ -131,10 +130,9 @@
                     <div class="card-body p-0 py-md-5 px-md-0">
                         <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
                         <a href="#intervencionismo-asistido" class="ver-mas show-data card-title m-0">
-                            <h3 class="card-title mb-3">Intervencionismo asistido por imágenes<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
+                            <h3 class="card-title mb-3">Intervencionismo asistido por imágenes</h3>
+                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
-                        <p class="card-text">Contamos con un equipo altamente especializado en las más modernas técnicas de intervencionismos asistidas por imágenes de alta resolución.
-                        Son una herramienta indispensable, en continuo crecimiento y desarrollo. Son de utilidad para diagnósticos y tratamientos de un gran número de patologías en toda la extensión de la columna vertebral. Son aplicadas tanto en patologías del adulto como en niños.</p>
                     </div>
                 </div>
                 
