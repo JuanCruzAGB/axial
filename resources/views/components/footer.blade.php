@@ -5,15 +5,15 @@
     <div class="ft-main-item">
 		<h2 class="ft-title">Grupo Axial</h2>
 		<ul>
-		<li>
-			<a href=""><i class="fa fa-angle-double-right"></i>Inicio</a></li>
+			<li><a href=""><i class="fa fa-angle-double-right"></i>Inicio</a></li>
 			<li><a href="/noticias"><i class="fa fa-angle-double-right"></i>Blog</a></li>
 			<li><a href="/#contacto"><i class="fa fa-angle-double-right"></i>Contacto</a></li>
 		</ul>
     </div>
-    <div class="ft-main-item mt-5">
+    <div class="ft-main-item">
+		<h2 class="ft-title">Menú</h2>
 		<ul>
-			<li><a href="/#nuestros-servicios"><i class="fa fa-angle-double-right"></i>Especialidades</a></li>
+			<li><a href="/#especialidades"><i class="fa fa-angle-double-right"></i>Especialidades</a></li>
 			<li><a href="/#patologias"><i class="fa fa-angle-double-right"></i>Patologías</a></li>
 			<li><a href="/#equipo"><i class="fa fa-angle-double-right"></i>Equipo</a></li>
 		</ul>

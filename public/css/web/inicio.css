@@ -7,12 +7,12 @@ h2{
     font-size: 2.5rem !important;
 }
 
-/* banner */
 .nav-menu{
     height: 8.5rem !important;
     max-height: 8.5rem !important;
 }
 
+/* banner */
 .jumbotron{
     position: relative;
     background: url('/img/bg-demo.jpg') -215px center no-repeat;
@@ -194,11 +194,11 @@ h2{
 }
 
 /* servicios */
-.nuestros-servicios{
+.especialidades{
     background-color: #fff;
 }
 
-#nuestros-servicios h2{
+#especialidades h2{
     color: var(--color-cuatro);
     font-family: gotham-bold;
 }
@@ -208,7 +208,7 @@ h2{
     height: 350px;
 }
 
-#nuestros-servicios span{
+#especialidades span{
     padding-top: 2rem;
 }
 
@@ -562,7 +562,7 @@ input.input100{
         display: inline;
     }
 
-    #nuestros-servicios p{
+    #especialidades p{
         height: 400px;
         padding-top: 20px;
     }
@@ -685,7 +685,11 @@ input.input100{
         flex-basis: 100%;
     }
 
-    #nuestros-servicios p{
+    #especialidades .cartas-servicios.invisible p{
+        height: 0;
+    }
+
+    #especialidades p{
         height: 300px;
         width: 400px;
         font-size: .93rem;
