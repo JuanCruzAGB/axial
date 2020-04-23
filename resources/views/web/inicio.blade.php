@@ -14,6 +14,7 @@
     <link href="{{asset('vendor/animsition/css/animsition.min.css')}}" rel="stylesheet">
     <link href="{{asset('vendor/select2/select2.min.css')}}" rel="stylesheet">
     <link href="{{asset('vendor/daterangepicker/daterangepicker.css')}}" rel="stylesheet">
+    <link href="{{asset('fonts/Icons/styles.css')}}" rel="stylesheet">
     <link href="{{asset('css/web/inicio.css')}}" rel="stylesheet">
 @endsection
 
@@ -57,7 +58,7 @@
             <div class="cards row d-flex justify-content-center pb-4 px-0 mx-auto">
                  <div id="escoliosis" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
                     <div class="card-body px-0 py-md-5 px-4 px-md-0">
-                        <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
+                        <i class="mb-3 iconos-servicios icon-01"></i>
                         <a href="#escoliosis" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Escoliosis – Cifosis<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
                         </a>

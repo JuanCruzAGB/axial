@@ -177,6 +177,7 @@
     width: auto;
 }
 
+.tabs .tab-body .tab-content section .content table thead tr,
 .tabs .tab-body .tab-content section .content table tbody tr{
     border-top: 2px solid rgba(0,0,0,0.09);
     padding: 0 2rem;

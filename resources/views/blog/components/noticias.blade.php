@@ -14,7 +14,7 @@
                         <tr>
                             <th id="id"></th>
                             <th>Titulo</th>
-                            <th>Contenido</th>
+                            <th>Última vez actualizada</th>
                             <th id="iconos-tabla"></th>
                             <th id="iconos-tabla"></th>
                             <th id="iconos-tabla"></th>
@@ -24,8 +24,8 @@
                     @foreach($noticias as $noticia)
                         <tr>
                             <td id="id" class="d-flex justify-content-center">{{$noticia->id_noticia}}</td>
-                            <td class="preview">{{$noticia->titulo}}</td>
-                            <td class="preview">{!!$noticia->contenido!!}</td>
+                            <td>{{$noticia->titulo}}</td>
+                            <td>{{$noticia->date}}</td>
                             <td id="iconos-tabla">
                                 <p data-placement="top" data-toggle="tooltip" title="Ver más">
                                     <a href="/noticia/{{$noticia->slug}}" class="btn btn-primary ver-mas btn-xs">

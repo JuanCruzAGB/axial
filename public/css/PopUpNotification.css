@@ -7,7 +7,7 @@
     left: 2rem;
     /* right: 0; */
     bottom: -5rem;
-    width: 20%;
+    width: fit-content;
     /* margin: auto; */
     border-radius: .2rem;
     color: var(--secondary-color);
@@ -35,6 +35,8 @@
 
 .popup-notification .popup-notification-text{
     color: var(--secondary-color);
+    margin: 0;
+    margin-right: 1rem;
 }
 
 /* MD */

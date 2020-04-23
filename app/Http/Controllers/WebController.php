@@ -35,12 +35,14 @@
             $miembros = Miembro::all();
             $miembros_count = 0;
             foreach($miembros as $miembro){
+                $miembro->date = $this->createDate('es', $miembro);
                 $miembros_count++;
             }
 
             $noticias = Noticia::all();
             $noticias_count = 0;
             foreach($noticias as $noticia){
+                $noticia->date = $this->createDate('es', $noticia);
                 $noticias_count++;
             }
 

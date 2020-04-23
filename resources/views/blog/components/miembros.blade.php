@@ -14,8 +14,7 @@
                         <tr>
                             <th id="id"></th>
                             <th>Nombre</th>
-                            <th>Título</th>
-                            <th>Puesto</th>
+                            <th>Última vez actualizada</th>
                             <th id="iconos-tabla"></th>
                             <th id="iconos-tabla"></th>
                             <th id="iconos-tabla"></th>
@@ -26,8 +25,7 @@
                             <tr>
                                 <td id="id" class="d-flex justify-content-center">{{$miembro->id_miembro}}</td>
                                 <td>{{$miembro->nombre}}</td>
-                                <td>{{$miembro->titulo}}</td>
-                                <td>{{$miembro->puesto}}</td>
+                                <td>{{$miembro->date}}</td>
                                 <td id="iconos-tabla">
                                     <p data-placement="top" data-toggle="tooltip" title="Ver más">
                                         <a href="/#equipo" class="btn btn-primary ver-mas btn-xs">

@@ -26,12 +26,13 @@
     <div id="edit-post" class="edit-post col-12 col-md-10 col-xl-8 mx-auto d-flex justify-content-between pt-3 mt-3 mb-5">
         
         <div class="content px-3">
-        <form action="/noticia/crear"
+        <form action="/noticia/{{$noticia->id_noticia}}/editar"
             class="form-validate"
             method="post"
             enctype="multipart/form-data"
             data-validation="{{$validation}}">
             @csrf
+            @method('PUT')
             <div class="row">
                 <div class="col-12">
                     <div class="titulo form-group">
@@ -42,7 +43,7 @@
                             name="titulo"
                             type="text"
                             class="form-control mb-3 w-75"
-                            value="{{old('titulo')}}"
+                            value="{{old('titulo', $noticia->titulo)}}"
                             placeholder="Título">
                         <div @if($errors->has('titulo'))
                             class="support-box showed"
@@ -61,6 +62,7 @@
                             type="file"
                             name="imagen"
                             data-text="Imagen"
+                            data-src="{{asset('storage/' . $noticia->imagen)}}"
                             data-notfound="No se eligió ninguna imagen.">
                         <div @if($errors->has('imagen'))
                             class="support-box showed mt-3"
@@ -83,7 +85,7 @@
                             class="form-control ckeditor w-75"
                             cols="30"
                             rows="10"
-                            placeholder="Contenido">{!!old('contenido')!!}</textarea>
+                            placeholder="Contenido">{!!old('contenido', $noticia->contenido)!!}</textarea>
                         <div @if($errors->has('contenido'))
                             class="mt-3 support-box showed mt-3"
                         @else

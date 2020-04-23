@@ -37,7 +37,7 @@
 
         @if(Session::has('status'))
             <aside class="popup-notification">
-                <p class="popup-notification-text m-0">{{Session::get('status')}}</p>
+                <p class="popup-notification-text">{{Session::get('status')}}</p>
                 <i class="popup-notification-closer" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </i>
