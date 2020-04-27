@@ -171,6 +171,11 @@ h2{
     color: #fff;
     line-height: 1.2;
     letter-spacing: 1px;
+    transition: 500ms;
+}
+
+.separador-call-to-action .row .go-blog:hover{
+    background-color: var(--color-uno-hover);
 }
 
 .quotes{
@@ -265,11 +270,11 @@ h2{
 }
 
 .seccion-aparte{
-    background-color: #fafafa;
+    background-color: #fff;
 }
 
 .seccion-aparte .row div ul li{
-    background-color: #fafafa !important;
+    background-color: #fff !important;
     padding-bottom: 0 !important;
 }
 
@@ -312,96 +317,40 @@ h2{
 .miembro.card{
     min-width: 83vw;
     flex-basis: 83vw;
-    height: 500px;
     border-radius: .25rem;
-    overflow: hidden;
+    border: none;
 }
 
 .card .card-background{
     width: 100%;
-    height: 100%;
+    height: 225px;
     text-align: center;
 }
 
 .card .card-background img{
     width: 225px;
-    height: 225px;
+    height: 100%;
     object-fit: cover;
     object-position: top;
     border-radius: 50%;
-    margin-top: 3rem;
-}
-
-.miembro.card .card-body{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4.25rem;
-    background: white;
-    transition: 500ms;
 }
 
 .miembro.card .card-body h3{
-    font-size: 1.3rem;
-}
-
-.miembro.card:target .card-body,
-.miembro.card.active .card-body{
-    height: 100%;
-    background-color: #fafafa;
-}
-
-.miembro.card .card-body .card-title{
-    position: relative;
-    display: block;
-    color: var(--color-uno);
-    text-decoration: none;
-    border-bottom: 2px solid white;
-    margin-bottom: .75rem !important;
-    padding-bottom: .75rem;
-    font-family: 'Montserrat', sans-serif;
-    transition: 500ms;
-    text-align: center;
-}
-
-.miembro.card .card-body:hover .card-title{
-    /* border-bottom: 2px solid var(--color-tres); */
-}
-
-.miembro.card:target .card-body .card-title,
-.miembro.card.active .card-body .card-title{
-    border-bottom: none;
-}
-
-.miembro.card:target .card-body .card-title .title-icon,
-.miembro.card.active .card-body .card-title .title-icon{
-    top: 25%;
-}
-
-.fa-sort-up:before{
-    transform: translateY(20%);
-}
-
-.fa-sort-down:before{
-    transform: translateY(-20%);
-}
-
-.miembro.card .card-body .card-content{
-    height: 0;
-    overflow: hidden;
-}
-
-.miembro.card:target .card-body .card-content,
-.miembro.card.active .card-body .card-content{
-    height: fit-content;
-    text-align: center;
-}
-
-.miembro.card .btn.btn-primary{
-    background-color: var(--color-uno);
-    border: none;
+    color: #000;
     font-family: gotham-light;
+    transition: 500ms;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.miembro.card .card-body h4{
+    color: var(--color-uno);
+}
+
+.miembro.card .card-body span{
+    display: block;
+    text-align: center;
 }
 
 .container-contact100{
@@ -453,31 +402,31 @@ input.input100{
 }
 
 .contact-form{
-    background-color: #fafafa;
+    background-color: #fff;
 }
 
 .wrap-contact100{
     width: 100%;
     flex-direction: row;
-    background-color: #fafafa;
+    background-color: #fff;
 }
 
 .wrap-contact100 form{
     position: relative;
 }
 
-.wrap-contact100 form::before{
+/* .wrap-contact100 form::before{
     content: "";
     position: absolute;
     bottom: -23px;
     left: 0;
     clip-path: polygon(0% 0%, 120% 0%, 0% 100%);
-    background-color: #fafafa;
+    background-color: #fff;
     z-index: 2;
     width: calc(100% + 2px);
     height: 25px;
     transform: translateX(-1px);
-}
+} */
 
 .contact100-form-title{
     font-family: 'Tajawal', sans-serif;
@@ -538,8 +487,32 @@ input.input100{
     border: 1px solid var(--color-uno);
 }
 
-.listado .miembro{
-    height: 350px !important;
+.btn-ver-mas{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: auto;
+    width: fit-content;
+    color: var(--color-uno);
+    transition: 500ms;
+    padding: 0 20px;
+    height: 50px;
+    border-radius: .25rem;
+    font-family: gotham-bold;
+    font-size: .8rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.btn-ver-mas:hover{
+    background-color: var(--color-uno);
+    color: #fff;
+}
+
+button.form-submit.contact100-form-btn:hover{
+    background: var(--color-uno-hover);
 }
 
 /* MD */
@@ -591,7 +564,6 @@ input.input100{
     .miembro.card{
         min-width: 50vw;
         flex-basis: 50vw;
-        height: 450px;
         border: none;
     }
 
@@ -635,8 +607,6 @@ input.input100{
         flex-basis: 50vw;
         height: 450px;
     }
-
-   
 
     .rs1-wrap-input100, .rs2-wrap-input100{
         width: 100% !important;
@@ -716,7 +686,6 @@ input.input100{
     .miembro.card{
         min-width: calc(((80% - 2rem) / 2) - 1rem);
         flex-basis: calc(((80% - 2rem) / 2) - 1rem);
-        height: 500px;
     }
 
     .miembros .miembro.card:nth-child(3n){
@@ -751,14 +720,14 @@ input.input100{
         order: 2;
     }
 
-    .wrap-contact100 form::before{
+    /* .wrap-contact100 form::before{
         top: 0;
         height: 50px;
         left: calc((-100% / 8) * 4);
         clip-path: polygon(0% 0%, 120% 0%, 0% 100%);
         width: calc(((100% / 8) * 4) + 100%);
         background-color: white;
-    }
+    } */
 
     .contact100-more{
         order: 1;

@@ -136,8 +136,6 @@
                         </a>
                     </div>
                 </div>
-                
-                
             </div>
         </div>
     </div>
@@ -195,19 +193,9 @@
                                 <img class="mb-0" src="{{asset('storage/' . $miembro->imagen)}}" alt="{{$miembro->nombre}}">
                             </div>
                             <div class="card-body p-3">
-                                <a href="#{{$miembro->slug}}" class="ver-mas collapsable-btn card-title m-0">
-                                    <h3 class="m-0">{{$miembro->nombre}}<i class="fas fa-angle-up pl-2 pb-0"></i></h3>
-                                </a>
-                                <div class="card-content px-3">
-                                    <div class="row d-flex justify-content-center">
-                                        <h4 class="col-12 m-0 p-0">{{$miembro->titulo}}</h4>
-                                        <span class="col-12 m-0 mt-3 p-0">{{$miembro->puesto}}</span>
-                                        <div class="col-12 mt-3 p-0">{!!$miembro->cv!!}</div>
-                                        @if($miembro->link !== null && $miembro->link != '')
-                                            <a target="_blank" href="{{$miembro->link}}" class="btn btn-primary mt-3">Ver más</a>
-                                        @endif
-                                    </div>
-                                </div>
+                                <h3 class="m-0 pb-3 text-center">{{$miembro->nombre}}</h3>
+                                <h4 class="m-0 pb-3 text-center">{{$miembro->titulo}}</h4>
+                                <span class="m-0 text-center">{{$miembro->puesto}}</span>
                             </div>
                         </div>
                     @endforeach
@@ -220,6 +208,11 @@
                     </div>
                 @endif
             </div>
+        </div>
+        <div class="col-12 text-center mt-4 pb-2">
+            <a class="btn-ver-mas btn btn-primary" href="/quienes-somos">
+                <i class="fas fa-chevron-right pr-2 pb-0"></i> Ver más
+            </a>
         </div>
     </div>
 

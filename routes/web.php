@@ -3,6 +3,8 @@
     Route::get('/', 'WebController@inicio')->name('web.inicio');
     // Route::get('/', 'WebController@construccion')->name('web.construccion');
     // Route::get('/demo', 'WebController@inicio')->name('web.inicio');
+    Route::get('/especialidades', 'WebController@especialidades')->name('web.especialidades');
+    Route::get('/quienes-somos', 'WebController@quienes')->name('web.quienes');
     Route::middleware('auth')->group(function(){
         Route::get('/panel', 'WebController@panel')->name('web.panel');
     });
@@ -33,12 +35,4 @@
         Route::put('/miembro/{id_miembro}/editar', 'MiembroController@edit')->name('miembro.edit');
         Route::delete('/miembro/{id_miembro}/echar', 'MiembroController@delete')->name('miembro.delete');
     });
-    Route::get('/miembros', 'MiembroController@info')->name('miembro.info');
-
-
-
-    Route::get('/servicios', 'WebController@servicios')->name('web.servicios');
-
-
-
-    
+    // Route::get('/miembros', 'MiembroController@info')->name('miembro.info');

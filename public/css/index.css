@@ -12,6 +12,7 @@ html{
 body{
     overflow-x: hidden;
     --color-uno: rgb(0, 69, 125);
+    --color-uno-hover: #0069d9;
     --color-dos: #55c9d8;
     --color-tres: rgb(148, 149, 142);
     --color-cuatro: #231F20;

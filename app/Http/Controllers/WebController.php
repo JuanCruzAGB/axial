@@ -66,10 +66,12 @@
             ]);
         }
 
-        public function servicios(){
-            return view('web.servicios');
+        /** Carga la sección especialidades. */
+        public function especialidades(){
+            return view('web.especialidades');
         }
 
+        /** Carga la sección especialidades. */
         public function quienes(){
             return view('web.quienes-somos');
         }
