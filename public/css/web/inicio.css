@@ -15,7 +15,7 @@ h2{
 /* banner */
 .jumbotron{
     position: relative;
-    background: url('/img/bg-demo.jpg') -215px center no-repeat;
+    background: url('/img/recursos/background/01-banner.jpg') -215px center no-repeat;
     background-attachment: fixed;
     height: 100vh;
     background-size: cover;
@@ -76,12 +76,13 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("/img/recursos/textura-3.jpg") no-repeat center center;
+    background: url("/img/recursos/background/02-separador-cita-logo.png") no-repeat center right;
+    /* background: url("/img/recursos/background/02-separador-cita-nueva.jpg") no-repeat center center; */
     background-size: cover;
     /* background: linear-gradient(0deg, rgb(37, 36, 36) 0%, rgba(0,69,124,1) 100%); */
     padding: 3rem;
     z-index: 5;
-    height: 30rem;
+    height: 25rem;
 }
 
 /* .separador-banner::before{
@@ -120,7 +121,7 @@ h2{
     background-color: transparent;
     align-items: flex-start;
     height: fit-content;
-    background-image: url('/img/bg-call.png');
+    background-image: url('/img/recursos/background/03-separador-call-to-action.png');
     background-size: cover;
     background-attachment: fixed;
     clip-path: polygon(0% 25px, 100% 0%, 100% calc(100% - 25px), 0% 100%);
@@ -366,7 +367,7 @@ input.input100{
 }
 
 .contact-data{
-    background-image: url('/img/bg-01.jpg');
+    background-image: url('/img/recursos/background/04-contacto.jpg');
     background-attachment: fixed;
     z-index: 1;
     padding-top: 40px;
@@ -519,7 +520,7 @@ button.form-submit.contact100-form-btn:hover{
 @media(min-width: 768px){
     .jumbotron{
         position: relative;
-        background: url('/img/bg-demo.jpg') center center no-repeat;
+        background: url('/img/recursos/background/01-banner.jpg') center center no-repeat;
         background-attachment: fixed;
         height: calc(100vh - 8.5rem + 50px);
         background-size: cover;

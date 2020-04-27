@@ -14,8 +14,11 @@
             <li><a href="/" class="nav-link">
                 Inicio
             </a></li>
-            <li><a href="/#servicios" class="nav-link">
-                Servicios
+            <li><a href="/quienes-somos" class="nav-link">
+                Quiénes Somos
+            </a></li>
+            <li><a href="/especialidades" class="nav-link">
+                especialidades
             </a></li>
             <li><a href="/#equipo" class="nav-link">
                 Equipo

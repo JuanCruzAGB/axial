@@ -14,7 +14,10 @@
             <li><a href="/" class="nav-link">
                 Inicio
             </a></li>
-            <li><a href="/#especialidades" class="nav-link">
+            <li><a href="/quienes-somos" class="nav-link">
+                Quiénes Somos
+            </a></li>
+            <li><a href="/especialidades" class="nav-link">
                 Especialidades
             </a></li>
             <li><a href="/#patologias" class="nav-link">

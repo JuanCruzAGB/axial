@@ -9,7 +9,7 @@
 }
 
 .parallax {
-    background: url("/img/thanks.jpg") no-repeat center -20rem;
+    background: url("/img/recursos/background/05-gracias.jpg") no-repeat center -20rem;
     min-height: 15rem;
     filter: brightness(60%);
 }

@@ -34,8 +34,11 @@ body{
     --tertiary-color: rgba(0,0,0,.5);
 }
 
-.menu-list .nav-link{
-    font-family: 'Montserrat', sans-serif !important; 
+.menu-list .nav-link,
+.menu-list .collapsable-button,
+.menu-list .collapsable-link{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: .85rem;
 }
 
 .nav-menu.fixed{
@@ -54,7 +57,7 @@ body{
 
 .nav-menu .nav-title{
     flex-basis: 100%;
-    background: url(../img/recursos/logo.png) no-repeat center center;
+    background: url(../img/recursos/logo/01-original.png) no-repeat center center;
     background-size: contain;
     height: 8.5rem;
 }

@@ -161,7 +161,7 @@
                 </ul>
             </div>
             <div class="col-12 col-lg-5 card-background img-patologias text-center">
-                <img src="{{asset('img/hurt.png')}}" alt="Imagen de muestra">
+                <img src="{{asset('img/inicio/01-patologias.png')}}" alt="Imagen de muestra">
             </div>
         </div>
     </div>
@@ -210,14 +210,14 @@
             </div>
         </div>
         <div class="col-12 text-center mt-4 pb-2">
-            <a class="btn-ver-mas btn btn-primary" href="/quienes-somos">
+            <a class="btn-ver-mas btn btn-primary" href="/quienes-somos-somos">
                 <i class="fas fa-chevron-right pr-2 pb-0"></i> Ver más
             </a>
         </div>
     </div>
 
     <div class="d-flex justify-content-around align-items-center col-12 seccion-img-random bg px-0 py-4 my-5">
-        <img src="{{asset('img/operando.jpg')}}" class="img-randoms mb-md-2 px-md-0" alt="Imagen de muestra">
+        <img src="{{asset('img/inicio/02-operando.jpg')}}" class="img-randoms mb-md-2 px-md-0" alt="Imagen de muestra">
     </div>
 </div>
             
