@@ -9,7 +9,7 @@
 @endsection
 
 @section('title')
-    {{$noticia->titulo}}
+    Axial - {{$noticia->titulo}}
 @endsection
 
 @section('nav')

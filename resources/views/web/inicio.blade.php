@@ -44,7 +44,7 @@
 
 @section('main')
     <div class="separador-banner col-12 p-md-5">
-        <p class="col-12 col-md-10 col-lg-6 text-white text-center m-0 p-0">Nuestra Misión es evolucionar, enfocando nuestras actividades y esfuerzos para mejorar la calidad de vida de las personas con patologías de la columna vertebral. Convirtiéndonos en una institución de referencia local, regional e internacional en evaluación, tratamiento y formación médica continua, relacionada con Patologías de la Columna Vertebral Pediátrica y Adultos</p>
+        <p class="col-12 col-md-10 col-lg-6 text-white text-center m-0 p-0">Nuestra Misión es evolucionar, enfocando nuestras actividades y esfuerzos para mejorar la calidad de vida de las personas con patologías de la columna vertebral. Convirtiéndonos en una institución de referencia local, regional e internacional en evaluación, tratamiento y formación médica continua, relacionada con Patologías de la Columna Vertebral Pediátrica y Adultos.</p>
     </div>
 
     <div id="especialidades" class="especialidades col-12">
@@ -210,7 +210,7 @@
             </div>
         </div>
         <div class="col-12 text-center mt-4 pb-2">
-            <a class="btn-ver-mas btn btn-primary" href="/quienes-somos-somos">
+            <a class="btn-ver-mas btn btn-primary" href="/quienes-somos">
                 <i class="fas fa-chevron-right pr-2 pb-0"></i> Ver más
             </a>
         </div>

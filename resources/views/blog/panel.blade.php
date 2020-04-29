@@ -14,7 +14,7 @@
 @endsection
 
 @section('title')
-    Panel de administración
+    Axial - Panel de administración
 @endsection
 
 @section('nav')

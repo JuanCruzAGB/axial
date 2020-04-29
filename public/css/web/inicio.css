@@ -76,8 +76,8 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("/img/recursos/background/02-separador-cita-logo.png") no-repeat center right;
-    /* background: url("/img/recursos/background/02-separador-cita-nueva.jpg") no-repeat center center; */
+    /* background: url("/img/recursos/background/02-separador-cita-logo.png") no-repeat center right; */
+    background: url("/img/recursos/background/02-separador-cita.jpg") no-repeat center center;
     background-size: cover;
     /* background: linear-gradient(0deg, rgb(37, 36, 36) 0%, rgba(0,69,124,1) 100%); */
     padding: 3rem;

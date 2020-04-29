@@ -11,7 +11,7 @@
 @endsection
 
 @section('title')
-    Editar "{{$user->name}}"
+    Axial - Editar "{{$user->name}}"
 @endsection
 
 @section('nav')

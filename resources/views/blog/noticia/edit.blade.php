@@ -11,7 +11,7 @@
 @endsection
 
 @section('title')
-    Editar "{{$noticia->titulo}}"
+    Axial - Editar "{{$noticia->titulo}}"
 @endsection
 
 @section('nav')

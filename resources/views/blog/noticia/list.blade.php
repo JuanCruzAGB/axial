@@ -8,7 +8,7 @@
 @endsection
 
 @section('title')
-    Blog
+    Axial - Blog
 @endsection
 
 @section('nav')
