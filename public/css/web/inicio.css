@@ -288,9 +288,10 @@ h2{
 }
 
 .patologias img{
-    width: 95%;
+    width: 100%;
     height: 650px;
     object-fit: contain;
+    padding-bottom: 5rem;
 }
 
 /* team */
@@ -400,6 +401,7 @@ input.input100{
     width: 100% !important;
     height: 500px;
     object-fit: cover;
+    object-position: -100px 0px;
 }
 
 .contact-form{
@@ -556,6 +558,7 @@ button.form-submit.contact100-form-btn:hover{
 
     .patologias img{
         width: 100%;
+        object-fit: cover;
     }
 
     .miembros{
@@ -671,6 +674,23 @@ button.form-submit.contact100-form-btn:hover{
         width: 100%;
     }
 
+    .lista-patologias-div{
+        padding: 0;
+        margin: 0;
+    }
+
+    .img-patologias{
+        padding: 0;
+        margin: 0;
+    }
+
+    .patologias img{
+        width: 450px;
+        height: 700px;
+        margin-top: 4rem;
+        object-fit: contain;
+    }
+
     .seccion-aparte .row{
         margin: auto !important;
     }
@@ -717,6 +737,10 @@ button.form-submit.contact100-form-btn:hover{
         border-bottom: none !important;
     }
 
+    .seccion-img-random .img-randoms{
+        object-position: center;
+    }
+
     .wrap-contact100 form{
         order: 2;
     }
@@ -751,14 +775,17 @@ button.form-submit.contact100-form-btn:hover{
 
 /* XL */
 @media(min-width: 1200px){
-    
-    .seccion-img-random .img-randoms{
-        width: 100% !important;
-        height: 450px !important;
-    }
 
     #nuestros-servicios p{
         width: 600px;
+    }
+
+    .patologias img{
+        height: 700px;
+    }
+
+    .seccion-img-random .img-randoms{
+        height: 600px;
     }
 }
 

@@ -57,82 +57,73 @@
 
             <div class="cards row d-flex justify-content-center pb-4 px-0 mx-auto">
                  <div id="escoliosis" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
-                    <div class="card-body px-0 py-md-5 px-4 px-md-0">
+                    <div class="card-body px-0 py-md-5 px-4 px-md-0 pb-5">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios icon"></i>
                         <a href="#escoliosis" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Escoliosis – Cifosis</h3>
-                            <i class="fas fa-chevron-right pr-2 pb-0 flechita-servicio"></i>
-                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
                     </div>
                 </div>
 
                  <div id="cirugia-mini-invasiva" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
-                    <div class="card-body px-0 py-md-5 px-md-0">
+                    <div class="card-body px-0 py-md-5 px-md-0 pb-5">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#cirugia-mini-invasiva" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Cirugías mínimamente invasiva</h3>
-                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
                     </div>
                 </div>
 
                  <div id="departamento-cirugia-pediatrica" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
-                    <div class="card-body px-0 py-md-5 px-md-0">
+                    <div class="card-body px-0 py-md-5 px-md-0 pb-5">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#departamento-cirugia-pediatrica" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Departamento de cirugía pediátrica de la columna vertebral</h3>
-                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
                     </div>
                 </div>
 
                  <div id="evaluacion-interdisciplinaria" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
-                    <div class="card-body px-0 py-md-5 px-md-0">
+                    <div class="card-body px-0 py-md-5 px-md-0 pb-5">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#evaluacion-interdisciplinaria" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Evaluación interdisciplinaria</h3>
-                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
                     </div>
                 </div>
 
                  <div id="columna-cervical" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
-                    <div class="card-body px-0 py-md-5 px-md-0">
+                    <div class="card-body px-0 py-md-5 px-md-0 pb-5">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#columna-cervical" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Descripción generada automáticamente Columna cervical</h3>
-                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
                     </div>
                 </div>
 
                  <div id="columna-lumbar" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
-                    <div class="card-body p-0 py-md-5 px-md-0">
+                    <div class="card-body p-0 py-md-5 px-md-0 pb-5">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#columna-lumbar" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Columna lumbar</h3>
-                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
                     </div>
                 </div>
                 
                  <div id="kinesiologia" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
-                    <div class="card-body p-0 py-md-5 px-md-0">
+                    <div class="card-body p-0 py-md-5 px-md-0 pb-5">
                         <i class="fas fa-microscope fa-3x mb-3 iconos-servicios"></i>
                         <a href="#kinesiologia" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Kinesiología y Actividad física</h3>
-                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
                     </div>
                 </div>
 
                 <div id="intervencionismo-asistido" class="cartas-servicios invisible card col-12 col-md-5 text-center pt-md-4 px-5 px-md-3 border-0">
-                    <div class="card-body p-0 py-md-5 px-md-0">
+                    <div class="card-body p-0 py-md-5 px-md-0 pb-5">
                         <i class="fas fa-user-md fa-3x mb-3 iconos-servicios"></i>
                         <a href="#intervencionismo-asistido" class="ver-mas show-data card-title m-0">
                             <h3 class="card-title mb-3">Intervencionismo asistido por imágenes</h3>
-                            <a href="/servicios" class="btn-servicios">Ver más</a>
                         </a>
                     </div>
                 </div>
@@ -146,22 +137,22 @@
             <div class="col-12">
                 <h2 class="text-center mb-4">Patologías</h2>
             </div>    
-            <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-5 d-flex justify-content-center align-items-center py-5 mb-5 lista-patologias-div px-lg-5">
                 <ul class="list-group list-group-flush lista-patologias">
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Canal estrecho / lumbar</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Quistes Sinoviales</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Escoliosis Idiopática</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Escoliosis Congénitas</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Escoliosis Neuromusculares</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Cifosis / Cifosis congénita</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Espondilolistesis</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Tumores</li>
-                    <li class="list-group-item"><i class="fas fa-angle-right pr-2 pb-0"></i>Infecciones</li>
+                    <li class="list-group-item py-4"><i class="fas fa-angle-right pr-3 pb-0"></i>Canal estrecho / lumbar</li>
+                    <li class="list-group-item py-4"><i class="fas fa-angle-right pr-3 pb-0"></i>Quistes Sinoviales</li>
+                    <li class="list-group-item py-4"><i class="fas fa-angle-right pr-3 pb-0"></i>Escoliosis Idiopática</li>
+                    <li class="list-group-item py-4"><i class="fas fa-angle-right pr-3 pb-0"></i>Escoliosis Congénitas</li>
+                    <li class="list-group-item py-4"><i class="fas fa-angle-right pr-3 pb-0"></i>Escoliosis Neuromusculares</li>
+                    <li class="list-group-item py-4"><i class="fas fa-angle-right pr-3 pb-0"></i>Cifosis / Cifosis congénita</li>
+                    <li class="list-group-item py-4"><i class="fas fa-angle-right pr-3 pb-0"></i>Espondilolistesis</li>
+                    <li class="list-group-item py-4"><i class="fas fa-angle-right pr-3 pb-0"></i>Tumores</li>
+                    <li class="list-group-item py-4"><i class="fas fa-angle-right pr-3 pb-0"></i>Infecciones</li>
                     <li class="list-group-item ultima-list border-bottom"></li>
                 </ul>
             </div>
-            <div class="col-12 col-lg-5 card-background img-patologias text-center">
-                <img src="{{asset('img/inicio/01-patologias.png')}}" alt="Imagen de muestra">
+            <div class="col-12 col-md-6 col-lg-5 card-background img-patologias text-center mb-5 px-lg-5">
+                <img src="{{asset('img/inicio/01-patologias.jpg')}}" alt="Imagen de muestra">
             </div>
         </div>
     </div>

@@ -1,0 +1,30 @@
+.contenedor{
+    padding: 0;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Tajawal', sans-serif;
+    color: #333;
+}
+
+h2{
+    font-size: 2rem;
+    font-family: 'Tajawal', sans-serif;
+    color: #333;
+}
+
+.info-nosotros p{
+    color: #333;
+    padding: 0 1rem;
+    line-height: 1.6rem;
+}
+
+@media(min-width: 1024px){
+    .equipo-div img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 550px;
+    }
+}
