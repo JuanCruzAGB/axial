@@ -81,7 +81,7 @@
     <body>
         <div class="coverPage">
             <div class="__coverPage-content">
-            <img src="/img/recursos/logo/01-original.jpg" class="img-fluid logo" alt="Responsive image">
+            <img src="/img/recursos/logo/02-blanco.png" class="img-fluid logo" alt="Responsive image">
                 <h1>Medicina especializada en Columna</h1>
                 <h3>Sitio web en construcción</h3>
                 <p class="info">info@grupoaxial.org <br>
