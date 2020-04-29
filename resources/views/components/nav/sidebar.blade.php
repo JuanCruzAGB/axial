@@ -10,20 +10,20 @@
             <li><a href="/" class="nav-link">
                 Inicio
             </a></li>
-            <li><a href="/#tratamiento-del-dolor" class="nav-link">
-                Tratamiento del dolor
+            <li><a href="/quienes-somos" class="nav-link">
+                Quiénes Somos
             </a></li>
-            <li><a href="/#cirugia-mini-invasiva" class="nav-link">
-                Cirugía mini invasiva
+            <li><a href="/especialidades" class="nav-link">
+                Especialidades
             </a></li>
-            <li><a href="/#patologia-de-la-columna" class="nav-link">
-                Patología de la columna
+            <li><a href="/#patologias" class="nav-link">
+                Patologías
             </a></li>
             <li><a href="/#equipo" class="nav-link">
                 Equipo
             </a></li>
             <li><a href="/noticias" class="nav-link">
-                Noticias
+                Blog
             </a></li>
             <li><a href="/#contacto" class="nav-link">
                 Contacto

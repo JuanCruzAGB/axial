@@ -32,6 +32,8 @@ body{
 .nav-menu{
     --primary-color: white;
     --tertiary-color: rgba(0,0,0,.5);
+    height: 8.5rem;
+    max-height: 8.5rem;
 }
 
 .menu-list .nav-link,
@@ -63,7 +65,7 @@ body{
 }
 
 .nav-menu.fixed .nav-title{
-    height: 8rem;
+    height: 5rem;
 }
 
 .nav-menu .nav-title h1{

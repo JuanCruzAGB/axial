@@ -19,3 +19,15 @@ sr.reveal('.img-patologias', {
     distance: '300px',
     origin: 'right'
 });
+
+// let scrollReveal = new ScrollReveal([
+//     {
+//         'HTMLElement': '.especialidades .cards .cartas-servicios .card-body',
+//     },{
+//         'HTMLElement': '.lista-patologias',
+//     },{
+//         'HTMLElement': '.img-patologia',
+//         'origin': 'right',
+//         'distance': '10px',
+//     },
+// ], 2000, '300px', 'left');
