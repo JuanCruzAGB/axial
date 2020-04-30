@@ -99,7 +99,7 @@ let InputFileMaker = {
         parent.insertBefore(div, input);
             let button = document.createElement('button');
             button.innerHTML = input.dataset.text;
-            button.classList.add('file-button');
+            button.classList.add('file-button', 'btn', 'btn-primary');
             div.appendChild(button);
             button.addEventListener('click', function(e){
                 e.preventDefault();

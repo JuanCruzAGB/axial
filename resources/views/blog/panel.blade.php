@@ -7,10 +7,10 @@
 
 @section('css')
     <meta name="csrf-token" content="{{csrf_token()}}">
+    <link href="{{asset('css/InputFileMaker.css')}}" rel="stylesheet">
+    <link href="{{asset('submodules/ValidationJS/css/styles.css')}}" rel="stylesheet">
     <link href="{{asset('css/blog/panel.css')}}" rel="stylesheet">
     <link href="{{asset('css/web/panel.css')}}" rel="stylesheet">
-    <link href="{{asset('submodules/ValidationJS/css/styles.css')}}" rel="stylesheet">
-    <link href="{{asset('css/InputFileMaker.css')}}" rel="stylesheet">
 @endsection
 
 @section('title')

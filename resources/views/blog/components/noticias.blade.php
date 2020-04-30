@@ -12,37 +12,37 @@
                 <table id="mytable" class="noticias table table-bordred table-striped">
                     <thead>
                         <tr>
-                            <th id="id"></th>
+                            <th class="id"></th>
                             <th>Titulo</th>
                             <th>Última vez actualizada</th>
-                            <th id="iconos-tabla"></th>
-                            <th id="iconos-tabla"></th>
-                            <th id="iconos-tabla"></th>
+                            <th class="icons"></th>
+                            <th class="icons"></th>
+                            <th class="icons"></th>
                         </tr>
                     </thead>
                     <tbody>
                     @foreach($noticias as $noticia)
                         <tr>
-                            <td id="id" class="d-flex justify-content-center">{{$noticia->id_noticia}}</td>
+                            <td class="id d-flex justify-content-center">{{$noticia->id_noticia}}</td>
                             <td>{{$noticia->titulo}}</td>
                             <td>{{$noticia->date}}</td>
-                            <td id="iconos-tabla">
+                            <td class="icons">
                                 <p data-placement="top" data-toggle="tooltip" title="Ver más">
-                                    <a href="/noticia/{{$noticia->slug}}" class="btn btn-primary ver-mas btn-xs">
+                                    <a href="/noticia/{{$noticia->slug}}" class="btn btn-icon ver-mas btn-xs">
                                         <span class="button-icon fas fa-eye"></span>
                                     </a>
                                 </p>
                             </td>
-                            <td id="iconos-tabla">
+                            <td class="icons">
                                 <p data-placement="top" data-toggle="tooltip" title="Editar">
-                                    <a href="/noticia/{{$noticia->slug}}/editar" class="btn btn-primary editar btn-xs">
+                                    <a href="/noticia/{{$noticia->slug}}/editar" class="btn btn-icon editar btn-xs">
                                         <span class="button-icon fas fa-pen"></span>
                                     </a>
                                 </p>
                             </td>
-                            <td id="iconos-tabla">
+                            <td class="icons">
                                 <p data-placement="top" data-toggle="tooltip" title="Borrar">
-                                    <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete-modal" data-title="Borrar noticia" data-body="¿Estás seguro de que querés borrar la noticia?" data-url="/noticia/{{$noticia->id_noticia}}/eliminar" data-toggle="modal" data-target="#delete-modal">
+                                    <button class="btn btn-icon btn-xs" data-toggle="modal" data-target="#delete-modal" data-title="Borrar noticia" data-body="¿Estás seguro de que querés borrar la noticia?" data-url="/noticia/{{$noticia->id_noticia}}/eliminar" data-toggle="modal" data-target="#delete-modal">
                                         <span class="button-icon fas fa-trash"></span>
                                     </button>                                    
                                 </p>
