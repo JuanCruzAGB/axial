@@ -74,9 +74,7 @@
         @component('components.inicio.equipo', ['miembros' => $miembros])
         @endcomponent
 
-        <div class="col-12 aux-img text-center mt-4 pt-5 px-lg-5 mb-lg-5">
-            <img src="{{asset('img/inicio/02-operando.jpg')}}" alt="Imagen de muestra">
-        </div>
+        <div class="separador separador-image col-12 p-md-5"></div>
     </div>
 </div>
             

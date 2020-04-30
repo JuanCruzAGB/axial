@@ -76,6 +76,7 @@ h2{
     background: url("/img/recursos/background/02-separador-cita.jpg") no-repeat center center;
     background-size: cover;
 }
+
 .separador-call-to-action{
     background: url("/img/recursos/background/03-separador-call-to-action.png") no-repeat center center;
     background-size: cover;
@@ -281,6 +282,13 @@ h2{
     /* height: 650px; */
     height: 500px;
     object-fit: cover;
+    transition: 800ms;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+.aux-img img:hover{
+    width: 110%;
 }
 
 /*Equipo*/
@@ -381,6 +389,13 @@ input.input100{
     width: 100%;
     height: 2rem;
     background-color: #C6C6C6;
+}
+
+.separador-image{
+    background: url(/img/inicio/02-operando.jpg) no-repeat center -110px;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 0 !important;
 }
 
 .seccion-img-random{

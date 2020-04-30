@@ -16,7 +16,7 @@
                 <li class="list-group-item m-0 p-0 pb-4"><i class="fas fa-angle-right pr-3 pb-0"></i>Infecciones</li>
             </ul>
         </div>
-        <div class="col-12 col-md-6 col-lg-5 aux-img text-center mt-5 mb-4 pb-5 px-lg-5">
+        <div class="col-12 col-md-6 col-lg-5 aux-img text-center mt-5 mb-4 pb-5 mx-lg-5 px-0">
             <img src="{{asset('img/inicio/01-patologias.jpg')}}" alt="Imagen de muestra">
         </div>
     </div>
