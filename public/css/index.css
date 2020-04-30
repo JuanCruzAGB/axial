@@ -1,3 +1,4 @@
+/*General*/
 *{
     margin: 0;
     padding: 0;
@@ -29,6 +30,80 @@ body{
     color: var(--color-uno) !important;
 }
 
+.btn.btn-primary{
+    background-color: var(--color-uno);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 200px;
+    height: 50px;
+    border-radius: .25rem;
+    font-family: gotham-bold;
+    font-size: .8rem;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.btn.btn-primary:hover{
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;;
+}
+
+.btn.btn-secondary{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: auto;
+    width: fit-content;
+    color: var(--color-uno);
+    transition: 500ms;
+    padding: 0 20px;
+    height: 50px;
+    border-radius: .25rem;
+    font-family: gotham-bold;
+    font-size: .8rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.btn.btn-secondary:hover{
+    background-color: var(--color-uno);
+    color: #fff;
+}
+
+/*Separadores*/
+.separador{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    z-index: 5;
+    height: 25rem;
+}
+
+.separador h2{
+    padding: 0 15px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+    /* font-size: 1.8rem; */
+    /* font-family: gotham-bold; */
+}
+
+.separador p{
+    position: relative;
+    font-size: 1rem;
+    font-family: gotham-light;
+    z-index: 2;
+    text-decoration: none;
+}
+
+/*Navmenu*/
 .nav-menu{
     --primary-color: white;
     --tertiary-color: rgba(0,0,0,.5);
@@ -120,11 +195,12 @@ a:hover{
     transform: translateY(-50%) translateX(-50%);
 }
 
-/* WhatsApp */
+/*WhatsApp*/
 .whatsapp{
     background: #25D366;
 }
 
+/*Footer*/
 #footer{
     background-color: var(--color-cuatro);
     color: #fff

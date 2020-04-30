@@ -1,3 +1,4 @@
+/*General*/
 .parent-row{
     margin: 0 !important;
 }
@@ -12,12 +13,12 @@ h2{
     max-height: 8.5rem !important;
 }
 
-/* banner */
+/*Banner*/
 .jumbotron{
     position: relative;
     background: url('/img/recursos/background/01-banner.jpg') -215px center no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    height: calc(100vh - 8.5rem);
     background-size: cover;
 }
 
@@ -43,12 +44,12 @@ h2{
 }
 
 .jumbotron .container h2 > span:last-child{
-        color: #fff;
-        display: block;
-        font-family: 'Montserrat', sans-serif;
-    }
+    color: #fff;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+}
 
-.enviar-mensaje{
+/* .enviar-mensaje{
     background-color: var(--color-uno);
     border: none;
     display: flex;
@@ -63,26 +64,23 @@ h2{
     color: #fff;
     line-height: 1.2;
     letter-spacing: 1px;
-}
+} */
 
-/* main */
+/*Main*/
 .contenedor{
     padding: 0;
 }
 
-.separador-banner,
-.separador-call-to-action{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background: url("/img/recursos/background/02-separador-cita-logo.png") no-repeat center right; */
+/*Separadores*/
+.separador-banner{
     background: url("/img/recursos/background/02-separador-cita.jpg") no-repeat center center;
     background-size: cover;
-    /* background: linear-gradient(0deg, rgb(37, 36, 36) 0%, rgba(0,69,124,1) 100%); */
-    padding: 3rem;
-    z-index: 5;
-    height: 25rem;
+}
+.separador-call-to-action{
+    background: url("/img/recursos/background/03-separador-call-to-action.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0% 25px, 100% 0%, 100% calc(100% - 25px), 0% 100%);
 }
 
 /* .separador-banner::before{
@@ -94,9 +92,9 @@ h2{
     height: 25px;
     background: #01447a;
     clip-path: polygon(100% 0%, 100% 100%, -20% 100%);
-}
+} */
 
-.separador-banner::after{
+/* .separador-banner::after{
     content: "";
     position: absolute;
     bottom: -23px;
@@ -108,15 +106,7 @@ h2{
     z-index: 1;
 } */
 
-.separador-banner p{
-    position: relative;
-    font-size: 1rem;
-    font-family: gotham-light;
-    z-index: 2;
-    text-decoration: none;
-}
-
-.separador-call-to-action{
+/* .separador-call-to-action{
     position: relative;
     background-color: transparent;
     align-items: flex-start;
@@ -125,7 +115,7 @@ h2{
     background-size: cover;
     background-attachment: fixed;
     clip-path: polygon(0% 25px, 100% 0%, 100% calc(100% - 25px), 0% 100%);
-}
+} */
 
 .separador-call-to-action::before{
     content: "";
@@ -138,7 +128,7 @@ h2{
     background: rgba(35, 31, 32, 0.6);
 }
 
-.separador-call-to-action .row{
+/* .separador-call-to-action .row{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,29 +167,9 @@ h2{
 
 .separador-call-to-action .row .go-blog:hover{
     background-color: var(--color-uno-hover);
-}
+} */
 
-.quotes{
-    position: absolute;
-    color: rgba(0,0,0,.5);
-}
-
-.quote-left{
-    top: 15px;
-    left: 15px;
-}
-
-.quote-right{
-    bottom: 15px;
-    right: 15px;
-}
-
-.quote-icon{
-    font-size: 2rem;
-    z-index: 1;
-}
-
-/* servicios */
+/*Especialidades*/
 .especialidades{
     background-color: #fff;
 }
@@ -270,13 +240,28 @@ h2{
     text-decoration: none !important;
 }
 
+/*Patologias*/
 .seccion-aparte{
     background-color: #fff;
 }
 
 .seccion-aparte .row div ul li{
     background-color: #fff !important;
-    padding-bottom: 0 !important;
+    border: none;
+    transition: 500ms;
+}
+
+.seccion-aparte .row div ul li:hover{
+    color: var(--color-uno);
+}
+
+.seccion-aparte .row div ul li i{
+    transition: 500ms;
+}
+
+.seccion-aparte .row div ul li:hover i{
+    padding-left: .5rem;
+    padding-right: .5rem !important;
 }
 
 .patologias h2{
@@ -287,13 +272,18 @@ h2{
     font-family: 'Montserrat', sans-serif;
 }
 
-.patologias img{
-    width: 95%;
-    height: 650px;
-    object-fit: contain;
+.aux-img{
+    overflow: hidden;
 }
 
-/* team */
+.aux-img img{
+    width: calc(100% - (30px + 1.25rem));
+    /* height: 650px; */
+    height: 500px;
+    object-fit: cover;
+}
+
+/*Equipo*/
 #equipo h2{
     width: 100%;
     display: block;
@@ -347,6 +337,7 @@ h2{
 
 .miembro.card .card-body h4{
     color: var(--color-uno);
+    font-size: 1rem;
 }
 
 .miembro.card .card-body span{
@@ -400,6 +391,7 @@ input.input100{
     width: 100% !important;
     height: 500px;
     object-fit: cover;
+    object-position: -100px 0px;
 }
 
 .contact-form{
@@ -488,7 +480,7 @@ input.input100{
     border: 1px solid var(--color-uno);
 }
 
-.btn-ver-mas{
+/* .btn-ver-mas{
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -510,7 +502,7 @@ input.input100{
 .btn-ver-mas:hover{
     background-color: var(--color-uno);
     color: #fff;
-}
+} */
 
 button.form-submit.contact100-form-btn:hover{
     background: var(--color-uno-hover);
@@ -518,11 +510,12 @@ button.form-submit.contact100-form-btn:hover{
 
 /* MD */
 @media(min-width: 768px){
+/*Banner*/
     .jumbotron{
         position: relative;
         background: url('/img/recursos/background/01-banner.jpg') center center no-repeat;
         background-attachment: fixed;
-        height: calc(100vh - 8.5rem + 50px);
+        height: calc(100vh - 8.5rem);
         background-size: cover;
     }
 
@@ -536,46 +529,28 @@ button.form-submit.contact100-form-btn:hover{
         display: inline;
     }
 
-    #especialidades p{
-        height: 400px;
-        padding-top: 20px;
-    }
-
-    .cartas-servicios.col-md-3{
-        flex: 0 0 30%;
-        max-width: 30%;
-        background-color: #fff;
-        border: none;
-    }
-
-    .cartas-servicios .card-text{
-        width: 15rem;
-        margin: auto;
-        font-family: 'Montserrat', sans-serif !important;
-    }
-
-    .patologias img{
-        width: 100%;
-    }
-
-    .miembros{
-        justify-content: center;
-    }
-
-    .miembro.card{
-        min-width: 50vw;
-        flex-basis: 50vw;
-        border: none;
-    }
-
-    .separador-banner p{
+/*Separadores*/
+    .separador p{
         font-size: 1.2rem;
     }
 
-    .separador-banner::before{
+    /* .separador-banner::before{
         top: -48px;
         height: 50px;
     }
+    
+    .separador-banner::after{
+        bottom: -48px;
+        height: 50px;
+    } */
+
+    /* .quote-left{
+        left: 15%;
+    }
+    
+    .quote-right{
+        right: 15%;
+    } */
 
     .separador-call-to-action{
         clip-path: polygon(0% 50px, 100% 0%, 100% calc(100% - 50px), 0% 100%);
@@ -584,23 +559,16 @@ button.form-submit.contact100-form-btn:hover{
     .separador-call-to-action::before{
         clip-path: polygon(0% 50px, 100% 0%, 100% calc(100% - 50px), 0% 100%);
     }
-    
-    .separador-banner::after{
-        bottom: -48px;
-        height: 50px;
+
+/*Equipo*/
+    .miembros{
+        justify-content: center;
     }
 
-    .cartas-servicios .card-title{
-        font-size: 1.1rem;
-        height: 2rem;
-    }
-
-    .quote-left{
-        left: 15%;
-    }
-    
-    .quote-right{
-        right: 15%;
+    .miembro.card{
+        min-width: 50vw;
+        flex-basis: 50vw;
+        border: none;
     }
 
     .empty-miembro.card{
@@ -637,16 +605,9 @@ button.form-submit.contact100-form-btn:hover{
     }
 }
 
-.seccion-aparte div div ul{
-    border: none;
-}
-
-.seccion-aparte div div ul{
-    font-family: 'Montserrat', sans-serif !important; 
-}
-
 /* LG */
 @media(min-width: 1024px){
+/*Banner*/
     .jumbotron .container h2{
         display: flex;
         flex-wrap: wrap;
@@ -656,6 +617,16 @@ button.form-submit.contact100-form-btn:hover{
         flex-basis: 100%;
     }
 
+/*Separadores*/
+    /* .quote-left{
+        left: 25%;
+    }
+    
+    .quote-right{
+        right: 25%;
+    } */
+    
+/*Especialidades*/
     #especialidades .cartas-servicios.invisible p{
         height: 0;
     }
@@ -666,20 +637,27 @@ button.form-submit.contact100-form-btn:hover{
         font-size: .93rem;
     }
 
+/*Patologias*/
     .listado{
         overflow-x: hidden;
         width: 100%;
     }
 
-    .seccion-aparte .row{
-        margin: auto !important;
+    .lista-patologias-div{
+        padding: 0;
+        margin: 0;
     }
 
-    .separador-banner p{
-        font-size: 1.3rem;
-        font-family: 'Montserrat', sans-serif;
+    .img-patologias{
+        padding: 0;
+        margin: 0;
     }
 
+    .patologias img{
+        width: 100%;
+    }
+
+/*Equipo*/
     .miembros{
         flex-wrap: wrap;
     }
@@ -699,36 +677,15 @@ button.form-submit.contact100-form-btn:hover{
         margin-top: 1rem;
     }
 
-    .quote-left{
-        left: 25%;
-    }
-    
-    .quote-right{
-        right: 25%;
-    }
-
     .empty-miembro.card{
         min-width: calc(((100% - 2rem) / 3) - 1rem);
         flex-basis: calc(((100% - 2rem) / 3) - 1rem);
         height: 500px;
     }
 
-    .ultima-list{
-        border-bottom: none !important;
-    }
-
     .wrap-contact100 form{
         order: 2;
     }
-
-    /* .wrap-contact100 form::before{
-        top: 0;
-        height: 50px;
-        left: calc((-100% / 8) * 4);
-        clip-path: polygon(0% 0%, 120% 0%, 0% 100%);
-        width: calc(((100% / 8) * 4) + 100%);
-        background-color: white;
-    } */
 
     .contact100-more{
         order: 1;
@@ -751,14 +708,6 @@ button.form-submit.contact100-form-btn:hover{
 
 /* XL */
 @media(min-width: 1200px){
-    
-    .seccion-img-random .img-randoms{
-        width: 100% !important;
-        height: 450px !important;
-    }
-
-    #nuestros-servicios p{
-        width: 600px;
-    }
+    /**/
 }
 
