@@ -206,7 +206,7 @@ h2{
     color: #000;
     font-family: gotham-light;
     transition: 500ms;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -275,6 +275,7 @@ h2{
 
 .aux-img{
     overflow: hidden;
+    margin-bottom: 4.5rem;
 }
 
 .aux-img img{
@@ -283,12 +284,10 @@ h2{
     height: 500px;
     object-fit: cover;
     transition: 800ms;
-    transform: translateX(-50%);
-    margin-left: 50%;
 }
 
 .aux-img img:hover{
-    width: 110%;
+    transform: scale(1.1);
 }
 
 /*Equipo*/
@@ -332,13 +331,18 @@ h2{
     object-fit: cover;
     object-position: top;
     border-radius: 50%;
+    transition: 500ms;
+}
+
+.card:hover .card-background img{
+    transform: scale(1.1);
 }
 
 .miembro.card .card-body h3{
     color: #000;
     font-family: gotham-light;
     transition: 500ms;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     text-decoration: none;
 }

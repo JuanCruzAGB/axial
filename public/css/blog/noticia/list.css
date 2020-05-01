@@ -32,15 +32,6 @@ h2{
     font-size: 1rem;
 }
 
-.preview:before{
-    content: '...';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background: white;
-    padding-left: .5rem;
-}
-
 .preview.card-title{
     color: #000;
     font-weight: 600;
@@ -49,7 +40,6 @@ h2{
 
 .preview.card-text{
     line-height: 1.5rem;
-    text-align: justify;
     color: #000;
 }
 
@@ -82,11 +72,22 @@ h2{
     color: var(--color-uno);
 }
 
-img.card-img-top{
+.card-img-top{
+    overflow: hidden;
+}
+
+.card-img-top img{
     width: 100%;
     height: 400px;
+    max-height: 400px;
+    overflow: hidden;
     object-fit: cover;
-    object-position: top;
+    object-position: top center;
+    transition: 800ms;
+}
+
+.card-img-top img:hover{
+    transform: scale(1.1);
 }
 
 /* MD */

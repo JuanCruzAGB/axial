@@ -23,6 +23,20 @@ let Tabs = {
             }
         }
     },
+    /** Get if the URL has an #. */
+    getTarget(){
+        let href = location.href;
+        let target = href.split('#');
+        if(target.length > 1){
+            target = target[1];
+            for(let i = 0; i < this.HTMLElements.length; i++){
+                if(this.HTMLElements[i].dataset.content == target){
+                    Tabs.change(this.HTMLElements[i]);
+                    Content.change(this.HTMLElements[i]);
+                }
+            }
+        }
+    },
 }, Content = {
     HTMLElements: [],
     load(){
@@ -34,6 +48,7 @@ let Tabs = {
     change(button){
         for(let i = 0; i < this.HTMLElements.length; i++){
             const content = this.HTMLElements[i];
+            console.log(button.dataset.content == content.id);
             if(button.dataset.content == content.id){
                 content.classList.add('active');
             }else{
@@ -45,4 +60,5 @@ let Tabs = {
 document.addEventListener('DOMContentLoaded', function(){
     Tabs.load();
     Content.load();
+    Tabs.getTarget();
 });
