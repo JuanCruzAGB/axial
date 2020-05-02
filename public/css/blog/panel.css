@@ -142,7 +142,11 @@
     border: none;
 }
 
-.tabs .tab-body .tab-content section .accions a,
+.tabs .tab-body .tab-content section .icons p{
+    height: 100%;
+}
+
+.tabs .tab-body .tab-content section .icons a,
 .tabs .tab-body .tab-content section button{
     background: var(--primary-color);
     border-radius: .25rem;
@@ -210,38 +214,36 @@
     color: var(--primary-color);
 }
 
-.tabs .tab-body .tab-content section .content table tr .accions a span{
+.tabs .tab-body .tab-content section .content table tr .icons a span{
     white-space: nowrap;
 }
 
-.tabs .tab-body .tab-content section .content table tr .accions a,
-.tabs .tab-body .tab-content section .content table tr .accions button{
+.tabs .tab-body .tab-content section .content table tr .icons a,
+.tabs .tab-body .tab-content section .content table tr .icons button{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25vw;
-    height: fit-content;
 }
 
-.tabs .tab-body .tab-content section .content table tr .accions a:hover,
-.tabs .tab-body .tab-content section .content table tr .accions a:focus,
-.tabs .tab-body .tab-content section .content table tr .accions button:hover,
-.tabs .tab-body .tab-content section .content table tr .accions button:focus{
+.tabs .tab-body .tab-content section .content table tr .icons a:hover,
+.tabs .tab-body .tab-content section .content table tr .icons a:focus,
+.tabs .tab-body .tab-content section .content table tr .icons button:hover,
+.tabs .tab-body .tab-content section .content table tr .icons button:focus{
     color: white;
 }
 
 /* Posts */
-.tabs .tab-body .tab-content section .content table.posts tr .accions{
+.tabs .tab-body .tab-content section .content table.posts tr .icons{
     min-width: calc((25vw * 3) + 2rem);
 }
 
 /* Categories */
-.tabs .tab-body .tab-content section .content table.categorys tr .accions{
+.tabs .tab-body .tab-content section .content table.categorys tr .icons{
     min-width: calc((25vw * 2) + 2rem);
 }
 
 /* Tags */
-.tabs .tab-body .tab-content section .content table.tags tr .accions{
+.tabs .tab-body .tab-content section .content table.tags tr .icons{
     min-width: calc((25vw * 2) + 2rem);
 }
 
@@ -279,19 +281,6 @@
     padding-left: 1rem;
 }
 
-#iconos-tabla .editar{
-    background: var(--color-uno) !important;
-    color: #fff;
-    border: none;
-}
-
-#iconos-tabla .ver-mas{
-    background: var(--color-uno) !important;
-    color: #fff;
-    border: none;
-}
-
-
 .aceptar-modal{
     background-color: var(--color-uno) !important;
     border: none;
@@ -301,7 +290,6 @@
     background-color: var(--color-uno) !important;
     border: none;
 }
-
 
 /* MD */
 @media(min-width: 768px){
@@ -331,24 +319,19 @@
         width: 10vw;
         min-width: 10vw;
     }
-
-    .tabs .tab-body .tab-content section .content table tr .accions a,
-    .tabs .tab-body .tab-content section .content table tr .accions button{
-        width: 15vw;
-    }
     
     /* Posts */
-    .tabs .tab-body .tab-content section .content table.posts tr .accions{
+    .tabs .tab-body .tab-content section .content table.posts tr .icons{
         min-width: calc((15vw * 3) + 1rem);
     }
     
     /* Categories */
-    .tabs .tab-body .tab-content section .content table.categorys tr .accions{
+    .tabs .tab-body .tab-content section .content table.categorys tr .icons{
         min-width: calc((15vw * 2) + 1rem);
     }
     
     /* Tags */
-    .tabs .tab-body .tab-content section .content table.tags tr .accions{
+    .tabs .tab-body .tab-content section .content table.tags tr .icons{
         min-width: calc((15vw * 2) + 1rem);
     }
 }
@@ -385,12 +368,12 @@
         min-width: calc(100% / 15);
     }
 
-    .tabs .tab-body .tab-content section .content table.posts tr .accions{
+    .tabs .tab-body .tab-content section .content table.posts tr .icons{
         min-width: calc(((100% /15) * 2) * 3);
     }
     
-    .tabs .tab-body .tab-content section .content table.posts tr .accions a,
-    .tabs .tab-body .tab-content section .content table.posts tr .accions button{
+    .tabs .tab-body .tab-content section .content table.posts tr .icons a,
+    .tabs .tab-body .tab-content section .content table.posts tr .icons button{
         width: calc((100% - 1rem) / 3);
     }
     
@@ -406,13 +389,13 @@
         min-width: calc(100% / 15);
     }
 
-    .tabs .tab-body .tab-content section .content table.categorys tr .accions{
+    .tabs .tab-body .tab-content section .content table.categorys tr .icons{
         min-width: calc(((100% / 15) * 2) * 3);
         margin-left: calc(((100% / 15) * 2) * 2);
     }
     
-    .tabs .tab-body .tab-content section .content table.categorys tr .accions a,
-    .tabs .tab-body .tab-content section .content table.categorys tr .accions button{
+    .tabs .tab-body .tab-content section .content table.categorys tr .icons a,
+    .tabs .tab-body .tab-content section .content table.categorys tr .icons button{
         width: calc((100% - 1rem) / 3);
     }
     
@@ -428,13 +411,13 @@
         min-width: calc(100% / 15);
     }
 
-    .tabs .tab-body .tab-content section .content table.tags tr .accions{
+    .tabs .tab-body .tab-content section .content table.tags tr .icons{
         min-width: calc(((100% / 15) * 2) * 3);
         margin-left: calc(((100% / 15) * 2) * 2);
     }
     
-    .tabs .tab-body .tab-content section .content table.tags tr .accions a,
-    .tabs .tab-body .tab-content section .content table.tags tr .accions button{
+    .tabs .tab-body .tab-content section .content table.tags tr .icons a,
+    .tabs .tab-body .tab-content section .content table.tags tr .icons button{
         width: calc((100% - 1rem) / 3);
     }
 }

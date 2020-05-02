@@ -14,10 +14,16 @@ sr.reveal('.lista-patologias', {
     origin: 'left'
 });
 
-sr.reveal('.img-patologias', {
+sr.reveal('.aux-img', {
     duration: 2000,
     distance: '300px',
     origin: 'right'
+});
+
+sr.reveal('#equipo', {
+    duration: 2000,
+    distance: '300px',
+    origin: 'bottom'
 });
 
 // let scrollReveal = new ScrollReveal([

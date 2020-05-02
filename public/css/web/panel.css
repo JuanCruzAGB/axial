@@ -22,8 +22,9 @@
     min-height: calc(100vh - 6.3rem);
 }
 
-.tabs .tab-body .tab-content section .content table.noticias tr .accions{
-    min-width: calc((25vw * 3) + 2rem);
+.tabs .tab-body .tab-content section .content table tr .icons{
+    width: fit-content;
+    min-width: fit-content;
 }
 
 .tabs .tab-body .tab-content section .content table tr th,
@@ -34,10 +35,10 @@
     border: none;
 }
 
-#id,
-#iconos-tabla{
-    min-width: 3.5rem;
+.tabs .tab-body .tab-content section .content table tr .id,
+.tabs .tab-body .tab-content section .content table tr .icons{
     width: 3.5rem;
+    min-width: 3.5rem;
 }
 
 .contenido{
@@ -65,12 +66,8 @@
     color: var(--color-cuatro) !important;
 }
 
-.tabs .tab-body .tab-content section .accions a, .tabs .tab-body .tab-content section button{
-    background-color: var(--color-uno);
-}
-
-form .crear-noticia{
-    background-color: var(--color-cuatro) !important;
+.input-file .file-button{
+    --primary-color: var(--color-uno);
 }
 
 .tabs .tab-menu .tab-button{
@@ -95,62 +92,39 @@ form .crear-noticia{
     height: 100%;
 }
 
+.tab-button.opened{
+    background: var(--color-uno);
+}
+
+.tabs .tab-body .tab-content section .btn.btn-icon{
+    background: var(--color-uno);
+    color: white;
+    transition: 500ms;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs .tab-body .tab-content section .btn.btn-icon:hover{
+    background: var(--color-uno-hover);
+    color: white;
+}
+
 /* MD */
 @media(min-width: 768px){
-    .tabs .tab-body .tab-content section .content table.noticias tr .accions{
-        min-width: calc((15vw * 3) + 1rem);
-    }
-
     .tabs .tab-body .tab-content section .content table tr th,
     .tabs .tab-body .tab-content section .content table tr td{
-        width: 35vw;
-        min-width: 35vw;
+        width: 30vw;
+        min-width: 30vw;
     }
 }
 
 /* LG */
 @media(min-width: 1024px){
-    .tabs .tab-body .tab-content section .content table.noticias tr th,
-    .tabs .tab-body .tab-content section .content table.noticias tr td{
-        width: calc((100vw - 20vw - (3.5rem * 4)) / 3);
-        min-width: calc((100vw - 20vw - (3.5rem * 4)) / 3);
-    }
-    
-    .tabs .tab-body .tab-content section .content table.noticias tr .id{
-        width: 11.11%;
-        min-width: 11.11%;
-    }
-
-    .tabs .tab-body .tab-content section .content table.noticias tr .accions{
-        width: 33.33%;
-        min-width: 33.33%;
-    }
-    
-    .tabs .tab-body .tab-content section .content table.noticias tr .accions a,
-    .tabs .tab-body .tab-content section .content table.noticias tr .accions button{
-        width: calc((100% - 1rem) / 3);
-        min-width: calc((100% - 1rem) / 3);
-    }
-
-    .tabs .tab-body .tab-content section .content table.miembros tr th,
-    .tabs .tab-body .tab-content section .content table.miembros tr td{
-        width: calc((100vw - 20vw - (3.5rem * 4)) / 3);
-        min-width: calc((100vw - 20vw - (3.5rem * 4)) / 3);
-    }
-    
-    .tabs .tab-body .tab-content section .content table.miembros tr .id{
-        width: 11.11%;
-        min-width: 11.11%;
-    }
-
-    .tabs .tab-body .tab-content section .content table.miembros tr .accions{
-        width: 22.22%;
-        min-width: 22.22%;
-    }
-    
-    .tabs .tab-body .tab-content section .content table.miembros tr .accions a,
-    .tabs .tab-body .tab-content section .content table.miembros tr .accions button{
-        width: calc((100% - 1rem) / 2);
-        min-width: calc((100% - 1rem) / 2);
+    .tabs .tab-body .tab-content section .content table tr th,
+    .tabs .tab-body .tab-content section .content table tr td{
+        width: calc((100% / 4) + 2rem);
+        min-width: calc((100% / 4) + 2rem);
     }
 }

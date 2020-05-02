@@ -28,7 +28,7 @@
             @endif
         </div>
     </div>
-    <div class="col-12 text-center mt-4">
+    <div class="col-12 text-center mb-4">
         <a class="btn btn-secondary" href="/quienes-somos#equipo">
             <i class="fas fa-chevron-right pr-2 pb-0"></i> Ver más
         </a>

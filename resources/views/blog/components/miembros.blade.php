@@ -12,37 +12,37 @@
                 <table id="mytable" class="miembros table table-bordred table-striped">
                     <thead>
                         <tr>
-                            <th id="id"></th>
+                            <th class="id"></th>
                             <th>Nombre</th>
                             <th>Última vez actualizada</th>
-                            <th id="iconos-tabla"></th>
-                            <th id="iconos-tabla"></th>
-                            <th id="iconos-tabla"></th>
+                            <th class="icons"></th>
+                            <th class="icons"></th>
+                            <th class="icons"></th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($miembros as $miembro)
                             <tr>
-                                <td id="id" class="d-flex justify-content-center">{{$miembro->id_miembro}}</td>
+                                <td class="id d-flex justify-content-center">{{$miembro->id_miembro}}</td>
                                 <td>{{$miembro->nombre}}</td>
                                 <td>{{$miembro->date}}</td>
-                                <td id="iconos-tabla">
+                                <td class="icons">
                                     <p data-placement="top" data-toggle="tooltip" title="Ver más">
-                                        <a href="/#equipo" class="btn btn-primary ver-mas btn-xs">
+                                        <a href="/#equipo" class="btn btn-icon ver-mas btn-xs">
                                             <span class="button-icon fas fa-eye"></span>
                                         </a>
                                     </p>
                                 </td>
-                                <td id="iconos-tabla">
+                                <td class="icons">
                                     <p data-placement="top" data-toggle="tooltip" title="Editar">
-                                        <a href="/miembro/{{$miembro->slug}}/editar" class="btn btn-primary editar btn-xs">
+                                        <a href="/miembro/{{$miembro->slug}}/editar" class="btn btn-icon editar btn-xs">
                                             <span class="button-icon fas fa-pen"></span>
                                         </a>
                                     </p>
                                 </td>
-                                <td id="iconos-tabla">
+                                <td class="icons">
                                     <p data-placement="top" data-toggle="tooltip" title="Echar">
-                                        <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete-modal" data-title="Echar miembro" data-body="¿Estás seguro de que querés borrar la miembro?" data-url="/miembro/{{$miembro->id_miembro}}/echar" data-toggle="modal" data-target="#delete-modal">
+                                        <button class="btn btn-icon btn-xs" data-toggle="modal" data-target="#delete-modal" data-title="Echar miembro" data-body="¿Estás seguro de que querés borrar la miembro?" data-url="/miembro/{{$miembro->id_miembro}}/echar" data-toggle="modal" data-target="#delete-modal">
                                             <span class="button-icon fas fa-trash"></span>
                                         </button>
                                     </p>
