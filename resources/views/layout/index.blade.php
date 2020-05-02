@@ -10,7 +10,8 @@
         <link rel="icon" type="image/png" href="/favicon.ico"/>
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
         <!-- Fuentes -->
         <link href="{{asset('fonts/stylesheet.css')}}" rel="stylesheet">
