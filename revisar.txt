@@ -1,0 +1,29 @@
+<div class="tarjetas-del-equipo col-12">
+    <div class="my-4">
+        <h3 class="text-center dark-text">Eduardo Galaretto</h3>
+        <div class="d-flex justify-content-center">
+            <img class="rounded-circle" src="/img/servicios/random.jpg" alt="">
+        </div>
+        <div class="datos-tarjetas text-dark px-4 my-5">
+            <p> Eduardo Galaretto nació en la ciudad de Caracarañá de la provincia de Santa Fe.</p>
+            <p> Egresó como Médico en la Universidad Nacional de Rosario.</p>
+            <p> Su residencia en Ortopedia y Traumatología la cursó en el Sanatorio Laprida
+                de la misma Ciudad.</p>
+            <p> Su formación de post grado comenzó en el Hospital de Pediatría Juan P.
+                Garrahan donde realizo un Fellow en el Servicio de Columna por 2 años. Luego
+                realizó rotaciones por los centros más prestigiosos de Estados Unidos y Europa
+                siempre enfocado en Patología de la columna Vertebral.</p>
+            <p> Miembro Titular de la Asociación Argentina de Patologia de la Columna
+                Vertebral</p>
+            <p> Miembro Titular de la Asociacion Argentina de Ortopedia y Traumatologia.</p>
+            <p> Cirujano espinal certificado por la Asociación Argentina de Patología de la
+                Columna Vertebral</p>
+            <p> Médico de Planta Permanente del Hospital de Pediatría Juan P. Garrahan.</p>
+            <p> Médico Consultor del Sanatorio de Niños de la Ciudad de Rosario.</p>
+            <p> Médico Consultor del Centro de Ortopedia y Traumatología de la Ciudad de
+                Rosario.</p>
+            <p> Médico de Planta Permanente del Hospital Universitario Austral.</p>
+            <p> Director Médico del Servicio de Columna Vertebral de Axial Grupo Médico.</p>
+        </div>
+    </div>
+<div>

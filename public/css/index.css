@@ -264,4 +264,8 @@ a:hover{
     .nav-menu.fixed .second-row{
         height: 6.3rem;
     }
+
+    .btn.btn-primary{
+        font-size: 1.1rem;
+    }
 }
