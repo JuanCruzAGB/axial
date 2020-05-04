@@ -15,7 +15,15 @@
 
 @section('main')
     <section class="col-12 col-md-10 col-xl-8 mx-auto pt-3 mb-5">
-        <h1 class="my-5 pb-lg-4 text-center">Especialidades</h1>
+        <div class="separador separador-call-to-action col-12 p-md-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="h2-responsive text-white text-center my-4">
+                        <span class="text-row">Especialidades</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-12 col-lg-4">
                 <ul class="menu-servicios-detallados list-group">

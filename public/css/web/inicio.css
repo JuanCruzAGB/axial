@@ -396,7 +396,7 @@ input.input100{
 }
 
 .separador-image{
-    background: url(/img/inicio/02-operando.jpg) no-repeat center -110px;
+    background: url(/img/inicio/02-operando.jpg) no-repeat -100px center;
     background-attachment: fixed;
     background-size: cover;
     margin-bottom: 0 !important;
@@ -644,6 +644,10 @@ button.form-submit.contact100-form-btn:hover{
     .quote-right{
         right: 25%;
     } */
+
+    .separador-image{
+        background-position: center -110px;
+    }
     
 /*Especialidades*/
     #especialidades .cartas-servicios.invisible p{
