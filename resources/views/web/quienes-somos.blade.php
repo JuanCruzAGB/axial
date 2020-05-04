@@ -98,6 +98,27 @@
             <div>
             <div class="tarjetas-del-equipo col-12">
                 <div class="my-4">
+                    <h3 class="text-center dark-text">Norberto Fernandez</h3>
+                    <div class="d-flex justify-content-center">
+                        <img class="rounded-circle" src="/img/servicios/random.jpg" alt="">
+                    </div>
+                    <div class="datos-tarjetas text-dark px-4 my-5">
+                        <p> Médico egresado de la Universidad Nacional de La Plata (2002)</p>
+                        <p> Residente de Ortopedia y Traumatología de Hospital Cosme Argerich (2003-
+                            2007), Jefe de residentes (2007-2008)</p>
+                        <p> Beca Bi-anual de perfeccionamiento en Patología Espinal del Hospital
+                            Garrahan. (2008-2010)</p>
+                        <p> Médico de planta del servicio de Patología de la Columna Vertebral del Hospital
+                            Argerich y ex médico del Hospital de Alta Complejidad El Cruce</p>
+                        <p> Especialista universitario en Ortopedia y Traumatología</p>
+                        <p> Miembro certificado de la Sociedad Argentina de Patología de la Columna
+                            Vertebral (SAPCV) y de la Asociación Argentina de Ortopedia y Traumatología
+                            (AAOT)</p>
+                    </div>
+                </div>
+            <div>
+            <div class="tarjetas-del-equipo col-12">
+                <div class="my-4">
                     <h3 class="text-center dark-text">Nicolas Coombes</h3>
                     <div class="d-flex justify-content-center">
                         <img class="rounded-circle" src="/img/servicios/random.jpg" alt="">

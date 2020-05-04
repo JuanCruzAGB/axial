@@ -35,8 +35,8 @@
                 <h2 class="h2-responsive text-white text-center mb-3">
                     <span class="text-row pb-4">Especialistas en patologías de la columna vertebral
                 </h2>
-                <div class="d-flex justify-content-center">
-                    <a class="btn btn-primary" href="#contacto" role="button">Solicitar Turno</a>
+                <div class="d-flex justify-content-center pt-5">
+                    <a class="btn btn-primary" href="#contacto" role="button">Contacto</a>
                 </div>
             </div>
         </div>
