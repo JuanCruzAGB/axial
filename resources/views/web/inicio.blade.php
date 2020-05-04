@@ -33,7 +33,7 @@
         <div class="container d-flex justify-content-center align-items-center">
             <div class="col-12 col-md-10 col-lg-7">
                 <h2 class="h2-responsive text-white text-center mb-3">
-                    <span class="text-row pb-4">Especialistas en patologías de la columna vertebral
+                    <span class="text-row pb-4">Especialistas en patologías de la columna vertebral</span>
                 </h2>
                 <div class="d-flex justify-content-center">
                     <a class="btn btn-primary" href="#contacto" role="button">Solicitar Turno</a>
@@ -85,11 +85,12 @@
 
         <div class="donde-encontrarnos col-12 p-0">
             <div class="row justify-content-center px-3">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2480796792042!2d-58.434819084771135!3d-34.572588880467585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59624034bf3%3A0x4c5b8dd6024977f9!2sHuergo%20366%2C%20C1426%20BQF%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1583877457141!5m2!1ses!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2480796792042!2d-58.434819084771135!3d-34.572588880467585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59624034bf3%3A0x4c5b8dd6024977f9!2sHuergo%20366%2C%20C1426%20BQF%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1583877457141!5m2!1ses!2sar" width="800" height="600" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </div>
 </div>
+<div><div>
 @endsection
 
 @section('extras')

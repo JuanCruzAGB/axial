@@ -4,25 +4,19 @@
 
 h1{
     font-size: 2.5rem;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #333;
 }
 
 h2{
     font-size: 2rem;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #333;
-}
-
-.info-nosotros p{
-    color: #333;
-    padding: 0 1rem;
-    line-height: 1.6rem;
 }
 
 /*Separadores*/
 .separador-call-to-action{
-    background: url("/img/recursos/background/03-separador-call-to-action.png") no-repeat center center;
+    background: url("/img/quienes/01-equipo.jpg") no-repeat 25px center;
     background-size: cover;
     background-attachment: fixed;
     clip-path: polygon(0% 25px, 100% 0%, 100% calc(100% - 25px), 0% 100%);
@@ -36,9 +30,38 @@ h2{
     width: 100%;
     height: 100%;
     clip-path: polygon(0% 25px, 100% 0%, 100% calc(100% - 25px), 0% 100%);
-    background: rgba(35, 31, 32, 0.6);
+    background: rgba(35, 31, 32, .1);
 }
 
+.info-nosotros p{
+    color: #333;
+    padding: 0 1rem;
+    line-height: 1.6rem;
+}
+
+.miembro img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+/* MD */
+@media(min-width: 768px){
+/*Separadores*/
+    .separador-call-to-action{
+        clip-path: polygon(0% 50px, 100% 0%, 100% calc(100% - 50px), 0% 100%);
+    }
+
+    .separador-call-to-action::before{
+        clip-path: polygon(0% 50px, 100% 0%, 100% calc(100% - 50px), 0% 100%);
+    }
+    .info-nosotros p{
+        font-size: 1.09rem;
+    }
+}
+
+/*LG*/
 @media(min-width: 1024px){
     .equipo-div img{
         width: 100%;
@@ -46,13 +69,9 @@ h2{
         object-position: center;
         height: 550px;
     }
+}
 
-/*Separadores*/
-    .separador-call-to-action{
-        clip-path: polygon(0% 50px, 100% 0%, 100% calc(100% - 50px), 0% 100%);
-    }
-    
-    .separador-call-to-action::before{
-        clip-path: polygon(0% 50px, 100% 0%, 100% calc(100% - 50px), 0% 100%);
-    }
+/* XL */
+@media(min-width: 1200px){
+    /**/
 }

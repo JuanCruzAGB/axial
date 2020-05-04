@@ -67,12 +67,25 @@
         }
 
         /** Carga la sección especialidades. */
-        public function especialidades(){
-            return view('web.especialidades');
+        public function quienes(){
+            $miembros = Miembro::all();
+            $miembros_count = 0;
+            foreach($miembros as $miembro){
+                $miembro->date = $this->createDate('es', $miembro);
+                $miembros_count++;
+            }
+
+            return view('web.quienes-somos',[
+                'data' => [
+                    'miembros' => $miembros,
+                ], 'counts' => [
+                    'miembros' => $miembros_count,
+                ],
+            ]);
         }
 
         /** Carga la sección especialidades. */
-        public function quienes(){
-            return view('web.quienes-somos');
+        public function especialidades(){
+            return view('web.especialidades');
         }
     }

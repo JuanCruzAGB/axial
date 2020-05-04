@@ -1,5 +1,5 @@
 <div id="patologias" class="patologias container-fluid contenedor seccion-aparte d-flex">       
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mx-auto">
         <div class="col-12">
             <h2 class="text-center my-4 pt-5">Patologías</h2>
         </div>    

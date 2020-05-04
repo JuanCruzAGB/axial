@@ -14,16 +14,16 @@
 @endsection
 
 @section('main')
-    <section class="col-12 col-md-10 col-xl-8 mx-auto pt-3 mb-5">
-        <div class="separador separador-call-to-action col-12 p-md-5">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="h2-responsive text-white text-center my-4">
-                        <span class="text-row">Especialidades</span>
-                    </h2>
-                </div>
+    <div class="separador separador-call-to-action col-12 p-md-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h2-responsive text-white text-center my-4">
+                    <span class="text-row">Especialidades</span>
+                </h2>
             </div>
         </div>
+    </div>
+    <section class="col-12 col-md-10 col-xl-8 mx-auto pt-3 mb-5">
         <div class="row">
             <div class="col-12 col-lg-4">
                 <ul class="menu-servicios-detallados list-group">
