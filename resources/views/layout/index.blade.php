@@ -15,6 +15,7 @@
 
         <!-- Fuentes -->
         <link href="{{asset('fonts/stylesheet.css')}}" rel="stylesheet">
+        <link href="{{asset('fonts/Icons/styles.css')}}" rel="stylesheet">
 
         <!-- Bootstrap -->
         <link href="{{asset('css/bootstrap/bootstrap.min.css')}}" rel="stylesheet">

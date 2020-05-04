@@ -25,6 +25,11 @@ img.img-fluid.rounded{
     object-fit: cover;
 }
 
+.separador-image{
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 0 !important;
+}
 
 /* MD */
 @media(min-width: 768px){

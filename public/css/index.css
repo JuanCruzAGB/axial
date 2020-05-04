@@ -25,6 +25,10 @@ body{
     margin: 0;
 }
 
+.iconos-servicios.icon{
+    font-size: 3em;
+}
+
 .btn:active{
     background: none !important;
     color: var(--color-uno) !important;
