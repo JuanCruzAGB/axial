@@ -15,7 +15,7 @@
                         <div class="card-body mb-4 p-3 pb-5">
                             <h3 class="m-0 pb-3 text-center">{{$miembro->nombre}}</h3>
                             <h4 class="m-0 pb-3 text-center">{{$miembro->titulo}}</h4>
-                            <a class="btn btn-secondary" href="/quienes-somos#equipo">
+                            <a class="btn btn-secondary" href="/quienes-somos#{{$miembro->slug}}">
                                 <i class="fas fa-chevron-right pr-2 pb-0"></i> Ver más
                             </a>
                         </div>

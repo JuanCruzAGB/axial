@@ -72,7 +72,7 @@
             </div>
             <div class="cartas-servicios invisible card col-12 col-md-5 col-lg-4 text-center border-0 mb-4">
                 <div class="card-body">
-                    <i class="icon-espina fa-3x mb-3 iconos-servicios"></i>
+                    <i class="icon-atras fa-3x mb-3 iconos-servicios"></i>
                     <h3 class="card-title mb-3">Intervencionismo asistido por imágenes</h3>
                     <a class="btn btn-secondary" href="/especialidades#intervencionismo-asistido-por-imagenes">
                         <i class="fas fa-chevron-right pr-2 pb-0"></i> Ver más

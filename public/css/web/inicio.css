@@ -451,20 +451,6 @@ input.input100{
 }
 
 .contact100-form-btn{
-    background-color: var(--color-uno);
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    min-width: 200px;
-    height: 50px;
-    border-radius: .25rem;
-    font-family: gotham-bold;
-    font-size: .8rem;
-    color: #fff;
-    line-height: 1.2;
-    letter-spacing: 1px;
     text-transform: none;
 }
 

@@ -63,7 +63,7 @@
 
                 <div class="col-12">
                     <div class="container-contact100-form-btn">
-                        <button class="form-submit contact100-form-btn">
+                        <button class="btn btn-primary form-submit contact100-form-btn">
                             Enviar mensaje
                         </button>
                     </div>
