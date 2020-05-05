@@ -46,6 +46,19 @@ h2{
     object-fit: cover;
 }
 
+
+.miembro-titulo{
+    font-size: 1.35rem;
+}
+
+.miembro-puesto{
+    font-size: 1.2rem;
+}
+
+.miembro-cv{
+    padding: 0;
+}
+
 /* MD */
 @media(min-width: 768px){
 /*Separadores*/
@@ -76,6 +89,11 @@ h2{
         object-fit: cover;
         object-position: center;
         height: 550px;
+    }
+
+    hr{
+        width: 80%;
+        background-color: var(--color-cinco);
     }
 }
 
