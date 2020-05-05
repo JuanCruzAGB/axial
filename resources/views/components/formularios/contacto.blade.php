@@ -71,7 +71,7 @@
             </div>
         </form>
 
-        <div class="col-12 col-lg-4 contact-data contact100-more flex-col-c-m pt-5">
+        <div class="col-12 col-lg-4 contact-data contact100-more flex-col-c-m pt-5 pl-lg-5">
             <div class="flex-w size1 p-b-47 mt-3 mt-md-5">
                 <div class="txt1 p-r-25">
                     <span class="lnr lnr-map-marker"></span>
