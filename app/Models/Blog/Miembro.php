@@ -33,7 +33,7 @@
                     'titulo' => 'nullable|min:5|max:200',
                     'puesto' => 'nullable|min:5|max:200',
                     'imagen' => 'required|mimetypes:image/jpeg,image/png',
-                    'cv' => 'nullable|max:300',
+                    'cv' => 'nullable|max:2000',
                     'link' => 'nullable|url',
                 ], 'messages' => [
                     'es' => [
@@ -56,7 +56,7 @@
                     'titulo' => 'nullable|min:5|max:200',
                     'puesto' => 'nullable|min:5|max:200',
                     'imagen' => 'nullable|mimetypes:image/jpeg,image/png',
-                    'cv' => 'nullable|max:300',
+                    'cv' => 'nullable|max:2000',
                     'link' => 'nullable|url',
                 ], 'messages' => [
                     'es' => [
