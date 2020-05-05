@@ -44,31 +44,29 @@
         <section id="equipo" class="col-12 pt-5 mt-4">
             <div class="row">
                 @foreach($data['miembros'] as $miembro)
-                    <div id="{{$miembro->slug}}" class="miembro col-12 d-lg-flex my-4">
-                        <div class="mt-4 col-12 col-lg-6">
-                            <div class="d-flex justify-content-center">
+                    <div id="{{$miembro->slug}}" class="miembro col-12 d-lg-flex justify-content-center mb-4">
+                        <div class="col-12 col-lg-3">
+                            <div class="d-flex justify-content-center mb-3">
                                 <img class="rounded-circle" src="{{asset('storage/' . $miembro->imagen)}}" alt="{{$miembro->nombre}}">
                             </div>
-                            <h3 class="text-center text-dark my-4 miembro-nombre">{{$miembro->nombre}}</h3>
-                            <h4 class="text-center text-dark my-4 miembro-titulo">{{$miembro->titulo}}</h4>
-                            <h4 class="text-center text-dark my-4 miembro-puesto">{{$miembro->puesto}}</h4>
-                            <a class="btn btn-secondary d-none d-lg-block" target="_blank" href="{{$miembro->link}}">
+                            <h3 class="text-center text-dark mb-3 miembro-nombre">{{$miembro->nombre}}</h3>
+                            <h4 class="text-center text-dark mb-3 miembro-titulo">{{$miembro->titulo}}</h4>
+                            <h4 class="text-center text-dark mb-3 miembro-puesto">{{$miembro->puesto}}</h4>
+                            <a class="btn btn-secondary d-none d-lg-flex" target="_blank" href="{{$miembro->link}}">
                                 <i class="fas fa-chevron-right pr-2 pb-0"></i> Ver sitio web
                             </a>
                         </div>
-                        <div class="mb-4 col-12 col-lg-6">   
-                            <div class="datos-tarjetas text-dark px-4 my-5 miembro-cv">{!!$miembro->cv!!}</div>
-                            <a class="btn btn-secondary d-lg-none" target="_blank" href="{{$miembro->link}}">
+                        <div class="col-12 col-lg-5">
+                            <div class="datos-tarjetas text-dark px-4 mb-3 mb-lg-0 miembro-cv">{!!$miembro->cv!!}</div>
+                            <a class="btn btn-secondary d-lg-none mt-4" target="_blank" href="{{$miembro->link}}">
                                 <i class="fas fa-chevron-right pr-2 pb-0"></i> Ver sitio web
                             </a>
                         </div>
-                    
                     </div>
-                    <hr class="mx-auto">
+                    <hr class="mx-auto mb-4 mt-lg-0 mb-lg-5">
                 @endforeach
             </div>
 
-            
             <div class="separador separador-call-to-action col-12 p-md-5">
                 <div class="row">
                     <div class="col-12">
@@ -76,7 +74,7 @@
                             <span class="text-row">Ir al contacto</span>
                         </h2>
                         <div class="d-flex justify-content-center mb-4">
-                            <a class="btn btn-primary" href="/noticias" role="button">Blog</a>
+                            <a class="btn btn-primary" href="/#contacto" role="button">Contacto</a>
                         </div>
                     </div>
                 </div>

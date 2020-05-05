@@ -25,16 +25,56 @@
     </div>
     <section class="col-12 col-md-10 col-xl-8 mx-auto mt-4 pt-5">
         <div class="row">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 mb-lg-4 pb-lg-5">
                 <ul class="menu-servicios-detallados list-group">
-                    <li class="list-group-item border-0 text-center"><button data-content="escoliosis-cifosis" class="active btn btn-secondary p-3">Escoliosis – Cifosis</button></li>
-                    <li class="list-group-item border-0 text-center"><button data-content="cirugias-minimamente-invasivas" class="btn btn-secondary p-3">Cirugías Mínimamente Invasiva</button></li>
-                    <li class="list-group-item border-0 text-center"><button data-content="departamento-de-cirugia-pediatrica-de-la-columna-vertebral" class="btn btn-secondary p-3">Departamento de cirugía pediátrica de la columna vertebral</button></li>
-                    <li class="list-group-item border-0 text-center"><button data-content="evaluacion-interdisciplinaria" class="btn btn-secondary p-3">Evaluación interdisciplinaria</button></li>
-                    <li class="list-group-item border-0 text-center"><button data-content="descripcion-generada-automaticamente-columna-cervical" class="btn btn-secondary p-3">Descripción generada automáticamente Columna cervical</button></li>
-                    <li class="list-group-item border-0 text-center"><button data-content="columna-lumbar" class="btn btn-secondary p-3">Columna lumbar</button></li>
-                    <li class="list-group-item border-0 text-center"><button data-content="kinesiologia-y-actividad-fisica" class="btn btn-secondary p-3">Kinesiología y Actividad física</button></li>
-                    <li class="list-group-item border-0 text-center"><button data-content="intervencionismo-asistido-por-imagenes" class="btn btn-secondary p-3">Intervencionismo asistido por imágenes</button></li>
+                    <li class="list-group-item border-0 text-center">
+                        <button data-content="escoliosis-cifosis" class="active btn btn-secondary p-3">
+                            <i class="icon-cuerpo mr-3 iconos-servicios icon"></i>
+                            Escoliosis – Cifosis
+                        </button>
+                    </li>
+                    <li class="list-group-item border-0 text-center">
+                        <button data-content="cirugias-minimamente-invasivas" class="btn btn-secondary p-3">
+                            <i class="icon-espina mr-3 iconos-servicios icon"></i>
+                            Cirugías Mínimamente Invasiva
+                        </button>
+                    </li>
+                    <li class="list-group-item border-0 text-center">
+                        <button data-content="departamento-de-cirugia-pediatrica-de-la-columna-vertebral" class="btn btn-secondary p-3">
+                            <i class="icon-columna-2 mr-3 iconos-servicios icon"></i>
+                            Departamento de cirugía pediátrica de la columna vertebral
+                        </button>
+                    </li>
+                    <li class="list-group-item border-0 text-center">
+                        <button data-content="evaluacion-interdisciplinaria" class="btn btn-secondary p-3">
+                            <i class="icon-masaje mr-3 iconos-servicios icon"></i>
+                            Evaluación interdisciplinaria
+                        </button>
+                    </li>
+                    <li class="list-group-item border-0 text-center">
+                        <button data-content="descripcion-generada-automaticamente-columna-cervical" class="btn btn-secondary p-3">
+                            <i class="icon-cuello mr-3 iconos-servicios icon"></i>
+                            Descripción generada automáticamente Columna cervical
+                        </button>
+                    </li>
+                    <li class="list-group-item border-0 text-center">
+                        <button data-content="columna-lumbar" class="btn btn-secondary p-3">
+                            <i class="icon-hueso mr-3 iconos-servicios icon"></i>
+                            Columna lumbar
+                        </button>
+                    </li>
+                    <li class="list-group-item border-0 text-center">
+                        <button data-content="kinesiologia-y-actividad-fisica" class="btn btn-secondary p-3">
+                            <i class="icon-cerebro mr-3 iconos-servicios icon"></i>
+                            Kinesiología y Actividad física
+                        </button>
+                    </li>
+                    <li class="list-group-item border-0 text-center">
+                        <button data-content="intervencionismo-asistido-por-imagenes" class="btn btn-secondary p-3">
+                            <i class="icon-atras mr-3 iconos-servicios icon"></i>
+                            Intervencionismo asistido por imágenes
+                        </button>
+                    </li>
                 </ul>
             </div>
             <div class="col-12 col-lg-8 pl-lg-5 my-4 py-5 mt-lg-0 pt-lg-0">
