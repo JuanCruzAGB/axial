@@ -21,7 +21,7 @@
 @endsection
 
 @section('main')
-    <div class="separador separador-call-to-action col-12 p-md-5">
+    <div class="separador separador-title col-12 p-md-5">
         <div class="row">
             <div class="col-12">
                 <h2 class="h2-responsive text-white text-center my-4">

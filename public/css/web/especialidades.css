@@ -74,6 +74,27 @@ img.img-fluid.rounded{
     display: block;
 }
 
+.btn.btn-secondary.active,
+.btn.btn-secondary:hover{
+    background-color: var(--color-uno) !important;
+    color: #fff;
+}
+
+.imagen-servicio{
+    overflow: hidden;
+}
+
+.imagen-servicio img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: 800ms;
+}
+
+.imagen-servicio img:hover{
+    transform: scale(1.1);
+}
+
 /* MD */
 @media(min-width: 768px){
 /*Separadores*/
