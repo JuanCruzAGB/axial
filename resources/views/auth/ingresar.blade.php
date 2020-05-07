@@ -94,11 +94,14 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Validation.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Rules.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Messages.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Requirements.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Validator.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Invalidator.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/auth/ingresar.js')}}"></script>
+    <!-- <script src="{{asset('submodules/ValidationJS/js/Validation.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Form.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Input.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Support.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Rule.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Message.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Requirement.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Validator.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Invalidator.js')}}"></script> -->
+    <script src="{{asset('js/auth/ingresar.js')}}"></script>
 @endsection

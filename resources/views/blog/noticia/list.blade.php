@@ -5,6 +5,7 @@
 
 @section('css')
     <link href="{{asset('css/blog/noticia/list.css')}}" rel="stylesheet">
+    <meta name="asset" content="{{asset('')}}">
 @endsection
 
 @section('title')
@@ -17,25 +18,33 @@
 @endsection
 
 @section('main')
-    <section class="col-12 col-md-10 col-lg-12 mx-auto pt-3 px-3">
-    <h1 class="my-4 text-center blog-h1">Blog</h1>
+    <div class="separador separador-title col-12 p-md-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h2-responsive text-white text-center my-4">
+                    <span class="text-row">Blog</span>
+                </h2>
+            </div>
+        </div>
+    </div>
     @if($count)
-        <div class="cards row d-flex justify-content-around">
+        <div class="noticias cards row d-flex justify-content-around mx-3 mt-4 pt-5">
             @foreach($noticias as $noticia)
-                <div class="card mb-4 mx-lg-1 col-12 col-lg-3 col-xl-3 p-0 border-0">
-                    <a href="/noticia/{{$noticia->slug}}" class="card-img-top mx-4">
+                <div class="noticia card mb-4 col-12 col-md-6 col-lg-3 col-xl-3 mx-lg-1 p-0 border-0">
+                    <a href="/noticia/{{$noticia->slug}}" class="card-img-top">
                         <img src="{{asset('storage/' . $noticia->imagen)}}" alt="{{$noticia->titulo}}">
                     </a>
-                    <div class="card-body">
-                    <div class="card-footer text-muted">
-                        {{$noticia->fecha}}
-                    </div>
-                        <h2 class="preview card-title">{{$noticia->titulo}}</h2>
-                        <div class="preview card-text mb-3">{!!$noticia->contenido!!}</div>
-                        <a href="/noticia/{{$noticia->slug}}" class="btn btn-secondary"><i class="fas fa-angle-right pr-2 pb-0"></i>Leer más</a>
+                    <div class="card-body p-0">
+                        <div class="card-footer text-muted mt-3 p-0">{{$noticia->fecha}}</div>
+                        <h2 class="preview card-title mt-3">{{$noticia->titulo}}</h2>
+                        <div class="preview card-text mt-3">{!!$noticia->contenido!!}</div>
+                        <a href="/noticia/{{$noticia->slug}}" class="btn btn-more mt-3"><i class="fas fa-angle-right pr-2 pb-0"></i>Leer más</a>
                     </div>
                 </div>
             @endforeach
+        </div>
+        <div class="col-12 mb-4 pb-5">
+            <button class="load-more btn btn-primary mx-auto">Cargar más</button>
         </div>
     @endif
 @endsection

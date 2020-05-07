@@ -66,16 +66,32 @@ img.img-fluid.rounded{
     order: 2;
 }
 
+.data{
+    --content-height: 0;
+    position: relative;
+    height: var(--content-height);
+}
+
 .content{
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 500ms;
+    transform: translateX(10%);
+    z-index: 1;
 }
 
 .content.active{
-    display: block;
+    transition: 1500ms;
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 2;
 }
 
-.btn.btn-secondary.active,
-.btn.btn-secondary:hover{
+.btn.btn-more.active,
+.btn.btn-more:hover{
     background-color: var(--color-uno) !important;
     color: #fff;
 }

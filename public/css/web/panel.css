@@ -111,6 +111,18 @@
     color: white;
 }
 
+.tabs .tab-body .tab-content section .icons a,
+.tabs .tab-body .tab-content section button{
+    background: var(--color-uno);
+    color: #fff;
+}
+
+.tabs .tab-body .tab-content section .icons a:hover,
+.tabs .tab-body .tab-content section button:hover{
+    background: var(--color-uno-hover);
+    color: #fff;
+}
+
 /* MD */
 @media(min-width: 768px){
     .tabs .tab-body .tab-content section .content table tr th,

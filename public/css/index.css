@@ -57,7 +57,7 @@ body{
     border-color: #0062cc;
 }
 
-.btn.btn-secondary{
+.btn.btn-more{
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -76,9 +76,35 @@ body{
     letter-spacing: 1px;
 }
 
-.btn.btn-secondary:hover{
+.btn span{
+    font-family: gotham-bold;
+}
+
+.btn.btn-more:hover{
     background-color: var(--color-uno);
     color: #fff;
+}
+
+.btn.btn-outline{
+    background-color: transparent;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 200px;
+    height: 50px;
+    border-radius: .25rem;
+    font-family: gotham-bold;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.btn.btn-outline:hover{
+    background-color: var(--color-uno);
+    border-color: var(--color-uno);
 }
 
 /*Separadores*/

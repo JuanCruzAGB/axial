@@ -32,7 +32,7 @@
 
         /** La vista donde se ve las Noticias creadas. */
         public function list(){
-            $noticias = Noticia::all();
+            $noticias = Noticia::limit(6)->orderBy('updated_at', 'DESC')->get();
             $count = 0;
             foreach($noticias as $noticia){
                 $noticia->fecha = $this->createDate($this->idiom, $noticia);
@@ -184,5 +184,24 @@
             if(isset($currentImage) && !empty($currentImage)){
                 Storage::delete($currentImage);
             }
+        }
+
+        public function loadMore(Request $request){
+            // Campos que llegan: $next
+            $inputData = extract($request->all());
+            $noticias = Noticia::orderBy('updated_at', 'DESC')->get();
+            $noticias_collection = collect([]);
+            for($int = 1; $int <= count($noticias); $int++){
+                $noticias[$int - 1]->fecha = $this->createDate($this->idiom, $noticias[$int - 1]);
+                $noticia = $noticias[$int - 1];
+                if($int > intval($next)){
+                    $noticias_collection->push($noticia);
+                }
+            }
+            
+            return response()->json([
+                'error' => 0,
+                'data' => $noticias_collection,
+            ]);
         }
     }

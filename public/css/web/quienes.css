@@ -97,8 +97,16 @@ h2{
     transition: 500ms;
 }
 
-.miembro .col-lg-3:hover img{
+.miembro .col-lg-3 .foto:hover img{
     transform: scale(1.1);
+}
+
+.datos-tarjetas p:last-of-type{
+    margin-bottom: 0;
+}
+
+.datos-tarjetas p{
+    margin-bottom: .5rem;
 }
 
 /* MD */

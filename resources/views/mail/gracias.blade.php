@@ -22,7 +22,9 @@
                     <strong>¡Muchas Gracias!</strong>
                 </h2>
                 <p class="mb-4 text-white">Te responderemos en la brevedad.</p>
-                <a class="btn btn-lg btn-outline-primary volverBtn mt-lg-4">Regresar al Inicio</a>
+                <div class="d-flex justify-content-center pt-5">
+                    <a class="btn btn-outline" href="/" role="button">Regresar al Inicio</a>
+                </div>
             </div>
         </div>
     </div>

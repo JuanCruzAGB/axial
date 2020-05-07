@@ -9,13 +9,13 @@
             @if(count($miembros))
                 @foreach($miembros as $miembro)
                     <div id="{{$miembro->slug}}" class="miembro collapsable-card card mr-4 mr-lg-0 p-0">
-                        <div class="card-background">
+                        <a href="/quienes-somos#{{$miembro->slug}}" class="card-background">
                             <img class="mb-0" src="{{asset('storage/' . $miembro->imagen)}}" alt="{{$miembro->nombre}}">
-                        </div>
+                        </a>
                         <div class="card-body mb-4 p-3 pb-5">
                             <h3 class="m-0 pb-3 text-center">{{$miembro->nombre}}</h3>
                             <h4 class="m-0 pb-3 text-center">{{$miembro->titulo}}</h4>
-                            <a class="btn btn-secondary" href="/quienes-somos#{{$miembro->slug}}">
+                            <a class="btn btn-more" href="/quienes-somos#{{$miembro->slug}}">
                                 <i class="fas fa-chevron-right pr-2 pb-0"></i> Ver más
                             </a>
                         </div>
