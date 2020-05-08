@@ -33,7 +33,7 @@
                     'titulo' => 'nullable|min:5|max:200',
                     'puesto' => 'nullable|min:5|max:200',
                     'imagen' => 'required|mimetypes:image/jpeg,image/png',
-                    'cv' => 'nullable|max:2000',
+                    'cv' => 'required|max:2000',
                     'link' => 'nullable|url',
                 ], 'messages' => [
                     'es' => [
@@ -46,6 +46,7 @@
                         'puesto.max' => 'El puesto no puede tener más de :max caracteres.',
                         'imagen.required' => 'La imagen es obligatoria.',
                         'imagen.mimetypes' => 'La imagen debe ser formato jpeg/jpg o png.',
+                        'cv.required' => 'El cv es obligatorio.',
                         'cv.max' => 'El cv no puede tener más de :max caracteres.',
                         'link.url' => 'El link debe ser una URL.',
                     ],
@@ -56,7 +57,7 @@
                     'titulo' => 'nullable|min:5|max:200',
                     'puesto' => 'nullable|min:5|max:200',
                     'imagen' => 'nullable|mimetypes:image/jpeg,image/png',
-                    'cv' => 'nullable|max:2000',
+                    'cv' => 'required|max:2000',
                     'link' => 'nullable|url',
                 ], 'messages' => [
                     'es' => [
@@ -68,6 +69,7 @@
                         'puesto.min' => 'El puesto debe tener al menos :min caracteres.',
                         'puesto.max' => 'El puesto no puede tener más de :max caracteres.',
                         'imagen.mimetypes' => 'La imagen debe ser formato jpeg/jpg o png.',
+                        'cv.required' => 'El cv es obligatorio.',
                         'cv.max' => 'El cv no puede tener más de :max caracteres.',
                         'link.url' => 'El link debe ser una URL.',
                     ],

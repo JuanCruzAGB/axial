@@ -9,7 +9,7 @@
     <div class="content row">
         @if($count)
             <div class="table-responsive px-2">
-                <table id="mytable" class="noticias table table-bordred table-striped">
+                <table class="noticias table table-bordred table-striped">
                     <thead>
                         <tr>
                             <th class="id"></th>
@@ -42,7 +42,7 @@
                             </td>
                             <td class="icons">
                                 <p data-placement="top" data-toggle="tooltip" title="Borrar">
-                                    <button class="btn btn-icon btn-xs" data-toggle="modal" data-target="#delete-modal" data-title="Borrar noticia" data-body="¿Estás seguro de que querés borrar la noticia?" data-url="/noticia/{{$noticia->id_noticia}}/eliminar" data-toggle="modal" data-target="#delete-modal">
+                                    <button class="btn btn-icon btn-xs" data-toggle="modal" data-target="#delete-modal" data-title="Borrar noticia" data-body="¿Estás seguro de que querés borrar la noticia?" data-url="/noticia/{{$noticia->id_noticia}}/eliminar">
                                         <span class="button-icon fas fa-trash"></span>
                                     </button>                                    
                                 </p>

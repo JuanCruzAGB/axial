@@ -77,16 +77,16 @@
 
 @section('js')
     <script src="{{asset('vendors/ckeditor/ckeditor.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Validation.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Form.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Input.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Support.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Rule.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Requirement.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Message.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Validator.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Invalidator.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/InputFileMaker.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/blog/panel.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/web/panel.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Validation.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Form.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Input.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Support.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Rule.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Requirement.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Message.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Validator.js')}}"></script>
+    <script src="{{asset('submodules/ValidationJS/js/Invalidator.js')}}"></script>
+    <script src="{{asset('js/InputFileMaker.js')}}"></script>
+    <script src="{{asset('js/blog/panel.js')}}"></script>
+    <script src="{{asset('js/web/panel.js')}}"></script>
 @endsection

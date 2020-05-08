@@ -55,5 +55,5 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="{{asset('js/blog/noticia/list.js')}}"></script>
+    <script src="{{asset('js/blog/noticia/list.js')}}"></script>
 @endsection

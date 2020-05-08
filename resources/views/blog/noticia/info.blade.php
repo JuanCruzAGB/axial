@@ -38,5 +38,5 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="{{asset('js/blog/noticia/info.js')}}"></script>
+    <script src="{{asset('js/blog/noticia/info.js')}}"></script>
 @endsection

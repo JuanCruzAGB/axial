@@ -20,98 +20,12 @@
 @endsection
 
 @section('main')
-    <div class="title editar-h1 d-flex justify-content-center ml-5">
-        <h1 class="mt-5 p-3">Editar noticia</h1>
-    </div>
-    <div id="edit-post" class="edit-post col-12 col-md-10 col-xl-8 mx-auto d-flex justify-content-between pt-3 mt-3 mb-5">
-        
-        <div class="content px-3">
-        <form action="/noticia/{{$noticia->id_noticia}}/editar"
-            class="form-validate"
-            method="post"
-            enctype="multipart/form-data"
-            data-validation="{{$validation}}">
-            @csrf
-            @method('PUT')
-            <div class="row">
-                <div class="col-12">
-                    <div class="titulo form-group">
-                        <label for="noticia_titulo" class="input-name">
-                            <span class="input-text">Título *</span>
-                        </label>
-                        <input id="noticia_titulo"
-                            name="titulo"
-                            type="text"
-                            class="form-control mb-3 w-75"
-                            value="{{old('titulo', $noticia->titulo)}}"
-                            placeholder="Título">
-                        <div @if($errors->has('titulo'))
-                            class="support-box showed"
-                        @else
-                            class="support-box"
-                        @endif>
-                            @if($errors->has('titulo'))
-                                <small>{{$errors->first('titulo')}}</small>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="imagen form-group">
-                        <input class="make-a-file make-an-image w-75"
-                            type="file"
-                            name="imagen"
-                            data-text="Imagen"
-                            data-src="{{asset('storage/' . $noticia->imagen)}}"
-                            data-notfound="No se eligió ninguna imagen.">
-                        <div @if($errors->has('imagen'))
-                            class="support-box showed mt-3"
-                        @else
-                            class="support-box mt-3"
-                        @endif>
-                            @if($errors->has('imagen'))
-                                <small>{{$errors->first('imagen')}}</small>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="contenido form-group">
-                        <label class="input-name">
-                            <span class="input-text">Contenido *</span>
-                        </label>
-                        <textarea id="contenido"
-                            name="contenido"
-                            class="form-control ckeditor w-75"
-                            cols="30"
-                            rows="10"
-                            placeholder="Contenido">{!!old('contenido', $noticia->contenido)!!}</textarea>
-                        <div @if($errors->has('contenido'))
-                            class="mt-3 support-box showed mt-3"
-                        @else
-                            class="mt-3 support-box mt-3"
-                        @endif>
-                            @if($errors->has('contenido'))
-                                <small>{{$errors->first('contenido')}}</small>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="form-submit btn btn-primary crear-noticia">Editar</button>
-                </div>
+    <div id="edit-post" class="edit-post col-12 col-md-10 col-xl-8 mx-auto d-flex justify-content-between pt-3">
+        <section>
+            <div class="title editar-h1">
+                <h1 class="d-flex justify-content-center justify-content-md-start mb-3 p-3">Editar {{$noticia->titulo}}</h1>
             </div>
-        </form>
-    </div>
-    </div>
-
-
-
-    <!-- <section>
-            <div class="title">
-                <h2 class="mb-3 p-3">Editar "{{$noticia->titulo}}"</h2>
-            </div>
-            <div class="content">
+            <div class="content px-3">
                 <form action="/noticia/{{$noticia->id_noticia}}/editar"
                     class="form-validate"
                     method="post"
@@ -121,14 +35,14 @@
                     @method('PUT')
                     <div class="row">
                         <div class="col-12">
-                            <div class="form-group">
-                                <label for="titulo" class="input-name">
-                                    <span class="input-text">Título</span>
+                            <div class="titulo form-group">
+                                <label for="noticia_titulo" class="input-name">
+                                    <span class="input-text">Título *</span>
                                 </label>
-                                <input id="titulo"
+                                <input id="noticia_titulo"
                                     name="titulo"
                                     type="text"
-                                    class="form-control"
+                                    class="form-control mb-3"
                                     value="{{old('titulo', $noticia->titulo)}}"
                                     placeholder="Título">
                                 <div @if($errors->has('titulo'))
@@ -143,17 +57,17 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="form-group">
+                            <div class="imagen form-group">
                                 <input class="make-a-file make-an-image"
                                     type="file"
                                     name="imagen"
                                     data-text="Imagen"
                                     data-src="{{asset('storage/' . $noticia->imagen)}}"
-                                    data-notfound='Imagen de la noticia: "{{$noticia->titulo}}"'>
+                                    data-notfound="No se eligió ninguna imagen.">
                                 <div @if($errors->has('imagen'))
-                                    class="support-box showed"
+                                    class="support-box showed mt-3"
                                 @else
-                                    class="support-box"
+                                    class="support-box mt-3"
                                 @endif>
                                     @if($errors->has('imagen'))
                                         <small>{{$errors->first('imagen')}}</small>
@@ -162,9 +76,9 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="form-group">
-                                <label for="contenido" class="input-name">
-                                    <span class="input-text">Contenido</span>
+                            <div class="contenido form-group">
+                                <label class="input-name">
+                                    <span class="input-text">Contenido *</span>
                                 </label>
                                 <textarea id="contenido"
                                     name="contenido"
@@ -173,9 +87,9 @@
                                     rows="10"
                                     placeholder="Contenido">{!!old('contenido', $noticia->contenido)!!}</textarea>
                                 <div @if($errors->has('contenido'))
-                                    class="support-box showed"
+                                    class="mt-3 support-box showed mt-3"
                                 @else
-                                    class="support-box"
+                                    class="mt-3 support-box mt-3"
                                 @endif>
                                     @if($errors->has('contenido'))
                                         <small>{{$errors->first('contenido')}}</small>
@@ -184,12 +98,13 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="form-submit btn btn-primary">Editar</button>
+                            <button type="submit" class="form-submit btn btn-primary crear-noticia">Editar</button>
                         </div>
                     </div>
                 </form>
             </div>
-        </section> -->
+        </section>
+    </div>
 @endsection
 
 @section('footer')
@@ -198,13 +113,7 @@
 @endsection
 
 @section('js')
-    <!-- <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Validation.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Rules.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Messages.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Requirements.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Validator.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Invalidator.js')}}"></script> -->
-    <script type="text/javascript" src="{{asset('js/InputFileMaker.js')}}"></script>
+    <script src="{{asset('js/InputFileMaker.js')}}"></script>
     <script src="{{asset('vendors/ckeditor/ckeditor.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/blog/noticia/edit.js')}}"></script>
+    <script src="{{asset('js/blog/noticia/edit.js')}}"></script>
 @endsection

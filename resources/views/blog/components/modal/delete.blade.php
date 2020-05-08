@@ -2,7 +2,7 @@
     <div class="modal-dialog d-flex justify-content-center align-items-center">
         <div class="modal-content m-3">
             <div class="modal-header">
-                <h2 class="modal-title" id="delete-modal-label"></h2>
+                <h2 class="modal-title" id="delete-modal-label">Example title</h2>
                 <button type="button" class="close" data-dismiss="modal">
                     <span>&times;</span>
                 </button>

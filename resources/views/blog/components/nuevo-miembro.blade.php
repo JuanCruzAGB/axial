@@ -100,7 +100,7 @@
                 <div class="col-12">
                     <div class="cv form-group">
                         <label class="input-name">
-                            <span class="input-text">CV</span>
+                            <span class="input-text">CV *</span>
                         </label>
                         <textarea id="cv"
                             name="cv"

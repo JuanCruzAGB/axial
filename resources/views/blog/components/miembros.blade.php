@@ -9,7 +9,7 @@
     <div class="content row">
         @if($count)
             <div class="table-responsive px-2">
-                <table id="mytable" class="miembros table table-bordred table-striped">
+                <table class="miembros table table-bordred table-striped">
                     <thead>
                         <tr>
                             <th class="id"></th>
@@ -28,7 +28,7 @@
                                 <td>{{$miembro->date}}</td>
                                 <td class="icons">
                                     <p data-placement="top" data-toggle="tooltip" title="Ver más">
-                                        <a href="/#equipo" class="btn btn-icon ver-mas btn-xs">
+                                        <a href="/quienes-somos#{{$miembro->slug}}" class="btn btn-icon ver-mas btn-xs">
                                             <span class="button-icon fas fa-eye"></span>
                                         </a>
                                     </p>
@@ -42,7 +42,7 @@
                                 </td>
                                 <td class="icons">
                                     <p data-placement="top" data-toggle="tooltip" title="Echar">
-                                        <button class="btn btn-icon btn-xs" data-toggle="modal" data-target="#delete-modal" data-title="Echar miembro" data-body="¿Estás seguro de que querés borrar la miembro?" data-url="/miembro/{{$miembro->id_miembro}}/echar" data-toggle="modal" data-target="#delete-modal">
+                                        <button class="btn btn-icon btn-xs" data-toggle="modal" data-target="#delete-modal" data-title="Echar miembro" data-body="¿Estás seguro de que querés borrar la miembro?" data-url="/miembro/{{$miembro->id_miembro}}/echar">
                                             <span class="button-icon fas fa-trash"></span>
                                         </button>
                                     </p>

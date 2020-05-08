@@ -113,10 +113,10 @@
     <script src="{{asset('submodules/ValidationJS/js/Form.js')}}"></script>
     <script src="{{asset('submodules/ValidationJS/js/Input.js')}}"></script>
     <script src="{{asset('submodules/ValidationJS/js/Support.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/web/inicio.js')}}"></script>
+    <script src="{{asset('js/web/inicio.js')}}"></script>
     <script src="vendor/animsition/js/animsition.min.js"></script>
-    <script type="text/javascript" src="{{asset('vendor/select2/select2.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('vendor/animsition/js/animsition.min.js')}}"></script>
+    <script src="{{asset('vendor/select2/select2.min.js')}}"></script>
+    <script src="{{asset('vendor/animsition/js/animsition.min.js')}}"></script>
     <script>
 		$(".selection-2").select2({
 			minimumResultsForSearch: 20,
@@ -124,12 +124,12 @@
 		});
     </script>
     
-    <script type="text/javascript" src="{{asset('vendor/daterangepicker/moment.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('vendor/daterangepicker/daterangepicker.js')}}"></script>
-    <script type="text/javascript" src="{{asset('vendor/countdowntime/countdowntime.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('https://unpkg.com/scrollreveal') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/scrollReveal.js') }}"></script>
-    <script type="text/javascript" src="{{asset('js/form/form.js')}}"></script>
+    <script src="{{asset('vendor/daterangepicker/moment.min.js')}}"></script>
+    <script src="{{asset('vendor/daterangepicker/daterangepicker.js')}}"></script>
+    <script src="{{asset('vendor/countdowntime/countdowntime.js')}}"></script>
+    <script src="{{ asset('https://unpkg.com/scrollreveal') }}"></script>
+    <script src="{{ asset('js/scrollReveal.js') }}"></script>
+    <script src="{{asset('js/form/form.js')}}"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>

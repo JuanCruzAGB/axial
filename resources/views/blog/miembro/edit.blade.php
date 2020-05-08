@@ -21,11 +21,11 @@
 
 @section('main')
     <div id="edit-post" class="edit-post col-12 col-md-10 col-xl-8 mx-auto d-flex justify-content-between pt-3">
-        <!-- <section>
-            <div class="title">
-                <h2 class="mb-3 p-3">Editar "{{$miembro->nombre}}"</h2>
+        <section>
+            <div class="title editar-h1">
+                <h1 class="d-flex justify-content-center justify-content-md-start mb-3 p-3">Editar "{{$miembro->nombre}}"</h1>
             </div>
-            <div class="content">
+            <div class="content px-3">
                 <form action="/miembro/{{$miembro->id_miembro}}/editar"
                     class="form-validate"
                     method="post"
@@ -35,14 +35,14 @@
                     @method('PUT')
                     <div class="row">
                         <div class="col-12">
-                            <div class="form-group">
+                            <div class="nombre form-group">
                                 <label for="nombre" class="input-name">
-                                    <span class="input-text">Nombre</span>
+                                    <span class="input-text">Nombre *</span>
                                 </label>
                                 <input id="nombre"
                                     name="nombre"
                                     type="text"
-                                    class="form-control"
+                                    class="form-control mb-3"
                                     value="{{old('nombre', $miembro->nombre)}}"
                                     placeholder="Nombre">
                                 <div @if($errors->has('nombre'))
@@ -57,14 +57,14 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="form-group">
-                                <label for="titulo" class="input-name">
+                            <div class="titulo form-group">
+                                <label for="miembro_titulo" class="input-name">
                                     <span class="input-text">Título</span>
                                 </label>
-                                <input id="titulo"
+                                <input id="miembro_titulo"
                                     name="titulo"
                                     type="text"
-                                    class="form-control"
+                                    class="form-control mb-3"
                                     value="{{old('titulo', $miembro->titulo)}}"
                                     placeholder="Título">
                                 <div @if($errors->has('titulo'))
@@ -79,14 +79,14 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="form-group">
+                            <div class="puesto form-group">
                                 <label for="puesto" class="input-name">
                                     <span class="input-text">Puesto</span>
                                 </label>
                                 <input id="puesto"
                                     name="puesto"
                                     type="text"
-                                    class="form-control"
+                                    class="form-control mb-3"
                                     value="{{old('puesto', $miembro->puesto)}}"
                                     placeholder="Puesto">
                                 <div @if($errors->has('puesto'))
@@ -101,17 +101,17 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="form-group">
+                            <div class="imagen form-group">
                                 <input class="make-a-file make-an-image"
                                     type="file"
                                     name="imagen"
                                     data-text="Imagen"
                                     data-src="{{asset('storage/' . $miembro->imagen)}}"
-                                    data-notfound='Imagen del miembro del equipo: "{{$miembro->nombre}}"'>
+                                    data-notfound="No se eligió ninguna imagen.">
                                 <div @if($errors->has('imagen'))
-                                    class="support-box showed"
+                                    class="support-box showed mt-3"
                                 @else
-                                    class="support-box"
+                                    class="support-box mt-3"
                                 @endif>
                                     @if($errors->has('imagen'))
                                         <small>{{$errors->first('imagen')}}</small>
@@ -120,9 +120,9 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="form-group">
-                                <label for="cv" class="input-name">
-                                    <span class="input-text">CV</span>
+                            <div class="cv form-group">
+                                <label class="input-name">
+                                    <span class="input-text">CV *</span>
                                 </label>
                                 <textarea id="cv"
                                     name="cv"
@@ -131,9 +131,9 @@
                                     rows="10"
                                     placeholder="CV">{!!old('cv', $miembro->cv)!!}</textarea>
                                 <div @if($errors->has('cv'))
-                                    class="support-box showed"
+                                    class="mt-3 support-box showed"
                                 @else
-                                    class="support-box"
+                                    class="mt-3 support-box"
                                 @endif>
                                     @if($errors->has('cv'))
                                         <small>{{$errors->first('cv')}}</small>
@@ -142,14 +142,14 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="form-group">
+                            <div class="link form-group">
                                 <label for="link" class="input-name">
                                     <span class="input-text">Link</span>
                                 </label>
                                 <input id="link"
                                     name="link"
                                     type="text"
-                                    class="form-control"
+                                    class="form-control mb-3"
                                     value="{{old('link', $miembro->link)}}"
                                     placeholder="Link">
                                 <div @if($errors->has('link'))
@@ -169,158 +169,7 @@
                     </div>
                 </form>
             </div>
-        </section> -->
-    
-        <section>
-    <div class="title editar-h1">
-        <h1 class="d-flex justify-content-center justify-content-md-start mb-3 p-3">Editar "{{$miembro->nombre}}"</h1>
-    </div>
-    <div class="content px-3">
-        <form action="/miembro/{{$miembro->id_miembro}}/editar"
-            class="form-validate"
-            method="post"
-            enctype="multipart/form-data"
-            data-validation="{{$validation}}">
-            @csrf
-            @method('PUT')
-            <div class="row">
-                <div class="col-12">
-                    <div class="nombre form-group">
-                        <label for="nombre" class="input-name">
-                            <span class="input-text">Nombre *</span>
-                        </label>
-                        <input id="nombre"
-                            name="nombre"
-                            type="text"
-                            class="form-control mb-3"
-                            value="{{old('nombre', $miembro->nombre)}}"
-                            placeholder="Nombre">
-                        <div @if($errors->has('nombre'))
-                            class="support-box showed"
-                        @else
-                            class="support-box"
-                        @endif>
-                            @if($errors->has('nombre'))
-                                <small>{{$errors->first('nombre')}}</small>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="titulo form-group">
-                        <label for="miembro_titulo" class="input-name">
-                            <span class="input-text">Título</span>
-                        </label>
-                        <input id="miembro_titulo"
-                            name="titulo"
-                            type="text"
-                            class="form-control mb-3"
-                            value="{{old('titulo', $miembro->titulo)}}"
-                            placeholder="Título">
-                        <div @if($errors->has('titulo'))
-                            class="support-box showed"
-                        @else
-                            class="support-box"
-                        @endif>
-                            @if($errors->has('titulo'))
-                                <small>{{$errors->first('titulo')}}</small>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="puesto form-group">
-                        <label for="puesto" class="input-name">
-                            <span class="input-text">Puesto</span>
-                        </label>
-                        <input id="puesto"
-                            name="puesto"
-                            type="text"
-                            class="form-control mb-3"
-                            value="{{old('puesto', $miembro->puesto)}}"
-                            placeholder="Puesto">
-                        <div @if($errors->has('puesto'))
-                            class="support-box showed"
-                        @else
-                            class="support-box"
-                        @endif>
-                            @if($errors->has('puesto'))
-                                <small>{{$errors->first('puesto')}}</small>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="imagen form-group">
-                        <input class="make-a-file make-an-image"
-                            type="file"
-                            name="imagen"
-                            data-text="Imagen"
-                            data-src="{{asset('storage/' . $miembro->imagen)}}"
-                            data-notfound="No se eligió ninguna imagen.">
-                        <div @if($errors->has('imagen'))
-                            class="support-box showed mt-3"
-                        @else
-                            class="support-box mt-3"
-                        @endif>
-                            @if($errors->has('imagen'))
-                                <small>{{$errors->first('imagen')}}</small>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="cv form-group">
-                        <label class="input-name">
-                            <span class="input-text">CV</span>
-                        </label>
-                        <textarea id="cv"
-                            name="cv"
-                            class="form-control ckeditor"
-                            cols="30"
-                            rows="10"
-                            placeholder="CV">{!!old('cv', $miembro->cv)!!}</textarea>
-                        <div @if($errors->has('cv'))
-                            class="mt-3 support-box showed"
-                        @else
-                            class="mt-3 support-box"
-                        @endif>
-                            @if($errors->has('cv'))
-                                <small>{{$errors->first('cv')}}</small>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="link form-group">
-                        <label for="link" class="input-name">
-                            <span class="input-text">Link</span>
-                        </label>
-                        <input id="link"
-                            name="link"
-                            type="text"
-                            class="form-control mb-3"
-                            value="{{old('link', $miembro->link)}}"
-                            placeholder="Link">
-                        <div @if($errors->has('link'))
-                            class="support-box showed"
-                        @else
-                            class="support-box"
-                        @endif>
-                            @if($errors->has('link'))
-                                <small>{{$errors->first('link')}}</small>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="form-submit btn btn-primary">Editar</button>
-                </div>
-            </div>
-        </form>
-    </div>
-</section>
-
+        </section>
     </div>
 @endsection
 
@@ -330,13 +179,7 @@
 @endsection
 
 @section('js')
-    <!-- <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Validation.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Rules.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Messages.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Requirements.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Validator.js')}}"></script>
-    <script type="text/javascript" src="{{asset('submodules/ValidationJS/js/Invalidator.js')}}"></script> -->
-    <script type="text/javascript" src="{{asset('js/InputFileMaker.js')}}"></script>
+    <script src="{{asset('js/InputFileMaker.js')}}"></script>
     <script src="{{asset('vendors/ckeditor/ckeditor.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/blog/miembro/edit.js')}}"></script>
+    <script src="{{asset('js/blog/miembro/edit.js')}}"></script>
 @endsection
