@@ -71,7 +71,7 @@
                 <div class="row">
                     <div class="col-12">
                         <h2 class="h2-responsive text-white text-center mt-4 mb-3">
-                            <span class="text-row">Ir al contacto</span>
+                            <span class="text-row">Envianos un mensaje</span>
                         </h2>
                         <div class="d-flex justify-content-center mb-4">
                             <a class="btn btn-primary" href="/#contacto" role="button">Contacto</a>

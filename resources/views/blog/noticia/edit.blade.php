@@ -23,7 +23,7 @@
     <div id="edit-post" class="edit-post col-12 col-md-10 col-xl-8 mx-auto d-flex justify-content-between pt-3">
         <section>
             <div class="title editar-h1">
-                <h1 class="d-flex justify-content-center justify-content-md-start mb-3 p-3">Editar {{$noticia->titulo}}</h1>
+                <h1 class="d-flex justify-content-center justify-content-lg-start mb-3 p-3">Editar {{$noticia->titulo}}</h1>
             </div>
             <div class="content px-3">
                 <form action="/noticia/{{$noticia->id_noticia}}/editar"
@@ -33,8 +33,8 @@
                     data-validation="{{$validation}}">
                     @csrf
                     @method('PUT')
-                    <div class="row">
-                        <div class="col-12">
+                    <div class="row d-lg-flex justify-content-start">
+                        <div class="col-12 col-md-8 col-lg-10 my-2">
                             <div class="titulo form-group">
                                 <label for="noticia_titulo" class="input-name">
                                     <span class="input-text">Título *</span>
@@ -56,9 +56,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="imagen form-group">
-                                <input class="make-a-file make-an-image"
+                        <div class="col-12 col-md-8 col-xl-8 col-xl-10 my-2">
+                            <div class="imagen form-group my-2">
+                                <input class="make-a-file make-an-image mb-3"
                                     type="file"
                                     name="imagen"
                                     data-text="Imagen"
@@ -75,7 +75,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 col-lg-10 my-2">
                             <div class="contenido form-group">
                                 <label class="input-name">
                                     <span class="input-text">Contenido *</span>
@@ -97,7 +97,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 col-md-8 col-xl-8 col-xl-10 my-2 my-4">
                             <button type="submit" class="form-submit btn btn-primary crear-noticia">Editar</button>
                         </div>
                     </div>

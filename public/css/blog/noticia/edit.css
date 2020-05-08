@@ -59,6 +59,7 @@
 
 .editar-h1 h1{
     background-color: #fff;
+    font-size: 2.2rem;
 }
 
 .input-file .file-button{
@@ -68,14 +69,23 @@
 /* MD */
 @media(min-width: 768px){
     /**/
+    #noticia_titulo{
+        width: 35rem;
+    }
 }
 
 /* LG */
 @media(min-width: 1024px){
     /**/
+    #noticia_titulo{
+        width: 35rem;
+    }
 }
 
 /* XL */
 @media(min-width: 1200px){
     /**/
+    #noticia_titulo{
+        width: 40rem;
+    }
 }

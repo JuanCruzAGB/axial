@@ -29,15 +29,15 @@
             data-validation="{{$validation}}">
             @csrf
             <div class="login-container">
-                <div class="row">
-                    <div class="form-group form-group-sm col-12 mb-2 ml-5">
+                <div class="row d-lg-flex justify-content-center">
+                    <div class="form-group form-group-sm col-12 col-lg-8 mb-2">
                         <label for="email" class="input-name m-0 p-0">
                             <span class="input-text">Correo</span>
                         </label>
                         <input id="email"
                             name="email"
                             type="text"
-                            class="form-control m-0 p-2 w-75"
+                            class="form-control m-0 p-2"
                             value="{{old('email')}}"
                             placeholder="ejemplo@email.com">
                         <div @if($errors->has('email'))
@@ -51,14 +51,14 @@
                         </div>
                     </div>
 
-                    <div class="form-group form-group-sm col-12 mb-2 ml-5">
+                    <div class="form-group form-group-sm col-12 col-lg-8 mb-2">
                         <label for="password" class="input-name m-0 p-0">
                             <span class="input-text">Contraseña</span>
                         </label>
                         <input id="password" 
                             name="password"
                             type="password" 
-                            class="form-control m-0 p-2 w-75"
+                            class="form-control m-0 p-2"
                             placeholder="Contraseña">
                         <div @if($errors->has('password'))
                             class="support-box showed"
@@ -71,13 +71,13 @@
                         </div>
                     </div>
 
-                    <div class="col-12 d-flex justify-content-end mt-4 mb-5 loginDivSubmit">
+                    <div class="col-12 d-flex justify-content-end mt-4 mb-5 loginDivSubmit col-lg-8">
                         <div class="form-check d-flex align-items-center mr-3 p-0">
                             <input class="form-check-input m-0" type="checkbox" id="autoSizingCheck2" name="remember">
                             <label class="form-check-label ml-4" for="autoSizingCheck2">Recordarme</label>
                         </div>
                     
-                            <button class="form-submit btn btn-primary mr-5"
+                            <button class="form-submit btn btn-primary"
                                 type="submit"
                                 name="action">Ingresar
                                 <i class="submit-icon fas fa-caret-right"></i>

@@ -12,6 +12,14 @@
      margin-left: .5rem;
 }
 
+main{
+    min-height: 50vh;
+}
+
+body{
+    min-height: 100vh;
+}
+
 /* MD */
 @media(min-width: 768px){
     /**/
@@ -29,10 +37,6 @@
         display: flex !important;
         justify-content: center !important;
     }
-
-    #email, #password{
-        width: 40rem !important;
-    }
 }
 
 /* XL */
@@ -45,10 +49,11 @@
     .login-container{
         display: flex !important;
         justify-content: center !important;
-    }
+    }   
 
-    #email, #password{
-        width: 35rem !important;
-        margin-left: 10rem;
+    @media(min-width: 1400px){
+        main{
+            min-height: 53.6vh;
+        }
     }
 }
