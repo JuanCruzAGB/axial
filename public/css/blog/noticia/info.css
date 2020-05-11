@@ -31,6 +31,16 @@ img.img-fluid.rounded{
     margin-bottom: 0 !important;
 }
 
+
+a{
+    text-decoration: none;
+    color: var(--color-uno);  
+}
+
+a:hover{
+    color: #0069d9;
+}
+
 /* MD */
 @media(min-width: 768px){
     /**/

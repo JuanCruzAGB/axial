@@ -109,6 +109,10 @@ h2{
     margin-bottom: .5rem;
 }
 
+hr:last-child{
+    display: none;
+}
+
 /* MD */
 @media(min-width: 768px){
 /*Separadores*/

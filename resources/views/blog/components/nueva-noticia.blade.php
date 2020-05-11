@@ -44,7 +44,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-lg-9">
                     <div class="contenido form-group">
                         <label class="input-name">
                             <span class="input-text">Contenido *</span>

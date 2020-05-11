@@ -13,7 +13,7 @@
             data-validation="{{$validation}}">
             @csrf
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-lg-8">
                     <div class="nombre form-group">
                         <label for="nombre" class="input-name">
                             <span class="input-text">Nombre *</span>
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-lg-8">
                     <div class="titulo form-group">
                         <label for="miembro_titulo" class="input-name">
                             <span class="input-text">Título</span>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-lg-8">
                     <div class="puesto form-group">
                         <label for="puesto" class="input-name">
                             <span class="input-text">Puesto</span>
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-lg-8">
                     <div class="imagen form-group">
                         <input class="make-a-file make-an-image"
                             type="file"
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-lg-8">
                     <div class="cv form-group">
                         <label class="input-name">
                             <span class="input-text">CV *</span>
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-lg-8">
                     <div class="link form-group">
                         <label for="link" class="input-name">
                             <span class="input-text">Link</span>
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-lg-8">
                     <button type="submit" class="form-submit btn btn-primary">Crear</button>
                 </div>
             </div>
