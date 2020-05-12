@@ -89,5 +89,5 @@
 @endsection
 
 @section('js')
-    <script src="{{asset('js/blog/noticia/info.js')}}"></script>
+    <script src="{{asset('js/web/quienes.js')}}"></script>
 @endsection

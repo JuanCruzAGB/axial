@@ -32,14 +32,14 @@
 
         /** Carga el panel de administracion. */
         public function panel(){
-            $miembros = Miembro::all();
+            $miembros = Miembro::orderBy('updated_at', 'DESC')->get();
             $miembros_count = 0;
             foreach($miembros as $miembro){
                 $miembro->date = $this->createDate('es', $miembro);
                 $miembros_count++;
             }
 
-            $noticias = Noticia::all();
+            $noticias = Noticia::orderBy('updated_at', 'DESC')->get();
             $noticias_count = 0;
             foreach($noticias as $noticia){
                 $noticia->date = $this->createDate('es', $noticia);

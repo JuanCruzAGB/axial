@@ -29,4 +29,18 @@ class SmoothScroll{
             });
         }
     }
+    /**
+     * Scroll the page to an element.
+     * @static
+     * @param {HTMLElement} element - The element to scroll.
+     * @param {int} pixels - The top pixels to add.
+     * @memberof SmoothScroll
+     */
+    static scrollTo(element, pixels){
+        let target = $(element);
+        console.log(target);
+        $('html, body').animate({
+            scrollTop: target.offset().top - pixels
+        }, 1000);
+    }
 }

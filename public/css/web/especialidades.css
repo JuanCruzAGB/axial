@@ -41,6 +41,13 @@ img.img-fluid.rounded{
     border: none;
     background: transparent;
     color: var(--color-tres);
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    min-height: 4rem;
 }
 
 .menu-servicios-detallados .list-group-item .active{
@@ -52,6 +59,29 @@ img.img-fluid.rounded{
 .menu-servicios-detallados .list-group-item:first-child{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+.list-group-item button i{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.list-group-item button span{
+    flex-basis: 75%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+    text-align: right;
 }
 
 .orden-1{

@@ -107,6 +107,10 @@ body{
     border-color: var(--color-uno);
 }
 
+.btn .button-icon{
+    font-family: "Font Awesome 5 Free";
+}
+
 /*Separadores*/
 .separador{
     position: relative;
