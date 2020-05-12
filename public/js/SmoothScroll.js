@@ -38,7 +38,6 @@ class SmoothScroll{
      */
     static scrollTo(element, pixels){
         let target = $(element);
-        console.log(target);
         $('html, body').animate({
             scrollTop: target.offset().top - pixels
         }, 1000);
