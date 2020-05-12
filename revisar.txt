@@ -2,7 +2,7 @@
     <div class="my-4">
         <h3 class="text-center dark-text">Eduardo Galaretto</h3>
         <div class="d-flex justify-content-center">
-            <img class="rounded-circle" src="/img/servicios/random.jpg" alt="">
+            <img class="rounded-circle" src="/img/especialidades/01-doctor.jpg" alt="">
         </div>
         <div class="datos-tarjetas text-dark px-4 my-5">
             <p> Eduardo Galaretto nació en la ciudad de Caracarañá de la provincia de Santa Fe.</p>
